@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#16213e">
+  <title>俄语名词变格练习</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- Welcome -->
+    <div id="welcome-page" class="page active">
+      <div class="text-center mt-4">
+        <div class="welcome-logo">Я</div>
+        <h1>俄语名词变格<br>朗读练习</h1>
+        <p class="mb-4">结构化掌握俄语名词三大变格法<br>每日朗读例句，维持语感</p>
+        <div class="card text-center mb-4">
+          <div class="card-title">📊 内置 17 个语法点</div>
+          <div class="card-sub">覆盖日常交流所需的全部名词变格类型</div>
+        </div>
+        <div class="card text-center mb-4">
+          <div class="card-title">🎯 四种练习模式</div>
+          <div class="card-sub">按词尾分组 / 按格分组 / 全随机 / 特殊变化专项</div>
+        </div>
+        <button id="start-diagnostic-btn" class="btn btn-primary">开始入门诊断</button>
+      </div>
+    </div>
+
+    <!-- Diagnostic -->
+    <div id="diagnostic-page" class="page">
+      <h2 id="diagnostic-title">入门诊断</h2>
+      <div class="question-counter" id="question-counter">问题 1 / 7</div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+      </div>
+      <div class="card mb-4">
+        <div id="question-text" class="card-title" style="font-size:1.1rem;line-height:1.6;"></div>
+      </div>
+      <div id="options-container"></div>
+
+      <div id="diagnostic-complete" class="hidden text-center mt-4">
+        <div class="welcome-logo" style="margin-top:20px;">✓</div>
+        <h2>诊断完成！</h2>
+        <p>已根据你的回答点亮了对应的语法点。<br>你可以在思维导图中随时调整。</p>
+        <button id="go-to-map-btn" class="btn btn-primary">进入思维导图</button>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div id="map-page" class="page">
+      <h2>语法框架</h2>
+      <p class="mb-4">点击节点可手动标记为已学或未学。已学节点会纳入每日练习。</p>
+      <div id="map-container"></div>
+    </div>
+
+    <!-- Practice -->
+    <div id="practice-page" class="page">
+      <div id="practice-overview" class="overview-card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <strong>今日概览</strong>
+          <span id="overview-count" style="font-size:0.85rem;color:var(--muted);"></span>
+        </div>
+        <div style="font-size:0.85rem;color:var(--muted);margin-bottom:6px;">本次练习包含以下语法点：</div>
+        <div class="overview-tags" id="overview-tags"></div>
+      </div>
+
+      <div id="practice-empty" class="hidden text-center mt-4">
+        <div class="welcome-logo" style="margin-top:40px;">📭</div>
+        <h3>暂无练习内容</h3>
+        <p>请先前往"思维导图"选择至少一个已学语法点。</p>
+      </div>
+
+      <div id="sentence-card">
+        <div class="sentence-card">
+          <div class="sentence-meta" id="sentence-meta"></div>
+          <div class="sentence-ru" id="sentence-ru"></div>
+          <div class="sentence-zh" id="sentence-zh"></div>
+          <div style="color:var(--muted);font-size:0.8rem;" id="progress-text"></div>
+        </div>
+
+        <div class="rule-panel" id="rule-panel"></div>
+
+        <div class="action-row">
+          <button id="toggle-rule-btn" class="btn btn-secondary btn-small">📖 查看变化规则</button>
+          <button id="weak-btn" class="btn btn-secondary btn-small">🔄 标记不熟</button>
+        </div>
+        <button id="next-btn" class="btn btn-primary">下一句</button>
+      </div>
+
+      <div id="practice-complete" class="hidden text-center mt-4">
+        <div class="welcome-logo" style="margin-top:40px;">🎉</div>
+        <h2>今日练习完成！</h2>
+        <p>你已完成 <strong id="complete-count">0</strong> 句朗读。</p>
+        <button id="restart-btn" class="btn btn-primary">再来一轮</button>
+      </div>
+    </div>
+
+    <!-- Settings -->
+    <div id="settings-page" class="page">
+      <h2>练习设置</h2>
+
+      <div class="card mb-4">
+        <div class="setting-item" style="border:none;">
+          <div>
+            <div class="setting-label">练习模式</div>
+            <div class="setting-desc">选择你希望如何抽选例句</div>
+          </div>
+          <select id="mode-select">
+            <option value="random">🎲 全随机</option>
+            <option value="byEnding">🏷️ 按词尾类型分组</option>
+            <option value="byCase">📐 按固定格分组</option>
+            <option value="special">⚡ 特殊变化专项</option>
+          </select>
+        </div>
+      </div>
+
+      <h3 class="mb-2">各语法点权重</h3>
+      <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">0x = 不练习 · 1x = 正常 · 2x = 多出现 · 3x = 经常出现</p>
+      <div class="card">
+        <div id="weight-list"></div>
+      </div>
+
+      <div class="card mt-4" style="border:1px solid rgba(233,69,96,0.3);">
+        <div class="setting-item" style="border:none;">
+          <div>
+            <div class="setting-label" style="color:var(--accent);">重置所有进度</div>
+            <div class="setting-desc">清空已学节点、练习记录和权重设置</div>
+          </div>
+          <button id="reset-progress-btn" class="btn btn-small" style="width:auto;background:rgba(233,69,96,0.15);color:var(--accent);">重置</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Nav -->
+    <nav id="bottom-nav" class="bottom-nav hidden">
+      <button class="nav-item" data-target="map">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <span>思维导图</span>
+      </button>
+      <button class="nav-item" data-target="practice">
+        <svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        <span>练习</span>
+      </button>
+      <button class="nav-item" data-target="settings">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span>设置</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

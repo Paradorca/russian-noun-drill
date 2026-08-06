@@ -1,0 +1,133 @@
+{
+  "framework": {
+    "nodes": [
+      {"id": "root", "name": "俄语名词变格", "type": "root", "parentId": null, "description": "俄语名词通过词尾变化表示格和数，共分为三大变格法和若干特殊类型。"},
+      {"id": "1st-decl", "name": "第一变格法", "type": "category", "parentId": "root", "description": "以 -а / -я / -ия 结尾。主要是阴性，少数阳性（папа, дядя, судья 等男人称呼）也按此变格。"},
+      {"id": "1st-decl-hard-a", "name": "硬变化 -а 结尾", "type": "grammarPoint", "parentId": "1st-decl", "exampleWord": "комната", "description": "词尾为 -а，词尾前是硬辅音。复数二格为零词尾。", "declensionTable": {"singular": ["комната", "комнаты", "комнате", "комнату", "комнатой", "о комнате"], "plural": ["комнаты", "комнат", "комнатам", "комнаты", "комнатами", "о комнатах"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格为零词尾（комнат）。", "tips": "注意：папа, дядя 等阳性称呼也按此变格，但属格等按阴性形式。"},
+      {"id": "1st-decl-soft-ya", "name": "软变化 -я 结尾", "type": "grammarPoint", "parentId": "1st-decl", "exampleWord": "семья", "description": "词尾为 -я，词尾前是元音或软辅音。", "declensionTable": {"singular": ["семья", "семьи", "семье", "семью", "семьёй", "о семье"], "plural": ["семьи", "семей", "семьям", "семьи", "семьями", "о семьях"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格为 -ей（семей）。", "tips": "如果重音在词尾，工具格单数可能是 -ей 或 -ёй。"},
+      {"id": "1st-decl-soft-iya", "name": "软变化 -ия 结尾", "type": "grammarPoint", "parentId": "1st-decl", "exampleWord": "станция", "description": "词尾为 -ия，通常是外来词或抽象名词。", "declensionTable": {"singular": ["станция", "станции", "станции", "станцию", "станцией", "о станции"], "plural": ["станции", "станций", "станциям", "станции", "станциями", "о станциях"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格为 -ий（станций）。", "tips": "-ия 型变化非常规则，记住复数二格是 -ий 即可。"},
+      {"id": "2nd-decl", "name": "第二变格法", "type": "category", "parentId": "root", "description": "阳性（辅音/-й/-ь结尾）和中性（-о/-е/-ие结尾）。"},
+      {"id": "2nd-decl-masc-hard-cons", "name": "阳性硬变化 辅音结尾", "type": "grammarPoint", "parentId": "2nd-decl", "exampleWord": "стол", "description": "阳性名词，以硬辅音结尾（除ж/ч/ш/щ/ц）。", "declensionTable": {"singular": ["стол", "стола", "столу", "стол / стола", "столом", "о столе"], "plural": ["столы", "столов", "столам", "столы", "столами", "о столах"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格为 -ов（столов）。动物名词四格同二格。", "tips": "非动物名词四格同主格；动物名词（人/动物）四格同二格。"},
+      {"id": "2nd-decl-masc-soft-y", "name": "阳性软变化 -й 结尾", "type": "grammarPoint", "parentId": "2nd-decl", "exampleWord": "музей", "description": "阳性名词，以 -й 结尾。", "declensionTable": {"singular": ["музей", "музея", "музею", "музей / музея", "музеем", "о музее"], "plural": ["музеи", "музеев", "музеям", "музеи", "музеями", "о музеях"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格为 -ев（музеев）。", "tips": "-й 结尾相当于软辅音，变化时看作息音规则。"},
+      {"id": "2nd-decl-masc-soft-b", "name": "阳性软变化 -ь 结尾", "type": "grammarPoint", "parentId": "2nd-decl", "exampleWord": "словарь", "description": "阳性名词，以 -ь 结尾（注意与第三变格法阴性-ь区分）。", "declensionTable": {"singular": ["словарь", "словаря", "словарю", "словарь / словаря", "словарём", "о словаре"], "plural": ["словари", "словарей", "словарям", "словари", "словарями", "о словарях"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格为 -ей（словарей）。", "tips": "很多职业名词属于此类：учитель, врач（但врач是唏音变化）。"},
+      {"id": "2nd-decl-masc-hissing", "name": "阳性唏音变化 ж/ч/ш/щ/ц", "type": "grammarPoint", "parentId": "2nd-decl", "exampleWord": "врач", "description": "阳性名词，以 ж/ч/ш/щ/ц 结尾。唏音后不能写 -ы / -ю / -я，需改写。", "declensionTable": {"singular": ["врач", "врача", "врачу", "врача", "врачом", "о враче"], "plural": ["врачи", "врачей", "врачам", "врачей", "врачами", "о врачах"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格一定是 -ей（врачей），不是 -ов！", "tips": "唏音后：ы→и, ю→у, я→а（但这里因是阳性，规则稍有不同，记住复数二格是-ей即可）。"},
+      {"id": "2nd-decl-neut-hard-o", "name": "中性硬变化 -о 结尾", "type": "grammarPoint", "parentId": "2nd-decl", "exampleWord": "окно", "description": "中性名词，以 -о 结尾。", "declensionTable": {"singular": ["окно", "окна", "окну", "окно", "окном", "об окне"], "plural": ["окна", "окон", "окнам", "окна", "окнами", "об окнах"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格为零词尾，且常有音变（окон）。", "tips": "很多 -о 结尾名词复数二格有零词尾+音变：окно→окон, яблоко→яблок。"},
+      {"id": "2nd-decl-neut-soft-e", "name": "中性软变化 -е / -ё 结尾", "type": "grammarPoint", "parentId": "2nd-decl", "exampleWord": "море", "description": "中性名词，以 -е 或 -ё 结尾。", "declensionTable": {"singular": ["море", "моря", "морю", "море", "морем", "о море"], "plural": ["моря", "морей", "морям", "моря", "морями", "о морях"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格为 -ей（морей）。", "tips": "-е / -ё 结尾的中性名词复数主格为 -я。"},
+      {"id": "2nd-decl-neut-ie", "name": "中性 -ие 结尾", "type": "grammarPoint", "parentId": "2nd-decl", "exampleWord": "событие", "description": "中性名词，以 -ие 结尾，多为抽象名词或外来词。", "declensionTable": {"singular": ["событие", "события", "событию", "событие", "событием", "о событии"], "plural": ["события", "событий", "событиям", "события", "событиями", "о событиях"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数二格为 -ий（событий），前置格单数为 -ии。", "tips": "与 -ия 型的变化规则完全平行，只是中性。"},
+      {"id": "3rd-decl", "name": "第三变格法", "type": "category", "parentId": "root", "description": "以 -ь 结尾的阴性名词。"},
+      {"id": "3rd-decl-soft-fem-b", "name": "常规软变化 -ь 结尾阴性", "type": "grammarPoint", "parentId": "3rd-decl", "exampleWord": "ночь", "description": "阴性名词，以 -ь 结尾。", "declensionTable": {"singular": ["ночь", "ночи", "ночи", "ночь", "ночью", "о ночи"], "plural": ["ночи", "ночей", "ночам", "ночи", "ночами", "о ночах"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "单数与格和属格同形（ночи），前置格也是 ночи。", "tips": "注意：与格、属格、前置格单数均为 -и；工具格为 -ью。"},
+      {"id": "3rd-decl-archaic-mat", "name": "古老残留型 мать / дочь", "type": "grammarPoint", "parentId": "3rd-decl", "exampleWord": "мать", "description": "以 -ь 结尾，但词干在单数时变为 -ер-（мать→матер-）。", "declensionTable": {"singular": ["мать", "матери", "матери", "мать", "матерью", "о матери"], "plural": ["матери", "матерей", "матерям", "матерей", "матерями", "о матерях"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "单数词干插入 -ер-（мать→матер-），дочь 完全平行（дочь→дочер-）。", "tips": "只有 мать 和 дочь 两个常用词属于此类，必须单独记忆。"},
+      {"id": "special", "name": "特殊变化", "type": "category", "parentId": "root", "description": "不符合三大变格法的名词，需单独记忆。"},
+      {"id": "special-mya", "name": "-мя 型中性（время 型）", "type": "grammarPoint", "parentId": "special", "exampleWord": "время", "description": "以 -мя 结尾的中性名词。词干变为 -мен-。", "declensionTable": {"singular": ["время", "времени", "времени", "время", "временем", "о времени"], "plural": ["времена", "времён", "временам", "времена", "временами", "о временах"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "мя → мен + 词尾。复数二格为 -ён（времён）。", "tips": "共10个常用词：время, имя, племя, семя, знамя, темя, пламя, бремя, вымя, стремя。"},
+      {"id": "special-vowel-drop", "name": "元音脱落型（-ец / -ок / -ёнок）", "type": "grammarPoint", "parentId": "special", "exampleWord": "отец", "description": "词干中的 -о- 或 -е- 在加词尾时脱落，常伴随软化。", "declensionTable": {"singular": ["отец", "отца", "отцу", "отца", "отцом", "об отце"], "plural": ["отцы", "отцов", "отцам", "отцов", "отцами", "об отцах"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "词干中的 е/о 脱落：отец→отц-。复数二格 -ов / -ев。", "tips": "常见词：отец, палец, конец, потолок, листок 等。"},
+      {"id": "special-anin", "name": "-анин / -янин 型（гражданин 型）", "type": "grammarPoint", "parentId": "special", "exampleWord": "гражданин", "description": "以 -анин / -янин 结尾，复数词尾为 -ане / -яне，复数二格零词尾。", "declensionTable": {"singular": ["гражданин", "гражданина", "гражданину", "гражданина", "гражданином", "о гражданине"], "plural": ["граждане", "граждан", "гражданам", "граждан", "гражданами", "о гражданах"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "复数主格 -ане（граждане），复数二格零词尾（граждан）。", "tips": "此类词表示'某地方的人'：гражданин, боярин, жителин（但常用的是гражданин）。"},
+      {"id": "special-suppletive", "name": "异干复数（单复数词根不同）", "type": "grammarPoint", "parentId": "special", "exampleWord": "человек", "description": "单数和复数使用完全不同的词根。", "declensionTable": {"singular": ["человек", "человека", "человеку", "человека", "человеком", "о человеке"], "plural": ["люди", "людей", "людям", "людей", "людьми", "о людях"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "单数 человек，复数 люди，完全不同！", "tips": "高频词：человек→люди, ребёнок→дети, сын→сыновья, дочь→дочери。"},
+      {"id": "special-indeclinable", "name": "不变格名词（外来词）", "type": "grammarPoint", "parentId": "special", "exampleWord": "метро", "description": "外来词，所有格的形式完全相同。", "declensionTable": {"singular": ["метро", "метро", "метро", "метро", "метро", "о метро"], "plural": ["метро", "метро", "метро", "метро", "метро", "о метро"]}, "caseNames": ["主格", "属格", "与格", "宾格", "工具格", "前置格"], "highlight": "全格同形，永远不变化！", "tips": "常见词：метро, радио, такси, пальто, кенгуру, кофе。"}
+    ]
+  },
+  "diagnosticTest": {
+    "title": "俄语名词变格入门诊断",
+    "description": "回答以下问题，帮助我们了解你已经掌握了哪些语法点。",
+    "questions": [
+      {
+        "id": "q1",
+        "text": "你知道俄语名词有'性'的区分吗？（阳性、阴性、中性）",
+        "options": [
+          {"label": "完全不知道", "value": 0},
+          {"label": "听说过，但不清楚怎么区分", "value": 1},
+          {"label": "知道，能根据词尾大致判断", "value": 2}
+        ],
+        "unlocks": {
+          "0": [],
+          "1": ["1st-decl", "2nd-decl", "3rd-decl"],
+          "2": ["1st-decl", "2nd-decl", "3rd-decl"]
+        }
+      },
+      {
+        "id": "q2",
+        "text": "你了解以 -а / -я 结尾的名词（如 комната, семья）的变格规则吗？",
+        "options": [
+          {"label": "完全不了解", "value": 0},
+          {"label": "知道大概，但容易混淆", "value": 1},
+          {"label": "比较熟悉，能变出大部分形式", "value": 2}
+        ],
+        "unlocks": {
+          "0": [],
+          "1": ["1st-decl-hard-a", "1st-decl-soft-ya"],
+          "2": ["1st-decl-hard-a", "1st-decl-soft-ya", "1st-decl-soft-iya"]
+        }
+      },
+      {
+        "id": "q3",
+        "text": "你了解阳性名词（如 стол, музей）和中性名词（如 окно, море）的变格规则吗？",
+        "options": [
+          {"label": "完全不了解", "value": 0},
+          {"label": "知道阳性会变，但中性不清楚", "value": 1},
+          {"label": "阳性和中性的基本变化都了解", "value": 2}
+        ],
+        "unlocks": {
+          "0": [],
+          "1": ["2nd-decl-masc-hard-cons", "2nd-decl-masc-soft-y"],
+          "2": ["2nd-decl-masc-hard-cons", "2nd-decl-masc-soft-y", "2nd-decl-masc-soft-b", "2nd-decl-masc-hissing", "2nd-decl-neut-hard-o", "2nd-decl-neut-soft-e", "2nd-decl-neut-ie"]
+        }
+      },
+      {
+        "id": "q4",
+        "text": "你了解以 -ь 结尾的阴性名词（如 ночь, дверь）的变格规则吗？",
+        "options": [
+          {"label": "完全不了解", "value": 0},
+          {"label": "知道一点，但容易和阳性-ь搞混", "value": 1},
+          {"label": "比较熟悉，能正确变格", "value": 2}
+        ],
+        "unlocks": {
+          "0": [],
+          "1": ["3rd-decl-soft-fem-b"],
+          "2": ["3rd-decl-soft-fem-b", "3rd-decl-archaic-mat"]
+        }
+      },
+      {
+        "id": "q5",
+        "text": "你知道像 мать / дочь 这类特殊词的变化吗？",
+        "options": [
+          {"label": "不知道，它们不是正常变化吗？", "value": 0},
+          {"label": "知道它们特殊，但记不清具体形式", "value": 1},
+          {"label": "能正确变出 матери / дочери", "value": 2}
+        ],
+        "unlocks": {
+          "0": [],
+          "1": [],
+          "2": ["3rd-decl-archaic-mat"]
+        }
+      },
+      {
+        "id": "q6",
+        "text": "你知道像 время、человек 这类'完全不规则'的词吗？",
+        "options": [
+          {"label": "不知道", "value": 0},
+          {"label": "知道它们不规则，但记不全", "value": 1},
+          {"label": "熟悉它们的变化", "value": 2}
+        ],
+        "unlocks": {
+          "0": [],
+          "1": [],
+          "2": ["special-mya", "special-suppletive"]
+        }
+      },
+      {
+        "id": "q7",
+        "text": "你能根据词尾大致判断一个名词属于哪种变格法吗？",
+        "options": [
+          {"label": "完全不能", "value": 0},
+          {"label": "能判断一部分", "value": 1},
+          {"label": "能较准确判断", "value": 2}
+        ],
+        "unlocks": {
+          "0": [],
+          "1": [],
+          "2": ["special-vowel-drop", "special-anin", "special-indeclinable"]
+        }
+      }
+    ],
+    "scoringLogic": "累加每道题的 unlocks 节点。如果某语法点的父节点被解锁，其子节点在思维导图中可见但灰色；只有当子节点本身也被解锁时才亮起。"
+  }
+}
