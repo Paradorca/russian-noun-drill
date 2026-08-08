@@ -355,9 +355,25 @@ const App = {
     card.classList.remove('hidden');
     empty.classList.add('hidden');
 
-    const uniqueGrammar = [...new Set(this.practice.queue.map(s => s.grammarPointName))];
-    document.getElementById('overview-tags').innerHTML = uniqueGrammar
-      .map(g => `<span class="tag">${g}</span>`).join('');
+    const declensions = new Set();
+    const cases = new Set();
+
+    this.practice.queue.forEach(s => {
+      const node = this.data.framework.nodes.find(n => n.id === s.grammarPointId);
+      if (node && node.parentId) {
+        const parent = this.data.framework.nodes.find(n => n.id === node.parentId);
+        if (parent) declensions.add(parent.name);
+      }
+      if (s.case && this.data.caseUsages[s.case]) {
+        cases.add(this.data.caseUsages[s.case].name);
+      }
+    });
+
+    const tags = [
+      ...Array.from(declensions).map(d => `<span class="tag">${d}</span>`),
+      ...Array.from(cases).map(c => `<span class="tag">${c}</span>`)
+    ];
+    document.getElementById('overview-tags').innerHTML = tags.join('');
     document.getElementById('overview-count').textContent = `今日 ${this.practice.queue.length} 句`;
 
     this.renderSentence(0);
