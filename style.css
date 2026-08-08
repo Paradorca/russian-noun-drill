@@ -1,15 +1,16 @@
 :root {
-  --bg: #1a1a2e;
-  --card: #16213e;
-  --accent: #e94560;
-  --secondary: #0f3460;
-  --text: #eaeaea;
-  --muted: #a0a0a0;
-  --success: #4ecca3;
-  --warning: #f4d03f;
-  --border: rgba(255,255,255,0.08);
+  --bg: #FDF8F0;
+  --card: #FFFFFF;
+  --accent: #D4856A;
+  --secondary: #F5EDE4;
+  --text: #2D3436;
+  --muted: #8D8D8D;
+  --success: #7BA098;
+  --warning: #F2C94C;
+  --other-decl: #BDBDBD;
+  --border: rgba(0,0,0,0.06);
   --radius: 14px;
-  --shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -69,9 +70,9 @@ p { margin-bottom: 12px; color: var(--muted); }
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent), #c23a51);
+  background: linear-gradient(135deg, var(--accent), #c2745d);
   color: white;
-  box-shadow: 0 4px 15px rgba(233,69,96,0.3);
+  box-shadow: 0 4px 15px rgba(212,133,106,0.25);
 }
 
 .btn-primary:active { transform: scale(0.98); }
@@ -102,6 +103,7 @@ p { margin-bottom: 12px; color: var(--muted); }
   margin: 40px auto 20px;
   color: var(--accent);
   box-shadow: var(--shadow);
+  border: 1px solid var(--border);
 }
 
 /* Cards */
@@ -166,13 +168,11 @@ p { margin-bottom: 12px; color: var(--muted); }
 
 .option-btn:hover, .option-btn.selected {
   border-color: var(--accent);
-  background: rgba(233,69,96,0.1);
+  background: rgba(212,133,106,0.06);
 }
 
 /* Map / Mind map */
-.map-category {
-  margin-bottom: 16px;
-}
+.map-category { margin-bottom: 16px; }
 
 .map-category-header {
   display: flex;
@@ -184,11 +184,13 @@ p { margin-bottom: 12px; color: var(--muted); }
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 8px;
+  color: var(--text);
 }
 
 .map-category-header .chevron {
   transition: transform 0.2s;
   margin-left: auto;
+  color: var(--muted);
 }
 
 .map-category-header.collapsed .chevron { transform: rotate(-90deg); }
@@ -214,23 +216,23 @@ p { margin-bottom: 12px; color: var(--muted); }
   transition: all 0.2s;
 }
 
-.map-node:hover { border-color: rgba(255,255,255,0.2); }
+.map-node:hover { border-color: rgba(0,0,0,0.15); }
 
 .map-node.active {
   border-color: var(--success);
-  background: rgba(78,204,163,0.08);
+  background: rgba(123,160,152,0.06);
 }
 
 .map-node .node-dot {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #555;
+  background: #ccc;
   flex-shrink: 0;
   transition: background 0.3s;
 }
 
-.map-node.active .node-dot { background: var(--success); box-shadow: 0 0 8px var(--success); }
+.map-node.active .node-dot { background: var(--success); box-shadow: 0 0 8px rgba(123,160,152,0.4); }
 
 .map-node .node-info { flex: 1; }
 
@@ -238,12 +240,40 @@ p { margin-bottom: 12px; color: var(--muted); }
 
 .map-node .node-example { font-size: 0.8rem; color: var(--muted); }
 
+/* View toggle */
+.view-toggle {
+  display: flex;
+  background: var(--secondary);
+  border-radius: var(--radius);
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+.view-toggle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-toggle button.active {
+  background: var(--card);
+  color: var(--text);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
 /* Practice */
 .overview-card {
   background: linear-gradient(135deg, var(--secondary), var(--card));
   border-radius: var(--radius);
   padding: 16px;
   margin-bottom: 16px;
+  border: 1px solid var(--border);
 }
 
 .overview-tags {
@@ -255,7 +285,7 @@ p { margin-bottom: 12px; color: var(--muted); }
 
 .tag {
   padding: 4px 10px;
-  background: rgba(233,69,96,0.15);
+  background: rgba(212,133,106,0.12);
   color: var(--accent);
   border-radius: 20px;
   font-size: 0.8rem;
@@ -284,6 +314,35 @@ p { margin-bottom: 12px; color: var(--muted); }
   margin-bottom: 20px;
 }
 
+.word-target {
+  background: var(--warning);
+  color: var(--text);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.word-other {
+  color: var(--other-decl);
+  cursor: pointer;
+  border-bottom: 1px dashed var(--other-decl);
+  transition: color 0.2s;
+}
+
+.word-other:hover { color: var(--text); }
+
+.other-decl-popup {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin: 8px 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.2s ease;
+}
+
 .sentence-meta {
   display: inline-flex;
   gap: 8px;
@@ -306,11 +365,13 @@ p { margin-bottom: 12px; color: var(--muted); }
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.4s ease;
   margin-bottom: 16px;
+  border: 1px solid transparent;
 }
 
 .rule-panel.open {
   padding: 16px;
-  max-height: 800px;
+  max-height: 1000px;
+  border-color: var(--border);
 }
 
 .rule-panel h4 {
@@ -320,7 +381,7 @@ p { margin-bottom: 12px; color: var(--muted); }
 }
 
 .rule-panel .highlight {
-  color: var(--warning);
+  color: #c2745d;
   font-weight: 600;
   margin: 8px 0;
 }
@@ -344,6 +405,39 @@ p { margin-bottom: 12px; color: var(--muted); }
 }
 
 .rule-table td { color: var(--muted); }
+
+.case-usage-block {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.case-usage-block h5 {
+  color: var(--text);
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.case-usage-block p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.case-usage-block .prep-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.case-usage-block .prep-tag {
+  padding: 2px 8px;
+  background: var(--secondary);
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: var(--text);
+}
 
 .action-row {
   display: flex;
@@ -406,7 +500,7 @@ select {
   transform: translateX(-50%);
   width: 100%;
   max-width: 480px;
-  background: rgba(22,33,62,0.95);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(10px);
   border-top: 1px solid var(--border);
   display: flex;
@@ -451,4 +545,4 @@ select {
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--secondary); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #ddd; border-radius: 3px; }
