@@ -60,6 +60,12 @@ const App = {
       this.saveState();
     }
 
+    // Ensure userSentences exists
+    if (!this.state.userSentences) {
+      this.state.userSentences = [];
+      this.saveState();
+    }
+
     const today = new Date().toISOString().slice(0,10);
     if (this.state.dailyStats?.date !== today) {
       this.state.dailyStats = { date: today, completed: 0, markedWeak: [] };
@@ -411,10 +417,15 @@ const App = {
 
   generateQueue() {
     const mode = this.state.practiceMode || 'random';
-    let pool = this.sentences.filter(s =>
+    const builtIn = this.sentences.filter(s =>
       this.state.unlockedNodes.includes(s.grammarPointId) &&
       (this.state.unlockedCases || []).includes(s.case)
     );
+    const custom = (this.state.userSentences || []).filter(s =>
+      this.state.unlockedNodes.includes(s.grammarPointId) &&
+      (this.state.unlockedCases || []).includes(s.case)
+    );
+    let pool = [...builtIn, ...custom];
 
     if (mode === 'special') {
       const specialIds = this.data.framework.nodes
@@ -614,6 +625,112 @@ const App = {
       };
       weightList.appendChild(div);
     });
+
+    // Custom sentence form
+    const grammarSelect = document.getElementById('custom-grammar');
+    if (grammarSelect && grammarSelect.options.length === 0) {
+      grammarNodes.forEach(node => {
+        const opt = document.createElement('option');
+        opt.value = node.id;
+        opt.textContent = node.name;
+        grammarSelect.appendChild(opt);
+      });
+    }
+
+    const updatePreview = () => {
+      const preview = document.getElementById('custom-rule-preview');
+      const gpId = document.getElementById('custom-grammar').value;
+      const caseKey = document.getElementById('custom-case').value;
+      const number = document.getElementById('custom-number').value;
+      const node = this.data.framework.nodes.find(n => n.id === gpId);
+      if (!node || !caseKey || !this.data.caseUsages[caseKey]) {
+        preview.style.display = 'none';
+        return;
+      }
+      const caseIdx = ['nominative','genitive','dative','accusative','instrumental','prepositional'].indexOf(caseKey);
+      const form = number === 'singular' ? node.declensionTable.singular[caseIdx] : node.declensionTable.plural[caseIdx];
+      preview.innerHTML = `<strong style="color:var(--accent);">${node.name} — ${this.data.caseUsages[caseKey].name}（${number === 'singular' ? '单数' : '复数'}）</strong><br>
+        变化形式：<span style="color:var(--text);font-weight:600;">${form}</span>`;
+      preview.style.display = 'block';
+    };
+
+    document.getElementById('custom-grammar').onchange = updatePreview;
+    document.getElementById('custom-case').onchange = updatePreview;
+    document.getElementById('custom-number').onchange = updatePreview;
+    updatePreview();
+
+    document.getElementById('add-custom-btn').onclick = () => {
+      const sentenceRU = document.getElementById('custom-ru').value.trim();
+      const sentenceZH = document.getElementById('custom-zh').value.trim();
+      const source = document.getElementById('custom-source').value.trim();
+      const grammarPointId = document.getElementById('custom-grammar').value;
+      const caseKey = document.getElementById('custom-case').value;
+      const number = document.getElementById('custom-number').value;
+      const targetWordForm = document.getElementById('custom-target').value.trim();
+
+      if (!sentenceRU || !sentenceZH || !targetWordForm) {
+        alert('请填写俄语句子、中文翻译和变格后的词形');
+        return;
+      }
+
+      const node = this.data.framework.nodes.find(n => n.id === grammarPointId);
+      const newSentence = {
+        grammarPointId,
+        grammarPointName: node ? node.name : '',
+        word: node ? node.exampleWord : '',
+        case: caseKey,
+        number,
+        sentenceRU,
+        sentenceZH,
+        targetWordForm,
+        otherDeclensions: [],
+        source: source || undefined
+      };
+
+      this.state.userSentences.push(newSentence);
+      this.saveState();
+      this.renderCustomSentences();
+
+      // Clear form
+      document.getElementById('custom-ru').value = '';
+      document.getElementById('custom-zh').value = '';
+      document.getElementById('custom-source').value = '';
+      document.getElementById('custom-target').value = '';
+      updatePreview();
+      alert('例句已添加，进入练习即可看到');
+    };
+
+    this.renderCustomSentences();
+  },
+
+  renderCustomSentences() {
+    const list = document.getElementById('custom-list');
+    const card = document.getElementById('custom-list-card');
+    const sentences = this.state.userSentences || [];
+    if (sentences.length === 0) {
+      card.style.display = 'none';
+      return;
+    }
+    card.style.display = 'block';
+    list.innerHTML = sentences.map((s, i) => `
+      <div style="padding:10px 0;border-bottom:1px solid var(--border);">
+        <div style="font-size:0.95rem;color:var(--text);margin-bottom:4px;">${s.sentenceRU}</div>
+        <div style="font-size:0.85rem;color:var(--muted);margin-bottom:4px;">${s.sentenceZH}</div>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <span class="meta-pill" style="font-size:0.75rem;">${s.grammarPointName}</span>
+          <span class="meta-pill" style="font-size:0.75rem;">${this.data.caseUsages[s.case]?.name || s.case} · ${s.number === 'singular' ? '单数' : '复数'}</span>
+          ${s.source ? `<span style="font-size:0.75rem;color:var(--muted);margin-left:auto;">来源：${s.source}</span>` : ''}
+          <button onclick="App.deleteCustomSentence(${i})" style="margin-left:auto;background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;">删除</button>
+        </div>
+      </div>
+    `).join('');
+  },
+
+  deleteCustomSentence(idx) {
+    if (!confirm('确定删除这条例句吗？')) return;
+    this.state.userSentences.splice(idx, 1);
+    this.saveState();
+    this.renderCustomSentences();
   },
 
   resetProgress() {

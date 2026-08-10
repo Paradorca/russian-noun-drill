@@ -133,6 +133,61 @@
           <button id="reset-progress-btn" class="btn btn-small" style="width:auto;background:rgba(233,69,96,0.15);color:var(--accent);">重置</button>
         </div>
       </div>
+
+      <!-- Custom Sentences -->
+      <h3 class="mb-2 mt-4">添加自定义例句</h3>
+      <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">输入你自己的例句，它会自动进入练习队列并匹配变化规则</p>
+      <div class="card mb-4">
+        <div style="margin-bottom:12px;">
+          <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">俄语句子</label>
+          <textarea id="custom-ru" rows="2" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;resize:vertical;"></textarea>
+        </div>
+        <div style="margin-bottom:12px;">
+          <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">中文翻译</label>
+          <textarea id="custom-zh" rows="2" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;resize:vertical;"></textarea>
+        </div>
+        <div style="margin-bottom:12px;">
+          <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">出处（可选）</label>
+          <input id="custom-source" type="text" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;">
+        </div>
+        <div style="display:flex;gap:10px;margin-bottom:12px;">
+          <div style="flex:1;">
+            <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">语法点</label>
+            <select id="custom-grammar" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;"></select>
+          </div>
+          <div style="flex:1;">
+            <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">格</label>
+            <select id="custom-case" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;">
+              <option value="nominative">主格</option>
+              <option value="genitive">属格</option>
+              <option value="dative">与格</option>
+              <option value="accusative">宾格</option>
+              <option value="instrumental">工具格</option>
+              <option value="prepositional">前置格</option>
+            </select>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;margin-bottom:12px;">
+          <div style="flex:1;">
+            <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">数</label>
+            <select id="custom-number" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;">
+              <option value="singular">单数</option>
+              <option value="plural">复数</option>
+            </select>
+          </div>
+          <div style="flex:1;">
+            <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">变格后的词形</label>
+            <input id="custom-target" type="text" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;">
+          </div>
+        </div>
+        <div id="custom-rule-preview" style="margin-bottom:12px;padding:12px;background:var(--secondary);border-radius:10px;font-size:0.85rem;color:var(--muted);display:none;"></div>
+        <button id="add-custom-btn" class="btn btn-primary">添加例句</button>
+      </div>
+
+      <div class="card mb-4" id="custom-list-card" style="display:none;">
+        <div class="card-title">我的例句</div>
+        <div id="custom-list"></div>
+      </div>
     </div>
 
     <!-- Bottom Nav -->
