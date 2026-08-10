@@ -54,6 +54,12 @@ const App = {
       dailyStats: { date: new Date().toISOString().slice(0,10), completed: 0, markedWeak: [] }
     };
 
+    // Ensure unlockedCases exists (default all cases unlocked for backward compatibility)
+    if (!this.state.unlockedCases) {
+      this.state.unlockedCases = ['nominative','genitive','dative','accusative','instrumental','prepositional'];
+      this.saveState();
+    }
+
     const today = new Date().toISOString().slice(0,10);
     if (this.state.dailyStats?.date !== today) {
       this.state.dailyStats = { date: today, completed: 0, markedWeak: [] };
@@ -269,7 +275,19 @@ const App = {
 
       const header = document.createElement('div');
       header.style.cssText = 'display:flex;justify-content:space-between;align-items:center;cursor:pointer;';
-      header.innerHTML = `<strong style="font-size:1.1rem;color:var(--text);">${usage.name}</strong><span class="chevron" style="color:var(--muted);">▼</span>`;
+      const isCaseActive = (this.state.unlockedCases || []).includes(caseKey);
+      header.innerHTML = `
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="case-dot" style="width:14px;height:14px;border-radius:50%;background:${isCaseActive ? 'var(--success)' : '#ccc'};flex-shrink:0;cursor:pointer;transition:background 0.3s;box-shadow:${isCaseActive ? '0 0 8px rgba(123,160,152,0.4)' : 'none'};"></span>
+          <strong style="font-size:1.1rem;color:var(--text);">${usage.name}</strong>
+        </div>
+        <span class="chevron" style="color:var(--muted);transition:transform 0.2s;">▼</span>`;
+
+      const dot = header.querySelector('.case-dot');
+      dot.onclick = (e) => {
+        e.stopPropagation();
+        this.toggleCase(caseKey);
+      };
 
       const detail = document.createElement('div');
       detail.className = 'case-detail hidden';
@@ -310,6 +328,18 @@ const App = {
     if (collapsed.has(catId)) collapsed.delete(catId);
     else collapsed.add(catId);
     this.state.collapsedCategories = Array.from(collapsed);
+    this.saveState();
+    this.renderMap();
+  },
+
+  toggleCase(caseKey) {
+    const cases = new Set(this.state.unlockedCases || []);
+    if (cases.has(caseKey)) {
+      cases.delete(caseKey);
+    } else {
+      cases.add(caseKey);
+    }
+    this.state.unlockedCases = Array.from(cases);
     this.saveState();
     this.renderMap();
   },
@@ -381,7 +411,10 @@ const App = {
 
   generateQueue() {
     const mode = this.state.practiceMode || 'random';
-    let pool = this.sentences.filter(s => this.state.unlockedNodes.includes(s.grammarPointId));
+    let pool = this.sentences.filter(s =>
+      this.state.unlockedNodes.includes(s.grammarPointId) &&
+      (this.state.unlockedCases || []).includes(s.case)
+    );
 
     if (mode === 'special') {
       const specialIds = this.data.framework.nodes
