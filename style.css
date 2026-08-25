@@ -1,7 +1,7 @@
 :root {
   --bg: #FDF8F0;
   --card: #FFFFFF;
-  --accent: #D4856A;
+  --accent: #4ECDC4;
   --secondary: #F5EDE4;
   --text: #2D3436;
   --muted: #8D8D8D;
@@ -70,9 +70,9 @@ p { margin-bottom: 12px; color: var(--muted); }
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent), #c2745d);
+  background: linear-gradient(135deg, var(--accent), #3AA89A);
   color: white;
-  box-shadow: 0 4px 15px rgba(212,133,106,0.25);
+  box-shadow: 0 4px 15px rgba(78,205,196,0.25);
 }
 
 .btn-primary:active { transform: scale(0.98); }
@@ -168,7 +168,7 @@ p { margin-bottom: 12px; color: var(--muted); }
 
 .option-btn:hover, .option-btn.selected {
   border-color: var(--accent);
-  background: rgba(212,133,106,0.06);
+  background: rgba(78,205,196,0.06);
 }
 
 /* Map / Mind map */
@@ -285,7 +285,7 @@ p { margin-bottom: 12px; color: var(--muted); }
 
 .tag {
   padding: 4px 10px;
-  background: rgba(212,133,106,0.12);
+  background: rgba(78,205,196,0.12);
   color: var(--accent);
   border-radius: 20px;
   font-size: 0.8rem;
@@ -381,7 +381,7 @@ p { margin-bottom: 12px; color: var(--muted); }
 }
 
 .rule-panel .highlight {
-  color: #c2745d;
+  color: #3AA89A;
   font-weight: 600;
   margin: 8px 0;
 }
