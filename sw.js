@@ -1,4 +1,4 @@
-const CACHE_NAME = 'russian-noun-drill-v5';
+const CACHE_NAME = 'russian-noun-drill-v6';
 const FILES_TO_CACHE = [
   './',
   './index.html',
@@ -7,7 +7,8 @@ const FILES_TO_CACHE = [
   './grammar-data.json',
   './sentences-data.json',
   './manifest.json',
-  './icon.svg'
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 self.addEventListener('install', (e) => {
