@@ -66,6 +66,12 @@ const App = {
       this.saveState();
     }
 
+    // Ensure userTexts exists
+    if (!this.state.userTexts) {
+      this.state.userTexts = [];
+      this.saveState();
+    }
+
     const today = new Date().toISOString().slice(0,10);
     if (this.state.dailyStats?.date !== today) {
       this.state.dailyStats = { date: today, completed: 0, markedWeak: [] };
@@ -85,6 +91,7 @@ const App = {
         const target = el.dataset.target;
         if (target === 'map') this.showMap();
         if (target === 'practice') this.showPractice();
+        if (target === 'texts') this.showTexts();
         if (target === 'settings') this.showSettings();
       });
     });
@@ -482,7 +489,33 @@ const App = {
 
     document.getElementById('rule-panel').classList.remove('open');
     document.getElementById('rule-panel').innerHTML = this.buildRuleHTML(s.grammarPointId, s.case);
+    this.renderRelatedTexts(s);
     document.getElementById('progress-text').textContent = `${idx + 1} / ${this.practice.queue.length}`;
+  },
+
+  renderRelatedTexts(s) {
+    const container = document.getElementById('related-text-content');
+    if (!container) return;
+    if (!s.source) {
+      container.innerHTML = '';
+      return;
+    }
+    const lessons = (this.state.userTexts || []).filter(t => t.source === s.source);
+    if (lessons.length === 0) {
+      container.innerHTML = '';
+      return;
+    }
+    container.innerHTML = lessons.map(t => `
+      <div class="lesson-card">
+        <div class="lesson-meta">
+          <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
+          ${t.chapter ? `<span class="meta-pill">${this.escapeHtml(t.chapter)}</span>` : ''}
+          ${t.title ? `<span class="meta-pill">${this.escapeHtml(t.title)}</span>` : ''}
+        </div>
+        <div class="lesson-ru">${this.escapeHtml(t.contentRU)}</div>
+        ${t.contentZH ? `<div class="lesson-zh">${this.escapeHtml(t.contentZH)}</div>` : ''}
+      </div>
+    `).join('');
   },
 
   renderHighlightedRU(sentenceRU, targetWordForm, otherDeclensions) {
@@ -731,6 +764,77 @@ const App = {
     this.state.userSentences.splice(idx, 1);
     this.saveState();
     this.renderCustomSentences();
+  },
+
+  // -------- Texts (课文回顾) --------
+  showTexts() {
+    this.switchPage('texts-page');
+    this.setActiveNav('texts');
+    this.renderTexts();
+  },
+
+  renderTexts() {
+    const list = document.getElementById('texts-list');
+    const empty = document.getElementById('texts-empty');
+    const texts = this.state.userTexts || [];
+
+    if (texts.length === 0) {
+      list.innerHTML = '';
+      empty.classList.remove('hidden');
+    } else {
+      empty.classList.add('hidden');
+      list.innerHTML = texts.map((t, i) => `
+        <div class="card mb-4">
+          <div class="lesson-meta" style="margin-bottom:8px;">
+            <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
+            ${t.chapter ? `<span class="meta-pill">${this.escapeHtml(t.chapter)}</span>` : ''}
+            <button onclick="App.deleteText(${i})" style="margin-left:auto;background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;">删除</button>
+          </div>
+          ${t.title ? `<div class="card-title" style="margin-bottom:6px;">${this.escapeHtml(t.title)}</div>` : ''}
+          <div class="lesson-ru">${this.escapeHtml(t.contentRU)}</div>
+          ${t.contentZH ? `<div class="lesson-zh">${this.escapeHtml(t.contentZH)}</div>` : ''}
+        </div>
+      `).join('');
+    }
+
+    document.getElementById('add-text-btn').onclick = () => this.addText();
+  },
+
+  addText() {
+    const source = document.getElementById('text-source').value.trim();
+    const chapter = document.getElementById('text-chapter').value.trim();
+    const title = document.getElementById('text-title').value.trim();
+    const contentRU = document.getElementById('text-content-ru').value.trim();
+    const contentZH = document.getElementById('text-content-zh').value.trim();
+
+    if (!source || !chapter || !contentRU) {
+      alert('请填写教材名称、章节和俄语课文');
+      return;
+    }
+
+    this.state.userTexts.push({
+      source,
+      chapter,
+      title: title || '',
+      contentRU,
+      contentZH: contentZH || ''
+    });
+    this.saveState();
+    this.renderTexts();
+
+    document.getElementById('text-source').value = '';
+    document.getElementById('text-chapter').value = '';
+    document.getElementById('text-title').value = '';
+    document.getElementById('text-content-ru').value = '';
+    document.getElementById('text-content-zh').value = '';
+    alert('课文已导入');
+  },
+
+  deleteText(idx) {
+    if (!confirm('确定删除这篇课文吗？')) return;
+    this.state.userTexts.splice(idx, 1);
+    this.saveState();
+    this.renderTexts();
   },
 
   resetProgress() {

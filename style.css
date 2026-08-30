@@ -406,6 +406,37 @@ p { margin-bottom: 12px; color: var(--muted); }
 
 .rule-table td { color: var(--muted); }
 
+.lesson-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.lesson-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lesson-ru {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  margin-bottom: 8px;
+}
+
+.lesson-zh {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
 .case-usage-block {
   margin-top: 16px;
   padding-top: 16px;
