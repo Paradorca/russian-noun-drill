@@ -268,29 +268,6 @@ p { margin-bottom: 12px; color: var(--muted); }
 }
 
 /* Practice */
-.overview-card {
-  background: linear-gradient(135deg, var(--secondary), var(--card));
-  border-radius: var(--radius);
-  padding: 16px;
-  margin-bottom: 16px;
-  border: 1px solid var(--border);
-}
-
-.overview-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 10px;
-}
-
-.tag {
-  padding: 4px 10px;
-  background: rgba(78,205,196,0.12);
-  color: var(--accent);
-  border-radius: 20px;
-  font-size: 0.8rem;
-}
-
 .sentence-card {
   background: var(--card);
   border-radius: var(--radius);
@@ -405,6 +382,39 @@ p { margin-bottom: 12px; color: var(--muted); }
 }
 
 .rule-table td { color: var(--muted); }
+
+.settings-section {
+  margin-bottom: 14px;
+}
+
+.settings-section > summary {
+  cursor: pointer;
+  padding: 14px 16px;
+  background: var(--secondary);
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+  user-select: none;
+}
+
+.settings-section > summary::-webkit-details-marker { display: none; }
+
+.settings-section > summary::after {
+  content: '▸';
+  float: right;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+
+.settings-section[open] > summary {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 12px;
+}
+
+.settings-section[open] > summary::after {
+  transform: rotate(90deg);
+}
 
 .lesson-card {
   background: var(--bg);

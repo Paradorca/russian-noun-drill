@@ -58,15 +58,6 @@
 
     <!-- Practice -->
     <div id="practice-page" class="page">
-      <div id="practice-overview" class="overview-card">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-          <strong>今日概览</strong>
-          <span id="overview-count" style="font-size:0.85rem;color:var(--muted);"></span>
-        </div>
-        <div style="font-size:0.85rem;color:var(--muted);margin-bottom:6px;">本次练习包含以下语法点：</div>
-        <div class="overview-tags" id="overview-tags"></div>
-      </div>
-
       <div id="practice-empty" class="hidden text-center mt-4">
         <div class="welcome-logo" style="margin-top:40px;">📭</div>
         <h3>暂无练习内容</h3>
@@ -98,6 +89,7 @@
         <div class="welcome-logo" style="margin-top:40px;">🎉</div>
         <h2>今日练习完成！</h2>
         <p>你已完成 <strong id="complete-count">0</strong> 句朗读。</p>
+        <div id="complete-lesson" style="text-align:left;"></div>
         <button id="restart-btn" class="btn btn-primary">再来一轮</button>
       </div>
     </div>
@@ -106,40 +98,49 @@
     <div id="settings-page" class="page">
       <h2>练习设置</h2>
 
-      <div class="card mb-4">
-        <div class="setting-item" style="border:none;">
-          <div>
-            <div class="setting-label">练习模式</div>
-            <div class="setting-desc">选择你希望如何抽选例句</div>
+      <details class="settings-section">
+        <summary>🎛️ 练习模式</summary>
+        <div class="card mb-4">
+          <div class="setting-item" style="border:none;">
+            <div>
+              <div class="setting-label">练习模式</div>
+              <div class="setting-desc">选择你希望如何抽选例句</div>
+            </div>
+            <select id="mode-select">
+              <option value="random">🎲 全随机</option>
+              <option value="byEnding">🏷️ 按词尾类型分组</option>
+              <option value="byCase">📐 按固定格分组</option>
+              <option value="special">⚡ 特殊变化专项</option>
+            </select>
           </div>
-          <select id="mode-select">
-            <option value="random">🎲 全随机</option>
-            <option value="byEnding">🏷️ 按词尾类型分组</option>
-            <option value="byCase">📐 按固定格分组</option>
-            <option value="special">⚡ 特殊变化专项</option>
-          </select>
         </div>
-      </div>
+      </details>
 
-      <h3 class="mb-2">各语法点权重</h3>
-      <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">0x = 不练习 · 1x = 正常 · 2x = 多出现 · 3x = 经常出现</p>
-      <div class="card">
-        <div id="weight-list"></div>
-      </div>
+      <details class="settings-section">
+        <summary>⚖️ 各语法点权重</summary>
+        <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">0x = 不练习 · 1x = 正常 · 2x = 多出现 · 3x = 经常出现</p>
+        <div class="card">
+          <div id="weight-list"></div>
+        </div>
+      </details>
 
-      <div class="card mt-4" style="border:1px solid rgba(233,69,96,0.3);">
-        <div class="setting-item" style="border:none;">
-          <div>
-            <div class="setting-label" style="color:var(--accent);">重置所有进度</div>
-            <div class="setting-desc">清空已学节点、练习记录和权重设置</div>
+      <details class="settings-section">
+        <summary>🗑️ 重置所有进度</summary>
+        <div class="card" style="border:1px solid rgba(233,69,96,0.3);">
+          <div class="setting-item" style="border:none;">
+            <div>
+              <div class="setting-label" style="color:var(--accent);">重置所有进度</div>
+              <div class="setting-desc">清空已学节点、练习记录和权重设置</div>
+            </div>
+            <button id="reset-progress-btn" class="btn btn-small" style="width:auto;background:rgba(233,69,96,0.15);color:var(--accent);">重置</button>
           </div>
-          <button id="reset-progress-btn" class="btn btn-small" style="width:auto;background:rgba(233,69,96,0.15);color:var(--accent);">重置</button>
         </div>
-      </div>
+      </details>
 
       <!-- Custom Sentences -->
-      <h3 class="mb-2 mt-4">添加自定义例句</h3>
-      <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">输入你自己的例句，它会自动进入练习队列并匹配变化规则</p>
+      <details class="settings-section">
+        <summary>✏️ 添加自定义例句</summary>
+        <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">输入你自己的例句，它会自动进入练习队列并匹配变化规则</p>
       <div class="card mb-4">
         <div style="margin-bottom:12px;">
           <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">俄语句子</label>
@@ -191,6 +192,7 @@
         <div class="card-title">我的例句</div>
         <div id="custom-list"></div>
       </div>
+      </details>
     </div>
 
     <!-- Texts -->
@@ -202,7 +204,8 @@
         <div class="card-title">导入课文</div>
         <div style="margin-bottom:12px;">
           <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">教材名称</label>
-          <input id="text-source" type="text" placeholder="例如：走遍俄罗斯" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;">
+          <input id="text-source" type="text" placeholder="例如：走遍俄罗斯" list="text-source-list" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;">
+          <datalist id="text-source-list"></datalist>
         </div>
         <div style="display:flex;gap:10px;margin-bottom:12px;">
           <div style="flex:1;">

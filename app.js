@@ -383,41 +383,17 @@ const App = {
     this.practice.queue = this.generateQueue();
     this.practice.index = 0;
 
-    const overview = document.getElementById('practice-overview');
     const card = document.getElementById('sentence-card');
     const empty = document.getElementById('practice-empty');
 
     if (this.practice.queue.length === 0) {
-      overview.classList.add('hidden');
       card.classList.add('hidden');
       empty.classList.remove('hidden');
       return;
     }
 
-    overview.classList.remove('hidden');
     card.classList.remove('hidden');
     empty.classList.add('hidden');
-
-    const declensions = new Set();
-    const cases = new Set();
-
-    this.practice.queue.forEach(s => {
-      const node = this.data.framework.nodes.find(n => n.id === s.grammarPointId);
-      if (node && node.parentId) {
-        const parent = this.data.framework.nodes.find(n => n.id === node.parentId);
-        if (parent) declensions.add(parent.name);
-      }
-      if (s.case && this.data.caseUsages[s.case]) {
-        cases.add(this.data.caseUsages[s.case].name);
-      }
-    });
-
-    const tags = [
-      ...Array.from(declensions).map(d => `<span class="tag">${d}</span>`),
-      ...Array.from(cases).map(c => `<span class="tag">${c}</span>`)
-    ];
-    document.getElementById('overview-tags').innerHTML = tags.join('');
-    document.getElementById('overview-count').textContent = `今日 ${this.practice.queue.length} 句`;
 
     this.renderSentence(0);
   },
@@ -450,7 +426,7 @@ const App = {
 
     const result = [];
     const used = new Set();
-    const max = Math.min(20, pool.length);
+    const max = Math.min(10, pool.length);
     for (let i = 0; i < max; i++) {
       const available = weighted.filter(w => !used.has(w.s) && w.weight > 0);
       if (available.length === 0) break;
@@ -607,9 +583,28 @@ const App = {
 
   showPracticeComplete() {
     document.getElementById('sentence-card').classList.add('hidden');
-    document.getElementById('practice-overview').classList.add('hidden');
     document.getElementById('practice-complete').classList.remove('hidden');
     document.getElementById('complete-count').textContent = this.practice.queue.length;
+
+    const lessonBox = document.getElementById('complete-lesson');
+    const texts = this.state.userTexts || [];
+    if (texts.length > 0) {
+      const t = texts[texts.length - 1];
+      lessonBox.innerHTML = `
+        <div style="margin:20px 0;font-size:0.9rem;color:var(--muted);text-align:center;">📖 回顾最近导入的课文</div>
+        <div class="lesson-card" style="margin-bottom:20px;">
+          <div class="lesson-meta">
+            <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
+            ${t.chapter ? `<span class="meta-pill">${this.escapeHtml(t.chapter)}</span>` : ''}
+            ${t.title ? `<span class="meta-pill">${this.escapeHtml(t.title)}</span>` : ''}
+          </div>
+          <div class="lesson-ru">${this.escapeHtml(t.contentRU)}</div>
+          ${t.contentZH ? `<div class="lesson-zh">${this.escapeHtml(t.contentZH)}</div>` : ''}
+        </div>
+      `;
+    } else {
+      lessonBox.innerHTML = '';
+    }
   },
 
   restartPractice() {
@@ -778,6 +773,10 @@ const App = {
     const empty = document.getElementById('texts-empty');
     const texts = this.state.userTexts || [];
 
+    const sources = [...new Set(texts.map(t => t.source))];
+    document.getElementById('text-source-list').innerHTML =
+      sources.map(s => `<option value="${this.escapeHtml(s)}">`).join('');
+
     if (texts.length === 0) {
       list.innerHTML = '';
       empty.classList.remove('hidden');
@@ -788,7 +787,8 @@ const App = {
           <div class="lesson-meta" style="margin-bottom:8px;">
             <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
             ${t.chapter ? `<span class="meta-pill">${this.escapeHtml(t.chapter)}</span>` : ''}
-            <button onclick="App.deleteText(${i})" style="margin-left:auto;background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;">删除</button>
+            <button onclick="App.editText(${i})" style="margin-left:auto;background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.8rem;">编辑</button>
+            <button onclick="App.deleteText(${i})" style="background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;">删除</button>
           </div>
           ${t.title ? `<div class="card-title" style="margin-bottom:6px;">${this.escapeHtml(t.title)}</div>` : ''}
           <div class="lesson-ru">${this.escapeHtml(t.contentRU)}</div>
@@ -797,7 +797,22 @@ const App = {
       `).join('');
     }
 
-    document.getElementById('add-text-btn').onclick = () => this.addText();
+    const btn = document.getElementById('add-text-btn');
+    btn.textContent = this.editingTextIndex == null ? '导入课文' : '保存修改';
+    btn.onclick = () => this.addText();
+  },
+
+  editText(idx) {
+    const t = (this.state.userTexts || [])[idx];
+    if (!t) return;
+    this.editingTextIndex = idx;
+    document.getElementById('text-source').value = t.source;
+    document.getElementById('text-chapter').value = t.chapter;
+    document.getElementById('text-title').value = t.title || '';
+    document.getElementById('text-content-ru').value = t.contentRU;
+    document.getElementById('text-content-zh').value = t.contentZH || '';
+    document.getElementById('add-text-btn').textContent = '保存修改';
+    document.getElementById('add-text-card').scrollIntoView({ behavior: 'smooth' });
   },
 
   addText() {
@@ -812,13 +827,22 @@ const App = {
       return;
     }
 
-    this.state.userTexts.push({
+    const lesson = {
       source,
       chapter,
       title: title || '',
       contentRU,
       contentZH: contentZH || ''
-    });
+    };
+
+    let msg = '课文已导入';
+    if (this.editingTextIndex != null) {
+      this.state.userTexts[this.editingTextIndex] = lesson;
+      this.editingTextIndex = null;
+      msg = '课文已更新';
+    } else {
+      this.state.userTexts.push(lesson);
+    }
     this.saveState();
     this.renderTexts();
 
@@ -827,12 +851,13 @@ const App = {
     document.getElementById('text-title').value = '';
     document.getElementById('text-content-ru').value = '';
     document.getElementById('text-content-zh').value = '';
-    alert('课文已导入');
+    alert(msg);
   },
 
   deleteText(idx) {
     if (!confirm('确定删除这篇课文吗？')) return;
     this.state.userTexts.splice(idx, 1);
+    if (this.editingTextIndex === idx) this.editingTextIndex = null;
     this.saveState();
     this.renderTexts();
   },
