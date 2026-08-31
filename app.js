@@ -451,9 +451,6 @@ const App = {
     this.practice.index = idx;
     const s = this.practice.queue[idx];
 
-    // Highlight sentence
-    const ruHtml = this.renderHighlightedRU(s.sentenceRU, s.targetWordForm, s.otherDeclensions || []);
-    document.getElementById('sentence-ru').innerHTML = ruHtml;
     document.getElementById('sentence-zh').textContent = s.sentenceZH;
     document.getElementById('sentence-meta').innerHTML = `
       <span class="meta-pill">${s.grammarPointName}</span>
@@ -467,16 +464,71 @@ const App = {
     document.getElementById('rule-panel').innerHTML = this.buildRuleHTML(s.grammarPointId, s.case);
     this.renderRelatedTexts(s);
     document.getElementById('progress-text').textContent = `${idx + 1} / ${this.practice.queue.length}`;
+
+    const ruleBtn = document.getElementById('toggle-rule-btn');
+    ruleBtn.disabled = true;
+
+    const ruEl = document.getElementById('sentence-ru');
+    const inputEl = document.getElementById('typing-input');
+    this.attachTyping(ruEl, inputEl, s.sentenceRU, () => {
+      ruEl.innerHTML = this.renderHighlightedRU(s.sentenceRU, s.targetWordForm, s.otherDeclensions || []);
+      ruleBtn.disabled = false;
+    });
+  },
+
+  normalizeLetters(str) {
+    return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ё/g, 'е');
+  },
+
+  lettersOnly(str) {
+    return this.normalizeLetters(str).replace(/[^a-zа-я]/g, '');
+  },
+
+  renderTypingProgress(textEl, targetText, matchedLetters) {
+    let count = 0, cut = 0;
+    for (let i = 0; i < targetText.length; i++) {
+      if (/[a-zа-яё]/i.test(targetText[i])) {
+        count++;
+        if (count === matchedLetters) { cut = i + 1; break; }
+      }
+    }
+    const done = this.escapeHtml(targetText.slice(0, cut));
+    const todo = this.escapeHtml(targetText.slice(cut));
+    textEl.innerHTML = `<span class="typing-done">${done}</span><span class="typing-pending">${todo}</span>`;
+  },
+
+  attachTyping(textEl, inputEl, targetText, onComplete) {
+    const targetLetters = this.lettersOnly(targetText);
+    inputEl.value = '';
+    inputEl.placeholder = '在这里把上面的句子打一遍（标点可省略）';
+    if (targetLetters.length === 0) {
+      this.renderTypingProgress(textEl, targetText, 0);
+      inputEl.disabled = true;
+      if (onComplete) onComplete();
+      return;
+    }
+    inputEl.disabled = false;
+    this.renderTypingProgress(textEl, targetText, 0);
+    inputEl.oninput = () => {
+      const typedLetters = this.lettersOnly(inputEl.value);
+      let m = 0;
+      while (m < typedLetters.length && m < targetLetters.length && typedLetters[m] === targetLetters[m]) m++;
+      this.renderTypingProgress(textEl, targetText, m);
+      if (m >= targetLetters.length) {
+        inputEl.disabled = true;
+        inputEl.placeholder = '✓ 拼写正确';
+        if (onComplete) onComplete();
+      }
+    };
   },
 
   renderRelatedTexts(s) {
     const container = document.getElementById('related-text-content');
     if (!container) return;
-    if (!s.source) {
-      container.innerHTML = '';
-      return;
-    }
-    const lessons = (this.state.userTexts || []).filter(t => t.source === s.source);
+    const lessons = (this.state.userTexts || []).filter(t =>
+      (s.source && t.source === s.source) ||
+      (t.grammarPoints || []).includes(s.grammarPointId)
+    );
     if (lessons.length === 0) {
       container.innerHTML = '';
       return;
@@ -591,17 +643,24 @@ const App = {
     if (texts.length > 0) {
       const t = texts[texts.length - 1];
       lessonBox.innerHTML = `
-        <div style="margin:20px 0;font-size:0.9rem;color:var(--muted);text-align:center;">📖 回顾最近导入的课文</div>
+        <div style="margin:20px 0;font-size:0.9rem;color:var(--muted);text-align:center;">📖 回顾最近导入的课文（打一遍加深记忆）</div>
         <div class="lesson-card" style="margin-bottom:20px;">
           <div class="lesson-meta">
             <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
             ${t.chapter ? `<span class="meta-pill">${this.escapeHtml(t.chapter)}</span>` : ''}
             ${t.title ? `<span class="meta-pill">${this.escapeHtml(t.title)}</span>` : ''}
           </div>
-          <div class="lesson-ru">${this.escapeHtml(t.contentRU)}</div>
-          ${t.contentZH ? `<div class="lesson-zh">${this.escapeHtml(t.contentZH)}</div>` : ''}
+          <div class="lesson-ru" id="complete-lesson-ru"></div>
+          <textarea id="complete-lesson-input" class="typing-input" rows="3" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
+          ${t.contentZH ? `<div class="lesson-zh" style="margin-top:10px;">${this.escapeHtml(t.contentZH)}</div>` : ''}
         </div>
       `;
+      this.attachTyping(
+        document.getElementById('complete-lesson-ru'),
+        document.getElementById('complete-lesson-input'),
+        t.contentRU,
+        null
+      );
     } else {
       lessonBox.innerHTML = '';
     }
@@ -777,6 +836,11 @@ const App = {
     document.getElementById('text-source-list').innerHTML =
       sources.map(s => `<option value="${this.escapeHtml(s)}">`).join('');
 
+    const editingGp = this.editingTextIndex != null
+      ? (texts[this.editingTextIndex].grammarPoints || [])
+      : [];
+    this.renderGpPicker(editingGp);
+
     if (texts.length === 0) {
       list.innerHTML = '';
       empty.classList.remove('hidden');
@@ -791,6 +855,7 @@ const App = {
             <button onclick="App.deleteText(${i})" style="background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;">删除</button>
           </div>
           ${t.title ? `<div class="card-title" style="margin-bottom:6px;">${this.escapeHtml(t.title)}</div>` : ''}
+          ${(t.grammarPoints || []).length > 0 ? `<div class="lesson-meta" style="margin-bottom:8px;">${t.grammarPoints.map(id => `<span class="gp-chip active" style="cursor:default;">${this.escapeHtml(this.gpName(id))}</span>`).join('')}</div>` : ''}
           <div class="lesson-ru">${this.escapeHtml(t.contentRU)}</div>
           ${t.contentZH ? `<div class="lesson-zh">${this.escapeHtml(t.contentZH)}</div>` : ''}
         </div>
@@ -802,6 +867,24 @@ const App = {
     btn.onclick = () => this.addText();
   },
 
+  gpName(id) {
+    const node = this.data.framework.nodes.find(n => n.id === id);
+    return node ? node.name : id;
+  },
+
+  renderGpPicker(selectedIds) {
+    const picker = document.getElementById('text-grammar-picker');
+    const grammarNodes = this.data.framework.nodes.filter(n => n.type === 'grammarPoint');
+    picker.innerHTML = grammarNodes.map(n =>
+      `<span class="gp-chip${selectedIds.includes(n.id) ? ' active' : ''}" data-id="${n.id}" onclick="this.classList.toggle('active')">${n.name}</span>`
+    ).join('');
+  },
+
+  getSelectedGpIds() {
+    return Array.from(document.querySelectorAll('#text-grammar-picker .gp-chip.active'))
+      .map(el => el.dataset.id);
+  },
+
   editText(idx) {
     const t = (this.state.userTexts || [])[idx];
     if (!t) return;
@@ -811,7 +894,7 @@ const App = {
     document.getElementById('text-title').value = t.title || '';
     document.getElementById('text-content-ru').value = t.contentRU;
     document.getElementById('text-content-zh').value = t.contentZH || '';
-    document.getElementById('add-text-btn').textContent = '保存修改';
+    this.renderTexts();
     document.getElementById('add-text-card').scrollIntoView({ behavior: 'smooth' });
   },
 
@@ -832,7 +915,8 @@ const App = {
       chapter,
       title: title || '',
       contentRU,
-      contentZH: contentZH || ''
+      contentZH: contentZH || '',
+      grammarPoints: this.getSelectedGpIds()
     };
 
     let msg = '课文已导入';

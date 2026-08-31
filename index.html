@@ -69,6 +69,7 @@
           <div class="sentence-meta" id="sentence-meta"></div>
           <div class="sentence-ru" id="sentence-ru"></div>
           <div class="sentence-zh" id="sentence-zh"></div>
+          <textarea id="typing-input" class="typing-input" rows="2" placeholder="在这里把上面的句子打一遍（标点可省略）" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
           <div style="color:var(--muted);font-size:0.8rem;" id="progress-text"></div>
           <div id="other-decl-popup" class="other-decl-popup hidden"></div>
         </div>
@@ -216,6 +217,10 @@
             <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">标题（可选）</label>
             <input id="text-title" type="text" placeholder="例如：在邮局" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;">
           </div>
+        </div>
+        <div style="margin-bottom:12px;">
+          <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">相关语法点（可选，点击选择）</label>
+          <div id="text-grammar-picker" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
         </div>
         <div style="margin-bottom:12px;">
           <label style="display:block;font-size:0.9rem;color:var(--muted);margin-bottom:4px;">俄语课文</label>

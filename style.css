@@ -447,6 +447,48 @@ p { margin-bottom: 12px; color: var(--muted); }
   white-space: pre-wrap;
 }
 
+.gp-chip {
+  padding: 4px 12px;
+  background: var(--secondary);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  cursor: pointer;
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.gp-chip.active {
+  background: rgba(78,205,196,0.15);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.typing-done { color: var(--text); }
+
+.typing-pending { color: #CFC9BE; }
+
+.typing-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  resize: vertical;
+  margin-top: 12px;
+}
+
+.typing-input:disabled {
+  opacity: 0.6;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
 .case-usage-block {
   margin-top: 16px;
   padding-top: 16px;
