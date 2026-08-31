@@ -462,7 +462,6 @@ const App = {
 
     document.getElementById('rule-panel').classList.remove('open');
     document.getElementById('rule-panel').innerHTML = this.buildRuleHTML(s.grammarPointId, s.case);
-    this.renderRelatedTexts(s);
     document.getElementById('progress-text').textContent = `${idx + 1} / ${this.practice.queue.length}`;
 
     const ruleBtn = document.getElementById('toggle-rule-btn');
@@ -520,30 +519,6 @@ const App = {
         if (onComplete) onComplete();
       }
     };
-  },
-
-  renderRelatedTexts(s) {
-    const container = document.getElementById('related-text-content');
-    if (!container) return;
-    const lessons = (this.state.userTexts || []).filter(t =>
-      (s.source && t.source === s.source) ||
-      (t.grammarPoints || []).includes(s.grammarPointId)
-    );
-    if (lessons.length === 0) {
-      container.innerHTML = '';
-      return;
-    }
-    container.innerHTML = lessons.map(t => `
-      <div class="lesson-card">
-        <div class="lesson-meta">
-          <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
-          ${t.chapter ? `<span class="meta-pill">${this.escapeHtml(t.chapter)}</span>` : ''}
-          ${t.title ? `<span class="meta-pill">${this.escapeHtml(t.title)}</span>` : ''}
-        </div>
-        <div class="lesson-ru">${this.escapeHtml(t.contentRU)}</div>
-        ${t.contentZH ? `<div class="lesson-zh">${this.escapeHtml(t.contentZH)}</div>` : ''}
-      </div>
-    `).join('');
   },
 
   renderHighlightedRU(sentenceRU, targetWordForm, otherDeclensions) {
@@ -836,17 +811,14 @@ const App = {
     document.getElementById('text-source-list').innerHTML =
       sources.map(s => `<option value="${this.escapeHtml(s)}">`).join('');
 
-    const editingGp = this.editingTextIndex != null
-      ? (texts[this.editingTextIndex].grammarPoints || [])
-      : [];
-    this.renderGpPicker(editingGp);
-
     if (texts.length === 0) {
       list.innerHTML = '';
       empty.classList.remove('hidden');
     } else {
       empty.classList.add('hidden');
-      list.innerHTML = texts.map((t, i) => `
+      list.innerHTML = texts.map((t, i) => {
+        const note = t.grammarNote || (t.grammarPoints || []).map(id => this.gpName(id)).join('、');
+        return `
         <div class="card mb-4">
           <div class="lesson-meta" style="margin-bottom:8px;">
             <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
@@ -855,11 +827,12 @@ const App = {
             <button onclick="App.deleteText(${i})" style="background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;">删除</button>
           </div>
           ${t.title ? `<div class="card-title" style="margin-bottom:6px;">${this.escapeHtml(t.title)}</div>` : ''}
-          ${(t.grammarPoints || []).length > 0 ? `<div class="lesson-meta" style="margin-bottom:8px;">${t.grammarPoints.map(id => `<span class="gp-chip active" style="cursor:default;">${this.escapeHtml(this.gpName(id))}</span>`).join('')}</div>` : ''}
+          ${note ? `<div class="lesson-meta" style="margin-bottom:8px;"><span class="meta-pill">🏷️ ${this.escapeHtml(note)}</span></div>` : ''}
           <div class="lesson-ru">${this.escapeHtml(t.contentRU)}</div>
           ${t.contentZH ? `<div class="lesson-zh">${this.escapeHtml(t.contentZH)}</div>` : ''}
         </div>
-      `).join('');
+      `;
+      }).join('');
     }
 
     const btn = document.getElementById('add-text-btn');
@@ -872,19 +845,6 @@ const App = {
     return node ? node.name : id;
   },
 
-  renderGpPicker(selectedIds) {
-    const picker = document.getElementById('text-grammar-picker');
-    const grammarNodes = this.data.framework.nodes.filter(n => n.type === 'grammarPoint');
-    picker.innerHTML = grammarNodes.map(n =>
-      `<span class="gp-chip${selectedIds.includes(n.id) ? ' active' : ''}" data-id="${n.id}" onclick="this.classList.toggle('active')">${n.name}</span>`
-    ).join('');
-  },
-
-  getSelectedGpIds() {
-    return Array.from(document.querySelectorAll('#text-grammar-picker .gp-chip.active'))
-      .map(el => el.dataset.id);
-  },
-
   editText(idx) {
     const t = (this.state.userTexts || [])[idx];
     if (!t) return;
@@ -892,6 +852,7 @@ const App = {
     document.getElementById('text-source').value = t.source;
     document.getElementById('text-chapter').value = t.chapter;
     document.getElementById('text-title').value = t.title || '';
+    document.getElementById('text-grammar').value = t.grammarNote || (t.grammarPoints || []).map(id => this.gpName(id)).join('、');
     document.getElementById('text-content-ru').value = t.contentRU;
     document.getElementById('text-content-zh').value = t.contentZH || '';
     this.renderTexts();
@@ -916,7 +877,7 @@ const App = {
       title: title || '',
       contentRU,
       contentZH: contentZH || '',
-      grammarPoints: this.getSelectedGpIds()
+      grammarNote: document.getElementById('text-grammar').value.trim()
     };
 
     let msg = '课文已导入';
@@ -933,6 +894,7 @@ const App = {
     document.getElementById('text-source').value = '';
     document.getElementById('text-chapter').value = '';
     document.getElementById('text-title').value = '';
+    document.getElementById('text-grammar').value = '';
     document.getElementById('text-content-ru').value = '';
     document.getElementById('text-content-zh').value = '';
     alert(msg);
