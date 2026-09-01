@@ -6,10 +6,46 @@ Object.assign(App, {
   },
 
   renderSettings() {
-    document.getElementById('mode-select').value = this.state.practiceMode || 'random';
-    document.getElementById('mode-select').onchange = (e) => {
+    const modeSelect = document.getElementById('mode-select');
+    const currentMode = this.state.practiceMode === 'byEnding' ? 'random' : (this.state.practiceMode || 'random');
+    modeSelect.value = currentMode;
+
+    const bycasePicker = document.getElementById('bycase-picker');
+    const renderByCaseChips = () => {
+      bycasePicker.style.display = modeSelect.value === 'byCase' ? 'block' : 'none';
+      const allCases = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional'];
+      const selected = new Set(
+        (this.state.practiceCases && this.state.practiceCases.length > 0)
+          ? this.state.practiceCases : allCases
+      );
+      document.getElementById('bycase-chips').innerHTML = allCases.map(c =>
+        `<span class="chip${selected.has(c) ? ' active' : ''}" data-case="${c}">${this.caseName(c)}</span>`
+      ).join('');
+      document.querySelectorAll('#bycase-chips .chip').forEach(chip => {
+        chip.onclick = () => {
+          const cur = new Set(
+            (this.state.practiceCases && this.state.practiceCases.length > 0)
+              ? this.state.practiceCases : allCases
+          );
+          const c = chip.dataset.case;
+          if (cur.has(c)) {
+            if (cur.size === 1) return; // keep at least one case selected
+            cur.delete(c);
+          } else {
+            cur.add(c);
+          }
+          this.state.practiceCases = Array.from(cur);
+          this.saveState();
+          renderByCaseChips();
+        };
+      });
+    };
+    renderByCaseChips();
+
+    modeSelect.onchange = (e) => {
       this.state.practiceMode = e.target.value;
       this.saveState();
+      renderByCaseChips();
     };
 
     const aiProvider = document.getElementById('ai-provider');

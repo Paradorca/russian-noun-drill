@@ -40,22 +40,30 @@ Object.assign(App, {
   },
 
   generateQueue() {
-    const mode = this.state.practiceMode || 'random';
-    const builtIn = this.sentences.filter(s =>
-      this.state.unlockedNodes.includes(s.grammarPointId) &&
-      (this.state.unlockedCases || []).includes(s.case)
-    );
-    const custom = (this.state.userSentences || []).filter(s =>
-      this.state.unlockedNodes.includes(s.grammarPointId) &&
-      (this.state.unlockedCases || []).includes(s.case)
-    );
-    let pool = [...builtIn, ...custom];
+    let mode = this.state.practiceMode || 'random';
+    if (mode === 'byEnding') mode = 'random';
+    const allCases = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional'];
+    const unlocked = this.state.unlockedCases || allCases;
+    const allSentences = [...this.sentences, ...(this.state.userSentences || [])];
 
+    let pool;
     if (mode === 'special') {
+      // Special mode ignores map unlock state: choosing the mode IS the selection
       const specialIds = this.data.framework.nodes
         .filter(n => n.parentId === 'special' && n.type === 'grammarPoint')
         .map(n => n.id);
-      pool = pool.filter(s => specialIds.includes(s.grammarPointId));
+      pool = allSentences.filter(s =>
+        specialIds.includes(s.grammarPointId) && unlocked.includes(s.case)
+      );
+    } else {
+      pool = allSentences.filter(s =>
+        this.state.unlockedNodes.includes(s.grammarPointId) && unlocked.includes(s.case)
+      );
+      if (mode === 'byCase') {
+        const selected = (this.state.practiceCases && this.state.practiceCases.length > 0)
+          ? this.state.practiceCases : allCases;
+        pool = pool.filter(s => selected.includes(s.case));
+      }
     }
 
     if (pool.length === 0) return [];
