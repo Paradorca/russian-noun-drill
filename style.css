@@ -472,6 +472,28 @@ p { margin-bottom: 12px; color: var(--muted); }
   cursor: not-allowed;
 }
 
+.chat-msg {
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.chat-msg.user {
+  background: rgba(78,205,196,0.15);
+  color: var(--text);
+  margin-left: 30px;
+}
+
+.chat-msg.ai {
+  background: var(--secondary);
+  color: var(--text);
+  margin-right: 30px;
+}
+
 .case-usage-block {
   margin-top: 16px;
   padding-top: 16px;
