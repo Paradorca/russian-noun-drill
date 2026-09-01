@@ -51,7 +51,7 @@ const App = {
       nodeWeights: defaultWeights,
       practiceMode: 'random',
       mapView: 'declension',
-      dailyStats: { date: new Date().toISOString().slice(0,10), completed: 0, markedWeak: [] }
+      dailyStats: { date: new Date().toISOString().slice(0,10), completed: 0 }
     };
 
     // Ensure unlockedCases exists (default all cases unlocked for backward compatibility)
@@ -74,7 +74,7 @@ const App = {
 
     const today = new Date().toISOString().slice(0,10);
     if (this.state.dailyStats?.date !== today) {
-      this.state.dailyStats = { date: today, completed: 0, markedWeak: [] };
+      this.state.dailyStats = { date: today, completed: 0 };
       this.saveState();
     }
     this.currentMapView = this.state.mapView || 'declension';
@@ -376,12 +376,27 @@ const App = {
   showPractice() {
     this.switchPage('practice-page');
     this.setActiveNav('practice');
+
+    // Resume an unfinished session instead of restarting
+    if (this.practice.completed) {
+      document.getElementById('practice-empty').classList.add('hidden');
+      this.showPracticeComplete();
+      return;
+    }
+    if (this.practice.queue && this.practice.queue.length > 0 && this.practice.index < this.practice.queue.length) {
+      document.getElementById('practice-complete').classList.add('hidden');
+      document.getElementById('practice-empty').classList.add('hidden');
+      document.getElementById('sentence-card').classList.remove('hidden');
+      this.renderSentence(this.practice.index, true);
+      return;
+    }
     this.startPractice();
   },
 
   startPractice() {
     this.practice.queue = this.generateQueue();
     this.practice.index = 0;
+    this.practice.completed = false;
 
     const card = document.getElementById('sentence-card');
     const empty = document.getElementById('practice-empty');
@@ -443,7 +458,7 @@ const App = {
     return result;
   },
 
-  renderSentence(idx) {
+  renderSentence(idx, keepChat) {
     if (idx >= this.practice.queue.length) {
       this.showPracticeComplete();
       return;
@@ -467,9 +482,11 @@ const App = {
     const ruleBtn = document.getElementById('toggle-rule-btn');
     ruleBtn.disabled = true;
 
-    this.chatHistory = [];
-    document.getElementById('chat-messages').innerHTML = '';
-    document.getElementById('chat-panel').classList.add('hidden');
+    if (!keepChat) {
+      this.chatHistory = [];
+      document.getElementById('chat-messages').innerHTML = '';
+      document.getElementById('chat-panel').classList.add('hidden');
+    }
 
     const ruEl = document.getElementById('sentence-ru');
     const inputEl = document.getElementById('typing-input');
@@ -503,7 +520,7 @@ const App = {
   attachTyping(textEl, inputEl, targetText, onComplete) {
     const targetLetters = this.lettersOnly(targetText);
     inputEl.value = '';
-    inputEl.placeholder = '在这里把上面的句子打一遍（标点可省略）';
+    inputEl.placeholder = '在这里把上面的文字打一遍（标点可省略）';
     if (targetLetters.length === 0) {
       this.renderTypingProgress(textEl, targetText, 0);
       inputEl.disabled = true;
@@ -511,6 +528,7 @@ const App = {
       return;
     }
     inputEl.disabled = false;
+    inputEl.focus();
     this.renderTypingProgress(textEl, targetText, 0);
     inputEl.oninput = () => {
       const typedLetters = this.lettersOnly(inputEl.value);
@@ -663,16 +681,8 @@ const App = {
     this.renderSentence(this.practice.index + 1);
   },
 
-  markWeak() {
-    const s = this.practice.queue[this.practice.index];
-    if (!this.state.dailyStats.markedWeak.includes(s.sentenceRU)) {
-      this.state.dailyStats.markedWeak.push(s.sentenceRU);
-      this.saveState();
-    }
-    this.nextSentence();
-  },
-
   showPracticeComplete() {
+    this.practice.completed = true;
     document.getElementById('sentence-card').classList.add('hidden');
     document.getElementById('practice-complete').classList.remove('hidden');
     document.getElementById('complete-count').textContent = this.practice.queue.length;
@@ -694,17 +704,30 @@ const App = {
           ${t.contentZH ? `<div class="lesson-zh" style="margin-top:10px;">${this.escapeHtml(t.contentZH)}</div>` : ''}
         </div>
       `;
-      this.attachTyping(
-        document.getElementById('complete-lesson-ru'),
-        document.getElementById('complete-lesson-input'),
-        t.contentRU,
-        null
-      );
+      const ruEl = document.getElementById('complete-lesson-ru');
+      const inputEl = document.getElementById('complete-lesson-input');
+      const paras = t.contentRU.split(/\n+/).map(p => p.trim()).filter(Boolean);
+      if (paras.length === 0) {
+        inputEl.disabled = true;
+      } else {
+        const showPara = (k) => {
+          const div = document.createElement('div');
+          div.style.marginBottom = '10px';
+          ruEl.appendChild(div);
+          this.attachTyping(div, inputEl, paras[k], () => {
+            if (k + 1 < paras.length) {
+              showPara(k + 1);
+            } else {
+              inputEl.placeholder = '✓ 课文完成';
+            }
+          });
+        };
+        showPara(0);
+      }
     } else {
       lessonBox.innerHTML = '';
     }
   },
-
   restartPractice() {
     document.getElementById('practice-complete').classList.add('hidden');
     this.startPractice();
@@ -1030,7 +1053,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('toggle-rule-btn').onclick = () => App.toggleRulePanel();
   document.getElementById('next-btn').onclick = () => App.nextSentence();
-  document.getElementById('weak-btn').onclick = () => App.markWeak();
   document.getElementById('restart-btn').onclick = () => App.restartPractice();
   document.getElementById('reset-progress-btn').onclick = () => App.resetProgress();
   document.getElementById('ask-ai-btn').onclick = () => App.toggleChat();
