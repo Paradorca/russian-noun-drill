@@ -2631,5 +2631,155 @@
     "sentenceZH": "我们讨论了更重要的问题。",
     "targetWordForm": "бо́лее",
     "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "Э́то красиве́йший го́род.",
+    "sentenceZH": "这是最美的城市。",
+    "targetWordForm": "красиве́йший",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "интересный",
+    "case": "nominative",
+    "form": "feminine",
+    "sentenceRU": "Э́то интересне́йшая кни́га.",
+    "sentenceZH": "这是一本最有趣的书。",
+    "targetWordForm": "интересне́йшая",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "трудный",
+    "case": "accusative",
+    "form": "feminine",
+    "sentenceRU": "Он реши́л трудне́йшую зада́чу.",
+    "sentenceZH": "他解出了最难的题。",
+    "targetWordForm": "трудне́йшую",
+    "otherDeclensions": [
+      {
+        "word": "зада́чу",
+        "case": "accusative",
+        "brief": "зада́ча 的宾格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "красивый",
+    "case": "prepositional",
+    "form": "masculine",
+    "sentenceRU": "Мы живём в красиве́йшем го́роде.",
+    "sentenceZH": "我们住在最美的城市。",
+    "targetWordForm": "красиве́йшем",
+    "otherDeclensions": [
+      {
+        "word": "го́роде",
+        "case": "prepositional",
+        "brief": "го́род 的前置格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "высокий",
+    "case": "nominative",
+    "form": "neuter",
+    "sentenceRU": "Э́то высоча́йшее зда́ние.",
+    "sentenceZH": "这是最高的建筑。",
+    "targetWordForm": "высоча́йшее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "хороший",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "Он мой лу́чший друг.",
+    "sentenceZH": "他是我最好的朋友。",
+    "targetWordForm": "лу́чший",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "Э́то са́мый краси́вый го́род.",
+    "sentenceZH": "这是最美的城市。",
+    "targetWordForm": "са́мый",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "интересный",
+    "case": "nominative",
+    "form": "feminine",
+    "sentenceRU": "Э́то са́мая интере́сная кни́га.",
+    "sentenceZH": "这是最有趣的一本书。",
+    "targetWordForm": "са́мая",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "большой",
+    "case": "prepositional",
+    "form": "masculine",
+    "sentenceRU": "Мы жи́ли в са́мом большо́м го́роде.",
+    "sentenceZH": "我们住在最大的城市。",
+    "targetWordForm": "са́мом",
+    "otherDeclensions": [
+      {
+        "word": "го́роде",
+        "case": "prepositional",
+        "brief": "го́род 的前置格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "трудный",
+    "case": "nominative",
+    "form": "neuter",
+    "sentenceRU": "Э́то са́мое тру́дное зада́ние.",
+    "sentenceZH": "这是最难的任务。",
+    "targetWordForm": "са́мое",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "интересный",
+    "case": "accusative",
+    "form": "feminine",
+    "sentenceRU": "Она́ чита́ет са́мую интере́сную кни́гу.",
+    "sentenceZH": "她在读最有趣的一本书。",
+    "targetWordForm": "са́мую",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-superlative",
+    "grammarPointName": "最高级",
+    "word": "интересный",
+    "case": "nominative",
+    "form": "plural",
+    "sentenceRU": "Э́то са́мые интере́сные ле́кции.",
+    "sentenceZH": "这些是最有趣的课。",
+    "targetWordForm": "са́мые",
+    "otherDeclensions": []
   }
 ]

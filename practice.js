@@ -199,6 +199,10 @@ Object.assign(App, {
       const rows = (node.comparativePairs || []).map(p =>
         `<tr><td>${p.base}</td><td>${p.comparative}</td></tr>`).join('');
       tablesHTML = `<table class="rule-table"><tr><th>原级</th><th>比较级</th></tr>${rows}</table>`;
+    } else if (node.tableType === 'superlative') {
+      const rows = (node.superlativePairs || []).map(p =>
+        `<tr><td>${p.base}</td><td>${p.superlative}</td></tr>`).join('');
+      tablesHTML = `<table class="rule-table"><tr><th>原级</th><th>最高级</th></tr>${rows}</table>`;
     } else {
       tablesHTML = renderTable(node.declensionTable, node.exampleWord) +
         (node.examples || []).map(e => renderTable(e.table, e.word)).join('');
