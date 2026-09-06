@@ -32,24 +32,12 @@ const App = {
 
   loadState() {
     const raw = localStorage.getItem('russianNounDrillState');
-    const defaultWeights = {};
-    const grammarIds = this.data?.framework?.nodes
-      ?.filter(n => n.type === 'grammarPoint')
-      ?.map(n => n.id) || [];
-    grammarIds.forEach(id => defaultWeights[id] = 1);
 
     this.state = raw ? JSON.parse(raw) : {
       unlockedNodes: [],
-      nodeWeights: defaultWeights,
-      practiceMode: 'random',
+      practiceMode: 'noun-decl',
       dailyStats: { date: new Date().toISOString().slice(0,10), completed: 0 }
     };
-
-    // Ensure unlockedCases exists (default all cases unlocked for backward compatibility)
-    if (!this.state.unlockedCases) {
-      this.state.unlockedCases = ['nominative','genitive','dative','accusative','instrumental','prepositional'];
-      this.saveState();
-    }
 
     // Ensure userSentences exists
     if (!this.state.userSentences) {

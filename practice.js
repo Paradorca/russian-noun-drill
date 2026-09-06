@@ -40,56 +40,18 @@ Object.assign(App, {
   },
 
   generateQueue() {
-    let mode = this.state.practiceMode || 'random';
-    if (mode === 'byEnding') mode = 'random';
-    const allCases = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional'];
-    const unlocked = this.state.unlockedCases || allCases;
-    const allSentences = [...this.sentences, ...(this.state.userSentences || [])];
-
-    let pool;
-    if (mode === 'special') {
-      // Special mode ignores map unlock state: choosing the mode IS the selection
-      const specialIds = this.data.framework.nodes
-        .filter(n => n.parentId === 'special' && n.type === 'grammarPoint')
-        .map(n => n.id);
-      pool = allSentences.filter(s =>
-        specialIds.includes(s.grammarPointId) && unlocked.includes(s.case)
-      );
-    } else {
-      pool = allSentences.filter(s =>
-        this.state.unlockedNodes.includes(s.grammarPointId) && unlocked.includes(s.case)
-      );
-      if (mode === 'byCase') {
-        const selected = (this.state.practiceCases && this.state.practiceCases.length > 0)
-          ? this.state.practiceCases : allCases;
-        pool = pool.filter(s => selected.includes(s.case));
-      }
-    }
-
-    if (pool.length === 0) return [];
-
-    const weighted = pool.map(s => {
-      const w = this.state.nodeWeights[s.grammarPointId] || 1;
-      return { s, weight: w };
-    });
-
-    const result = [];
-    const used = new Set();
-    const max = Math.min(10, pool.length);
-    for (let i = 0; i < max; i++) {
-      const available = weighted.filter(w => !used.has(w.s) && w.weight > 0);
-      if (available.length === 0) break;
-      const totalWeight = available.reduce((sum, w) => sum + w.weight, 0);
-      let rnd = Math.random() * totalWeight;
-      let selected = available[0];
-      for (const item of available) {
-        rnd -= item.weight;
-        if (rnd <= 0) { selected = item; break; }
-      }
-      result.push(selected.s);
-      used.add(selected.s);
-    }
-    return result;
+    const nodes = this.data.framework.nodes;
+    const branches = nodes.filter(n => n.type === 'category' && n.parentId === 'root').map(n => n.id);
+    const branch = branches.includes(this.state.practiceMode) ? this.state.practiceMode : branches[0];
+    const branchOf = (gpId) => {
+      let n = nodes.find(x => x.id === gpId);
+      while (n && n.parentId && n.parentId !== 'root') n = nodes.find(x => x.id === n.parentId);
+      return n ? n.id : null;
+    };
+    const all = [...this.sentences, ...(this.state.userSentences || [])];
+    const pool = all.filter(s => branchOf(s.grammarPointId) === branch);
+    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 10);
   },
 
   renderSentence(idx, keepChat) {

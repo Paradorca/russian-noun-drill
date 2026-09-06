@@ -11,10 +11,10 @@
 - `index.html` — 全部页面结构（思维导图/练习/课文回顾/设置）
 - `style.css` — 全部样式，主题色变量在 `:root`（accent `#4ECDC4`）
 - `app.js` — 核心：App 对象、init、状态读写（localStorage）、导航、页面切换、工具函数、DOMContentLoaded 全局事件绑定
-- `map.js` — 思维导图（变格法视图 + 六格视图）
+- `map.js` — 思维导图（五大板块卡片 + 名词卡片下的变格规则/格的含义参考小卡）
 - `practice.js` — 例句练习：抽题、打字验证（灰→黑渐进显示）、高亮、规则面板、完成后课文逐段回顾
 - `chat.js` — AI 语法助手（服务商配置 + 对话）
-- `settings.js` — 设置页：练习模式、权重、AI Key、自定义例句、重置
+- `settings.js` — 设置页：练习板块选择、AI Key、自定义例句、重置
 - `texts.js` — 课文回顾：导入/编辑/删除课文
 - 各模块通过 `Object.assign(App, { ... })` 挂到 App 上；`index.html` 中 app.js 必须最先加载
 - `grammar-data.json` — 语法框架 + 六格用法
@@ -24,15 +24,15 @@
 
 root（俄语语法框架）→ 5 个 category 分支：noun-decl 名词变格、adj-decl 形容词变格、num 数词、pron 代词、verb 动词。名词分支下还有一层子 category（三大变格法 + 特殊变化），其余分支直接挂 grammarPoint。
 
-带 `pending: true` 的 grammarPoint 是待补充骨架：思维导图显示"待补充"，六格视图/权重/自定义例句里要过滤掉（`!n.pending`），也不生成例句。填写内容时去掉 pending 并补齐字段（exampleWord、description、declensionTable、highlight、tips）。
+带 `pending: true` 的 grammarPoint 是待补充骨架：思维导图显示"待补充"，自定义例句的语法点下拉要过滤掉（`!n.pending`），也不生成例句。填写内容时去掉 pending 并补齐字段（exampleWord、description、declensionTable、highlight、tips）。
 
 动词板块不适用"格"的概念：未来动词例句用变位形式（时态×人称）代替 case，规则面板显示变位表，按格筛选不作用于动词。
 
 ## 关键约定（改代码时必须遵守）
 
 1. **每次发布必须 bump `sw.js` 里的 `CACHE_NAME` 版本号**（如 v17 → v18），否则用户手机上是旧缓存。新增文件时同步加入 `FILES_TO_CACHE`。
-2. 用户数据全部在 localStorage 的 `russianNounDrillState` 键下（unlockedNodes、unlockedCases、nodeWeights、practiceMode、userSentences、userTexts、aiProvider、aiApiKey 等）。新增字段时在 `loadState()` 里做向后兼容的 backfill。
-3. 每日练习 10 句，由 `practice.js` 的 `generateQueue()` 控制。
+2. 用户数据全部在 localStorage 的 `russianNounDrillState` 键下（unlockedNodes、practiceMode、userSentences、userTexts、aiProvider、aiApiKey 等）。新增字段时在 `loadState()` 里做向后兼容的 backfill。
+3. 每日练习 10 句，由 `practice.js` 的 `generateQueue()` 控制：practiceMode 存的是板块 id（noun-decl/adj-decl/num/pron/verb），从该板块的例句库中纯随机抽取，已学节点不影响抽选。
 4. 打字校验规则：只比对字母（忽略大小写、重音符号、标点，ё=е），见 `normalizeLetters/lettersOnly`。
 5. AI 助手：用户的 API Key 存在 localStorage，浏览器直连服务商 API（OpenAI 兼容格式），无后端。
 

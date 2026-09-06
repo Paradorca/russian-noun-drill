@@ -7,45 +7,17 @@ Object.assign(App, {
 
   renderSettings() {
     const modeSelect = document.getElementById('mode-select');
-    const currentMode = this.state.practiceMode === 'byEnding' ? 'random' : (this.state.practiceMode || 'random');
-    modeSelect.value = currentMode;
-
-    const bycasePicker = document.getElementById('bycase-picker');
-    const renderByCaseChips = () => {
-      bycasePicker.style.display = modeSelect.value === 'byCase' ? 'block' : 'none';
-      const allCases = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional'];
-      const selected = new Set(
-        (this.state.practiceCases && this.state.practiceCases.length > 0)
-          ? this.state.practiceCases : allCases
-      );
-      document.getElementById('bycase-chips').innerHTML = allCases.map(c =>
-        `<span class="chip${selected.has(c) ? ' active' : ''}" data-case="${c}">${this.caseName(c)}</span>`
-      ).join('');
-      document.querySelectorAll('#bycase-chips .chip').forEach(chip => {
-        chip.onclick = () => {
-          const cur = new Set(
-            (this.state.practiceCases && this.state.practiceCases.length > 0)
-              ? this.state.practiceCases : allCases
-          );
-          const c = chip.dataset.case;
-          if (cur.has(c)) {
-            if (cur.size === 1) return; // keep at least one case selected
-            cur.delete(c);
-          } else {
-            cur.add(c);
-          }
-          this.state.practiceCases = Array.from(cur);
-          this.saveState();
-          renderByCaseChips();
-        };
-      });
-    };
-    renderByCaseChips();
-
+    const branches = this.data.framework.nodes.filter(n => n.type === 'category' && n.parentId === 'root');
+    modeSelect.innerHTML = branches.map(b => `<option value="${b.id}">${b.name}</option>`).join('');
+    const validIds = branches.map(b => b.id);
+    if (!validIds.includes(this.state.practiceMode)) {
+      this.state.practiceMode = validIds[0];
+      this.saveState();
+    }
+    modeSelect.value = this.state.practiceMode;
     modeSelect.onchange = (e) => {
       this.state.practiceMode = e.target.value;
       this.saveState();
-      renderByCaseChips();
     };
 
     const aiProvider = document.getElementById('ai-provider');
@@ -68,36 +40,9 @@ Object.assign(App, {
       this.saveState();
     };
 
-    const weightList = document.getElementById('weight-list');
-    weightList.innerHTML = '';
-    const grammarNodes = this.data.framework.nodes.filter(n => n.type === 'grammarPoint' && !n.pending);
-    grammarNodes.forEach(node => {
-      const w = this.state.nodeWeights[node.id] || 1;
-      const isUnlocked = this.state.unlockedNodes.includes(node.id);
-      const div = document.createElement('div');
-      div.className = 'map-node' + (isUnlocked ? ' active' : '');
-      div.innerHTML = `
-        <div class="node-info" style="flex:1;">
-          <div class="node-name">${node.name}</div>
-        </div>
-        <div class="weight-slider">
-          <input type="range" min="0" max="3" step="1" value="${w}" data-id="${node.id}">
-          <span class="weight-value">${w}x</span>
-        </div>
-      `;
-      const input = div.querySelector('input');
-      const valSpan = div.querySelector('.weight-value');
-      input.oninput = (e) => {
-        const v = parseInt(e.target.value);
-        valSpan.textContent = v + 'x';
-        this.state.nodeWeights[node.id] = v;
-        this.saveState();
-      };
-      weightList.appendChild(div);
-    });
-
     // Custom sentence form
     const grammarSelect = document.getElementById('custom-grammar');
+    const grammarNodes = this.data.framework.nodes.filter(n => n.type === 'grammarPoint' && !n.pending);
     if (grammarSelect && grammarSelect.options.length === 0) {
       grammarNodes.forEach(node => {
         const opt = document.createElement('option');

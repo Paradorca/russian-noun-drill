@@ -484,23 +484,6 @@ p { margin-bottom: 12px; color: var(--muted); }
 
 .typing-done { color: var(--text); }
 
-.chip {
-  padding: 4px 12px;
-  background: var(--secondary);
-  border-radius: 20px;
-  font-size: 0.8rem;
-  color: var(--muted);
-  cursor: pointer;
-  border: 1px solid transparent;
-  user-select: none;
-}
-
-.chip.active {
-  background: rgba(78,205,196,0.15);
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
 .typing-pending { color: #CFC9BE; }
 
 .typing-input {
@@ -607,29 +590,6 @@ select {
   border-radius: 8px;
   padding: 8px 12px;
   font-size: 0.95rem;
-}
-
-.weight-slider {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 6px;
-}
-
-.weight-slider input[type="range"] {
-  flex: 1;
-  accent-color: var(--accent);
-}
-
-.weight-value {
-  min-width: 30px;
-  text-align: right;
-  font-weight: 600;
-  color: var(--accent);
-}
-
-.weight-list .map-node {
-  margin-bottom: 8px;
 }
 
 /* Bottom nav */

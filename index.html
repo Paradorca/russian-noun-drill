@@ -14,7 +14,7 @@
     <!-- Map -->
     <div id="map-page" class="page">
       <h2>语法框架</h2>
-      <p class="mb-4">点击节点可手动标记为已学或未学。已学节点会纳入每日练习。</p>
+      <p class="mb-4">点击节点可手动标记为已学或未学。</p>
       <div id="map-container"></div>
     </div>
 
@@ -23,7 +23,7 @@
       <div id="practice-empty" class="hidden text-center mt-4">
         <div class="welcome-logo" style="margin-top:40px;">📭</div>
         <h3>暂无练习内容</h3>
-        <p>请先前往"思维导图"选择至少一个已学语法点和格。</p>
+        <p>所选板块暂无可练习的例句，请在设置中更换练习板块。</p>
       </div>
 
       <div id="sentence-card">
@@ -70,31 +70,16 @@
       <h2>练习设置</h2>
 
       <details class="settings-section">
-        <summary>🎛️ 练习模式</summary>
+        <summary>🎛️ 练习板块</summary>
         <div class="card mb-4">
           <div class="setting-item" style="border:none;">
             <div>
-              <div class="setting-label">练习模式</div>
-              <div class="setting-desc">选择你希望如何抽选例句</div>
+              <div class="setting-label">练习板块</div>
+              <div class="setting-desc">只从所选板块的例句库中随机抽选</div>
             </div>
             <select id="mode-select">
-              <option value="random">🎲 全随机</option>
-              <option value="byCase">📐 按固定格分组</option>
-              <option value="special">⚡ 特殊变化专项</option>
             </select>
           </div>
-          <div id="bycase-picker" style="display:none;padding:14px 16px 16px;border-top:1px solid var(--border);">
-            <div style="font-size:0.85rem;color:var(--muted);margin-bottom:8px;">选择要着重练习的格（可多选）：</div>
-            <div id="bycase-chips" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
-          </div>
-        </div>
-      </details>
-
-      <details class="settings-section">
-        <summary>⚖️ 各语法点权重</summary>
-        <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">0x = 不练习 · 1x = 正常 · 2x = 多出现 · 3x = 经常出现</p>
-        <div class="card">
-          <div id="weight-list"></div>
         </div>
       </details>
 
