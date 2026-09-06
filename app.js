@@ -2,7 +2,6 @@ const App = {
   data: null,
   sentences: null,
   state: {},
-  diagnostic: { current: 0, answers: [] },
   practice: { queue: [], index: 0, todaySeen: new Set() },
   currentMapView: 'declension',
 
@@ -22,13 +21,8 @@ const App = {
     this.loadState();
     this.registerSW();
     this.setupNav();
-
-    if (!this.state.diagnosticCompleted) {
-      this.showWelcome();
-    } else {
-      this.showMap();
-      this.showBottomNav();
-    }
+    this.showMap();
+    this.showBottomNav();
   },
 
   registerSW() {
@@ -46,7 +40,6 @@ const App = {
     grammarIds.forEach(id => defaultWeights[id] = 1);
 
     this.state = raw ? JSON.parse(raw) : {
-      diagnosticCompleted: false,
       unlockedNodes: [],
       nodeWeights: defaultWeights,
       practiceMode: 'random',

@@ -204,6 +204,13 @@ p { margin-bottom: 12px; color: var(--muted); }
 
 .map-children.hidden { display: none; }
 
+.map-subcategory {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+  margin-top: 6px;
+}
+
 .map-node {
   display: flex;
   align-items: center;

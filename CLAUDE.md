@@ -8,18 +8,25 @@
 
 ## 文件结构
 
-- `index.html` — 全部页面结构（欢迎/诊断/思维导图/练习/课文回顾/设置）
+- `index.html` — 全部页面结构（思维导图/练习/课文回顾/设置）
 - `style.css` — 全部样式，主题色变量在 `:root`（accent `#4ECDC4`）
 - `app.js` — 核心：App 对象、init、状态读写（localStorage）、导航、页面切换、工具函数、DOMContentLoaded 全局事件绑定
-- `diagnostic.js` — 入门诊断流程
 - `map.js` — 思维导图（变格法视图 + 六格视图）
 - `practice.js` — 例句练习：抽题、打字验证（灰→黑渐进显示）、高亮、规则面板、完成后课文逐段回顾
 - `chat.js` — AI 语法助手（服务商配置 + 对话）
 - `settings.js` — 设置页：练习模式、权重、AI Key、自定义例句、重置
 - `texts.js` — 课文回顾：导入/编辑/删除课文
 - 各模块通过 `Object.assign(App, { ... })` 挂到 App 上；`index.html` 中 app.js 必须最先加载
-- `grammar-data.json` — 语法框架（17 个语法点、变格表、六格用法）
+- `grammar-data.json` — 语法框架 + 六格用法
 - `sentences-data.json` — 85 条例句
+
+## 语法框架结构
+
+root（俄语语法框架）→ 5 个 category 分支：noun-decl 名词变格、adj-decl 形容词变格、num 数词、pron 代词、verb 动词。名词分支下还有一层子 category（三大变格法 + 特殊变化），其余分支直接挂 grammarPoint。
+
+带 `pending: true` 的 grammarPoint 是待补充骨架：思维导图显示"待补充"，六格视图/权重/自定义例句里要过滤掉（`!n.pending`），也不生成例句。填写内容时去掉 pending 并补齐字段（exampleWord、description、declensionTable、highlight、tips）。
+
+动词板块不适用"格"的概念：未来动词例句用变位形式（时态×人称）代替 case，规则面板显示变位表，按格筛选不作用于动词。
 
 ## 关键约定（改代码时必须遵守）
 

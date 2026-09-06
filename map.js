@@ -35,55 +35,68 @@ Object.assign(App, {
   renderDeclensionView(container) {
     const nodes = this.data.framework.nodes;
     const root = nodes.find(n => n.type === 'root');
-    const categories = nodes.filter(n => n.type === 'category' && n.parentId === root.id);
+    const branches = nodes.filter(n => n.type === 'category' && n.parentId === root.id);
 
-    categories.forEach(cat => {
-      const catEl = document.createElement('div');
-      catEl.className = 'map-category';
+    const renderPoint = (child) => {
+      const nodeEl = document.createElement('div');
+      const isActive = this.state.unlockedNodes.includes(child.id);
+      nodeEl.className = `map-node ${isActive ? 'active' : ''}`;
+      nodeEl.innerHTML = `
+        <div class="node-dot"></div>
+        <div class="node-info">
+          <div class="node-name">${child.name}</div>
+          <div class="node-example">${child.pending ? '待补充' : `例：${child.exampleWord}`}</div>
+        </div>
+      `;
+      nodeEl.onclick = () => this.toggleNode(child.id);
+      return nodeEl;
+    };
+
+    branches.forEach(branch => {
+      const branchEl = document.createElement('div');
+      branchEl.className = 'map-category';
 
       const header = document.createElement('div');
       header.className = 'map-category-header';
-      const isCollapsed = this.state.collapsedCategories?.includes(cat.id);
+      const isCollapsed = this.state.collapsedCategories?.includes(branch.id);
       if (isCollapsed) header.classList.add('collapsed');
 
-      const catUnlocked = this.state.unlockedNodes.includes(cat.id);
+      const branchUnlocked = this.state.unlockedNodes.includes(branch.id);
       header.innerHTML = `
-        <span style="color:${catUnlocked ? 'var(--success)' : 'var(--muted)'};">●</span>
-        <span>${cat.name}</span>
+        <span style="color:${branchUnlocked ? 'var(--success)' : 'var(--muted)'};">●</span>
+        <span>${branch.name}</span>
         <span class="chevron">▼</span>
       `;
-      header.onclick = () => this.toggleCategory(cat.id);
-      catEl.appendChild(header);
+      header.onclick = () => this.toggleCategory(branch.id);
+      branchEl.appendChild(header);
 
       const childrenContainer = document.createElement('div');
       childrenContainer.className = 'map-children';
       if (isCollapsed) childrenContainer.classList.add('hidden');
 
-      const children = nodes.filter(n => n.parentId === cat.id && n.type === 'grammarPoint');
+      const children = nodes.filter(n => n.parentId === branch.id);
       children.forEach(child => {
-        const nodeEl = document.createElement('div');
-        const isActive = this.state.unlockedNodes.includes(child.id);
-        nodeEl.className = `map-node ${isActive ? 'active' : ''}`;
-        nodeEl.innerHTML = `
-          <div class="node-dot"></div>
-          <div class="node-info">
-            <div class="node-name">${child.name}</div>
-            <div class="node-example">例：${child.exampleWord}</div>
-          </div>
-        `;
-        nodeEl.onclick = () => this.toggleNode(child.id);
-        childrenContainer.appendChild(nodeEl);
+        if (child.type === 'category') {
+          const subHeader = document.createElement('div');
+          subHeader.className = 'map-subcategory';
+          subHeader.textContent = child.name;
+          childrenContainer.appendChild(subHeader);
+          nodes.filter(n => n.parentId === child.id && n.type === 'grammarPoint')
+            .forEach(gp => childrenContainer.appendChild(renderPoint(gp)));
+        } else if (child.type === 'grammarPoint') {
+          childrenContainer.appendChild(renderPoint(child));
+        }
       });
 
-      catEl.appendChild(childrenContainer);
-      container.appendChild(catEl);
+      branchEl.appendChild(childrenContainer);
+      container.appendChild(branchEl);
     });
   },
 
   renderCaseView(container) {
     const caseOrder = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional'];
     const caseIndexMap = { nominative: 0, genitive: 1, dative: 2, accusative: 3, instrumental: 4, prepositional: 5 };
-    const grammarNodes = this.data.framework.nodes.filter(n => n.type === 'grammarPoint');
+    const grammarNodes = this.data.framework.nodes.filter(n => n.type === 'grammarPoint' && !n.pending);
 
     caseOrder.forEach(caseKey => {
       const usage = this.data.caseUsages[caseKey];
@@ -170,9 +183,12 @@ Object.assign(App, {
       this.state.unlockedNodes.splice(idx, 1);
     } else {
       this.state.unlockedNodes.push(nodeId);
-      const node = this.data.framework.nodes.find(n => n.id === nodeId);
-      if (node && node.parentId && !this.state.unlockedNodes.includes(node.parentId)) {
-        this.state.unlockedNodes.push(node.parentId);
+      let node = this.data.framework.nodes.find(n => n.id === nodeId);
+      while (node && node.parentId) {
+        if (!this.state.unlockedNodes.includes(node.parentId)) {
+          this.state.unlockedNodes.push(node.parentId);
+        }
+        node = this.data.framework.nodes.find(n => n.id === node.parentId);
       }
     }
     this.saveState();

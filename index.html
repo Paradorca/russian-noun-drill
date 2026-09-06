@@ -4,50 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#4ECDC4">
-  <title>俄语名词变格练习</title>
+  <title>俄语语法练习</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="app">
-
-    <!-- Welcome -->
-    <div id="welcome-page" class="page active">
-      <div class="text-center mt-4">
-        <div class="welcome-logo">Я</div>
-        <h1>俄语名词变格<br>朗读练习</h1>
-        <p class="mb-4">结构化掌握俄语名词三大变格法<br>每日朗读例句，维持语感</p>
-        <div class="card text-center mb-4">
-          <div class="card-title">📊 内置 17 个语法点</div>
-          <div class="card-sub">覆盖日常交流所需的全部名词变格类型</div>
-        </div>
-        <div class="card text-center mb-4">
-          <div class="card-title">🎯 四种练习模式</div>
-          <div class="card-sub">按词尾分组 / 按格分组 / 全随机 / 特殊变化专项</div>
-        </div>
-        <button id="start-diagnostic-btn" class="btn btn-primary">开始入门诊断</button>
-      </div>
-    </div>
-
-    <!-- Diagnostic -->
-    <div id="diagnostic-page" class="page">
-      <h2 id="diagnostic-title">入门诊断</h2>
-      <div class="question-counter" id="question-counter">问题 1 / 7</div>
-      <div class="progress-bar">
-        <div class="progress-fill" id="progress-fill" style="width:0%"></div>
-      </div>
-      <div class="card mb-4">
-        <div id="question-text" class="card-title" style="font-size:1.1rem;line-height:1.6;"></div>
-      </div>
-      <div id="options-container"></div>
-
-      <div id="diagnostic-complete" class="hidden text-center mt-4">
-        <div class="welcome-logo" style="margin-top:20px;">✓</div>
-        <h2>诊断完成！</h2>
-        <p>已根据你的回答点亮了对应的语法点。<br>你可以在思维导图中随时调整。</p>
-        <button id="go-to-map-btn" class="btn btn-primary">进入思维导图</button>
-      </div>
-    </div>
 
     <!-- Map -->
     <div id="map-page" class="page">
@@ -298,7 +260,6 @@
   </div>
 
   <script src="app.js"></script>
-  <script src="diagnostic.js"></script>
   <script src="map.js"></script>
   <script src="practice.js"></script>
   <script src="chat.js"></script>

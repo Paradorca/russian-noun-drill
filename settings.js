@@ -70,7 +70,7 @@ Object.assign(App, {
 
     const weightList = document.getElementById('weight-list');
     weightList.innerHTML = '';
-    const grammarNodes = this.data.framework.nodes.filter(n => n.type === 'grammarPoint');
+    const grammarNodes = this.data.framework.nodes.filter(n => n.type === 'grammarPoint' && !n.pending);
     grammarNodes.forEach(node => {
       const w = this.state.nodeWeights[node.id] || 1;
       const isUnlocked = this.state.unlockedNodes.includes(node.id);
