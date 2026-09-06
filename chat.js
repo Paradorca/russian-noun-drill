@@ -30,7 +30,7 @@ Object.assign(App, {
     const provider = this.aiProviders[this.state.aiProvider || 'deepseek'];
     let systemPrompt = '你是一位俄语语法老师，用简体中文回答。只回答与俄语语法、句法、名词变格相关的问题；如果问题无关，礼貌地拒绝。回答要简洁，控制在150字以内。';
     if (s) {
-      systemPrompt += `\n\n当前例句：${s.sentenceRU}\n中文：${s.sentenceZH}\n变格词：「${s.targetWordForm}」（${this.caseName(s.case)}，${s.number === 'singular' ? '单数' : '复数'}，语法点：${s.grammarPointName}）`;
+      systemPrompt += `\n\n当前例句：${s.sentenceRU}\n中文：${s.sentenceZH}\n变格词：「${s.targetWordForm}」（${this.caseName(s.case)}，${this.formName(s)}，语法点：${s.grammarPointName}）`;
     }
     const messages = [
       { role: 'system', content: systemPrompt },

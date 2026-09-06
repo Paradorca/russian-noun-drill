@@ -39,6 +39,8 @@ Object.assign(App, {
     if (branch.id === 'noun-decl') {
       body.appendChild(this.renderRefCard('📐 变格规则', this.buildDeclTableHTML()));
       body.appendChild(this.renderRefCard('📘 格的含义', this.buildCaseMeaningHTML()));
+      card.appendChild(body);
+      return card;
     }
 
     const renderPoint = (child) => {
