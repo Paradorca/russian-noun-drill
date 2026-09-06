@@ -26,7 +26,13 @@ root（俄语语法框架）→ 5 个 category 分支：noun-decl 名词变格�
 
 带 `pending: true` 的 grammarPoint 是待补充骨架：思维导图显示"待补充"，自定义例句的语法点下拉要过滤掉（`!n.pending`），也不生成例句。填写内容时去掉 pending 并补齐字段（exampleWord、description、declensionTable、highlight、tips）。
 
-形容词板块：节点带 `tableType: "adjective"`，declensionTable 为四键（masculine/neuter/feminine/plural，各 6 格）；例句用 `form` 字段（masculine/neuter/feminine/plural）代替名词的 `number`，显示标签统一走 `App.formName(s)`。规则面板按 `tableType` 渲染四列表或单复数表。
+形容词板块的 grammarPoint 用 `tableType` 区分渲染方式：
+- `adjective`：declensionTable 四键（masculine/neuter/feminine/plural，各 6 格），规则面板渲染四列表；`examples` 数组可挂多张表（如混合变化的三个例子）
+- `short`：declensionTable 四键为纯字符串（短尾四形式），规则面板渲染单行四形式
+- `comparative`：`comparativePairs` 数组（{base, comparative}），规则面板渲染「原级→比较级」表；例句 form 用 comparative（简单式）/ compound（复合式）
+- `superlative`：`superlativePairs` 数组（{base, superlative}），规则面板渲染「原级→最高级」表；例句照常按格×性（简单式按普通形容词变格，复合式目标词为 самый 变格）
+
+例句 `form` 字段取值：masculine/neuter/feminine/plural（形容词与短尾）、comparative/compound（比较级）；名词仍用 `number`。显示标签统一走 `App.formName(s)`。case-usage 块对 short/comparative 不渲染。
 
 动词板块不适用"格"的概念：未来动词例句用变位形式（时态×人称）代替 case，规则面板显示变位表，按格筛选不作用于动词。
 
