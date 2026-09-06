@@ -170,29 +170,30 @@ Object.assign(App, {
   buildRuleHTML(gpId, currentCase) {
     const node = this.data.framework.nodes.find(n => n.id === gpId);
     if (!node) return '';
-    let tableHeader, tableRows;
-    if (node.tableType === 'adjective') {
-      const t = node.declensionTable;
-      tableHeader = '<tr><th>格</th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr>';
-      tableRows = node.caseNames.map((cn, i) => {
-        return `<tr><td>${cn}</td><td>${t.masculine[i]}</td><td>${t.neuter[i]}</td><td>${t.feminine[i]}</td><td>${t.plural[i]}</td></tr>`;
-      }).join('');
-    } else {
-      tableHeader = '<tr><th>格</th><th>单数</th><th>复数</th></tr>';
-      tableRows = node.caseNames.map((cn, i) => {
-        return `<tr><td>${cn}</td><td>${node.declensionTable.singular[i]}</td><td>${node.declensionTable.plural[i]}</td></tr>`;
-      }).join('');
-    }
+
+    const renderTable = (table, word) => {
+      let header, rows;
+      if (node.tableType === 'adjective') {
+        header = '<tr><th>格</th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr>';
+        rows = node.caseNames.map((cn, i) => {
+          return `<tr><td>${cn}</td><td>${table.masculine[i]}</td><td>${table.neuter[i]}</td><td>${table.feminine[i]}</td><td>${table.plural[i]}</td></tr>`;
+        }).join('');
+      } else {
+        header = '<tr><th>格</th><th>单数</th><th>复数</th></tr>';
+        rows = node.caseNames.map((cn, i) => {
+          return `<tr><td>${cn}</td><td>${table.singular[i]}</td><td>${table.plural[i]}</td></tr>`;
+        }).join('');
+      }
+      return `<h5 style="color:var(--text);font-size:0.95rem;margin:12px 0 4px;">${word}</h5><table class="rule-table">${header}${rows}</table>`;
+    };
 
     let html = `
       <h4>${node.name}（${node.exampleWord}）</h4>
       <p style="color:var(--muted);font-size:0.9rem;margin-bottom:10px;">${node.description}</p>
       <p class="highlight">${node.highlight}</p>
-      <table class="rule-table">
-        ${tableHeader}
-        ${tableRows}
-      </table>
-      <p style="color:var(--muted);font-size:0.85rem;margin-top:10px;">💡 ${node.tips}</p>
+      ${renderTable(node.declensionTable, node.exampleWord)}
+      ${(node.examples || []).map(e => renderTable(e.table, e.word)).join('')}
+      <p style="color:var(--muted);font-size:0.85rem;margin-top:12px;">💡 ${node.tips}</p>
     `;
 
     // Add case usage for current sentence's case

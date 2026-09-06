@@ -1980,5 +1980,308 @@
         "brief": "пала́тка 的前置格（复数）"
       }
     ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "хороший",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "У меня́ есть хоро́ший друг.",
+    "sentenceZH": "我有一个好朋友。",
+    "targetWordForm": "хоро́ший",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "хороший",
+    "case": "nominative",
+    "form": "feminine",
+    "sentenceRU": "Она́ хоро́шая учи́тельница.",
+    "sentenceZH": "她是一位好老师。",
+    "targetWordForm": "хоро́шая",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "хороший",
+    "case": "nominative",
+    "form": "neuter",
+    "sentenceRU": "Это хоро́шее вино́.",
+    "sentenceZH": "这是好酒。",
+    "targetWordForm": "хоро́шее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "хороший",
+    "case": "accusative",
+    "form": "masculine",
+    "sentenceRU": "Я зна́ю хоро́шего врача́.",
+    "sentenceZH": "我认识一位好医生。",
+    "targetWordForm": "хоро́шего",
+    "otherDeclensions": [
+      {
+        "word": "врача́",
+        "case": "accusative",
+        "brief": "врач 的宾格（单数，动物名词）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "хороший",
+    "case": "prepositional",
+    "form": "feminine",
+    "sentenceRU": "Мы говори́ли о хоро́шей кни́ге.",
+    "sentenceZH": "我们谈论了一本好书。",
+    "targetWordForm": "хоро́шей",
+    "otherDeclensions": [
+      {
+        "word": "кни́ге",
+        "case": "prepositional",
+        "brief": "кни́га 的前置格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "хороший",
+    "case": "instrumental",
+    "form": "masculine",
+    "sentenceRU": "Он дово́лен хоро́шим результа́том.",
+    "sentenceZH": "他对好成绩很满意。",
+    "targetWordForm": "хоро́шим",
+    "otherDeclensions": [
+      {
+        "word": "результа́том",
+        "case": "instrumental",
+        "brief": "результа́т 的工具格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "хороший",
+    "case": "dative",
+    "form": "masculine",
+    "sentenceRU": "Я помога́ю хоро́шему дру́гу.",
+    "sentenceZH": "我帮助一位好朋友。",
+    "targetWordForm": "хоро́шему",
+    "otherDeclensions": [
+      {
+        "word": "дру́гу",
+        "case": "dative",
+        "brief": "друг 的与格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "лёгкий",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "У меня́ лёгкий рюкза́к.",
+    "sentenceZH": "我有一个轻的背包。",
+    "targetWordForm": "лёгкий",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "лёгкий",
+    "case": "nominative",
+    "form": "feminine",
+    "sentenceRU": "Э́то лёгкая зада́ча.",
+    "sentenceZH": "这是一道简单的题。",
+    "targetWordForm": "лёгкая",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "лёгкий",
+    "case": "accusative",
+    "form": "feminine",
+    "sentenceRU": "Она́ чита́ет лёгкую кни́гу.",
+    "sentenceZH": "她在读一本轻松的书。",
+    "targetWordForm": "лёгкую",
+    "otherDeclensions": [
+      {
+        "word": "кни́гу",
+        "case": "accusative",
+        "brief": "кни́га 的宾格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "лёгкий",
+    "case": "accusative",
+    "form": "neuter",
+    "sentenceRU": "Мы вы́учили лёгкое пра́вило.",
+    "sentenceZH": "我们学会了一条简单的规则。",
+    "targetWordForm": "лёгкое",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "лёгкий",
+    "case": "instrumental",
+    "form": "feminine",
+    "sentenceRU": "Он дово́лен лёгкой побе́дой.",
+    "sentenceZH": "他对轻松的胜利很满意。",
+    "targetWordForm": "лёгкой",
+    "otherDeclensions": [
+      {
+        "word": "побе́дой",
+        "case": "instrumental",
+        "brief": "побе́да 的工具格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "лёгкий",
+    "case": "prepositional",
+    "form": "neuter",
+    "sentenceRU": "В лёгком пла́тье удо́бно.",
+    "sentenceZH": "穿轻薄连衣裙很舒服。",
+    "targetWordForm": "лёгком",
+    "otherDeclensions": [
+      {
+        "word": "пла́тье",
+        "case": "prepositional",
+        "brief": "пла́тье 的前置格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "лёгкий",
+    "case": "dative",
+    "form": "neuter",
+    "sentenceRU": "Она́ ра́да лёгкому зада́нию.",
+    "sentenceZH": "她对简单的任务很高兴。",
+    "targetWordForm": "лёгкому",
+    "otherDeclensions": [
+      {
+        "word": "зада́нию",
+        "case": "dative",
+        "brief": "зада́ние 的与格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "плохой",
+    "case": "nominative",
+    "form": "feminine",
+    "sentenceRU": "Сего́дня плоха́я пого́да.",
+    "sentenceZH": "今天天气不好。",
+    "targetWordForm": "плоха́я",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "плохой",
+    "case": "nominative",
+    "form": "neuter",
+    "sentenceRU": "Э́то плохо́е реше́ние.",
+    "sentenceZH": "这是个糟糕的决定。",
+    "targetWordForm": "плохо́е",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "плохой",
+    "case": "genitive",
+    "form": "masculine",
+    "sentenceRU": "Мы избежа́ли плохо́го результа́та.",
+    "sentenceZH": "我们避免了不好的结果。",
+    "targetWordForm": "плохо́го",
+    "otherDeclensions": [
+      {
+        "word": "результа́та",
+        "case": "genitive",
+        "brief": "результа́т 的属格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "плохой",
+    "case": "accusative",
+    "form": "masculine",
+    "sentenceRU": "Он получи́л плохо́й результа́т.",
+    "sentenceZH": "他得到了不好的结果。",
+    "targetWordForm": "плохо́й",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "плохой",
+    "case": "prepositional",
+    "form": "feminine",
+    "sentenceRU": "Я слы́шал о плохо́й но́вости.",
+    "sentenceZH": "我听到了坏消息。",
+    "targetWordForm": "плохо́й",
+    "otherDeclensions": [
+      {
+        "word": "но́вости",
+        "case": "prepositional",
+        "brief": "но́вость 的前置格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "плохой",
+    "case": "instrumental",
+    "form": "neuter",
+    "sentenceRU": "Он недово́лен плохи́м реше́нием.",
+    "sentenceZH": "他对糟糕的决定不满意。",
+    "targetWordForm": "плохи́м",
+    "otherDeclensions": [
+      {
+        "word": "реше́нием",
+        "case": "instrumental",
+        "brief": "реше́ние 的工具格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-mixed",
+    "grammarPointName": "混合变化",
+    "word": "плохой",
+    "case": "dative",
+    "form": "masculine",
+    "sentenceRU": "Не ве́рь плохо́му сове́ту.",
+    "sentenceZH": "不要相信坏建议。",
+    "targetWordForm": "плохо́му",
+    "otherDeclensions": [
+      {
+        "word": "сове́ту",
+        "case": "dative",
+        "brief": "сове́т 的与格（单数）"
+      }
+    ]
   }
 ]
