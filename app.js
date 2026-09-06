@@ -101,7 +101,7 @@ const App = {
   },
   formName(s) {
     if (s.form) {
-      const map = { masculine: '阳性', neuter: '中性', feminine: '阴性', plural: '复数' };
+      const map = { masculine: '阳性', neuter: '中性', feminine: '阴性', plural: '复数', comparative: '比较级', compound: '复合比较级' };
       return map[s.form] || s.form;
     }
     return s.number === 'singular' ? '单数' : '复数';

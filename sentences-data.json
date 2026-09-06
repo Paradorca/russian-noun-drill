@@ -2415,5 +2415,221 @@
     "sentenceZH": "书很有趣。",
     "targetWordForm": "интере́сна",
     "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Э́тот дом краси́вее того́.",
+    "sentenceZH": "这栋房子比那栋更美。",
+    "targetWordForm": "краси́вее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "интересный",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Э́та кни́га интере́снее той.",
+    "sentenceZH": "这本书比那本更有趣。",
+    "targetWordForm": "интере́снее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "дорогой",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Но́вый телефо́н доро́же ста́рого.",
+    "sentenceZH": "新手机比旧手机贵。",
+    "targetWordForm": "доро́же",
+    "otherDeclensions": [
+      {
+        "word": "ста́рого",
+        "case": "genitive",
+        "brief": "ста́рый 的属格（比较对象）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "хороший",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Сего́дня пого́да лу́чше, чем вчера́.",
+    "sentenceZH": "今天天气比昨天好。",
+    "targetWordForm": "лу́чше",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "плохой",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Э́та зада́ча ху́же, чем пре́жняя.",
+    "sentenceZH": "这道题比上一道更差。",
+    "targetWordForm": "ху́же",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "старый",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Мой брат ста́рше меня́.",
+    "sentenceZH": "我哥哥比我大。",
+    "targetWordForm": "ста́рше",
+    "otherDeclensions": [
+      {
+        "word": "бра́та",
+        "case": "genitive",
+        "brief": "брат 的属格（比较对象）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "короткий",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Э́тот путь коро́че.",
+    "sentenceZH": "这条路更短。",
+    "targetWordForm": "коро́че",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "тихий",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Она́ говори́т ти́ше бра́та.",
+    "sentenceZH": "她说话比哥哥轻。",
+    "targetWordForm": "ти́ше",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "тяжёлый",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Э́тот чемода́н тяжеле́е.",
+    "sentenceZH": "这个箱子更重。",
+    "targetWordForm": "тяжеле́е",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "дешёвый",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Э́то вино́ деше́вле.",
+    "sentenceZH": "这种酒更便宜。",
+    "targetWordForm": "деше́вле",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "быстрый",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Он бе́гает быстре́е меня́.",
+    "sentenceZH": "他跑得比我快。",
+    "targetWordForm": "быстре́е",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "длинный",
+    "case": "nominative",
+    "form": "comparative",
+    "sentenceRU": "Э́та у́лица длинне́е той.",
+    "sentenceZH": "这条街比那条更长。",
+    "targetWordForm": "длинне́е",
+    "otherDeclensions": [
+      {
+        "word": "той",
+        "case": "genitive",
+        "brief": "та 的属格（比较对象）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "удобный",
+    "case": "nominative",
+    "form": "compound",
+    "sentenceRU": "Э́тот вариа́нт бо́лее удо́бный.",
+    "sentenceZH": "这个方案更方便。",
+    "targetWordForm": "бо́лее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "трудный",
+    "case": "nominative",
+    "form": "compound",
+    "sentenceRU": "Э́та зада́ча бо́лее тру́дная.",
+    "sentenceZH": "这道题更难。",
+    "targetWordForm": "бо́лее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "тёплый",
+    "case": "nominative",
+    "form": "compound",
+    "sentenceRU": "Сего́дня пого́да ме́нее тёплая.",
+    "sentenceZH": "今天天气没那么暖和。",
+    "targetWordForm": "ме́нее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "надёжный",
+    "case": "nominative",
+    "form": "compound",
+    "sentenceRU": "Э́то реше́ние бо́лее надёжное.",
+    "sentenceZH": "这个决定更可靠。",
+    "targetWordForm": "бо́лее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "дорогой",
+    "case": "nominative",
+    "form": "compound",
+    "sentenceRU": "Он вы́брал бо́лее дорого́й вариа́нт.",
+    "sentenceZH": "他选了更贵的方案。",
+    "targetWordForm": "бо́лее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-comparative",
+    "grammarPointName": "比较级",
+    "word": "важный",
+    "case": "nominative",
+    "form": "compound",
+    "sentenceRU": "Мы обсуди́ли бо́лее ва́жный вопро́с.",
+    "sentenceZH": "我们讨论了更重要的问题。",
+    "targetWordForm": "бо́лее",
+    "otherDeclensions": []
   }
 ]

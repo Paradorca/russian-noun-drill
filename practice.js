@@ -63,9 +63,13 @@ Object.assign(App, {
     const s = this.practice.queue[idx];
 
     document.getElementById('sentence-zh').textContent = s.sentenceZH;
+    const gpNode = this.data.framework.nodes.find(n => n.id === s.grammarPointId);
+    const secondPill = (gpNode && gpNode.tableType === 'comparative')
+      ? this.formName(s)
+      : `${this.caseName(s.case)} · ${this.formName(s)}`;
     document.getElementById('sentence-meta').innerHTML = `
       <span class="meta-pill">${s.grammarPointName}</span>
-      <span class="meta-pill">${this.caseName(s.case)} · ${this.formName(s)}</span>
+      <span class="meta-pill">${secondPill}</span>
     `;
 
     // Hide any open popup
@@ -190,17 +194,26 @@ Object.assign(App, {
       return `<h5 style="color:var(--text);font-size:0.95rem;margin:12px 0 4px;">${word}</h5><table class="rule-table">${header}${rows}</table>`;
     };
 
+    let tablesHTML;
+    if (node.tableType === 'comparative') {
+      const rows = (node.comparativePairs || []).map(p =>
+        `<tr><td>${p.base}</td><td>${p.comparative}</td></tr>`).join('');
+      tablesHTML = `<table class="rule-table"><tr><th>原级</th><th>比较级</th></tr>${rows}</table>`;
+    } else {
+      tablesHTML = renderTable(node.declensionTable, node.exampleWord) +
+        (node.examples || []).map(e => renderTable(e.table, e.word)).join('');
+    }
+
     let html = `
       <h4>${node.name}（${node.exampleWord}）</h4>
       <p style="color:var(--muted);font-size:0.9rem;margin-bottom:10px;">${node.description}</p>
       <p class="highlight">${node.highlight}</p>
-      ${renderTable(node.declensionTable, node.exampleWord)}
-      ${(node.examples || []).map(e => renderTable(e.table, e.word)).join('')}
+      ${tablesHTML}
       <p style="color:var(--muted);font-size:0.85rem;margin-top:12px;">💡 ${node.tips}</p>
     `;
 
     // Add case usage for current sentence's case
-    if (currentCase && this.data.caseUsages[currentCase]) {
+    if (currentCase && this.data.caseUsages[currentCase] && node.tableType !== 'short' && node.tableType !== 'comparative') {
       const usage = this.data.caseUsages[currentCase];
       html += `
         <div class="case-usage-block">
