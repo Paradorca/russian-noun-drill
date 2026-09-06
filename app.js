@@ -99,6 +99,13 @@ const App = {
     const map = { nominative: '主格', genitive: '属格', dative: '与格', accusative: '宾格', instrumental: '工具格', prepositional: '前置格' };
     return map[c] || c;
   },
+  formName(s) {
+    if (s.form) {
+      const map = { masculine: '阳性', neuter: '中性', feminine: '阴性', plural: '复数' };
+      return map[s.form] || s.form;
+    }
+    return s.number === 'singular' ? '单数' : '复数';
+  },
 };
 
 // Global event bindings

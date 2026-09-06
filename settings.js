@@ -52,26 +52,38 @@ Object.assign(App, {
       });
     }
 
+    const formKeyLabels = { singular: '单数', plural: '复数', masculine: '阳性', neuter: '中性', feminine: '阴性' };
+    const updateFormOptions = () => {
+      const gpId = document.getElementById('custom-grammar').value;
+      const node = this.data.framework.nodes.find(n => n.id === gpId);
+      const sel = document.getElementById('custom-number');
+      const keys = node && node.tableType === 'adjective'
+        ? ['masculine', 'neuter', 'feminine', 'plural']
+        : ['singular', 'plural'];
+      sel.innerHTML = keys.map(k => `<option value="${k}">${formKeyLabels[k]}</option>`).join('');
+    };
+
     const updatePreview = () => {
       const preview = document.getElementById('custom-rule-preview');
       const gpId = document.getElementById('custom-grammar').value;
       const caseKey = document.getElementById('custom-case').value;
-      const number = document.getElementById('custom-number').value;
+      const formKey = document.getElementById('custom-number').value;
       const node = this.data.framework.nodes.find(n => n.id === gpId);
       if (!node || !caseKey || !this.data.caseUsages[caseKey]) {
         preview.style.display = 'none';
         return;
       }
       const caseIdx = ['nominative','genitive','dative','accusative','instrumental','prepositional'].indexOf(caseKey);
-      const form = number === 'singular' ? node.declensionTable.singular[caseIdx] : node.declensionTable.plural[caseIdx];
-      preview.innerHTML = `<strong style="color:var(--accent);">${node.name} — ${this.data.caseUsages[caseKey].name}（${number === 'singular' ? '单数' : '复数'}）</strong><br>
+      const form = node.declensionTable[formKey]?.[caseIdx];
+      preview.innerHTML = `<strong style="color:var(--accent);">${node.name} — ${this.data.caseUsages[caseKey].name}（${formKeyLabels[formKey] || formKey}）</strong><br>
         变化形式：<span style="color:var(--text);font-weight:600;">${form}</span>`;
       preview.style.display = 'block';
     };
 
-    document.getElementById('custom-grammar').onchange = updatePreview;
+    document.getElementById('custom-grammar').onchange = () => { updateFormOptions(); updatePreview(); };
     document.getElementById('custom-case').onchange = updatePreview;
     document.getElementById('custom-number').onchange = updatePreview;
+    updateFormOptions();
     updatePreview();
 
     document.getElementById('add-custom-btn').onclick = () => {
@@ -80,7 +92,7 @@ Object.assign(App, {
       const source = document.getElementById('custom-source').value.trim();
       const grammarPointId = document.getElementById('custom-grammar').value;
       const caseKey = document.getElementById('custom-case').value;
-      const number = document.getElementById('custom-number').value;
+      const formKey = document.getElementById('custom-number').value;
       const targetWordForm = document.getElementById('custom-target').value.trim();
 
       if (!sentenceRU || !sentenceZH || !targetWordForm) {
@@ -94,13 +106,14 @@ Object.assign(App, {
         grammarPointName: node ? node.name : '',
         word: node ? node.exampleWord : '',
         case: caseKey,
-        number,
         sentenceRU,
         sentenceZH,
         targetWordForm,
         otherDeclensions: [],
         source: source || undefined
       };
+      if (node && node.tableType === 'adjective') newSentence.form = formKey;
+      else newSentence.number = formKey;
 
       this.state.userSentences.push(newSentence);
       this.saveState();
@@ -133,7 +146,7 @@ Object.assign(App, {
         <div style="font-size:0.85rem;color:var(--muted);margin-bottom:4px;">${s.sentenceZH}</div>
         <div style="display:flex;gap:6px;align-items:center;">
           <span class="meta-pill" style="font-size:0.75rem;">${s.grammarPointName}</span>
-          <span class="meta-pill" style="font-size:0.75rem;">${this.data.caseUsages[s.case]?.name || s.case} · ${s.number === 'singular' ? '单数' : '复数'}</span>
+          <span class="meta-pill" style="font-size:0.75rem;">${this.data.caseUsages[s.case]?.name || s.case} · ${this.formName(s)}</span>
           ${s.source ? `<span style="font-size:0.75rem;color:var(--muted);margin-left:auto;">来源：${s.source}</span>` : ''}
           <button onclick="App.deleteCustomSentence(${i})" style="margin-left:auto;background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;">删除</button>
         </div>

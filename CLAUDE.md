@@ -26,6 +26,8 @@ root（俄语语法框架）→ 5 个 category 分支：noun-decl 名词变格�
 
 带 `pending: true` 的 grammarPoint 是待补充骨架：思维导图显示"待补充"，自定义例句的语法点下拉要过滤掉（`!n.pending`），也不生成例句。填写内容时去掉 pending 并补齐字段（exampleWord、description、declensionTable、highlight、tips）。
 
+形容词板块：节点带 `tableType: "adjective"`，declensionTable 为四键（masculine/neuter/feminine/plural，各 6 格）；例句用 `form` 字段（masculine/neuter/feminine/plural）代替名词的 `number`，显示标签统一走 `App.formName(s)`。规则面板按 `tableType` 渲染四列表或单复数表。
+
 动词板块不适用"格"的概念：未来动词例句用变位形式（时态×人称）代替 case，规则面板显示变位表，按格筛选不作用于动词。
 
 ## 关键约定（改代码时必须遵守）

@@ -65,7 +65,7 @@ Object.assign(App, {
     document.getElementById('sentence-zh').textContent = s.sentenceZH;
     document.getElementById('sentence-meta').innerHTML = `
       <span class="meta-pill">${s.grammarPointName}</span>
-      <span class="meta-pill">${this.caseName(s.case)} · ${s.number === 'singular' ? '单数' : '复数'}</span>
+      <span class="meta-pill">${this.caseName(s.case)} · ${this.formName(s)}</span>
     `;
 
     // Hide any open popup
@@ -170,16 +170,26 @@ Object.assign(App, {
   buildRuleHTML(gpId, currentCase) {
     const node = this.data.framework.nodes.find(n => n.id === gpId);
     if (!node) return '';
-    const tableRows = node.caseNames.map((cn, i) => {
-      return `<tr><td>${cn}</td><td>${node.declensionTable.singular[i]}</td><td>${node.declensionTable.plural[i]}</td></tr>`;
-    }).join('');
+    let tableHeader, tableRows;
+    if (node.tableType === 'adjective') {
+      const t = node.declensionTable;
+      tableHeader = '<tr><th>格</th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr>';
+      tableRows = node.caseNames.map((cn, i) => {
+        return `<tr><td>${cn}</td><td>${t.masculine[i]}</td><td>${t.neuter[i]}</td><td>${t.feminine[i]}</td><td>${t.plural[i]}</td></tr>`;
+      }).join('');
+    } else {
+      tableHeader = '<tr><th>格</th><th>单数</th><th>复数</th></tr>';
+      tableRows = node.caseNames.map((cn, i) => {
+        return `<tr><td>${cn}</td><td>${node.declensionTable.singular[i]}</td><td>${node.declensionTable.plural[i]}</td></tr>`;
+      }).join('');
+    }
 
     let html = `
       <h4>${node.name}（${node.exampleWord}）</h4>
       <p style="color:var(--muted);font-size:0.9rem;margin-bottom:10px;">${node.description}</p>
       <p class="highlight">${node.highlight}</p>
       <table class="rule-table">
-        <tr><th>格</th><th>单数</th><th>复数</th></tr>
+        ${tableHeader}
         ${tableRows}
       </table>
       <p style="color:var(--muted);font-size:0.85rem;margin-top:10px;">💡 ${node.tips}</p>
