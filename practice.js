@@ -173,7 +173,10 @@ Object.assign(App, {
 
     const renderTable = (table, word) => {
       let header, rows;
-      if (node.tableType === 'adjective') {
+      if (node.tableType === 'short') {
+        header = '<tr><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr>';
+        rows = `<tr><td>${table.masculine}</td><td>${table.neuter}</td><td>${table.feminine}</td><td>${table.plural}</td></tr>`;
+      } else if (node.tableType === 'adjective') {
         header = '<tr><th>格</th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr>';
         rows = node.caseNames.map((cn, i) => {
           return `<tr><td>${cn}</td><td>${table.masculine[i]}</td><td>${table.neuter[i]}</td><td>${table.feminine[i]}</td><td>${table.plural[i]}</td></tr>`;

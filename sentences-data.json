@@ -2283,5 +2283,137 @@
         "brief": "сове́т 的与格（单数）"
       }
     ]
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "Э́тот го́род о́чень кра́сив.",
+    "sentenceZH": "这座城市很美。",
+    "targetWordForm": "кра́сив",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "feminine",
+    "sentenceRU": "Э́та де́вушка о́чень краси́ва.",
+    "sentenceZH": "这个女孩很美。",
+    "targetWordForm": "краси́ва",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "neuter",
+    "sentenceRU": "Э́то ме́сто краси́во.",
+    "sentenceZH": "这个地方很美。",
+    "targetWordForm": "краси́во",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "plural",
+    "sentenceRU": "Э́ти цветы́ краси́вы.",
+    "sentenceZH": "这些花很美。",
+    "targetWordForm": "краси́вы",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "Я рад тебя́ ви́деть.",
+    "sentenceZH": "很高兴见到你。",
+    "targetWordForm": "рад",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "feminine",
+    "sentenceRU": "Она́ гото́ва к экза́мену.",
+    "sentenceZH": "她为考试做好了准备。",
+    "targetWordForm": "гото́ва",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "plural",
+    "sentenceRU": "Мы гото́вы отве́тить на вопро́с.",
+    "sentenceZH": "我们准备好回答问题了。",
+    "targetWordForm": "гото́вы",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "Уро́к был интере́сен.",
+    "sentenceZH": "课很有趣。",
+    "targetWordForm": "интере́сен",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "Э́тот вопро́с о́чень тру́ден.",
+    "sentenceZH": "这个问题很难。",
+    "targetWordForm": "тру́ден",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "plural",
+    "sentenceRU": "Вы соверше́нно пра́вы.",
+    "sentenceZH": "你们完全正确。",
+    "targetWordForm": "пра́вы",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "Он уже́ свобо́ден.",
+    "sentenceZH": "他已经有空了。",
+    "targetWordForm": "свобо́ден",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-short",
+    "grammarPointName": "短尾形容词",
+    "word": "красивый",
+    "case": "nominative",
+    "form": "feminine",
+    "sentenceRU": "Кни́га была́ интере́сна.",
+    "sentenceZH": "书很有趣。",
+    "targetWordForm": "интере́сна",
+    "otherDeclensions": []
   }
 ]

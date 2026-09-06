@@ -57,10 +57,18 @@ Object.assign(App, {
       const gpId = document.getElementById('custom-grammar').value;
       const node = this.data.framework.nodes.find(n => n.id === gpId);
       const sel = document.getElementById('custom-number');
-      const keys = node && node.tableType === 'adjective'
-        ? ['masculine', 'neuter', 'feminine', 'plural']
-        : ['singular', 'plural'];
-      sel.innerHTML = keys.map(k => `<option value="${k}">${formKeyLabels[k]}</option>`).join('');
+      const caseSel = document.getElementById('custom-case');
+      if (node && node.tableType === 'short') {
+        sel.innerHTML = ['masculine', 'neuter', 'feminine', 'plural'].map(k => `<option value="${k}">${formKeyLabels[k]}</option>`).join('');
+        caseSel.value = 'nominative';
+        caseSel.disabled = true;
+      } else {
+        const keys = node && node.tableType === 'adjective'
+          ? ['masculine', 'neuter', 'feminine', 'plural']
+          : ['singular', 'plural'];
+        sel.innerHTML = keys.map(k => `<option value="${k}">${formKeyLabels[k]}</option>`).join('');
+        caseSel.disabled = false;
+      }
     };
 
     const updatePreview = () => {
@@ -74,7 +82,9 @@ Object.assign(App, {
         return;
       }
       const caseIdx = ['nominative','genitive','dative','accusative','instrumental','prepositional'].indexOf(caseKey);
-      const form = node.declensionTable[formKey]?.[caseIdx];
+      const form = node.tableType === 'short'
+        ? node.declensionTable[formKey]
+        : node.declensionTable[formKey]?.[caseIdx];
       preview.innerHTML = `<strong style="color:var(--accent);">${node.name} — ${this.data.caseUsages[caseKey].name}（${formKeyLabels[formKey] || formKey}）</strong><br>
         变化形式：<span style="color:var(--text);font-weight:600;">${form}</span>`;
       preview.style.display = 'block';
@@ -112,7 +122,7 @@ Object.assign(App, {
         otherDeclensions: [],
         source: source || undefined
       };
-      if (node && node.tableType === 'adjective') newSentence.form = formKey;
+      if (node && (node.tableType === 'adjective' || node.tableType === 'short')) newSentence.form = formKey;
       else newSentence.number = formKey;
 
       this.state.userSentences.push(newSentence);
