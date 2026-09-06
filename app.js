@@ -3,7 +3,6 @@ const App = {
   sentences: null,
   state: {},
   practice: { queue: [], index: 0, todaySeen: new Set() },
-  currentMapView: 'declension',
 
   async init() {
     try {
@@ -43,7 +42,6 @@ const App = {
       unlockedNodes: [],
       nodeWeights: defaultWeights,
       practiceMode: 'random',
-      mapView: 'declension',
       dailyStats: { date: new Date().toISOString().slice(0,10), completed: 0 }
     };
 
@@ -70,11 +68,9 @@ const App = {
       this.state.dailyStats = { date: today, completed: 0 };
       this.saveState();
     }
-    this.currentMapView = this.state.mapView || 'declension';
   },
 
   saveState() {
-    this.state.mapView = this.currentMapView;
     localStorage.setItem('russianNounDrillState', JSON.stringify(this.state));
   },
 

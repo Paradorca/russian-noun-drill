@@ -211,6 +211,61 @@ p { margin-bottom: 12px; color: var(--muted); }
   margin-top: 6px;
 }
 
+.map-refcard {
+  background: var(--card);
+  border-radius: 10px;
+}
+
+.map-refcard-header {
+  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.map-refcard-header .chevron {
+  color: var(--muted);
+  transition: transform 0.2s;
+}
+
+.map-refcard-body {
+  padding: 0 14px 14px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.decl-table {
+  min-width: 620px;
+  font-size: 0.8rem;
+}
+
+.case-meaning-item {
+  margin-bottom: 14px;
+}
+
+.case-meaning-item:last-child {
+  margin-bottom: 0;
+}
+
+.case-meaning-item h5 {
+  color: var(--accent);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.case-meaning-item p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 3px;
+  line-height: 1.5;
+}
+
 .map-node {
   display: flex;
   align-items: center;
@@ -246,33 +301,6 @@ p { margin-bottom: 12px; color: var(--muted); }
 .map-node .node-name { font-weight: 500; font-size: 0.95rem; }
 
 .map-node .node-example { font-size: 0.8rem; color: var(--muted); }
-
-/* View toggle */
-.view-toggle {
-  display: flex;
-  background: var(--secondary);
-  border-radius: var(--radius);
-  padding: 4px;
-  margin-bottom: 16px;
-}
-
-.view-toggle button {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  background: transparent;
-  color: var(--muted);
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.view-toggle button.active {
-  background: var(--card);
-  color: var(--text);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
 
 /* Practice */
 .sentence-card {

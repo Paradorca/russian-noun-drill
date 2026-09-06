@@ -8,34 +8,38 @@ Object.assign(App, {
   renderMap() {
     const container = document.getElementById('map-container');
     container.innerHTML = '';
-
-    // View toggle
-    const toggle = document.createElement('div');
-    toggle.className = 'view-toggle';
-    toggle.innerHTML = `
-      <button class="${this.currentMapView === 'declension' ? 'active' : ''}" data-view="declension">变格法视图</button>
-      <button class="${this.currentMapView === 'case' ? 'active' : ''}" data-view="case">六格视图</button>
-    `;
-    toggle.querySelectorAll('button').forEach(btn => {
-      btn.onclick = () => {
-        this.currentMapView = btn.dataset.view;
-        this.saveState();
-        this.renderMap();
-      };
-    });
-    container.appendChild(toggle);
-
-    if (this.currentMapView === 'declension') {
-      this.renderDeclensionView(container);
-    } else {
-      this.renderCaseView(container);
-    }
-  },
-
-  renderDeclensionView(container) {
     const nodes = this.data.framework.nodes;
     const root = nodes.find(n => n.type === 'root');
     const branches = nodes.filter(n => n.type === 'category' && n.parentId === root.id);
+    branches.forEach(branch => container.appendChild(this.renderBranchCard(branch, nodes)));
+  },
+
+  renderBranchCard(branch, nodes) {
+    const card = document.createElement('div');
+    card.className = 'map-category';
+
+    const header = document.createElement('div');
+    header.className = 'map-category-header';
+    const isCollapsed = this.state.collapsedCategories?.includes(branch.id);
+    if (isCollapsed) header.classList.add('collapsed');
+
+    const branchUnlocked = this.state.unlockedNodes.includes(branch.id);
+    header.innerHTML = `
+      <span style="color:${branchUnlocked ? 'var(--success)' : 'var(--muted)'};">●</span>
+      <span>${branch.name}</span>
+      <span class="chevron">▼</span>
+    `;
+    header.onclick = () => this.toggleCategory(branch.id);
+    card.appendChild(header);
+
+    const body = document.createElement('div');
+    body.className = 'map-children';
+    if (isCollapsed) body.classList.add('hidden');
+
+    if (branch.id === 'noun-decl') {
+      body.appendChild(this.renderRefCard('📐 变格规则', this.buildDeclTableHTML()));
+      body.appendChild(this.renderRefCard('📘 格的含义', this.buildCaseMeaningHTML()));
+    }
 
     const renderPoint = (child) => {
       const nodeEl = document.createElement('div');
@@ -52,108 +56,77 @@ Object.assign(App, {
       return nodeEl;
     };
 
-    branches.forEach(branch => {
-      const branchEl = document.createElement('div');
-      branchEl.className = 'map-category';
-
-      const header = document.createElement('div');
-      header.className = 'map-category-header';
-      const isCollapsed = this.state.collapsedCategories?.includes(branch.id);
-      if (isCollapsed) header.classList.add('collapsed');
-
-      const branchUnlocked = this.state.unlockedNodes.includes(branch.id);
-      header.innerHTML = `
-        <span style="color:${branchUnlocked ? 'var(--success)' : 'var(--muted)'};">●</span>
-        <span>${branch.name}</span>
-        <span class="chevron">▼</span>
-      `;
-      header.onclick = () => this.toggleCategory(branch.id);
-      branchEl.appendChild(header);
-
-      const childrenContainer = document.createElement('div');
-      childrenContainer.className = 'map-children';
-      if (isCollapsed) childrenContainer.classList.add('hidden');
-
-      const children = nodes.filter(n => n.parentId === branch.id);
-      children.forEach(child => {
-        if (child.type === 'category') {
-          const subHeader = document.createElement('div');
-          subHeader.className = 'map-subcategory';
-          subHeader.textContent = child.name;
-          childrenContainer.appendChild(subHeader);
-          nodes.filter(n => n.parentId === child.id && n.type === 'grammarPoint')
-            .forEach(gp => childrenContainer.appendChild(renderPoint(gp)));
-        } else if (child.type === 'grammarPoint') {
-          childrenContainer.appendChild(renderPoint(child));
-        }
-      });
-
-      branchEl.appendChild(childrenContainer);
-      container.appendChild(branchEl);
+    const children = nodes.filter(n => n.parentId === branch.id);
+    children.forEach(child => {
+      if (child.type === 'category') {
+        const subHeader = document.createElement('div');
+        subHeader.className = 'map-subcategory';
+        subHeader.textContent = child.name;
+        body.appendChild(subHeader);
+        nodes.filter(n => n.parentId === child.id && n.type === 'grammarPoint')
+          .forEach(gp => body.appendChild(renderPoint(gp)));
+      } else if (child.type === 'grammarPoint') {
+        body.appendChild(renderPoint(child));
+      }
     });
+
+    card.appendChild(body);
+    return card;
   },
 
-  renderCaseView(container) {
-    const caseOrder = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional'];
-    const caseIndexMap = { nominative: 0, genitive: 1, dative: 2, accusative: 3, instrumental: 4, prepositional: 5 };
-    const grammarNodes = this.data.framework.nodes.filter(n => n.type === 'grammarPoint' && !n.pending);
+  renderRefCard(title, innerHTML) {
+    const el = document.createElement('div');
+    el.className = 'map-refcard';
+    const head = document.createElement('div');
+    head.className = 'map-refcard-header';
+    head.innerHTML = `<span>${title}</span><span class="chevron">▼</span>`;
+    const bodyEl = document.createElement('div');
+    bodyEl.className = 'map-refcard-body hidden';
+    bodyEl.innerHTML = innerHTML;
+    head.onclick = () => {
+      bodyEl.classList.toggle('hidden');
+      head.querySelector('.chevron').style.transform =
+        bodyEl.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+    };
+    el.appendChild(head);
+    el.appendChild(bodyEl);
+    return el;
+  },
 
-    caseOrder.forEach(caseKey => {
-      const usage = this.data.caseUsages[caseKey];
-      const caseIdx = caseIndexMap[caseKey];
+  buildDeclTableHTML() {
+    const rows = [
+      ['1（主格）', '—', 'студе́нт', '-й', 'музе́й', '-ь', 'писа́тель', '-ий', 'санато́рий'],
+      ['2（属格）', '-а', 'студе́нта', '-я', 'музе́я', '-я', 'писа́теля', '-ия', 'санато́рия'],
+      ['3（与格）', '-у', 'студе́нту', '-ю', 'музе́ю', '-ю', 'писа́телю', '-ию', 'санато́рию'],
+      ['4（宾格）', '同一或二', 'студе́нта', '同一或二', 'музе́й', '同一或二', 'писа́теля', '同一或二', 'санато́рий'],
+      ['5（工具格）', '-ом', 'студе́нтом', '-ем', 'музе́ем', '-ем', 'писа́телем', '-ием', 'санато́рием'],
+      ['6（前置格）', '-е', 'о студе́нте', '-е', 'о музе́е', '-е', 'о писа́теле', '-ии', 'о санато́рии']
+    ];
+    const body = rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('');
+    return `
+      <div class="table-scroll">
+        <table class="rule-table decl-table">
+          <tr><th>格</th><th>辅音结尾</th><th>示例</th><th>-й 结尾</th><th>示例</th><th>-ь 结尾</th><th>示例</th><th>-ий 结尾</th><th>示例</th></tr>
+          ${body}
+        </table>
+      </div>
+    `;
+  },
 
-      const card = document.createElement('div');
-      card.className = 'card case-card';
-      card.style.marginBottom = '12px';
-
-      const header = document.createElement('div');
-      header.style.cssText = 'display:flex;justify-content:space-between;align-items:center;cursor:pointer;';
-      const isCaseActive = (this.state.unlockedCases || []).includes(caseKey);
-      header.innerHTML = `
-        <div style="display:flex;align-items:center;gap:10px;">
-          <span class="case-dot" style="width:14px;height:14px;border-radius:50%;background:${isCaseActive ? 'var(--success)' : '#ccc'};flex-shrink:0;cursor:pointer;transition:background 0.3s;box-shadow:${isCaseActive ? '0 0 8px rgba(123,160,152,0.4)' : 'none'};"></span>
-          <strong style="font-size:1.1rem;color:var(--text);">${usage.name}</strong>
+  buildCaseMeaningHTML() {
+    const order = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional'];
+    return order.map(k => {
+      const u = this.data.caseUsages[k];
+      return `
+        <div class="case-meaning-item">
+          <h5>${u.name}</h5>
+          <p><strong>含义：</strong>${u.meaning}</p>
+          <p><strong>用法：</strong>${u.usage}</p>
+          <p><strong>例句：</strong>${u.example}</p>
+          ${u.prepositions.length > 0 ? `<div class="prep-list">${u.prepositions.map(p => `<span class="prep-tag">${p}</span>`).join('')}</div>` : ''}
         </div>
-        <span class="chevron" style="color:var(--muted);transition:transform 0.2s;">▼</span>`;
-
-      const dot = header.querySelector('.case-dot');
-      dot.onclick = (e) => {
-        e.stopPropagation();
-        this.toggleCase(caseKey);
-      };
-
-      const detail = document.createElement('div');
-      detail.className = 'case-detail hidden';
-      detail.style.marginTop = '12px';
-
-      // Usage info
-      let detailHTML = `<p style="color:var(--muted);font-size:0.9rem;margin-bottom:8px;">${usage.meaning}</p>`;
-      detailHTML += `<p style="color:var(--muted);font-size:0.85rem;margin-bottom:8px;">${usage.usage}</p>`;
-      if (usage.prepositions.length > 0) {
-        detailHTML += `<div class="prep-list" style="margin-bottom:12px;">${usage.prepositions.map(p => `<span class="prep-tag">${p}</span>`).join('')}</div>`;
-      }
-
-      // Comparison table
-      detailHTML += `<table class="rule-table"><tr><th>变格类型</th><th>单数</th><th>复数</th></tr>`;
-      grammarNodes.forEach(node => {
-        const isUnlocked = this.state.unlockedNodes.includes(node.id);
-        const sForm = node.declensionTable.singular[caseIdx];
-        const pForm = node.declensionTable.plural[caseIdx];
-        detailHTML += `<tr style="${isUnlocked ? '' : 'opacity:0.5'}"><td>${node.name}</td><td>${sForm}</td><td>${pForm}</td></tr>`;
-      });
-      detailHTML += `</table>`;
-
-      detail.innerHTML = detailHTML;
-
-      header.onclick = () => {
-        detail.classList.toggle('hidden');
-        header.querySelector('.chevron').style.transform = detail.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
-      };
-
-      card.appendChild(header);
-      card.appendChild(detail);
-      container.appendChild(card);
-    });
+      `;
+    }).join('');
   },
 
   toggleCategory(catId) {
@@ -161,18 +134,6 @@ Object.assign(App, {
     if (collapsed.has(catId)) collapsed.delete(catId);
     else collapsed.add(catId);
     this.state.collapsedCategories = Array.from(collapsed);
-    this.saveState();
-    this.renderMap();
-  },
-
-  toggleCase(caseKey) {
-    const cases = new Set(this.state.unlockedCases || []);
-    if (cases.has(caseKey)) {
-      cases.delete(caseKey);
-    } else {
-      cases.add(caseKey);
-    }
-    this.state.unlockedCases = Array.from(cases);
     this.saveState();
     this.renderMap();
   },
@@ -193,5 +154,5 @@ Object.assign(App, {
     }
     this.saveState();
     this.renderMap();
-  },
+  }
 });
