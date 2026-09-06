@@ -42,15 +42,6 @@
 
         <div class="action-row">
           <button id="toggle-rule-btn" class="btn btn-secondary btn-small">📖 查看变化规则</button>
-          <button id="ask-ai-btn" class="btn btn-secondary btn-small">💬 问AI</button>
-        </div>
-
-        <div id="chat-panel" class="hidden" style="margin-bottom:12px;">
-          <div id="chat-messages" style="max-height:300px;overflow-y:auto;margin-bottom:10px;"></div>
-          <div style="display:flex;gap:8px;">
-            <input id="chat-input" type="text" placeholder="例如：为什么这里用属格？" style="flex:1;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:1rem;">
-            <button id="chat-send-btn" class="btn btn-primary btn-small">发送</button>
-          </div>
         </div>
 
         <button id="next-btn" class="btn btn-primary">下一句</button>
@@ -241,6 +232,19 @@
         <span>设置</span>
       </button>
     </nav>
+
+    <!-- AI Chat Window -->
+    <div id="ai-window" class="ai-window hidden">
+      <div class="ai-window-header">
+        <span>💬 AI 语法助手</span>
+        <button id="ai-close-btn" class="ai-close">收起</button>
+      </div>
+      <div id="chat-messages" class="ai-window-messages"></div>
+      <div class="ai-window-input">
+        <input id="chat-input" type="text" placeholder="例如：为什么这里用属格？" autocapitalize="off" autocorrect="off" spellcheck="false">
+        <button id="chat-send-btn" class="btn btn-primary btn-small">发送</button>
+      </div>
+    </div>
 
   </div>
 

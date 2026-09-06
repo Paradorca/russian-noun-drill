@@ -85,7 +85,7 @@ Object.assign(App, {
     if (!keepChat) {
       this.chatHistory = [];
       document.getElementById('chat-messages').innerHTML = '';
-      document.getElementById('chat-panel').classList.add('hidden');
+      document.getElementById('ai-window').classList.add('hidden');
     }
 
     const ruEl = document.getElementById('sentence-ru');
@@ -210,8 +210,8 @@ Object.assign(App, {
 
     let html = `
       <h4>${node.name}（${node.exampleWord}）</h4>
-      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:10px;">${node.description}</p>
-      <p class="highlight">${node.highlight}</p>
+      ${node.description ? `<p style="color:var(--muted);font-size:0.9rem;margin-bottom:10px;">${node.description}</p>` : ''}
+      ${node.highlight ? `<p class="highlight">${node.highlight}</p>` : ''}
       ${tablesHTML}
       <p style="color:var(--muted);font-size:0.85rem;margin-top:12px;">💡 ${node.tips}</p>
     `;

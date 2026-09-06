@@ -1,6 +1,15 @@
 Object.assign(App, {
   toggleChat() {
-    document.getElementById('chat-panel').classList.toggle('hidden');
+    const win = document.getElementById('ai-window');
+    if (!win) return;
+    const isOpen = !win.classList.contains('hidden');
+    if (isOpen) {
+      win.classList.add('hidden');
+    } else if (document.getElementById('practice-page').classList.contains('active')) {
+      win.classList.remove('hidden');
+      const input = document.getElementById('chat-input');
+      if (input) input.focus();
+    }
   },
 
   appendChatMsg(role, text) {

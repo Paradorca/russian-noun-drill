@@ -88,6 +88,10 @@ const App = {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     window.scrollTo(0, 0);
+    if (id !== 'practice-page') {
+      const win = document.getElementById('ai-window');
+      if (win) win.classList.add('hidden');
+    }
   },
 
   escapeHtml(text) {
@@ -116,11 +120,28 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('next-btn').onclick = () => App.nextSentence();
   document.getElementById('restart-btn').onclick = () => App.restartPractice();
   document.getElementById('reset-progress-btn').onclick = () => App.resetProgress();
-  document.getElementById('ask-ai-btn').onclick = () => App.toggleChat();
+  document.getElementById('ai-close-btn').onclick = () => App.toggleChat();
   document.getElementById('chat-send-btn').onclick = () => App.sendChat();
   document.getElementById('chat-input').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') App.sendChat();
   });
+
+  // Horizontal swipe on the app toggles the AI window
+  const appEl = document.getElementById('app');
+  let swipeX = null, swipeY = null;
+  appEl.addEventListener('touchstart', (e) => {
+    swipeX = e.touches[0].clientX;
+    swipeY = e.touches[0].clientY;
+  }, { passive: true });
+  appEl.addEventListener('touchend', (e) => {
+    if (swipeX == null) return;
+    const dx = e.changedTouches[0].clientX - swipeX;
+    const dy = e.changedTouches[0].clientY - swipeY;
+    swipeX = null; swipeY = null;
+    if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      App.toggleChat();
+    }
+  }, { passive: true });
 
   // Delegate click for other-declension words
   document.getElementById('sentence-ru').addEventListener('click', (e) => App.handleWordClick(e));
