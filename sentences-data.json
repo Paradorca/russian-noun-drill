@@ -1710,5 +1710,275 @@
         "brief": "дом 的前置格（复数）"
       }
     ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "nominative",
+    "form": "masculine",
+    "sentenceRU": "Мой си́ний рюкза́к стои́т в углу́.",
+    "sentenceZH": "我的蓝色背包放在角落里。",
+    "targetWordForm": "си́ний",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "nominative",
+    "form": "feminine",
+    "sentenceRU": "На столе́ лежи́т си́няя тетра́дь.",
+    "sentenceZH": "桌上放着一本蓝色练习本。",
+    "targetWordForm": "си́няя",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "nominative",
+    "form": "neuter",
+    "sentenceRU": "Си́нее мо́ре сего́дня споко́йно.",
+    "sentenceZH": "今天蓝色的大海很平静。",
+    "targetWordForm": "Си́нее",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "летний",
+    "case": "nominative",
+    "form": "plural",
+    "sentenceRU": "Ле́тние кани́кулы уже́ начали́сь.",
+    "sentenceZH": "暑假已经开始了。",
+    "targetWordForm": "Ле́тние",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "genitive",
+    "form": "masculine",
+    "sentenceRU": "У меня́ нет си́него карандаша́.",
+    "sentenceZH": "我没有蓝色铅笔。",
+    "targetWordForm": "си́него",
+    "otherDeclensions": [
+      {
+        "word": "карандаша́",
+        "case": "genitive",
+        "brief": "каранда́ш 的属格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "genitive",
+    "form": "feminine",
+    "sentenceRU": "Она́ вы́шла из си́ней пала́тки.",
+    "sentenceZH": "她从蓝色帐篷里出来。",
+    "targetWordForm": "си́ней",
+    "otherDeclensions": [
+      {
+        "word": "пала́тки",
+        "case": "genitive",
+        "brief": "пала́тка 的属格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "genitive",
+    "form": "plural",
+    "sentenceRU": "В ко́мнате мно́го си́них стульев.",
+    "sentenceZH": "房间里有很多蓝色椅子。",
+    "targetWordForm": "си́них",
+    "otherDeclensions": [
+      {
+        "word": "стульев",
+        "case": "genitive",
+        "brief": "стул 的属格（复数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "dative",
+    "form": "masculine",
+    "sentenceRU": "Мы подошли́ к си́нему до́му.",
+    "sentenceZH": "我们走近了蓝色的房子。",
+    "targetWordForm": "си́нему",
+    "otherDeclensions": [
+      {
+        "word": "до́му",
+        "case": "dative",
+        "brief": "дом 的与格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "dative",
+    "form": "feminine",
+    "sentenceRU": "Мы идём к си́ней маши́не.",
+    "sentenceZH": "我们走向蓝色的汽车。",
+    "targetWordForm": "си́ней",
+    "otherDeclensions": [
+      {
+        "word": "маши́не",
+        "case": "dative",
+        "brief": "маши́на 的与格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "accusative",
+    "form": "masculine",
+    "sentenceRU": "Я купи́л си́ний каранда́ш.",
+    "sentenceZH": "我买了一支蓝色铅笔。",
+    "targetWordForm": "си́ний",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "последний",
+    "case": "accusative",
+    "form": "masculine",
+    "sentenceRU": "Я уви́дел после́днего го́стя.",
+    "sentenceZH": "我看到了最后一位客人。",
+    "targetWordForm": "после́днего",
+    "otherDeclensions": [
+      {
+        "word": "го́стя",
+        "case": "accusative",
+        "brief": "гость 的宾格（单数，动物名词）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "accusative",
+    "form": "feminine",
+    "sentenceRU": "Она́ на́дела си́нюю ю́бку.",
+    "sentenceZH": "她穿上了蓝色裙子。",
+    "targetWordForm": "си́нюю",
+    "otherDeclensions": [
+      {
+        "word": "ю́бку",
+        "case": "accusative",
+        "brief": "ю́бка 的宾格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "accusative",
+    "form": "plural",
+    "sentenceRU": "Мы уви́дели си́ние маши́ны.",
+    "sentenceZH": "我们看见了蓝色的汽车。",
+    "targetWordForm": "си́ние",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "instrumental",
+    "form": "masculine",
+    "sentenceRU": "Он дово́лен си́ним рюкзако́м.",
+    "sentenceZH": "他对蓝色背包很满意。",
+    "targetWordForm": "си́ним",
+    "otherDeclensions": [
+      {
+        "word": "рюкзако́м",
+        "case": "instrumental",
+        "brief": "рюкза́к 的工具格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "instrumental",
+    "form": "feminine",
+    "sentenceRU": "Она́ дово́льна си́ней маши́ной.",
+    "sentenceZH": "她对蓝色的汽车很满意。",
+    "targetWordForm": "си́ней",
+    "otherDeclensions": [
+      {
+        "word": "маши́ной",
+        "case": "instrumental",
+        "brief": "маши́на 的工具格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "prepositional",
+    "form": "masculine",
+    "sentenceRU": "Я ду́маю о си́нем рюкзаке́.",
+    "sentenceZH": "我在考虑那个蓝色背包。",
+    "targetWordForm": "си́нем",
+    "otherDeclensions": [
+      {
+        "word": "рюкзаке́",
+        "case": "prepositional",
+        "brief": "рюкза́к 的前置格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "prepositional",
+    "form": "feminine",
+    "sentenceRU": "Мы говори́ли о си́ней кни́ге.",
+    "sentenceZH": "我们谈论了那本蓝色的书。",
+    "targetWordForm": "си́ней",
+    "otherDeclensions": [
+      {
+        "word": "кни́ге",
+        "case": "prepositional",
+        "brief": "кни́га 的前置格（单数）"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "adj-soft",
+    "grammarPointName": "软变化（-ний）",
+    "word": "синий",
+    "case": "prepositional",
+    "form": "plural",
+    "sentenceRU": "В си́них пала́тках тепло́.",
+    "sentenceZH": "蓝色帐篷里很暖和。",
+    "targetWordForm": "си́них",
+    "otherDeclensions": [
+      {
+        "word": "пала́тках",
+        "case": "prepositional",
+        "brief": "пала́тка 的前置格（复数）"
+      }
+    ]
   }
 ]
