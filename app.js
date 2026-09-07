@@ -143,6 +143,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, { passive: true });
 
+  // Keep the AI chat input above the on-screen keyboard
+  if (window.visualViewport) {
+    const vv = window.visualViewport;
+    const adjust = () => {
+      const kb = Math.max(0, window.innerHeight - vv.height - vv.offsetTop);
+      document.documentElement.style.setProperty('--kb-height', kb + 'px');
+    };
+    vv.addEventListener('resize', adjust);
+    vv.addEventListener('scroll', adjust);
+    adjust();
+  }
+
   // Delegate click for other-declension words
   document.getElementById('sentence-ru').addEventListener('click', (e) => App.handleWordClick(e));
 });

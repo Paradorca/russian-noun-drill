@@ -44,18 +44,18 @@ Object.assign(App, {
     }
 
     const renderPoint = (child) => {
-      const nodeEl = document.createElement('div');
-      const isActive = this.state.unlockedNodes.includes(child.id);
-      nodeEl.className = `map-node ${isActive ? 'active' : ''}`;
-      nodeEl.innerHTML = `
-        <div class="node-dot"></div>
-        <div class="node-info">
-          <div class="node-name">${child.name}</div>
-          <div class="node-example">${child.pending ? '待补充' : `例：${child.exampleWord}`}</div>
-        </div>
-      `;
-      nodeEl.onclick = () => this.toggleNode(child.id);
-      return nodeEl;
+      if (child.pending) {
+        const el = document.createElement('div');
+        el.className = 'map-node';
+        el.innerHTML = `
+          <div class="node-info">
+            <div class="node-name">${child.name}</div>
+            <div class="node-example">待补充</div>
+          </div>
+        `;
+        return el;
+      }
+      return this.renderGrammarCard(child);
     };
 
     const children = nodes.filter(n => n.parentId === branch.id);
@@ -85,6 +85,25 @@ Object.assign(App, {
     const bodyEl = document.createElement('div');
     bodyEl.className = 'map-refcard-body hidden';
     bodyEl.innerHTML = innerHTML;
+    head.onclick = () => {
+      bodyEl.classList.toggle('hidden');
+      head.querySelector('.chevron').style.transform =
+        bodyEl.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+    };
+    el.appendChild(head);
+    el.appendChild(bodyEl);
+    return el;
+  },
+
+  renderGrammarCard(node) {
+    const el = document.createElement('div');
+    el.className = 'map-refcard';
+    const head = document.createElement('div');
+    head.className = 'map-refcard-header';
+    head.innerHTML = `<span>${node.name}</span><span class="chevron">▼</span>`;
+    const bodyEl = document.createElement('div');
+    bodyEl.className = 'map-refcard-body hidden';
+    bodyEl.innerHTML = this.buildRuleHTML(node.id);
     head.onclick = () => {
       bodyEl.classList.toggle('hidden');
       head.querySelector('.chevron').style.transform =
@@ -140,21 +159,4 @@ Object.assign(App, {
     this.renderMap();
   },
 
-  toggleNode(nodeId) {
-    const idx = this.state.unlockedNodes.indexOf(nodeId);
-    if (idx > -1) {
-      this.state.unlockedNodes.splice(idx, 1);
-    } else {
-      this.state.unlockedNodes.push(nodeId);
-      let node = this.data.framework.nodes.find(n => n.id === nodeId);
-      while (node && node.parentId) {
-        if (!this.state.unlockedNodes.includes(node.parentId)) {
-          this.state.unlockedNodes.push(node.parentId);
-        }
-        node = this.data.framework.nodes.find(n => n.id === node.parentId);
-      }
-    }
-    this.saveState();
-    this.renderMap();
-  }
 });
