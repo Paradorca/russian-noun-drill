@@ -81,6 +81,12 @@ Object.assign(App, {
         preview.style.display = 'none';
         return;
       }
+      if (!node.declensionTable) {
+        preview.innerHTML = `<strong style="color:var(--accent);">${node.name} — ${this.data.caseUsages[caseKey].name}（${formKeyLabels[formKey] || formKey}）</strong><br>
+          变化形式：请自行填写（该语法点无固定变格表）`;
+        preview.style.display = 'block';
+        return;
+      }
       const caseIdx = ['nominative','genitive','dative','accusative','instrumental','prepositional'].indexOf(caseKey);
       const form = node.tableType === 'short'
         ? node.declensionTable[formKey]

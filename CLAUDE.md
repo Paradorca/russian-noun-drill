@@ -34,6 +34,8 @@ root（俄语语法框架）→ 5 个 category 分支：noun-decl 名词变格�
 
 例句 `form` 字段取值：masculine/neuter/feminine/plural（形容词与短尾）、comparative/compound（比较级）；名词仍用 `number`。显示标签统一走 `App.formName(s)`。case-usage 块对 short/comparative 不渲染。
 
+代词板块：人称代词用 `tableType: "personal"`，配 `personalTable`（`headers` 为 8 个人称代词 я/ты/он/она/оно/мы/вы/они，`rows` 为 6 格各形式），规则面板渲染 8 列×6 行宽表。人称代词例句仍用 `number`（单数/复数）区分，且不设 `declensionTable`（自定义例句预览需判空）。
+
 动词板块不适用"格"的概念：未来动词例句用变位形式（时态×人称）代替 case，规则面板显示变位表，按格筛选不作用于动词。
 
 ## 关键约定（改代码时必须遵守）

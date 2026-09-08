@@ -2781,5 +2781,522 @@
     "sentenceZH": "这些是最有趣的课。",
     "targetWordForm": "са́мые",
     "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "я",
+    "case": "genitive",
+    "number": "singular",
+    "sentenceRU": "У меня́ есть но́вая кни́га.",
+    "sentenceZH": "我有一本新书。",
+    "targetWordForm": "меня́",
+    "otherDeclensions": [
+      {
+        "word": "кни́га",
+        "case": "nominative",
+        "brief": "阴性单数主格'书'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "я",
+    "case": "dative",
+    "number": "singular",
+    "sentenceRU": "Мне нра́вится э́та му́зыка.",
+    "sentenceZH": "我喜欢这首音乐。",
+    "targetWordForm": "Мне",
+    "otherDeclensions": [
+      {
+        "word": "му́зыка",
+        "case": "nominative",
+        "brief": "阴性单数主格'音乐'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "я",
+    "case": "accusative",
+    "number": "singular",
+    "sentenceRU": "Он ви́дит меня́ в па́рке.",
+    "sentenceZH": "他在公园里看见我。",
+    "targetWordForm": "меня́",
+    "otherDeclensions": [
+      {
+        "word": "па́рке",
+        "case": "prepositional",
+        "brief": "阳性单数前置格'在公园里'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "я",
+    "case": "instrumental",
+    "number": "singular",
+    "sentenceRU": "Она́ идёт со мной в кино́.",
+    "sentenceZH": "她和我一起去看电影。",
+    "targetWordForm": "мной",
+    "otherDeclensions": [
+      {
+        "word": "кино́",
+        "case": "accusative",
+        "brief": "不变格名词'电影院'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "я",
+    "case": "prepositional",
+    "number": "singular",
+    "sentenceRU": "Они́ ду́мают обо мне ка́ждый день.",
+    "sentenceZH": "他们每天都想我。",
+    "targetWordForm": "мне",
+    "otherDeclensions": [
+      {
+        "word": "день",
+        "case": "accusative",
+        "brief": "阳性单数宾格'天'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "ты",
+    "case": "genitive",
+    "number": "singular",
+    "sentenceRU": "У тебя́ есть брат и́ли сестра́?",
+    "sentenceZH": "你有兄弟姐妹吗？",
+    "targetWordForm": "тебя́",
+    "otherDeclensions": [
+      {
+        "word": "сестра́",
+        "case": "nominative",
+        "brief": "阴性单数主格'姐妹'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "ты",
+    "case": "dative",
+    "number": "singular",
+    "sentenceRU": "Я дам тебе́ э́ту кни́гу.",
+    "sentenceZH": "我把这本书给你。",
+    "targetWordForm": "тебе́",
+    "otherDeclensions": [
+      {
+        "word": "кни́гу",
+        "case": "accusative",
+        "brief": "阴性单数宾格'书'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "ты",
+    "case": "accusative",
+    "number": "singular",
+    "sentenceRU": "Я о́чень люблю́ тебя́.",
+    "sentenceZH": "我非常爱你。",
+    "targetWordForm": "тебя́",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "ты",
+    "case": "instrumental",
+    "number": "singular",
+    "sentenceRU": "Я хочу́ поговори́ть с тобо́й.",
+    "sentenceZH": "我想和你谈谈。",
+    "targetWordForm": "тобо́й",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "ты",
+    "case": "prepositional",
+    "number": "singular",
+    "sentenceRU": "Ма́ма ду́мает о тебе́.",
+    "sentenceZH": "妈妈在想你。",
+    "targetWordForm": "тебе́",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "он",
+    "case": "genitive",
+    "number": "singular",
+    "sentenceRU": "У него́ есть но́вая маши́на.",
+    "sentenceZH": "他有一辆新车。",
+    "targetWordForm": "него́",
+    "otherDeclensions": [
+      {
+        "word": "маши́на",
+        "case": "nominative",
+        "brief": "阴性单数主格'汽车'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "он",
+    "case": "dative",
+    "number": "singular",
+    "sentenceRU": "Я дал ему́ хоро́ший сове́т.",
+    "sentenceZH": "我给了他一个好建议。",
+    "targetWordForm": "ему́",
+    "otherDeclensions": [
+      {
+        "word": "сове́т",
+        "case": "accusative",
+        "brief": "阳性单数宾格'建议'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "он",
+    "case": "accusative",
+    "number": "singular",
+    "sentenceRU": "Я ви́жу его́ в шко́ле.",
+    "sentenceZH": "我在学校看见他。",
+    "targetWordForm": "его́",
+    "otherDeclensions": [
+      {
+        "word": "шко́ле",
+        "case": "prepositional",
+        "brief": "阴性单数前置格'在学校里'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "он",
+    "case": "instrumental",
+    "number": "singular",
+    "sentenceRU": "Мы горди́мся им.",
+    "sentenceZH": "我们为他感到骄傲。",
+    "targetWordForm": "им",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "он",
+    "case": "prepositional",
+    "number": "singular",
+    "sentenceRU": "Она́ ча́сто говори́т о нём.",
+    "sentenceZH": "她经常谈论他。",
+    "targetWordForm": "нём",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "она",
+    "case": "genitive",
+    "number": "singular",
+    "sentenceRU": "У неё краси́вый го́лос.",
+    "sentenceZH": "她有一副好嗓子。",
+    "targetWordForm": "неё",
+    "otherDeclensions": [
+      {
+        "word": "го́лос",
+        "case": "nominative",
+        "brief": "阳性单数主格'嗓音'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "она",
+    "case": "dative",
+    "number": "singular",
+    "sentenceRU": "Я дал ей цветы́.",
+    "sentenceZH": "我给了她花。",
+    "targetWordForm": "ей",
+    "otherDeclensions": [
+      {
+        "word": "цветы́",
+        "case": "accusative",
+        "brief": "复数宾格'花'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "она",
+    "case": "accusative",
+    "number": "singular",
+    "sentenceRU": "Я ви́жу её ка́ждый день.",
+    "sentenceZH": "我每天看见她。",
+    "targetWordForm": "её",
+    "otherDeclensions": [
+      {
+        "word": "день",
+        "case": "accusative",
+        "brief": "阳性单数宾格'天'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "она",
+    "case": "instrumental",
+    "number": "singular",
+    "sentenceRU": "Мы идём в теа́тр с ней.",
+    "sentenceZH": "我们和她一起去剧院。",
+    "targetWordForm": "ней",
+    "otherDeclensions": [
+      {
+        "word": "теа́тр",
+        "case": "accusative",
+        "brief": "阳性单数宾格'剧院'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "она",
+    "case": "prepositional",
+    "number": "singular",
+    "sentenceRU": "Мы говори́м о ней.",
+    "sentenceZH": "我们在谈论她。",
+    "targetWordForm": "ней",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "мы",
+    "case": "genitive",
+    "number": "plural",
+    "sentenceRU": "У нас больша́я семья́.",
+    "sentenceZH": "我们有一个大家庭。",
+    "targetWordForm": "нас",
+    "otherDeclensions": [
+      {
+        "word": "семья́",
+        "case": "nominative",
+        "brief": "阴性单数主格'家庭'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "мы",
+    "case": "dative",
+    "number": "plural",
+    "sentenceRU": "Нам нужна́ по́мощь.",
+    "sentenceZH": "我们需要帮助。",
+    "targetWordForm": "Нам",
+    "otherDeclensions": [
+      {
+        "word": "по́мощь",
+        "case": "nominative",
+        "brief": "阴性单数主格'帮助'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "мы",
+    "case": "accusative",
+    "number": "plural",
+    "sentenceRU": "Они́ ждут нас у вхо́да.",
+    "sentenceZH": "他们在入口等我们。",
+    "targetWordForm": "нас",
+    "otherDeclensions": [
+      {
+        "word": "вхо́да",
+        "case": "genitive",
+        "brief": "阳性单数属格'入口'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "мы",
+    "case": "instrumental",
+    "number": "plural",
+    "sentenceRU": "Он разгова́ривает с на́ми.",
+    "sentenceZH": "他在和我们说话。",
+    "targetWordForm": "на́ми",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "мы",
+    "case": "prepositional",
+    "number": "plural",
+    "sentenceRU": "Они́ ча́сто ду́мают о нас.",
+    "sentenceZH": "他们经常想我们。",
+    "targetWordForm": "нас",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "вы",
+    "case": "genitive",
+    "number": "plural",
+    "sentenceRU": "У вас есть вопро́с?",
+    "sentenceZH": "您有问题吗？",
+    "targetWordForm": "вас",
+    "otherDeclensions": [
+      {
+        "word": "вопро́с",
+        "case": "nominative",
+        "brief": "阳性单数主格'问题'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "вы",
+    "case": "dative",
+    "number": "plural",
+    "sentenceRU": "Я хочу́ вам помо́чь.",
+    "sentenceZH": "我想帮助您。",
+    "targetWordForm": "вам",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "вы",
+    "case": "accusative",
+    "number": "plural",
+    "sentenceRU": "Я вас по́нял.",
+    "sentenceZH": "我明白您了。",
+    "targetWordForm": "вас",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "вы",
+    "case": "instrumental",
+    "number": "plural",
+    "sentenceRU": "Мы горди́мся ва́ми.",
+    "sentenceZH": "我们为您感到骄傲。",
+    "targetWordForm": "ва́ми",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "вы",
+    "case": "prepositional",
+    "number": "plural",
+    "sentenceRU": "Мы говори́м о вас.",
+    "sentenceZH": "我们在谈论您。",
+    "targetWordForm": "вас",
+    "otherDeclensions": []
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "они",
+    "case": "genitive",
+    "number": "plural",
+    "sentenceRU": "У них нет вре́мени.",
+    "sentenceZH": "他们没有时间。",
+    "targetWordForm": "них",
+    "otherDeclensions": [
+      {
+        "word": "вре́мени",
+        "case": "genitive",
+        "brief": "中性单数属格'时间'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "они",
+    "case": "dative",
+    "number": "plural",
+    "sentenceRU": "Я дал им сове́т.",
+    "sentenceZH": "我给了他们建议。",
+    "targetWordForm": "им",
+    "otherDeclensions": [
+      {
+        "word": "сове́т",
+        "case": "accusative",
+        "brief": "阳性单数宾格'建议'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "они",
+    "case": "accusative",
+    "number": "plural",
+    "sentenceRU": "Я ви́жу их на у́лице.",
+    "sentenceZH": "我在街上看见他们。",
+    "targetWordForm": "их",
+    "otherDeclensions": [
+      {
+        "word": "у́лице",
+        "case": "prepositional",
+        "brief": "阴性单数前置格'在街上'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "они",
+    "case": "instrumental",
+    "number": "plural",
+    "sentenceRU": "Мы идём с ни́ми в кино́.",
+    "sentenceZH": "我们和他们一起去看电影。",
+    "targetWordForm": "ни́ми",
+    "otherDeclensions": [
+      {
+        "word": "кино́",
+        "case": "accusative",
+        "brief": "不变格名词'电影院'"
+      }
+    ]
+  },
+  {
+    "grammarPointId": "pron-personal",
+    "grammarPointName": "人称代词",
+    "word": "они",
+    "case": "prepositional",
+    "number": "plural",
+    "sentenceRU": "Мы говори́м о них.",
+    "sentenceZH": "我们在谈论他们。",
+    "targetWordForm": "них",
+    "otherDeclensions": []
   }
 ]
