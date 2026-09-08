@@ -2,21 +2,113 @@ Object.assign(App, {
   showPractice() {
     this.switchPage('practice-page');
     this.setActiveNav('practice');
+    this.showPracticeMode();
+  },
 
-    // Resume an unfinished session instead of restarting
-    if (this.practice.completed) {
-      document.getElementById('practice-empty').classList.add('hidden');
-      this.showPracticeComplete();
-      return;
-    }
-    if (this.practice.queue && this.practice.queue.length > 0 && this.practice.index < this.practice.queue.length) {
-      document.getElementById('practice-complete').classList.add('hidden');
-      document.getElementById('practice-empty').classList.add('hidden');
-      document.getElementById('sentence-card').classList.remove('hidden');
-      this.renderSentence(this.practice.index, true);
-      return;
-    }
+  showPracticeMode() {
+    this.practice.mode = null;
+    document.getElementById('ai-window').classList.add('hidden');
+    document.getElementById('practice-mode').classList.remove('hidden');
+    document.getElementById('practice-empty').classList.add('hidden');
+    document.getElementById('sentence-card').classList.add('hidden');
+    document.getElementById('practice-complete').classList.add('hidden');
+    document.getElementById('text-practice').classList.add('hidden');
+  },
+
+  startSentencePractice() {
+    this.practice.mode = 'sentence';
+    document.getElementById('practice-mode').classList.add('hidden');
+    document.getElementById('text-practice').classList.add('hidden');
+    document.getElementById('practice-complete').classList.add('hidden');
     this.startPractice();
+  },
+
+  startTextPractice() {
+    this.practice.mode = 'text';
+    document.getElementById('practice-mode').classList.add('hidden');
+    document.getElementById('practice-empty').classList.add('hidden');
+    document.getElementById('sentence-card').classList.add('hidden');
+    document.getElementById('practice-complete').classList.add('hidden');
+    document.getElementById('text-practice').classList.remove('hidden');
+    this.renderTextPractice();
+  },
+
+  renderTextPractice() {
+    const list = document.getElementById('text-practice-list');
+    const view = document.getElementById('text-practice-view');
+    view.classList.add('hidden');
+    view.innerHTML = '';
+    const texts = this.state.userTexts || [];
+    if (texts.length === 0) {
+      list.innerHTML = '<div class="text-center mt-4"><div class="welcome-logo" style="margin-top:40px;">📖</div><h3>暂无课文</h3><p>请先在「课文回顾」页导入课文。</p></div>';
+      return;
+    }
+    list.innerHTML = texts.map((t, i) => `
+      <div class="card mb-4">
+        <div class="lesson-meta" style="margin-bottom:8px;">
+          <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
+          ${t.chapter ? `<span class="meta-pill">${this.escapeHtml(t.chapter)}</span>` : ''}
+          <button onclick="App.startTextTyping(${i})" style="margin-left:auto;background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.9rem;">练习 ▶</button>
+        </div>
+        ${t.title ? `<div class="card-title" style="margin-bottom:6px;">${this.escapeHtml(t.title)}</div>` : ''}
+        <div class="lesson-ru">${this.escapeHtml(t.contentRU)}</div>
+      </div>
+    `).join('');
+  },
+
+  startTextTyping(textIndex) {
+    const t = (this.state.userTexts || [])[textIndex];
+    if (!t) return;
+    this.chatHistory = [];
+    document.getElementById('chat-messages').innerHTML = '';
+    document.getElementById('ai-window').classList.add('hidden');
+    const list = document.getElementById('text-practice-list');
+    const view = document.getElementById('text-practice-view');
+    list.classList.add('hidden');
+    view.classList.remove('hidden');
+    view.innerHTML = `
+      <div class="lesson-card" style="margin-bottom:20px;">
+        <div class="lesson-meta" style="margin-bottom:8px;">
+          <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
+          ${t.chapter ? `<span class="meta-pill">${this.escapeHtml(t.chapter)}</span>` : ''}
+          ${t.title ? `<span class="meta-pill">${this.escapeHtml(t.title)}</span>` : ''}
+        </div>
+        <div class="lesson-ru" id="text-practice-ru"></div>
+        <textarea id="text-practice-input" class="typing-input" rows="3" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
+        ${t.contentZH ? `<div class="lesson-zh" style="margin-top:10px;">${this.escapeHtml(t.contentZH)}</div>` : ''}
+      </div>
+    `;
+    const ruEl = document.getElementById('text-practice-ru');
+    const inputEl = document.getElementById('text-practice-input');
+    const paras = t.contentRU.split(/\n+/).map(p => p.trim()).filter(Boolean);
+    if (paras.length === 0) {
+      inputEl.disabled = true;
+    } else {
+      const showPara = (k) => {
+        const div = document.createElement('div');
+        div.style.marginBottom = '10px';
+        ruEl.appendChild(div);
+        this.attachTyping(div, inputEl, paras[k], () => {
+          if (k + 1 < paras.length) {
+            showPara(k + 1);
+          } else {
+            inputEl.placeholder = '✓ 课文完成';
+          }
+        });
+      };
+      showPara(0);
+    }
+  },
+
+  textPracticeBack() {
+    const view = document.getElementById('text-practice-view');
+    if (view.classList.contains('hidden')) {
+      this.showPracticeMode();
+    } else {
+      view.classList.add('hidden');
+      view.innerHTML = '';
+      document.getElementById('text-practice-list').classList.remove('hidden');
+    }
   },
 
   startPractice() {
@@ -204,10 +296,12 @@ Object.assign(App, {
         `<tr><td>${p.base}</td><td>${p.superlative}</td></tr>`).join('');
       tablesHTML = `<table class="rule-table"><tr><th>原级</th><th>最高级</th></tr>${rows}</table>`;
     } else if (node.tableType === 'personal') {
-      const header = `<tr><th>格</th>${node.personalTable.headers.map(c => `<th>${c}</th>`).join('')}</tr>`;
-      const rows = node.personalTable.rows.map(r =>
-        `<tr><td>${r.case}</td>${r.forms.map(f => `<td>${f}</td>`).join('')}</tr>`).join('');
-      tablesHTML = `<div class="table-scroll"><table class="rule-table decl-table">${header}${rows}</table></div>`;
+      tablesHTML = (node.personalTable.groups || []).map(g => {
+        const header = `<tr><th>格</th>${g.headers.map(c => `<th>${c}</th>`).join('')}</tr>`;
+        const rows = g.rows.map(r =>
+          `<tr><td>${r.case}</td>${r.forms.map(f => `<td>${f}</td>`).join('')}</tr>`).join('');
+        return `<h5 style="color:var(--text);font-size:0.95rem;margin:12px 0 4px;">${g.title}</h5><table class="rule-table">${header}${rows}</table>`;
+      }).join('');
     } else {
       tablesHTML = renderTable(node.declensionTable, node.exampleWord) +
         (node.examples || []).map(e => renderTable(e.table, e.word)).join('');
@@ -254,50 +348,8 @@ Object.assign(App, {
     document.getElementById('sentence-card').classList.add('hidden');
     document.getElementById('practice-complete').classList.remove('hidden');
     document.getElementById('complete-count').textContent = this.practice.queue.length;
-
-    const lessonBox = document.getElementById('complete-lesson');
-    const texts = this.state.userTexts || [];
-    if (texts.length > 0) {
-      const t = texts[texts.length - 1];
-      lessonBox.innerHTML = `
-        <div style="margin:20px 0;font-size:0.9rem;color:var(--muted);text-align:center;">📖 回顾最近导入的课文（打一遍加深记忆）</div>
-        <div class="lesson-card" style="margin-bottom:20px;">
-          <div class="lesson-meta">
-            <span class="meta-pill">📖 ${this.escapeHtml(t.source)}</span>
-            ${t.chapter ? `<span class="meta-pill">${this.escapeHtml(t.chapter)}</span>` : ''}
-            ${t.title ? `<span class="meta-pill">${this.escapeHtml(t.title)}</span>` : ''}
-          </div>
-          <div class="lesson-ru" id="complete-lesson-ru"></div>
-          <textarea id="complete-lesson-input" class="typing-input" rows="3" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
-          ${t.contentZH ? `<div class="lesson-zh" style="margin-top:10px;">${this.escapeHtml(t.contentZH)}</div>` : ''}
-        </div>
-      `;
-      const ruEl = document.getElementById('complete-lesson-ru');
-      const inputEl = document.getElementById('complete-lesson-input');
-      const paras = t.contentRU.split(/\n+/).map(p => p.trim()).filter(Boolean);
-      if (paras.length === 0) {
-        inputEl.disabled = true;
-      } else {
-        const showPara = (k) => {
-          const div = document.createElement('div');
-          div.style.marginBottom = '10px';
-          ruEl.appendChild(div);
-          this.attachTyping(div, inputEl, paras[k], () => {
-            if (k + 1 < paras.length) {
-              showPara(k + 1);
-            } else {
-              inputEl.placeholder = '✓ 课文完成';
-            }
-          });
-        };
-        showPara(0);
-      }
-    } else {
-      lessonBox.innerHTML = '';
-    }
   },
   restartPractice() {
-    document.getElementById('practice-complete').classList.add('hidden');
-    this.startPractice();
+    this.startSentencePractice();
   },
 });

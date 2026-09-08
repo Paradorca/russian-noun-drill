@@ -119,6 +119,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('toggle-rule-btn').onclick = () => App.toggleRulePanel();
   document.getElementById('next-btn').onclick = () => App.nextSentence();
   document.getElementById('restart-btn').onclick = () => App.restartPractice();
+  document.getElementById('mode-sentence-btn').onclick = () => App.startSentencePractice();
+  document.getElementById('mode-text-btn').onclick = () => App.startTextPractice();
+  document.getElementById('text-back-btn').onclick = () => App.textPracticeBack();
+  document.getElementById('complete-back-btn').onclick = () => App.showPracticeMode();
   document.getElementById('reset-progress-btn').onclick = () => App.resetProgress();
   document.getElementById('ai-close-btn').onclick = () => App.toggleChat();
   document.getElementById('chat-send-btn').onclick = () => App.sendChat();

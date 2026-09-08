@@ -20,13 +20,20 @@
 
     <!-- Practice -->
     <div id="practice-page" class="page">
+      <div id="practice-mode">
+        <h2>练习</h2>
+        <p class="mb-4">选择要练习的内容</p>
+        <button id="mode-sentence-btn" class="btn btn-primary">✍️ 例句练习</button>
+        <button id="mode-text-btn" class="btn btn-secondary">📖 课文练习</button>
+      </div>
+
       <div id="practice-empty" class="hidden text-center mt-4">
         <div class="welcome-logo" style="margin-top:40px;">📭</div>
         <h3>暂无练习内容</h3>
         <p>所选板块暂无可练习的例句，请在设置中更换练习板块。</p>
       </div>
 
-      <div id="sentence-card">
+      <div id="sentence-card" class="hidden">
         <div class="sentence-card">
           <div class="sentence-meta" id="sentence-meta"></div>
           <div class="sentence-ru" id="sentence-ru"></div>
@@ -51,8 +58,14 @@
         <div class="welcome-logo" style="margin-top:40px;">🎉</div>
         <h2>今日练习完成！</h2>
         <p>你已完成 <strong id="complete-count">0</strong> 句朗读。</p>
-        <div id="complete-lesson" style="text-align:left;"></div>
+        <button id="complete-back-btn" class="btn btn-secondary">返回选择</button>
         <button id="restart-btn" class="btn btn-primary">再来一轮</button>
+      </div>
+
+      <div id="text-practice" class="hidden">
+        <button id="text-back-btn" class="btn btn-secondary btn-small" style="margin-bottom:12px;">← 返回</button>
+        <div id="text-practice-list"></div>
+        <div id="text-practice-view"></div>
       </div>
     </div>
 
