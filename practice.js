@@ -2,7 +2,10 @@ Object.assign(App, {
   showPractice() {
     this.switchPage('practice-page');
     this.setActiveNav('practice');
-    this.showPracticeMode();
+    // 有进行中的练习（mode 已设置）就保留现场，不要重置回模式选择
+    if (!this.practice.mode) {
+      this.showPracticeMode();
+    }
   },
 
   showPracticeMode() {
