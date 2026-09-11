@@ -286,6 +286,13 @@ Object.assign(App, {
       return `<h5 style="color:var(--text);font-size:0.95rem;margin:12px 0 4px;">${word}</h5><table class="rule-table">${header}${rows}</table>`;
     };
 
+    const renderCaseTable = (ct) => {
+      const header = `<tr><th>格</th>${ct.headers.map(c => `<th>${c}</th>`).join('')}</tr>`;
+      const rows = ct.rows.map(r =>
+        `<tr><td>${r.case}</td>${r.forms.map(f => `<td>${f}</td>`).join('')}</tr>`).join('');
+      return `<h5 style="color:var(--text);font-size:0.95rem;margin:12px 0 4px;">${ct.title}</h5><table class="rule-table">${header}${rows}</table>`;
+    };
+
     let tablesHTML;
     if (node.tableType === 'comparative') {
       const rows = (node.comparativePairs || []).map(p =>
@@ -303,7 +310,8 @@ Object.assign(App, {
         return `<h5 style="color:var(--text);font-size:0.95rem;margin:12px 0 4px;">${g.title}</h5><table class="rule-table">${header}${rows}</table>`;
       }).join('');
     } else {
-      tablesHTML = renderTable(node.declensionTable, node.exampleWord) +
+      tablesHTML = (node.caseTable ? renderCaseTable(node.caseTable) : '') +
+        renderTable(node.declensionTable, node.exampleWord) +
         (node.examples || []).map(e => renderTable(e.table, e.word)).join('');
     }
 
