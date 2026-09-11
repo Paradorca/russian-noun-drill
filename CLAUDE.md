@@ -18,7 +18,10 @@
 - `texts.js` — 课文回顾：导入/编辑/删除课文
 - 各模块通过 `Object.assign(App, { ... })` 挂到 App 上；`index.html` 中 app.js 必须最先加载
 - `grammar-data.json` — 语法框架 + 六格用法
-- `sentences-data.json` — 85 条例句
+- `sentences-data.json` — 例句数组（当前 308 条）
+- `DATA-GUIDE.md` — 内容索引与字段约定，改内容（知识点/例句）前先读它
+- `tools/curate.js` — 内容脚本（list/validate/add-sentences/add-point/edit-point/delete-sentence）
+- `tools/release.js` — 发布脚本（自动 bump sw.js 版本号 + 校验 + git 提交推送）
 
 ## 语法框架结构
 
@@ -48,9 +51,9 @@ root（俄语语法框架）→ 5 个 category 分支：noun-decl 名词变格�
 
 ## 发布流程
 
-1. Claude 直接改代码 + bump sw.js 版本号
-2. Claude 可以直接 `git add / commit / push`（网络已通）。提交信息用英文简述
-3. GitHub Actions 自动部署，约 30 秒后生效
+1. 改完内容后先跑 `node tools/curate.js validate` 确认无误
+2. 直接 `node tools/release.js "提交信息"`（自动 validate → bump sw.js 版本号 → git 提交推送），提交信息用英文简述
+3. GitHub Pages 自动部署，约 30 秒后生效
 4. 用户刷新网址验证
 
 ## 已知坑

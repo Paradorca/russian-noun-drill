@@ -83,7 +83,7 @@
         "brief": "阳性单数前置格，指示代词'这个'"
       },
       {
-        "word": "доме",
+        "word": "до́ме",
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在房子里'"
       }
@@ -229,12 +229,12 @@
     "word": "профессия",
     "case": "accusative",
     "number": "singular",
-    "sentenceRU": "Он вы́брал интéресную профéссию.",
+    "sentenceRU": "Он вы́брал инте́ресную профе́ссию.",
     "sentenceZH": "他选择了一个有趣的职业。",
-    "targetWordForm": "профéссию",
+    "targetWordForm": "профе́ссию",
     "otherDeclensions": [
       {
-        "word": "интéресную",
+        "word": "инте́ресную",
         "case": "accusative",
         "brief": "阴性单数宾格，形容词'有趣的'"
       }
@@ -246,12 +246,12 @@
     "word": "лекция",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "На лéкции прису́тствовало мно́го студéнтов.",
+    "sentenceRU": "На ле́кции прису́тствовало мно́го студе́нтов.",
     "sentenceZH": "很多学生在听讲座。",
-    "targetWordForm": "лéкции",
+    "targetWordForm": "ле́кции",
     "otherDeclensions": [
       {
-        "word": "студéнтов",
+        "word": "студе́нтов",
         "case": "genitive",
         "brief": "阳性复数属格，表示数量'很多学生的'"
       }
@@ -282,7 +282,7 @@
     "number": "singular",
     "sentenceRU": "Окно́ до́ма вы́ходит в сад.",
     "sentenceZH": "房子的窗户朝向花园。",
-    "targetWordForm": "дóма",
+    "targetWordForm": "до́ма",
     "otherDeclensions": [
       {
         "word": "сад",
@@ -370,7 +370,7 @@
     "word": "музей",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Вы́ставка музе́я очень интéресная.",
+    "sentenceRU": "Вы́ставка музе́я очень инте́ресная.",
     "sentenceZH": "博物馆的展览非常有趣。",
     "targetWordForm": "музе́я",
     "otherDeclensions": []
@@ -409,7 +409,7 @@
     "word": "музей",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В го́роде три совремéнных музе́я.",
+    "sentenceRU": "В го́роде три совреме́нных музе́я.",
     "sentenceZH": "城里有三座现代博物馆。",
     "targetWordForm": "музе́я",
     "otherDeclensions": [
@@ -426,7 +426,7 @@
     "word": "словарь",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Э́тот слова́рь о́чень полéзный.",
+    "sentenceRU": "Э́тот слова́рь о́чень поле́зный.",
     "sentenceZH": "这本词典非常有用。",
     "targetWordForm": "слова́рь",
     "otherDeclensions": [
@@ -460,7 +460,7 @@
     "word": "словарь",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Я часто́ обращáюсь к словарю́.",
+    "sentenceRU": "Я часто́ обраща́юсь к словарю́.",
     "sentenceZH": "我经常查阅词典。",
     "targetWordForm": "словарю́",
     "otherDeclensions": []
@@ -471,7 +471,7 @@
     "word": "учитель",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "Мы говори́ли об учи́теле тóлько хоро́шее.",
+    "sentenceRU": "Мы говори́ли об учи́теле то́лько хоро́шее.",
     "sentenceZH": "我们只说老师的好话。",
     "targetWordForm": "учи́теле",
     "otherDeclensions": []
@@ -482,9 +482,9 @@
     "word": "словарь",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "У меня́ есть колле́кция ре́дких словарéй.",
+    "sentenceRU": "У меня́ есть колле́кция ре́дких словаре́й.",
     "sentenceZH": "我有一批珍贵的词典收藏。",
-    "targetWordForm": "словарéй",
+    "targetWordForm": "словаре́й",
     "otherDeclensions": [
       {
         "word": "меня́",
@@ -504,7 +504,7 @@
     "word": "врач",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Наш врач приéмлет пацие́нтов по утрам.",
+    "sentenceRU": "Наш врач прие́млет пацие́нтов по утрам.",
     "sentenceZH": "我们的医生上午接诊。",
     "targetWordForm": "врач",
     "otherDeclensions": [
@@ -521,9 +521,9 @@
     "word": "врач",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Мне нрáвится óпыт этого́ врачá.",
+    "sentenceRU": "Мне нра́вится о́пыт э́того врача́.",
     "sentenceZH": "我喜欢这位医生的经验。",
-    "targetWordForm": "врачá",
+    "targetWordForm": "врача́",
     "otherDeclensions": [
       {
         "word": "Мне",
@@ -531,7 +531,7 @@
         "brief": "人称代词'我'的与格"
       },
       {
-        "word": "это́го",
+        "word": "э́того",
         "case": "genitive",
         "brief": "阳性单数属格，指示代词'这个'"
       }
@@ -565,9 +565,9 @@
     "word": "врач",
     "case": "accusative",
     "number": "singular",
-    "sentenceRU": "Я уважáю э́того врачá за терпéние.",
+    "sentenceRU": "Я уважа́ю э́того врача́ за терпе́ние.",
     "sentenceZH": "我尊敬这位医生的耐心。（动物名词，四格同二格）",
-    "targetWordForm": "врачá",
+    "targetWordForm": "врача́",
     "otherDeclensions": [
       {
         "word": "э́того",
@@ -575,7 +575,7 @@
         "brief": "阳性单数宾格（动物名词同二格），指示代词'这个'"
       },
       {
-        "word": "терпéние",
+        "word": "терпе́ние",
         "case": "accusative",
         "brief": "中性单数宾格，表示原因'为了耐心'"
       }
@@ -587,9 +587,9 @@
     "word": "врач",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В больни́це рабо́тает мно́го молоды́х врачéй.",
+    "sentenceRU": "В больни́це рабо́тает мно́го молоды́х враче́й.",
     "sentenceZH": "医院里有很多年轻医生工作。",
-    "targetWordForm": "врачéй",
+    "targetWordForm": "враче́й",
     "otherDeclensions": [
       {
         "word": "больни́це",
@@ -609,7 +609,7 @@
     "word": "окно",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "О́кно откры́то, и в ко́мнату втекáет свежий возду́х.",
+    "sentenceRU": "О́кно откры́то, и в ко́мнату втека́ет свежий возду́х.",
     "sentenceZH": "窗户开着，新鲜空气流入房间。",
     "targetWordForm": "О́кно",
     "otherDeclensions": [
@@ -631,9 +631,9 @@
     "word": "окно",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "У ко́мнаты есть óкно на ю́г.",
+    "sentenceRU": "У ко́мнаты есть о́кно на ю́г.",
     "sentenceZH": "这个房间有一扇朝南的窗户。",
-    "targetWordForm": "óкно",
+    "targetWordForm": "о́кно",
     "otherDeclensions": [
       {
         "word": "ко́мнаты",
@@ -648,12 +648,12 @@
     "word": "яблоко",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "На столé лежа́т три зелёных я́блока.",
+    "sentenceRU": "На столе́ лежа́т три зелёных я́блока.",
     "sentenceZH": "桌上放着三个青苹果。",
     "targetWordForm": "я́блока",
     "otherDeclensions": [
       {
-        "word": "столé",
+        "word": "столе́",
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在桌上'"
       },
@@ -670,12 +670,12 @@
     "word": "окно",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "На óкне стои́т го́ршок с цветáми.",
+    "sentenceRU": "На о́кне стои́т го́ршок с цвета́ми.",
     "sentenceZH": "窗台上放着一盆花。",
-    "targetWordForm": "óкне",
+    "targetWordForm": "о́кне",
     "otherDeclensions": [
       {
-        "word": "цветáми",
+        "word": "цвета́ми",
         "case": "instrumental",
         "brief": "复数工具格，表示伴随'带着花'"
       }
@@ -687,12 +687,12 @@
     "word": "письмо",
     "case": "accusative",
     "number": "singular",
-    "sentenceRU": "Я получи́л вáжное письмо́ вчерá.",
+    "sentenceRU": "Я получи́л ва́жное письмо́ вчера́.",
     "sentenceZH": "我昨天收到了一封重要的信。",
     "targetWordForm": "письмо́",
     "otherDeclensions": [
       {
-        "word": "вáжное",
+        "word": "ва́жное",
         "case": "accusative",
         "brief": "中性单数宾格，形容词'重要的'"
       }
@@ -704,12 +704,12 @@
     "word": "море",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Чёрное мо́ре омывáет берегá Кáвказа.",
+    "sentenceRU": "Чёрное мо́ре омыва́ет берега́ Ка́вказа.",
     "sentenceZH": "黑海冲刷着高加索的海岸。",
     "targetWordForm": "мо́ре",
     "otherDeclensions": [
       {
-        "word": "Кáвказа",
+        "word": "Ка́вказа",
         "case": "genitive",
         "brief": "阳性单数属格，表示所属'高加索的'"
       }
@@ -721,7 +721,7 @@
     "word": "море",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Цвет мо́ря измéнился перед бу́рей.",
+    "sentenceRU": "Цвет мо́ря изме́нился перед бу́рей.",
     "sentenceZH": "暴风雨前海的颜色变了。",
     "targetWordForm": "мо́ря",
     "otherDeclensions": [
@@ -749,12 +749,12 @@
     "word": "море",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "Мы отдыхáли на мóре всё лéто.",
+    "sentenceRU": "Мы отдыха́ли на мо́ре всё ле́то.",
     "sentenceZH": "我们整个夏天都在海边休息。",
-    "targetWordForm": "мóре",
+    "targetWordForm": "мо́ре",
     "otherDeclensions": [
       {
-        "word": "лéто",
+        "word": "ле́то",
         "case": "accusative",
         "brief": "中性单数宾格，表示时间'整个夏天'"
       }
@@ -766,9 +766,9 @@
     "word": "море",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "Рыбаки́ знáют все мóря э́того регио́на.",
+    "sentenceRU": "Рыбаки́ зна́ют все мо́ря э́того регио́на.",
     "sentenceZH": "渔民们了解这个地区的所有海域。",
-    "targetWordForm": "мóря",
+    "targetWordForm": "мо́ря",
     "otherDeclensions": [
       {
         "word": "э́того",
@@ -799,12 +799,12 @@
     "word": "событие",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Он не помнит дéтали собы́тия.",
+    "sentenceRU": "Он не помнит де́тали собы́тия.",
     "sentenceZH": "他不记得这件事的细节。",
     "targetWordForm": "собы́тия",
     "otherDeclensions": [
       {
-        "word": "дéтали",
+        "word": "де́тали",
         "case": "genitive",
         "brief": "阴性单数属格，表示对象'细节'"
       }
@@ -816,9 +816,9 @@
     "word": "упражнение",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Я приступи́л к упражнéнию óчень внимáтельно.",
+    "sentenceRU": "Я приступи́л к упражне́нию о́чень внима́тельно.",
     "sentenceZH": "我非常认真地开始做这个练习。",
-    "targetWordForm": "упражнéнию",
+    "targetWordForm": "упражне́нию",
     "otherDeclensions": []
   },
   {
@@ -827,7 +827,7 @@
     "word": "событие",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "В собы́тии учáствовали лю́ди из ра́зных стран.",
+    "sentenceRU": "В собы́тии уча́ствовали лю́ди из ра́зных стран.",
     "sentenceZH": "来自不同国家的人参与了这次活动。",
     "targetWordForm": "собы́тии",
     "otherDeclensions": [
@@ -844,7 +844,7 @@
     "word": "здание",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В э́том ра́йоне мно́го истóрических зда́ний.",
+    "sentenceRU": "В э́том ра́йоне мно́го исто́рических зда́ний.",
     "sentenceZH": "这个区域有很多历史建筑。",
     "targetWordForm": "зда́ний",
     "otherDeclensions": [
@@ -928,9 +928,9 @@
     "word": "ночь",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "Он провёл несколько бессо́нных ночéй.",
+    "sentenceRU": "Он провёл несколько бессо́нных ноче́й.",
     "sentenceZH": "他度过了几个不眠之夜。",
-    "targetWordForm": "ночéй",
+    "targetWordForm": "ноче́й",
     "otherDeclensions": [
       {
         "word": "несколько",
@@ -946,7 +946,7 @@
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
-    "grammarPointName": "第三变格法 — 古老残留型（мать / дочь）",
+    "grammarPointName": "第三变格法 — 古老残留型 мать / дочь",
     "word": "мать",
     "case": "nominative",
     "number": "singular",
@@ -963,7 +963,7 @@
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
-    "grammarPointName": "第三变格法 — 古老残留型（мать / дочь）",
+    "grammarPointName": "第三变格法 — 古老残留型 мать / дочь",
     "word": "мать",
     "case": "genitive",
     "number": "singular",
@@ -980,16 +980,16 @@
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
-    "grammarPointName": "第三变格法 — 古老残留型（мать / дочь）",
+    "grammarPointName": "第三变格法 — 古老残留型 мать / дочь",
     "word": "дочь",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Он горди́тся своéй дочéрью.",
+    "sentenceRU": "Он горди́тся свое́й доче́рью.",
     "sentenceZH": "他为自己的女儿感到骄傲。",
-    "targetWordForm": "дочéрью",
+    "targetWordForm": "доче́рью",
     "otherDeclensions": [
       {
-        "word": "своéй",
+        "word": "свое́й",
         "case": "instrumental",
         "brief": "阴性单数工具格，物主代词'自己的'"
       }
@@ -997,7 +997,7 @@
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
-    "grammarPointName": "第三变格法 — 古老残留型（мать / дочь）",
+    "grammarPointName": "第三变格法 — 古老残留型 мать / дочь",
     "word": "мать",
     "case": "dative",
     "number": "singular",
@@ -1014,11 +1014,11 @@
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
-    "grammarPointName": "第三变格法 — 古老残留型（мать / дочь）",
+    "grammarPointName": "第三变格法 — 古老残留型 мать / дочь",
     "word": "дочь",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В саду́ игра́ли дéти и их ма́тери.",
+    "sentenceRU": "В саду́ игра́ли де́ти и их ма́тери.",
     "sentenceZH": "孩子们在花园里玩，他们的母亲们也在。",
     "targetWordForm": "ма́тери",
     "otherDeclensions": [
@@ -1028,7 +1028,7 @@
         "brief": "阳性单数前置格，表示地点'在花园'"
       },
       {
-        "word": "дéти",
+        "word": "де́ти",
         "case": "nominative",
         "brief": "复数主格，表示主体'孩子们'"
       }
@@ -1051,9 +1051,9 @@
     "word": "время",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "У нас мáло врéмени.",
+    "sentenceRU": "У нас ма́ло вре́мени.",
     "sentenceZH": "我们的时间很少。",
-    "targetWordForm": "врéмени",
+    "targetWordForm": "вре́мени",
     "otherDeclensions": []
   },
   {
@@ -1062,7 +1062,7 @@
     "word": "имя",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Я не мо́гу вспо́мнить и́мени э́того человéка.",
+    "sentenceRU": "Я не мо́гу вспо́мнить и́мени э́того челове́ка.",
     "sentenceZH": "我想不起这个人的名字了。",
     "targetWordForm": "и́мени",
     "otherDeclensions": [
@@ -1072,7 +1072,7 @@
         "brief": "阳性单数属格，指示代词'这个'"
       },
       {
-        "word": "человéка",
+        "word": "челове́ка",
         "case": "genitive",
         "brief": "阳性单数属格，表示所属'人的'"
       }
@@ -1084,9 +1084,9 @@
     "word": "время",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Он уме́ет распределя́ть врéменем.",
+    "sentenceRU": "Он уме́ет распределя́ть вре́менем.",
     "sentenceZH": "他懂得分配时间。",
-    "targetWordForm": "врéменем",
+    "targetWordForm": "вре́менем",
     "otherDeclensions": []
   },
   {
@@ -1095,9 +1095,9 @@
     "word": "племя",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "На э́той земле́ жили́ ра́зные племенá.",
+    "sentenceRU": "На э́той земле́ жили́ ра́зные племена́.",
     "sentenceZH": "这片土地上曾居住着不同的部落。",
-    "targetWordForm": "племенá",
+    "targetWordForm": "племена́",
     "otherDeclensions": [
       {
         "word": "э́той",
@@ -1113,11 +1113,11 @@
   },
   {
     "grammarPointId": "special-vowel-drop",
-    "grammarPointName": "特殊变化 — 元音脱落型（отец 型）",
+    "grammarPointName": "特殊变化 — 元音脱落型（-ец / -ок / -ёнок）",
     "word": "отец",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Мой о́тец рабо́тает инженéром.",
+    "sentenceRU": "Мой о́тец рабо́тает инжене́ром.",
     "sentenceZH": "我的父亲是一名工程师。",
     "targetWordForm": "о́тец",
     "otherDeclensions": [
@@ -1127,7 +1127,7 @@
         "brief": "阳性单数主格，物主代词'我的'"
       },
       {
-        "word": "инженéром",
+        "word": "инжене́ром",
         "case": "instrumental",
         "brief": "阳性单数工具格，表示职位'以工程师身份'"
       }
@@ -1135,13 +1135,13 @@
   },
   {
     "grammarPointId": "special-vowel-drop",
-    "grammarPointName": "特殊变化 — 元音脱落型（отец 型）",
+    "grammarPointName": "特殊变化 — 元音脱落型（-ец / -ок / -ёнок）",
     "word": "отец",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Я ви́жу отцá у подъе́зда.",
+    "sentenceRU": "Я ви́жу отца́ у подъе́зда.",
     "sentenceZH": "我看见父亲在单元门口。",
-    "targetWordForm": "отцá",
+    "targetWordForm": "отца́",
     "otherDeclensions": [
       {
         "word": "подъе́зда",
@@ -1152,13 +1152,13 @@
   },
   {
     "grammarPointId": "special-vowel-drop",
-    "grammarPointName": "特殊变化 — 元音脱落型（отец 型）",
+    "grammarPointName": "特殊变化 — 元音脱落型（-ец / -ок / -ёнок）",
     "word": "палец",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "У него́ длинные пáльцы.",
+    "sentenceRU": "У него́ длинные па́льцы.",
     "sentenceZH": "他的手指很长。",
-    "targetWordForm": "пáльцы",
+    "targetWordForm": "па́льцы",
     "otherDeclensions": [
       {
         "word": "него́",
@@ -1169,13 +1169,13 @@
   },
   {
     "grammarPointId": "special-vowel-drop",
-    "grammarPointName": "特殊变化 — 元音脱落型（отец 型）",
+    "grammarPointName": "特殊变化 — 元音脱落型（-ец / -ок / -ёнок）",
     "word": "потолок",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Цвет потолкá бы́л бе́лым.",
+    "sentenceRU": "Цвет потолка́ бы́л бе́лым.",
     "sentenceZH": "天花板的颜色是白色的。",
-    "targetWordForm": "потолкá",
+    "targetWordForm": "потолка́",
     "otherDeclensions": [
       {
         "word": "бе́лым",
@@ -1186,13 +1186,13 @@
   },
   {
     "grammarPointId": "special-vowel-drop",
-    "grammarPointName": "特殊变化 — 元音脱落型（отец 型）",
+    "grammarPointName": "特殊变化 — 元音脱落型（-ец / -ок / -ёнок）",
     "word": "отец",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В на́шем дворе́ мно́го отцóв с дéтьми.",
+    "sentenceRU": "В на́шем дворе́ мно́го отцо́в с де́тьми.",
     "sentenceZH": "我们院子里有很多父亲带着孩子。",
-    "targetWordForm": "отцóв",
+    "targetWordForm": "отцо́в",
     "otherDeclensions": [
       {
         "word": "на́шем",
@@ -1205,7 +1205,7 @@
         "brief": "阳性单数前置格，表示地点'在院子里'"
       },
       {
-        "word": "дéтьми",
+        "word": "де́тьми",
         "case": "instrumental",
         "brief": "复数工具格，表示伴随'带着孩子'"
       }
@@ -1217,7 +1217,7 @@
     "word": "гражданин",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Кáждый граждани́н име́ет пра́ва и обяза́нности.",
+    "sentenceRU": "Ка́ждый граждани́н име́ет пра́ва и обяза́нности.",
     "sentenceZH": "每个公民都有权利和义务。",
     "targetWordForm": "граждани́н",
     "otherDeclensions": []
@@ -1295,9 +1295,9 @@
     "word": "человек",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Один человéк не мо́жет всё знать.",
+    "sentenceRU": "Один челове́к не мо́жет всё знать.",
     "sentenceZH": "一个人不可能什么都知道。",
-    "targetWordForm": "человéк",
+    "targetWordForm": "челове́к",
     "otherDeclensions": []
   },
   {
@@ -1306,12 +1306,12 @@
     "word": "человек",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В зáле бы́ло мно́го людéй.",
+    "sentenceRU": "В за́ле бы́ло мно́го люде́й.",
     "sentenceZH": "大厅里有很多人。",
-    "targetWordForm": "людéй",
+    "targetWordForm": "люде́й",
     "otherDeclensions": [
       {
-        "word": "зáле",
+        "word": "за́ле",
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在大厅里'"
       }
@@ -1323,12 +1323,12 @@
     "word": "ребёнок",
     "case": "dative",
     "number": "plural",
-    "sentenceRU": "Мы купи́ли подáрки дéтям.",
+    "sentenceRU": "Мы купи́ли пода́рки де́тям.",
     "sentenceZH": "我们给孩子们买了礼物。",
-    "targetWordForm": "дéтям",
+    "targetWordForm": "де́тям",
     "otherDeclensions": [
       {
-        "word": "подáрки",
+        "word": "пода́рки",
         "case": "accusative",
         "brief": "阳性复数宾格，表示对象'买了礼物'"
       }
@@ -1357,9 +1357,9 @@
     "word": "ребёнок",
     "case": "instrumental",
     "number": "plural",
-    "sentenceRU": "Она ра́дуется дéтьми.",
+    "sentenceRU": "Она ра́дуется де́тьми.",
     "sentenceZH": "她为孩子们感到高兴。",
-    "targetWordForm": "дéтьми",
+    "targetWordForm": "де́тьми",
     "otherDeclensions": []
   },
   {
@@ -1402,7 +1402,7 @@
     "word": "радио",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Я слýшаю но́вости по ра́дио.",
+    "sentenceRU": "Я слы́шаю но́вости по ра́дио.",
     "sentenceZH": "我通过收音机听新闻。（不变格）",
     "targetWordForm": "ра́дио",
     "otherDeclensions": []
@@ -1713,7 +1713,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "nominative",
     "form": "masculine",
@@ -1724,7 +1724,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "nominative",
     "form": "feminine",
@@ -1735,7 +1735,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "nominative",
     "form": "neuter",
@@ -1746,7 +1746,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "летний",
     "case": "nominative",
     "form": "plural",
@@ -1757,7 +1757,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "genitive",
     "form": "masculine",
@@ -1774,7 +1774,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "genitive",
     "form": "feminine",
@@ -1791,7 +1791,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "genitive",
     "form": "plural",
@@ -1808,7 +1808,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "dative",
     "form": "masculine",
@@ -1825,7 +1825,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "dative",
     "form": "feminine",
@@ -1842,7 +1842,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "accusative",
     "form": "masculine",
@@ -1853,7 +1853,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "последний",
     "case": "accusative",
     "form": "masculine",
@@ -1870,7 +1870,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "accusative",
     "form": "feminine",
@@ -1887,7 +1887,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "accusative",
     "form": "plural",
@@ -1898,7 +1898,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "instrumental",
     "form": "masculine",
@@ -1915,7 +1915,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "instrumental",
     "form": "feminine",
@@ -1932,7 +1932,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "prepositional",
     "form": "masculine",
@@ -1949,7 +1949,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "prepositional",
     "form": "feminine",
@@ -1966,7 +1966,7 @@
   },
   {
     "grammarPointId": "adj-soft",
-    "grammarPointName": "软变化（-ний）",
+    "grammarPointName": "软变化（-ий）",
     "word": "синий",
     "case": "prepositional",
     "form": "plural",
@@ -2488,9 +2488,9 @@
     "targetWordForm": "ста́рше",
     "otherDeclensions": [
       {
-        "word": "бра́та",
+        "word": "меня́",
         "case": "genitive",
-        "brief": "брат 的属格（比较对象）"
+        "brief": "人称代词「я」的属格，比较对象（старше + 属格）"
       }
     ]
   },
