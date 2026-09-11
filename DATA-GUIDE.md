@@ -121,7 +121,7 @@
 
 ## 六、改动联动清单（改一处，必同步其余）
 
-1. **新增 tableType** → `practice.js` buildRuleHTML（渲染）+ `settings.js` updateFormOptions/updatePreview（自定义例句表单）+ 本文件「五」。
+1. **新增 tableType** → `practice.js` buildRuleHTML（渲染）+ `texts.js` detectTarget（自定义例句自动识别目标词形）+ 本文件「五」。
 2. **新增 state 字段** → `app.js` loadState 里做向后兼容 backfill。
 3. **新增任何文件** → `sw.js` 的 `FILES_TO_CACHE` 加入。
 4. **每次发布** → bump `sw.js` 的 `CACHE_NAME` 版本号（或直接跑 `node tools/release.js`）。

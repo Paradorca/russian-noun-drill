@@ -40,7 +40,7 @@ Object.assign(App, {
     view.innerHTML = '';
     const texts = this.state.userTexts || [];
     if (texts.length === 0) {
-      list.innerHTML = '<div class="text-center mt-4"><div class="welcome-logo" style="margin-top:40px;">📖</div><h3>暂无课文</h3><p>请先在「课文回顾」页导入课文。</p></div>';
+      list.innerHTML = '<div class="text-center mt-4"><div class="welcome-logo" style="margin-top:40px;">📖</div><h3>暂无课文</h3><p>请先在「添加语料」页导入课文。</p></div>';
       return;
     }
     list.innerHTML = texts.map((t, i) => `
@@ -156,13 +156,15 @@ Object.assign(App, {
 
     document.getElementById('sentence-zh').textContent = s.sentenceZH;
     const gpNode = this.data.framework.nodes.find(n => n.id === s.grammarPointId);
-    const secondPill = (gpNode && gpNode.tableType === 'comparative')
-      ? this.formName(s)
-      : `${this.caseName(s.case)} · ${this.formName(s)}`;
-    document.getElementById('sentence-meta').innerHTML = `
-      <span class="meta-pill">${s.grammarPointName}</span>
-      <span class="meta-pill">${secondPill}</span>
-    `;
+    let secondPill = '';
+    if (gpNode && gpNode.tableType === 'comparative') {
+      secondPill = this.formName(s);
+    } else if (s.case) {
+      secondPill = `${this.caseName(s.case)} · ${this.formName(s)}`;
+    }
+    document.getElementById('sentence-meta').innerHTML =
+      `<span class="meta-pill">${s.grammarPointName}</span>` +
+      (secondPill ? `<span class="meta-pill">${secondPill}</span>` : '');
 
     // Hide any open popup
     document.getElementById('other-decl-popup').classList.add('hidden');
@@ -311,7 +313,7 @@ Object.assign(App, {
       }).join('');
     } else {
       tablesHTML = (node.caseTable ? renderCaseTable(node.caseTable) : '') +
-        renderTable(node.declensionTable, node.exampleWord) +
+        (node.declensionTable ? renderTable(node.declensionTable, node.exampleWord) : '') +
         (node.examples || []).map(e => renderTable(e.table, e.word)).join('');
     }
 
