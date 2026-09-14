@@ -60,6 +60,8 @@ Object.assign(App, {
     }
 
     document.getElementById('add-custom-btn').onclick = () => this.addCustomSentence();
+    this.editingSentenceIndex = null;
+    document.getElementById('add-custom-btn').textContent = '添加例句';
     this.renderCustomSentences();
   },
 
@@ -92,14 +94,20 @@ Object.assign(App, {
       if (detected.case) newSentence.case = detected.case;
     }
 
-    this.state.userSentences.push(newSentence);
+    if (this.editingSentenceIndex != null) {
+      this.state.userSentences[this.editingSentenceIndex] = newSentence;
+      this.editingSentenceIndex = null;
+      document.getElementById('add-custom-btn').textContent = '添加例句';
+    } else {
+      this.state.userSentences.push(newSentence);
+    }
     this.saveState();
     this.renderCustomSentences();
 
     document.getElementById('custom-ru').value = '';
     document.getElementById('custom-zh').value = '';
     document.getElementById('custom-source').value = '';
-    alert(detected ? '例句已添加，已自动识别目标词形' : '例句已添加（未能自动识别目标词形，练习时不显示高亮）');
+    alert(detected ? '例句已保存，已自动识别目标词形' : '例句已保存（未能自动识别目标词形，练习时不显示高亮）');
   },
 
   detectTarget(node, sentenceRU) {
@@ -184,7 +192,8 @@ Object.assign(App, {
           <span class="meta-pill" style="font-size:0.75rem;">${s.grammarPointName}</span>
           ${pill}
           ${s.source ? `<span style="font-size:0.75rem;color:var(--muted);margin-left:auto;">来源：${s.source}</span>` : ''}
-          <button onclick="App.deleteCustomSentence(${i})" style="margin-left:auto;background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;">删除</button>
+          <button onclick="App.editCustomSentence(${i})" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.8rem;">编辑</button>
+          <button onclick="App.deleteCustomSentence(${i})" style="background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;">删除</button>
         </div>
       </div>`;
     }).join('');
@@ -193,8 +202,21 @@ Object.assign(App, {
   deleteCustomSentence(idx) {
     if (!confirm('确定删除这条例句吗？')) return;
     this.state.userSentences.splice(idx, 1);
+    if (this.editingSentenceIndex === idx) this.editingSentenceIndex = null;
     this.saveState();
     this.renderCustomSentences();
+  },
+
+  editCustomSentence(idx) {
+    const s = (this.state.userSentences || [])[idx];
+    if (!s) return;
+    this.editingSentenceIndex = idx;
+    document.getElementById('custom-grammar').value = s.grammarPointId;
+    document.getElementById('custom-ru').value = s.sentenceRU;
+    document.getElementById('custom-zh').value = s.sentenceZH;
+    document.getElementById('custom-source').value = s.source || '';
+    document.getElementById('add-custom-btn').textContent = '保存修改';
+    document.getElementById('add-sentence-panel').scrollIntoView({ behavior: 'smooth' });
   },
 
   renderTexts() {

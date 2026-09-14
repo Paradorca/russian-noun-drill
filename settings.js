@@ -20,6 +20,13 @@ Object.assign(App, {
       this.saveState();
     };
 
+    const levelSelect = document.getElementById('level-select');
+    levelSelect.value = this.state.practiceLevel || 'A1';
+    levelSelect.onchange = (e) => {
+      this.state.practiceLevel = e.target.value;
+      this.saveState();
+    };
+
     const aiProvider = document.getElementById('ai-provider');
     const aiKeyInput = document.getElementById('ai-api-key');
     const aiHint = document.getElementById('ai-key-hint');

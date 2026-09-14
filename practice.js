@@ -143,7 +143,9 @@ Object.assign(App, {
       while (n && n.parentId && n.parentId !== 'root') n = nodes.find(x => x.id === n.parentId);
       return n ? n.id : null;
     };
-    const all = [...this.sentences, ...(this.state.userSentences || [])];
+    const level = this.state.practiceLevel || 'A1';
+    const builtin = this.sentences.filter(s => (s.level || 'A1') === level);
+    const all = [...builtin, ...(this.state.userSentences || [])];
     const pool = all.filter(s => branchOf(s.grammarPointId) === branch);
     const shuffled = [...pool].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 10);

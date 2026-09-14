@@ -14,7 +14,8 @@
         "case": "nominative",
         "brief": "阴性单数主格，指示代词'这个'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-hard-a",
@@ -31,7 +32,8 @@
         "case": "genitive",
         "brief": "人称代词'我'的属格"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-hard-a",
@@ -48,7 +50,8 @@
         "case": "genitive",
         "brief": "阳性单数属格，表示所属'城市的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-hard-a",
@@ -65,7 +68,8 @@
         "case": "instrumental",
         "brief": "阳性单数工具格，表示位置'在拐角处'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-hard-a",
@@ -87,7 +91,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在房子里'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-ya",
@@ -109,7 +114,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在北京'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-ya",
@@ -126,7 +132,8 @@
         "case": "nominative",
         "brief": "阳性单数主格，表示'末尾/结束'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-ya",
@@ -143,7 +150,8 @@
         "case": "dative",
         "brief": "阴性单数与格，物主代词'自己的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-ya",
@@ -160,7 +168,8 @@
         "case": "prepositional",
         "brief": "阴性单数前置格，表示话题'关于文化'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-ya",
@@ -177,7 +186,8 @@
         "case": "nominative",
         "brief": "复数主格，物主代词'我们的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-iya",
@@ -199,7 +209,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，表示时间'在...年'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-iya",
@@ -210,7 +221,8 @@
     "sentenceRU": "У э́той фу́нкции есть огра́ничения.",
     "sentenceZH": "这个功能有局限性。",
     "targetWordForm": "фу́нкции",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-iya",
@@ -221,7 +233,8 @@
     "sentenceRU": "Поезд подхо́дит к ста́нции.",
     "sentenceZH": "列车正在进站。",
     "targetWordForm": "ста́нции",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-iya",
@@ -238,7 +251,8 @@
         "case": "accusative",
         "brief": "阴性单数宾格，形容词'有趣的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "1st-decl-soft-iya",
@@ -255,7 +269,8 @@
         "case": "genitive",
         "brief": "阳性复数属格，表示数量'很多学生的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hard-cons",
@@ -272,7 +287,8 @@
         "case": "prepositional",
         "brief": "阴性单数前置格，表示地点'在厨房'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hard-cons",
@@ -289,7 +305,8 @@
         "case": "accusative",
         "brief": "阳性单数宾格，表示方向'朝向花园'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hard-cons",
@@ -306,7 +323,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，形容词'大的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hard-cons",
@@ -323,7 +341,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在商店'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hard-cons",
@@ -345,7 +364,8 @@
         "case": "prepositional",
         "brief": "阴性单数前置格，表示地点'在街上'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-y",
@@ -362,7 +382,8 @@
         "case": "nominative",
         "brief": "阳性单数主格，指示代词'这个'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-y",
@@ -373,7 +394,8 @@
     "sentenceRU": "Вы́ставка музе́я очень инте́ресная.",
     "sentenceZH": "博物馆的展览非常有趣。",
     "targetWordForm": "музе́я",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-y",
@@ -384,7 +406,8 @@
     "sentenceRU": "Мы бежи́м к трамва́ю.",
     "sentenceZH": "我们正跑向电车。",
     "targetWordForm": "трамва́ю",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-y",
@@ -401,7 +424,8 @@
         "case": "instrumental",
         "brief": "阳性单数工具格，表示职位'以馆长身份'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-y",
@@ -418,7 +442,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在城市里'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-b",
@@ -435,7 +460,8 @@
         "case": "nominative",
         "brief": "阳性单数主格，指示代词'这个'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-b",
@@ -452,7 +478,8 @@
         "case": "genitive",
         "brief": "阳性单数属格，物主代词'我们的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-b",
@@ -463,7 +490,8 @@
     "sentenceRU": "Я часто́ обраща́юсь к словарю́.",
     "sentenceZH": "我经常查阅词典。",
     "targetWordForm": "словарю́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-b",
@@ -474,7 +502,8 @@
     "sentenceRU": "Мы говори́ли об учи́теле то́лько хоро́шее.",
     "sentenceZH": "我们只说老师的好话。",
     "targetWordForm": "учи́теле",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-soft-b",
@@ -496,7 +525,8 @@
         "case": "genitive",
         "brief": "复数属格，形容词'珍贵的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hissing",
@@ -513,7 +543,8 @@
         "case": "genitive",
         "brief": "阳性复数属格，表示对象'接诊病人'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hissing",
@@ -535,7 +566,8 @@
         "case": "genitive",
         "brief": "阳性单数属格，指示代词'这个'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hissing",
@@ -557,7 +589,8 @@
         "case": "instrumental",
         "brief": "阳性单数工具格，形容词'锋利的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hissing",
@@ -579,7 +612,8 @@
         "case": "accusative",
         "brief": "中性单数宾格，表示原因'为了耐心'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-masc-hissing",
@@ -601,7 +635,8 @@
         "case": "genitive",
         "brief": "复数属格，形容词'年轻的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-hard-o",
@@ -623,7 +658,8 @@
         "case": "nominative",
         "brief": "阳性单数主格，表示主体'空气'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-hard-o",
@@ -640,7 +676,8 @@
         "case": "genitive",
         "brief": "阴性单数属格，表示所属'房间的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-hard-o",
@@ -662,7 +699,8 @@
         "case": "genitive",
         "brief": "复数属格，形容词'绿色的/青的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-hard-o",
@@ -679,7 +717,8 @@
         "case": "instrumental",
         "brief": "复数工具格，表示伴随'带着花'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-hard-o",
@@ -696,7 +735,8 @@
         "case": "accusative",
         "brief": "中性单数宾格，形容词'重要的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-soft-e",
@@ -713,7 +753,8 @@
         "case": "genitive",
         "brief": "阳性单数属格，表示所属'高加索的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-soft-e",
@@ -730,7 +771,8 @@
         "case": "instrumental",
         "brief": "阴性单数工具格，表示时间'在暴风雨前'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-soft-e",
@@ -741,7 +783,8 @@
     "sentenceRU": "Трактор е́дет к по́лю.",
     "sentenceZH": "拖拉机正驶向田地。",
     "targetWordForm": "по́лю",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-soft-e",
@@ -758,7 +801,8 @@
         "case": "accusative",
         "brief": "中性单数宾格，表示时间'整个夏天'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-soft-e",
@@ -780,7 +824,8 @@
         "case": "genitive",
         "brief": "阳性单数属格，表示所属'地区的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-ie",
@@ -791,7 +836,8 @@
     "sentenceRU": "Э́то собы́тие измени́ло всё.",
     "sentenceZH": "这件事改变了一切。",
     "targetWordForm": "собы́тие",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-ie",
@@ -808,7 +854,8 @@
         "case": "genitive",
         "brief": "阴性单数属格，表示对象'细节'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-ie",
@@ -819,7 +866,8 @@
     "sentenceRU": "Я приступи́л к упражне́нию о́чень внима́тельно.",
     "sentenceZH": "我非常认真地开始做这个练习。",
     "targetWordForm": "упражне́нию",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-ie",
@@ -836,7 +884,8 @@
         "case": "genitive",
         "brief": "复数属格，表示来源'来自不同国家的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "2nd-decl-neut-ie",
@@ -858,7 +907,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在区域里'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-soft-fem-b",
@@ -869,7 +919,8 @@
     "sentenceRU": "Ночь бы́ла тёплой и звёздной.",
     "sentenceZH": "那个夜晚温暖而繁星满天。",
     "targetWordForm": "Ночь",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-soft-fem-b",
@@ -886,7 +937,8 @@
         "case": "accusative",
         "brief": "阴性单数宾格，形容词'沉重的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-soft-fem-b",
@@ -903,7 +955,8 @@
         "case": "genitive",
         "brief": "阴性单数属格，表示所属'春天的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-soft-fem-b",
@@ -920,7 +973,8 @@
         "case": "instrumental",
         "brief": "阴性单数工具格，形容词'新的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-soft-fem-b",
@@ -942,7 +996,8 @@
         "case": "genitive",
         "brief": "复数属格，形容词'不眠的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
@@ -959,7 +1014,8 @@
         "case": "accusative",
         "brief": "人称代词'我'的宾格"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
@@ -976,7 +1032,8 @@
         "case": "prepositional",
         "brief": "中性单数前置格，表示话题'关于健康'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
@@ -993,7 +1050,8 @@
         "case": "instrumental",
         "brief": "阴性单数工具格，物主代词'自己的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
@@ -1010,7 +1068,8 @@
         "case": "dative",
         "brief": "阳性单数与格，表示范围'在家里'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "3rd-decl-archaic-mat",
@@ -1032,7 +1091,8 @@
         "case": "nominative",
         "brief": "复数主格，表示主体'孩子们'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-mya",
@@ -1043,7 +1103,8 @@
     "sentenceRU": "Время лечи́т всё.",
     "sentenceZH": "时间治愈一切。",
     "targetWordForm": "Время",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-mya",
@@ -1054,7 +1115,8 @@
     "sentenceRU": "У нас ма́ло вре́мени.",
     "sentenceZH": "我们的时间很少。",
     "targetWordForm": "вре́мени",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-mya",
@@ -1076,7 +1138,8 @@
         "case": "genitive",
         "brief": "阳性单数属格，表示所属'人的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-mya",
@@ -1087,7 +1150,8 @@
     "sentenceRU": "Он уме́ет распределя́ть вре́менем.",
     "sentenceZH": "他懂得分配时间。",
     "targetWordForm": "вре́менем",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-mya",
@@ -1109,7 +1173,8 @@
         "case": "prepositional",
         "brief": "阴性单数前置格，表示地点'在土地上'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-vowel-drop",
@@ -1131,7 +1196,8 @@
         "case": "instrumental",
         "brief": "阳性单数工具格，表示职位'以工程师身份'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-vowel-drop",
@@ -1148,7 +1214,8 @@
         "case": "genitive",
         "brief": "阳性单数属格，表示地点'在单元门口'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-vowel-drop",
@@ -1165,7 +1232,8 @@
         "case": "genitive",
         "brief": "人称代词'他'的属格"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-vowel-drop",
@@ -1182,7 +1250,8 @@
         "case": "instrumental",
         "brief": "阳性单数工具格，形容词'白色的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-vowel-drop",
@@ -1209,7 +1278,8 @@
         "case": "instrumental",
         "brief": "复数工具格，表示伴随'带着孩子'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-anin",
@@ -1220,7 +1290,8 @@
     "sentenceRU": "Ка́ждый граждани́н име́ет пра́ва и обяза́нности.",
     "sentenceZH": "每个公民都有权利和义务。",
     "targetWordForm": "граждани́н",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-anin",
@@ -1231,7 +1302,8 @@
     "sentenceRU": "Паспо́рт граждани́на недействи́телен.",
     "sentenceZH": "这位公民的护照无效。",
     "targetWordForm": "граждани́на",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-anin",
@@ -1248,7 +1320,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在文件里'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-anin",
@@ -1265,7 +1338,8 @@
         "case": "prepositional",
         "brief": "阴性单数前置格，表示地点'在广场上'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-anin",
@@ -1287,7 +1361,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在城市里'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-suppletive",
@@ -1298,7 +1373,8 @@
     "sentenceRU": "Один челове́к не мо́жет всё знать.",
     "sentenceZH": "一个人不可能什么都知道。",
     "targetWordForm": "челове́к",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-suppletive",
@@ -1315,7 +1391,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格，表示地点'在大厅里'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-suppletive",
@@ -1332,7 +1409,8 @@
         "case": "accusative",
         "brief": "阳性复数宾格，表示对象'买了礼物'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-suppletive",
@@ -1349,7 +1427,8 @@
         "case": "genitive",
         "brief": "人称代词'他们'的属格"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-suppletive",
@@ -1360,7 +1439,8 @@
     "sentenceRU": "Она ра́дуется де́тьми.",
     "sentenceZH": "她为孩子们感到高兴。",
     "targetWordForm": "де́тьми",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-indeclinable",
@@ -1377,7 +1457,8 @@
         "case": "prepositional",
         "brief": "阴性单数前置格，表示地点'在莫斯科'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-indeclinable",
@@ -1394,7 +1475,8 @@
         "case": "genitive",
         "brief": "阳性单数属格，表示地点'在入口处'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-indeclinable",
@@ -1405,7 +1487,8 @@
     "sentenceRU": "Я слы́шаю но́вости по ра́дио.",
     "sentenceZH": "我通过收音机听新闻。（不变格）",
     "targetWordForm": "ра́дио",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-indeclinable",
@@ -1422,7 +1505,8 @@
         "case": "accusative",
         "brief": "中性单数宾格，形容词'新的'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "special-indeclinable",
@@ -1439,7 +1523,8 @@
         "case": "prepositional",
         "brief": "阴性单数前置格，表示地点'在澳大利亚'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1450,7 +1535,8 @@
     "sentenceRU": "Это мой но́вый друг.",
     "sentenceZH": "这是我的新朋友。",
     "targetWordForm": "но́вый",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1461,7 +1547,8 @@
     "sentenceRU": "Но́вая маши́на стои́т во дворе́.",
     "sentenceZH": "新汽车停在院子里。",
     "targetWordForm": "Но́вая",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1472,7 +1559,8 @@
     "sentenceRU": "Бе́лое зда́ние — э́то музе́й.",
     "sentenceZH": "白色的楼是博物馆。",
     "targetWordForm": "Бе́лое",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1483,7 +1571,8 @@
     "sentenceRU": "Молоды́е ребя́та игра́ют в футбо́л.",
     "sentenceZH": "年轻的男孩们在踢足球。",
     "targetWordForm": "Молоды́е",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1500,7 +1589,8 @@
         "case": "genitive",
         "brief": "телефо́н 的属格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1517,7 +1607,8 @@
         "case": "genitive",
         "brief": "кварти́ра 的属格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1534,7 +1625,8 @@
         "case": "genitive",
         "brief": "магази́н 的属格（复数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1551,7 +1643,8 @@
         "case": "dative",
         "brief": "сосе́д 的与格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1568,7 +1661,8 @@
         "case": "dative",
         "brief": "учи́тельница 的与格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1579,7 +1673,8 @@
     "sentenceRU": "Я купи́л но́вый телефо́н.",
     "sentenceZH": "我买了新手机。",
     "targetWordForm": "но́вый",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1596,7 +1691,8 @@
         "case": "accusative",
         "brief": "сосе́д 的宾格（单数，动物名词）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1613,7 +1709,8 @@
         "case": "accusative",
         "brief": "кни́га 的宾格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1624,7 +1721,8 @@
     "sentenceRU": "Я ви́дел но́вые маши́ны.",
     "sentenceZH": "我看见了新汽车。",
     "targetWordForm": "но́вые",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1641,7 +1739,8 @@
         "case": "instrumental",
         "brief": "телефо́н 的工具格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1658,7 +1757,8 @@
         "case": "instrumental",
         "brief": "колле́га 的工具格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1675,7 +1775,8 @@
         "case": "prepositional",
         "brief": "прое́кт 的前置格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1692,7 +1793,8 @@
         "case": "prepositional",
         "brief": "кни́га 的前置格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-hard",
@@ -1709,7 +1811,8 @@
         "case": "prepositional",
         "brief": "дом 的前置格（复数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1720,7 +1823,8 @@
     "sentenceRU": "Мой си́ний рюкза́к стои́т в углу́.",
     "sentenceZH": "我的蓝色背包放在角落里。",
     "targetWordForm": "си́ний",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1731,7 +1835,8 @@
     "sentenceRU": "На столе́ лежи́т си́няя тетра́дь.",
     "sentenceZH": "桌上放着一本蓝色练习本。",
     "targetWordForm": "си́няя",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1742,7 +1847,8 @@
     "sentenceRU": "Си́нее мо́ре сего́дня споко́йно.",
     "sentenceZH": "今天蓝色的大海很平静。",
     "targetWordForm": "Си́нее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1753,7 +1859,8 @@
     "sentenceRU": "Ле́тние кани́кулы уже́ начали́сь.",
     "sentenceZH": "暑假已经开始了。",
     "targetWordForm": "Ле́тние",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1770,7 +1877,8 @@
         "case": "genitive",
         "brief": "каранда́ш 的属格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1787,7 +1895,8 @@
         "case": "genitive",
         "brief": "пала́тка 的属格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1804,7 +1913,8 @@
         "case": "genitive",
         "brief": "стул 的属格（复数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1821,7 +1931,8 @@
         "case": "dative",
         "brief": "дом 的与格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1838,7 +1949,8 @@
         "case": "dative",
         "brief": "маши́на 的与格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1849,7 +1961,8 @@
     "sentenceRU": "Я купи́л си́ний каранда́ш.",
     "sentenceZH": "我买了一支蓝色铅笔。",
     "targetWordForm": "си́ний",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1866,7 +1979,8 @@
         "case": "accusative",
         "brief": "гость 的宾格（单数，动物名词）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1883,7 +1997,8 @@
         "case": "accusative",
         "brief": "ю́бка 的宾格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1894,7 +2009,8 @@
     "sentenceRU": "Мы уви́дели си́ние маши́ны.",
     "sentenceZH": "我们看见了蓝色的汽车。",
     "targetWordForm": "си́ние",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1911,7 +2027,8 @@
         "case": "instrumental",
         "brief": "рюкза́к 的工具格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1928,7 +2045,8 @@
         "case": "instrumental",
         "brief": "маши́на 的工具格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1945,7 +2063,8 @@
         "case": "prepositional",
         "brief": "рюкза́к 的前置格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1962,7 +2081,8 @@
         "case": "prepositional",
         "brief": "кни́га 的前置格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-soft",
@@ -1979,7 +2099,8 @@
         "case": "prepositional",
         "brief": "пала́тка 的前置格（复数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -1990,7 +2111,8 @@
     "sentenceRU": "У меня́ есть хоро́ший друг.",
     "sentenceZH": "我有一个好朋友。",
     "targetWordForm": "хоро́ший",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2001,7 +2123,8 @@
     "sentenceRU": "Она́ хоро́шая учи́тельница.",
     "sentenceZH": "她是一位好老师。",
     "targetWordForm": "хоро́шая",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2012,7 +2135,8 @@
     "sentenceRU": "Это хоро́шее вино́.",
     "sentenceZH": "这是好酒。",
     "targetWordForm": "хоро́шее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2029,7 +2153,8 @@
         "case": "accusative",
         "brief": "врач 的宾格（单数，动物名词）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2046,7 +2171,8 @@
         "case": "prepositional",
         "brief": "кни́га 的前置格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2063,7 +2189,8 @@
         "case": "instrumental",
         "brief": "результа́т 的工具格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2080,7 +2207,8 @@
         "case": "dative",
         "brief": "друг 的与格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2091,7 +2219,8 @@
     "sentenceRU": "У меня́ лёгкий рюкза́к.",
     "sentenceZH": "我有一个轻的背包。",
     "targetWordForm": "лёгкий",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2102,7 +2231,8 @@
     "sentenceRU": "Э́то лёгкая зада́ча.",
     "sentenceZH": "这是一道简单的题。",
     "targetWordForm": "лёгкая",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2119,7 +2249,8 @@
         "case": "accusative",
         "brief": "кни́га 的宾格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2130,7 +2261,8 @@
     "sentenceRU": "Мы вы́учили лёгкое пра́вило.",
     "sentenceZH": "我们学会了一条简单的规则。",
     "targetWordForm": "лёгкое",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2147,7 +2279,8 @@
         "case": "instrumental",
         "brief": "побе́да 的工具格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2164,7 +2297,8 @@
         "case": "prepositional",
         "brief": "пла́тье 的前置格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2181,7 +2315,8 @@
         "case": "dative",
         "brief": "зада́ние 的与格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2192,7 +2327,8 @@
     "sentenceRU": "Сего́дня плоха́я пого́да.",
     "sentenceZH": "今天天气不好。",
     "targetWordForm": "плоха́я",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2203,7 +2339,8 @@
     "sentenceRU": "Э́то плохо́е реше́ние.",
     "sentenceZH": "这是个糟糕的决定。",
     "targetWordForm": "плохо́е",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2220,7 +2357,8 @@
         "case": "genitive",
         "brief": "результа́т 的属格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2231,7 +2369,8 @@
     "sentenceRU": "Он получи́л плохо́й результа́т.",
     "sentenceZH": "他得到了不好的结果。",
     "targetWordForm": "плохо́й",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2248,7 +2387,8 @@
         "case": "prepositional",
         "brief": "но́вость 的前置格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2265,7 +2405,8 @@
         "case": "instrumental",
         "brief": "реше́ние 的工具格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-mixed",
@@ -2282,7 +2423,8 @@
         "case": "dative",
         "brief": "сове́т 的与格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2293,7 +2435,8 @@
     "sentenceRU": "Э́тот го́род о́чень кра́сив.",
     "sentenceZH": "这座城市很美。",
     "targetWordForm": "кра́сив",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2304,7 +2447,8 @@
     "sentenceRU": "Э́та де́вушка о́чень краси́ва.",
     "sentenceZH": "这个女孩很美。",
     "targetWordForm": "краси́ва",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2315,7 +2459,8 @@
     "sentenceRU": "Э́то ме́сто краси́во.",
     "sentenceZH": "这个地方很美。",
     "targetWordForm": "краси́во",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2326,7 +2471,8 @@
     "sentenceRU": "Э́ти цветы́ краси́вы.",
     "sentenceZH": "这些花很美。",
     "targetWordForm": "краси́вы",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2337,7 +2483,8 @@
     "sentenceRU": "Я рад тебя́ ви́деть.",
     "sentenceZH": "很高兴见到你。",
     "targetWordForm": "рад",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2348,7 +2495,8 @@
     "sentenceRU": "Она́ гото́ва к экза́мену.",
     "sentenceZH": "她为考试做好了准备。",
     "targetWordForm": "гото́ва",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2359,7 +2507,8 @@
     "sentenceRU": "Мы гото́вы отве́тить на вопро́с.",
     "sentenceZH": "我们准备好回答问题了。",
     "targetWordForm": "гото́вы",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2370,7 +2519,8 @@
     "sentenceRU": "Уро́к был интере́сен.",
     "sentenceZH": "课很有趣。",
     "targetWordForm": "интере́сен",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2381,7 +2531,8 @@
     "sentenceRU": "Э́тот вопро́с о́чень тру́ден.",
     "sentenceZH": "这个问题很难。",
     "targetWordForm": "тру́ден",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2392,7 +2543,8 @@
     "sentenceRU": "Вы соверше́нно пра́вы.",
     "sentenceZH": "你们完全正确。",
     "targetWordForm": "пра́вы",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2403,7 +2555,8 @@
     "sentenceRU": "Он уже́ свобо́ден.",
     "sentenceZH": "他已经有空了。",
     "targetWordForm": "свобо́ден",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-short",
@@ -2414,7 +2567,8 @@
     "sentenceRU": "Кни́га была́ интере́сна.",
     "sentenceZH": "书很有趣。",
     "targetWordForm": "интере́сна",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2425,7 +2579,8 @@
     "sentenceRU": "Э́тот дом краси́вее того́.",
     "sentenceZH": "这栋房子比那栋更美。",
     "targetWordForm": "краси́вее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2436,7 +2591,8 @@
     "sentenceRU": "Э́та кни́га интере́снее той.",
     "sentenceZH": "这本书比那本更有趣。",
     "targetWordForm": "интере́снее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2453,7 +2609,8 @@
         "case": "genitive",
         "brief": "ста́рый 的属格（比较对象）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2464,7 +2621,8 @@
     "sentenceRU": "Сего́дня пого́да лу́чше, чем вчера́.",
     "sentenceZH": "今天天气比昨天好。",
     "targetWordForm": "лу́чше",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2475,7 +2633,8 @@
     "sentenceRU": "Э́та зада́ча ху́же, чем пре́жняя.",
     "sentenceZH": "这道题比上一道更差。",
     "targetWordForm": "ху́же",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2492,7 +2651,8 @@
         "case": "genitive",
         "brief": "人称代词「я」的属格，比较对象（старше + 属格）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2503,7 +2663,8 @@
     "sentenceRU": "Э́тот путь коро́че.",
     "sentenceZH": "这条路更短。",
     "targetWordForm": "коро́че",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2514,7 +2675,8 @@
     "sentenceRU": "Она́ говори́т ти́ше бра́та.",
     "sentenceZH": "她说话比哥哥轻。",
     "targetWordForm": "ти́ше",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2525,7 +2687,8 @@
     "sentenceRU": "Э́тот чемода́н тяжеле́е.",
     "sentenceZH": "这个箱子更重。",
     "targetWordForm": "тяжеле́е",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2536,7 +2699,8 @@
     "sentenceRU": "Э́то вино́ деше́вле.",
     "sentenceZH": "这种酒更便宜。",
     "targetWordForm": "деше́вле",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2547,7 +2711,8 @@
     "sentenceRU": "Он бе́гает быстре́е меня́.",
     "sentenceZH": "他跑得比我快。",
     "targetWordForm": "быстре́е",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2564,7 +2729,8 @@
         "case": "genitive",
         "brief": "та 的属格（比较对象）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2575,7 +2741,8 @@
     "sentenceRU": "Э́тот вариа́нт бо́лее удо́бный.",
     "sentenceZH": "这个方案更方便。",
     "targetWordForm": "бо́лее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2586,7 +2753,8 @@
     "sentenceRU": "Э́та зада́ча бо́лее тру́дная.",
     "sentenceZH": "这道题更难。",
     "targetWordForm": "бо́лее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2597,7 +2765,8 @@
     "sentenceRU": "Сего́дня пого́да ме́нее тёплая.",
     "sentenceZH": "今天天气没那么暖和。",
     "targetWordForm": "ме́нее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2608,7 +2777,8 @@
     "sentenceRU": "Э́то реше́ние бо́лее надёжное.",
     "sentenceZH": "这个决定更可靠。",
     "targetWordForm": "бо́лее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2619,7 +2789,8 @@
     "sentenceRU": "Он вы́брал бо́лее дорого́й вариа́нт.",
     "sentenceZH": "他选了更贵的方案。",
     "targetWordForm": "бо́лее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-comparative",
@@ -2630,7 +2801,8 @@
     "sentenceRU": "Мы обсуди́ли бо́лее ва́жный вопро́с.",
     "sentenceZH": "我们讨论了更重要的问题。",
     "targetWordForm": "бо́лее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2641,7 +2813,8 @@
     "sentenceRU": "Э́то красиве́йший го́род.",
     "sentenceZH": "这是最美的城市。",
     "targetWordForm": "красиве́йший",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2652,7 +2825,8 @@
     "sentenceRU": "Э́то интересне́йшая кни́га.",
     "sentenceZH": "这是一本最有趣的书。",
     "targetWordForm": "интересне́йшая",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2669,7 +2843,8 @@
         "case": "accusative",
         "brief": "зада́ча 的宾格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2686,7 +2861,8 @@
         "case": "prepositional",
         "brief": "го́род 的前置格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2697,7 +2873,8 @@
     "sentenceRU": "Э́то высоча́йшее зда́ние.",
     "sentenceZH": "这是最高的建筑。",
     "targetWordForm": "высоча́йшее",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2708,7 +2885,8 @@
     "sentenceRU": "Он мой лу́чший друг.",
     "sentenceZH": "他是我最好的朋友。",
     "targetWordForm": "лу́чший",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2719,7 +2897,8 @@
     "sentenceRU": "Э́то са́мый краси́вый го́род.",
     "sentenceZH": "这是最美的城市。",
     "targetWordForm": "са́мый",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2730,7 +2909,8 @@
     "sentenceRU": "Э́то са́мая интере́сная кни́га.",
     "sentenceZH": "这是最有趣的一本书。",
     "targetWordForm": "са́мая",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2747,7 +2927,8 @@
         "case": "prepositional",
         "brief": "го́род 的前置格（单数）"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2758,7 +2939,8 @@
     "sentenceRU": "Э́то са́мое тру́дное зада́ние.",
     "sentenceZH": "这是最难的任务。",
     "targetWordForm": "са́мое",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2769,7 +2951,8 @@
     "sentenceRU": "Она́ чита́ет са́мую интере́сную кни́гу.",
     "sentenceZH": "她在读最有趣的一本书。",
     "targetWordForm": "са́мую",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "adj-superlative",
@@ -2780,7 +2963,8 @@
     "sentenceRU": "Э́то са́мые интере́сные ле́кции.",
     "sentenceZH": "这些是最有趣的课。",
     "targetWordForm": "са́мые",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2797,7 +2981,8 @@
         "case": "nominative",
         "brief": "阴性单数主格'书'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2814,7 +2999,8 @@
         "case": "nominative",
         "brief": "阴性单数主格'音乐'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2831,7 +3017,8 @@
         "case": "prepositional",
         "brief": "阳性单数前置格'在公园里'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2848,7 +3035,8 @@
         "case": "accusative",
         "brief": "不变格名词'电影院'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2865,7 +3053,8 @@
         "case": "accusative",
         "brief": "阳性单数宾格'天'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2882,7 +3071,8 @@
         "case": "nominative",
         "brief": "阴性单数主格'姐妹'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2899,7 +3089,8 @@
         "case": "accusative",
         "brief": "阴性单数宾格'书'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2910,7 +3101,8 @@
     "sentenceRU": "Я о́чень люблю́ тебя́.",
     "sentenceZH": "我非常爱你。",
     "targetWordForm": "тебя́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2921,7 +3113,8 @@
     "sentenceRU": "Я хочу́ поговори́ть с тобо́й.",
     "sentenceZH": "我想和你谈谈。",
     "targetWordForm": "тобо́й",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2932,7 +3125,8 @@
     "sentenceRU": "Ма́ма ду́мает о тебе́.",
     "sentenceZH": "妈妈在想你。",
     "targetWordForm": "тебе́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2949,7 +3143,8 @@
         "case": "nominative",
         "brief": "阴性单数主格'汽车'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2966,7 +3161,8 @@
         "case": "accusative",
         "brief": "阳性单数宾格'建议'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2983,7 +3179,8 @@
         "case": "prepositional",
         "brief": "阴性单数前置格'在学校里'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -2994,7 +3191,8 @@
     "sentenceRU": "Мы горди́мся им.",
     "sentenceZH": "我们为他感到骄傲。",
     "targetWordForm": "им",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3005,7 +3203,8 @@
     "sentenceRU": "Она́ ча́сто говори́т о нём.",
     "sentenceZH": "她经常谈论他。",
     "targetWordForm": "нём",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3022,7 +3221,8 @@
         "case": "nominative",
         "brief": "阳性单数主格'嗓音'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3039,7 +3239,8 @@
         "case": "accusative",
         "brief": "复数宾格'花'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3056,7 +3257,8 @@
         "case": "accusative",
         "brief": "阳性单数宾格'天'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3073,7 +3275,8 @@
         "case": "accusative",
         "brief": "阳性单数宾格'剧院'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3084,7 +3287,8 @@
     "sentenceRU": "Мы говори́м о ней.",
     "sentenceZH": "我们在谈论她。",
     "targetWordForm": "ней",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3101,7 +3305,8 @@
         "case": "nominative",
         "brief": "阴性单数主格'家庭'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3118,7 +3323,8 @@
         "case": "nominative",
         "brief": "阴性单数主格'帮助'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3135,7 +3341,8 @@
         "case": "genitive",
         "brief": "阳性单数属格'入口'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3146,7 +3353,8 @@
     "sentenceRU": "Он разгова́ривает с на́ми.",
     "sentenceZH": "他在和我们说话。",
     "targetWordForm": "на́ми",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3157,7 +3365,8 @@
     "sentenceRU": "Они́ ча́сто ду́мают о нас.",
     "sentenceZH": "他们经常想我们。",
     "targetWordForm": "нас",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3174,7 +3383,8 @@
         "case": "nominative",
         "brief": "阳性单数主格'问题'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3185,7 +3395,8 @@
     "sentenceRU": "Я хочу́ вам помо́чь.",
     "sentenceZH": "我想帮助您。",
     "targetWordForm": "вам",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3196,7 +3407,8 @@
     "sentenceRU": "Я вас по́нял.",
     "sentenceZH": "我明白您了。",
     "targetWordForm": "вас",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3207,7 +3419,8 @@
     "sentenceRU": "Мы горди́мся ва́ми.",
     "sentenceZH": "我们为您感到骄傲。",
     "targetWordForm": "ва́ми",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3218,7 +3431,8 @@
     "sentenceRU": "Мы говори́м о вас.",
     "sentenceZH": "我们在谈论您。",
     "targetWordForm": "вас",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3235,7 +3449,8 @@
         "case": "genitive",
         "brief": "中性单数属格'时间'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3252,7 +3467,8 @@
         "case": "accusative",
         "brief": "阳性单数宾格'建议'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3269,7 +3485,8 @@
         "case": "prepositional",
         "brief": "阴性单数前置格'在街上'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3286,7 +3503,8 @@
         "case": "accusative",
         "brief": "不变格名词'电影院'"
       }
-    ]
+    ],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-personal",
@@ -3297,7 +3515,8 @@
     "sentenceRU": "Мы говори́м о них.",
     "sentenceZH": "我们在谈论他们。",
     "targetWordForm": "них",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3308,7 +3527,8 @@
     "sentenceRU": "Э́то мой брат.",
     "sentenceZH": "这是我的哥哥（弟弟）。",
     "targetWordForm": "мой",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3319,7 +3539,8 @@
     "sentenceRU": "Э́то моя́ кни́га.",
     "sentenceZH": "这是我的书。",
     "targetWordForm": "моя́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3330,7 +3551,8 @@
     "sentenceRU": "Э́то моё окно́.",
     "sentenceZH": "这是我的窗户。",
     "targetWordForm": "моё",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3341,7 +3563,8 @@
     "sentenceRU": "Э́то мои́ друзья́.",
     "sentenceZH": "这些是我的朋友。",
     "targetWordForm": "мои́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3352,7 +3575,8 @@
     "sentenceRU": "Здесь нет моего́ бра́та.",
     "sentenceZH": "我哥哥不在这里。",
     "targetWordForm": "моего́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3363,7 +3587,8 @@
     "sentenceRU": "У мое́й сестры́ есть кот.",
     "sentenceZH": "我姐姐有一只猫。",
     "targetWordForm": "мое́й",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3374,7 +3599,8 @@
     "sentenceRU": "Я дал кни́гу моему́ дру́гу.",
     "sentenceZH": "我把书给了我的朋友。",
     "targetWordForm": "моему́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3385,7 +3611,8 @@
     "sentenceRU": "Я помога́ю мое́й ма́ме.",
     "sentenceZH": "我帮助我的妈妈。",
     "targetWordForm": "мое́й",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3396,7 +3623,8 @@
     "sentenceRU": "Я люблю́ мою́ ма́му.",
     "sentenceZH": "我爱我的妈妈。",
     "targetWordForm": "мою́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3407,7 +3635,8 @@
     "sentenceRU": "Я ви́жу моего́ дру́га.",
     "sentenceZH": "我看见我的朋友。",
     "targetWordForm": "моего́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3418,7 +3647,8 @@
     "sentenceRU": "Я иду́ с мои́м бра́том.",
     "sentenceZH": "我和我哥哥一起走。",
     "targetWordForm": "мои́м",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3429,7 +3659,8 @@
     "sentenceRU": "Я гуля́ю с мое́й соба́кой.",
     "sentenceZH": "我和我的狗一起散步。",
     "targetWordForm": "мое́й",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3440,7 +3671,8 @@
     "sentenceRU": "Я живу́ в моём до́ме.",
     "sentenceZH": "我住在我的房子里。",
     "targetWordForm": "моём",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3451,7 +3683,8 @@
     "sentenceRU": "Я ду́маю о мое́й рабо́те.",
     "sentenceZH": "我在想我的工作。",
     "targetWordForm": "мое́й",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3462,7 +3695,8 @@
     "sentenceRU": "Здесь нет мои́х веще́й.",
     "sentenceZH": "我的东西不在这里。",
     "targetWordForm": "мои́х",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3473,7 +3707,8 @@
     "sentenceRU": "Где твоя́ су́мка?",
     "sentenceZH": "你的包在哪里？",
     "targetWordForm": "твоя́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3484,7 +3719,8 @@
     "sentenceRU": "Я не зна́ю твоего́ и́мени.",
     "sentenceZH": "我不知道你的名字。",
     "targetWordForm": "твоего́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3495,7 +3731,8 @@
     "sentenceRU": "Э́то на́ша шко́ла.",
     "sentenceZH": "这是我们的学校。",
     "targetWordForm": "на́ша",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3506,7 +3743,8 @@
     "sentenceRU": "Здесь нет на́шего учи́теля.",
     "sentenceZH": "我们的老师不在这里。",
     "targetWordForm": "на́шего",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3517,7 +3755,8 @@
     "sentenceRU": "Где ва́ш дом?",
     "sentenceZH": "您的房子在哪里？",
     "targetWordForm": "ва́ш",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3528,7 +3767,8 @@
     "sentenceRU": "Я ви́жу ва́шу маши́ну.",
     "sentenceZH": "我看见您的汽车。",
     "targetWordForm": "ва́шу",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3539,7 +3779,8 @@
     "sentenceRU": "Он чита́ет свою́ кни́гу.",
     "sentenceZH": "他在读自己的书。",
     "targetWordForm": "свою́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3550,7 +3791,8 @@
     "sentenceRU": "Она́ лю́бит свои́х друзе́й.",
     "sentenceZH": "她爱自己的朋友们。",
     "targetWordForm": "свои́х",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-possessive",
@@ -3561,7 +3803,8 @@
     "sentenceRU": "Он звони́т своему́ отцу́.",
     "sentenceZH": "他给自己的父亲打电话。",
     "targetWordForm": "своему́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3572,7 +3815,8 @@
     "sentenceRU": "Э́тот дом большо́й.",
     "sentenceZH": "这个房子很大。",
     "targetWordForm": "Э́тот",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3583,7 +3827,8 @@
     "sentenceRU": "Э́та кни́га интере́сная.",
     "sentenceZH": "这本书很有趣。",
     "targetWordForm": "Э́та",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3594,7 +3839,8 @@
     "sentenceRU": "Э́то окно́ большо́е.",
     "sentenceZH": "这个窗户很大。",
     "targetWordForm": "Э́то",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3605,7 +3851,8 @@
     "sentenceRU": "Э́ти кни́ги мои́.",
     "sentenceZH": "这些书是我的。",
     "targetWordForm": "Э́ти",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3616,7 +3863,8 @@
     "sentenceRU": "Здесь нет э́того словаря́.",
     "sentenceZH": "这里没有这本词典。",
     "targetWordForm": "э́того",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3627,7 +3875,8 @@
     "sentenceRU": "У э́той де́вушки есть брат.",
     "sentenceZH": "这个女孩有个哥哥。",
     "targetWordForm": "э́той",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3638,7 +3887,8 @@
     "sentenceRU": "Я ве́рю э́тому челове́ку.",
     "sentenceZH": "我相信这个人。",
     "targetWordForm": "э́тому",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3649,7 +3899,8 @@
     "sentenceRU": "Я чита́ю э́ту кни́гу.",
     "sentenceZH": "我在读这本书。",
     "targetWordForm": "э́ту",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3660,7 +3911,8 @@
     "sentenceRU": "Мы говори́м об э́том фи́льме.",
     "sentenceZH": "我们在谈论这部电影。",
     "targetWordForm": "э́том",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3671,7 +3923,8 @@
     "sentenceRU": "Здесь нет э́тих книг.",
     "sentenceZH": "这里没有这些书。",
     "targetWordForm": "э́тих",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3682,7 +3935,8 @@
     "sentenceRU": "Тот дом ста́рый.",
     "sentenceZH": "那栋房子很旧。",
     "targetWordForm": "Тот",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3693,7 +3947,8 @@
     "sentenceRU": "Та кни́га моя́.",
     "sentenceZH": "那本书是我的。",
     "targetWordForm": "Та",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3704,7 +3959,8 @@
     "sentenceRU": "Я ви́жу ту маши́ну.",
     "sentenceZH": "我看见那辆汽车。",
     "targetWordForm": "ту",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-demonstrative",
@@ -3715,7 +3971,8 @@
     "sentenceRU": "Он ду́мает о том дне.",
     "sentenceZH": "他在想那一天。",
     "targetWordForm": "том",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3726,7 +3983,8 @@
     "sentenceRU": "Кто э́то?",
     "sentenceZH": "这是谁？",
     "targetWordForm": "Кто",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3737,7 +3995,8 @@
     "sentenceRU": "У кого́ есть вре́мя?",
     "sentenceZH": "谁有时间？",
     "targetWordForm": "кого́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3748,7 +4007,8 @@
     "sentenceRU": "Кому́ ты дал кни́гу?",
     "sentenceZH": "你把书给了谁？",
     "targetWordForm": "Кому́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3759,7 +4019,8 @@
     "sentenceRU": "Кого́ ты ви́дишь?",
     "sentenceZH": "你看见谁？",
     "targetWordForm": "Кого́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3770,7 +4031,8 @@
     "sentenceRU": "С кем ты говори́шь?",
     "sentenceZH": "你在和谁说话？",
     "targetWordForm": "кем",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3781,7 +4043,8 @@
     "sentenceRU": "О ком ты ду́маешь?",
     "sentenceZH": "你在想谁？",
     "targetWordForm": "ком",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3792,7 +4055,8 @@
     "sentenceRU": "Что э́то?",
     "sentenceZH": "这是什么？",
     "targetWordForm": "Что",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3803,7 +4067,8 @@
     "sentenceRU": "Чего́ ты хо́чешь?",
     "sentenceZH": "你想要什么？",
     "targetWordForm": "Чего́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3814,7 +4079,8 @@
     "sentenceRU": "Чему́ ты ра́дуешься?",
     "sentenceZH": "你为什么高兴？",
     "targetWordForm": "Чему́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3825,7 +4091,8 @@
     "sentenceRU": "Чем ты пи́шешь?",
     "sentenceZH": "你用什么写字？",
     "targetWordForm": "Чем",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3836,7 +4103,8 @@
     "sentenceRU": "О чём ты ду́маешь?",
     "sentenceZH": "你在想什么？",
     "targetWordForm": "чём",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3847,7 +4115,8 @@
     "sentenceRU": "Како́й сего́дня день?",
     "sentenceZH": "今天星期几？",
     "targetWordForm": "Како́й",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3858,7 +4127,8 @@
     "sentenceRU": "Кака́я сего́дня пого́да?",
     "sentenceZH": "今天天气怎么样？",
     "targetWordForm": "Кака́я",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3869,7 +4139,8 @@
     "sentenceRU": "Чей э́то дом?",
     "sentenceZH": "这是谁的房子？",
     "targetWordForm": "Чей",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-interrogative",
@@ -3880,7 +4151,8 @@
     "sentenceRU": "Чья э́то су́мка?",
     "sentenceZH": "这是谁的包？",
     "targetWordForm": "Чья",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3891,7 +4163,8 @@
     "sentenceRU": "Я ви́жу себя́ в зе́ркале.",
     "sentenceZH": "我在镜子里看见自己。",
     "targetWordForm": "себя́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3902,7 +4175,8 @@
     "sentenceRU": "Я купи́л э́то для себя́.",
     "sentenceZH": "我给自己买了这个。",
     "targetWordForm": "себя́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3913,7 +4187,8 @@
     "sentenceRU": "Он купи́л себе́ кни́гу.",
     "sentenceZH": "他给自己买了本书。",
     "targetWordForm": "себе́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3924,7 +4199,8 @@
     "sentenceRU": "Она́ горди́тся собо́й.",
     "sentenceZH": "她为自己骄傲。",
     "targetWordForm": "собо́й",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3935,7 +4211,8 @@
     "sentenceRU": "Он ча́сто ду́мает о себе́.",
     "sentenceZH": "他经常想自己。",
     "targetWordForm": "себе́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3946,7 +4223,8 @@
     "sentenceRU": "Он лю́бит свой дом.",
     "sentenceZH": "他爱自己的房子。",
     "targetWordForm": "свой",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3957,7 +4235,8 @@
     "sentenceRU": "Он чита́ет свою́ кни́гу.",
     "sentenceZH": "他读自己的书。",
     "targetWordForm": "свою́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3968,7 +4247,8 @@
     "sentenceRU": "У него́ своя́ маши́на.",
     "sentenceZH": "他有自己的汽车。",
     "targetWordForm": "своя́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3979,7 +4259,8 @@
     "sentenceRU": "У него́ нет своего́ до́ма.",
     "sentenceZH": "他没有自己的房子。",
     "targetWordForm": "своего́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -3990,7 +4271,8 @@
     "sentenceRU": "Он горди́тся свои́м сы́ном.",
     "sentenceZH": "他为自己儿子骄傲。",
     "targetWordForm": "свои́м",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -4001,7 +4283,8 @@
     "sentenceRU": "Он пи́шет письмо́ своему́ бра́ту.",
     "sentenceZH": "他给自己的哥哥写信。",
     "targetWordForm": "своему́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-reflexive",
@@ -4012,7 +4295,8 @@
     "sentenceRU": "Он ду́мает о своём бу́дущем.",
     "sentenceZH": "他在想自己的未来。",
     "targetWordForm": "своём",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4023,7 +4307,8 @@
     "sentenceRU": "Весь день я рабо́тал.",
     "sentenceZH": "我工作了一整天。",
     "targetWordForm": "Весь",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4034,7 +4319,8 @@
     "sentenceRU": "Вся семья́ до́ма.",
     "sentenceZH": "全家都在家。",
     "targetWordForm": "Вся",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4045,7 +4331,8 @@
     "sentenceRU": "Всё в поря́дке.",
     "sentenceZH": "一切都好。",
     "targetWordForm": "Всё",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4056,7 +4343,8 @@
     "sentenceRU": "Все студе́нты здесь.",
     "sentenceZH": "所有学生都在这里。",
     "targetWordForm": "Все",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4067,7 +4355,8 @@
     "sentenceRU": "Я не зна́ю всего́ те́кста.",
     "sentenceZH": "我不了解全文。",
     "targetWordForm": "всего́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4078,7 +4367,8 @@
     "sentenceRU": "Я чита́л всю ночь.",
     "sentenceZH": "我读了一整夜。",
     "targetWordForm": "всю",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4089,7 +4379,8 @@
     "sentenceRU": "Мы знако́мы со всем кла́ссом.",
     "sentenceZH": "我们认识全班。",
     "targetWordForm": "всем",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4100,7 +4391,8 @@
     "sentenceRU": "Он ду́мает обо всём.",
     "sentenceZH": "他什么都想。",
     "targetWordForm": "всём",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4111,7 +4403,8 @@
     "sentenceRU": "Он сам э́то сде́лал.",
     "sentenceZH": "他自己做了这个。",
     "targetWordForm": "сам",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4122,7 +4415,8 @@
     "sentenceRU": "Она́ сама́ пришла́.",
     "sentenceZH": "她自己来了。",
     "targetWordForm": "сама́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4133,7 +4427,8 @@
     "sentenceRU": "Я дал э́то самому́ дире́ктору.",
     "sentenceZH": "我把它给了经理本人。",
     "targetWordForm": "самому́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-definitive",
@@ -4144,7 +4439,8 @@
     "sentenceRU": "Они́ са́ми э́то зна́ют.",
     "sentenceZH": "他们自己知道这个。",
     "targetWordForm": "са́ми",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4155,7 +4451,8 @@
     "sentenceRU": "Никто́ не зна́ет.",
     "sentenceZH": "没有人知道。",
     "targetWordForm": "Никто́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4166,7 +4463,8 @@
     "sentenceRU": "Я никого́ не ви́жу.",
     "sentenceZH": "我谁也没看见。",
     "targetWordForm": "никого́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4177,7 +4475,8 @@
     "sentenceRU": "Я никому́ не сказа́л.",
     "sentenceZH": "我谁也没告诉。",
     "targetWordForm": "никому́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4188,7 +4487,8 @@
     "sentenceRU": "Он нике́м не дово́лен.",
     "sentenceZH": "他对谁都不满意。",
     "targetWordForm": "нике́м",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4199,7 +4499,8 @@
     "sentenceRU": "Он ни о ко́м не ду́мает.",
     "sentenceZH": "他谁也不想。",
     "targetWordForm": "ко́м",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4210,7 +4511,8 @@
     "sentenceRU": "Ничто́ не измени́лось.",
     "sentenceZH": "什么都没改变。",
     "targetWordForm": "Ничто́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4221,7 +4523,8 @@
     "sentenceRU": "У него́ ничего́ нет.",
     "sentenceZH": "他什么都没有。",
     "targetWordForm": "ничего́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4232,7 +4535,8 @@
     "sentenceRU": "Он ничему́ не удивля́ется.",
     "sentenceZH": "他对什么都不惊讶。",
     "targetWordForm": "ничему́",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4243,7 +4547,8 @@
     "sentenceRU": "Он ниче́м не интересу́ется.",
     "sentenceZH": "他对什么都不感兴趣。",
     "targetWordForm": "ниче́м",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4254,7 +4559,8 @@
     "sentenceRU": "Он ни о чём не ду́мает.",
     "sentenceZH": "他什么都不想。",
     "targetWordForm": "чём",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4265,7 +4571,8 @@
     "sentenceRU": "Нет никако́й пробле́мы.",
     "sentenceZH": "没有任何问题。",
     "targetWordForm": "никако́й",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "pron-negative",
@@ -4276,7 +4583,8 @@
     "sentenceRU": "У меня́ нет никаки́х вопро́сов.",
     "sentenceZH": "我没有任何问题。",
     "targetWordForm": "никаки́х",
-    "otherDeclensions": []
+    "otherDeclensions": [],
+    "level": "A1"
   },
   {
     "grammarPointId": "num-odin",
@@ -4287,7 +4595,8 @@
     "sentenceZH": "我有一个兄弟。",
     "targetWordForm": "оди́н",
     "otherDeclensions": [],
-    "form": "masculine"
+    "form": "masculine",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-odin",
@@ -4298,7 +4607,8 @@
     "sentenceZH": "这里一辆车也没有。",
     "targetWordForm": "одно́й",
     "otherDeclensions": [],
-    "form": "feminine"
+    "form": "feminine",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-odin",
@@ -4309,7 +4619,8 @@
     "sentenceZH": "我和一个大学生交谈。",
     "targetWordForm": "одни́м",
     "otherDeclensions": [],
-    "form": "masculine"
+    "form": "masculine",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-odin",
@@ -4320,7 +4631,8 @@
     "sentenceZH": "我看见一个女孩。",
     "targetWordForm": "одну́",
     "otherDeclensions": [],
-    "form": "feminine"
+    "form": "feminine",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-odin",
@@ -4331,7 +4643,8 @@
     "sentenceZH": "这是同一批人。",
     "targetWordForm": "одни́",
     "otherDeclensions": [],
-    "form": "plural"
+    "form": "plural",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-dva-chetyre",
@@ -4342,7 +4655,8 @@
     "sentenceZH": "我有两个兄弟。",
     "targetWordForm": "два",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-dva-chetyre",
@@ -4353,7 +4667,8 @@
     "sentenceZH": "我有两个姐妹。",
     "targetWordForm": "две",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-dva-chetyre",
@@ -4364,7 +4679,8 @@
     "sentenceZH": "他没有两张票。",
     "targetWordForm": "двух",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-dva-chetyre",
@@ -4375,7 +4691,8 @@
     "sentenceZH": "他带着两个孩子来了。",
     "targetWordForm": "двумя́",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-dva-chetyre",
@@ -4386,7 +4703,8 @@
     "sentenceZH": "我们在思考四个问题。",
     "targetWordForm": "четырёх",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-pyat-plus",
@@ -4397,7 +4715,8 @@
     "sentenceZH": "我有五本书。",
     "targetWordForm": "пять",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-pyat-plus",
@@ -4408,7 +4727,8 @@
     "sentenceZH": "他没有五卢布。",
     "targetWordForm": "пяти́",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-pyat-plus",
@@ -4419,7 +4739,8 @@
     "sentenceZH": "他打电话给五个朋友。",
     "targetWordForm": "пяти́",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-pyat-plus",
@@ -4430,7 +4751,8 @@
     "sentenceZH": "他带着五个朋友来了。",
     "targetWordForm": "пятью́",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-pyat-plus",
@@ -4441,7 +4763,8 @@
     "sentenceZH": "我们谈论了五座城市。",
     "targetWordForm": "пяти́",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-ordinal",
@@ -4452,7 +4775,8 @@
     "sentenceZH": "今天是春天的第一天。",
     "targetWordForm": "пе́рвый",
     "otherDeclensions": [],
-    "form": "masculine"
+    "form": "masculine",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-ordinal",
@@ -4463,7 +4787,8 @@
     "sentenceZH": "我没有第二次机会。",
     "targetWordForm": "второ́й",
     "otherDeclensions": [],
-    "form": "feminine"
+    "form": "feminine",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-ordinal",
@@ -4474,7 +4799,8 @@
     "sentenceZH": "我在读第三封信。",
     "targetWordForm": "тре́тье",
     "otherDeclensions": [],
-    "form": "neuter"
+    "form": "neuter",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-ordinal",
@@ -4485,7 +4811,8 @@
     "sentenceZH": "他第一个到了。",
     "targetWordForm": "пе́рвым",
     "otherDeclensions": [],
-    "form": "masculine"
+    "form": "masculine",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-ordinal",
@@ -4496,7 +4823,8 @@
     "sentenceZH": "我们谈论了最初的步骤。",
     "targetWordForm": "пе́рвых",
     "otherDeclensions": [],
-    "form": "plural"
+    "form": "plural",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-collective",
@@ -4507,7 +4835,8 @@
     "sentenceZH": "我有两个孩子。",
     "targetWordForm": "дво́е",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-collective",
@@ -4518,7 +4847,8 @@
     "sentenceZH": "我们没有两个朋友。",
     "targetWordForm": "двои́х",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-collective",
@@ -4529,7 +4859,8 @@
     "sentenceZH": "他帮助了三个大学生。",
     "targetWordForm": "трои́м",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-collective",
@@ -4540,7 +4871,8 @@
     "sentenceZH": "他带着两个孩子来了。",
     "targetWordForm": "двои́ми",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-collective",
@@ -4551,7 +4883,8 @@
     "sentenceZH": "我们谈论了三个兄弟。",
     "targetWordForm": "трои́х",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-time",
@@ -4562,7 +4895,8 @@
     "sentenceZH": "现在是一点。",
     "targetWordForm": "час",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-time",
@@ -4573,7 +4907,8 @@
     "sentenceZH": "现在是两点。",
     "targetWordForm": "часа́",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-time",
@@ -4584,7 +4919,8 @@
     "sentenceZH": "现在是五点。",
     "targetWordForm": "часо́в",
     "otherDeclensions": [],
-    "number": "plural"
+    "number": "plural",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-time",
@@ -4595,7 +4931,8 @@
     "sentenceZH": "我们凌晨一点到的。",
     "targetWordForm": "час",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-time",
@@ -4606,7 +4943,8 @@
     "sentenceZH": "他五点到的。",
     "targetWordForm": "часо́в",
     "otherDeclensions": [],
-    "number": "plural"
+    "number": "plural",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-age",
@@ -4617,7 +4955,8 @@
     "sentenceZH": "我一岁。",
     "targetWordForm": "год",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-age",
@@ -4628,7 +4967,8 @@
     "sentenceZH": "她两岁。",
     "targetWordForm": "го́да",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-age",
@@ -4639,7 +4979,8 @@
     "sentenceZH": "他二十岁。",
     "targetWordForm": "лет",
     "otherDeclensions": [],
-    "number": "plural"
+    "number": "plural",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-age",
@@ -4650,7 +4991,8 @@
     "sentenceZH": "我二十一岁。",
     "targetWordForm": "год",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   },
   {
     "grammarPointId": "num-age",
@@ -4661,6 +5003,7 @@
     "sentenceZH": "她三十二岁。",
     "targetWordForm": "го́да",
     "otherDeclensions": [],
-    "number": "singular"
+    "number": "singular",
+    "level": "A1"
   }
 ]

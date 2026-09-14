@@ -11,6 +11,7 @@ const SENTENCES_PATH = path.join(ROOT, 'sentences-data.json');
 const CASES = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional'];
 const FORM_KEYS = ['masculine', 'neuter', 'feminine', 'plural', 'comparative', 'compound'];
 const NUMBER_KEYS = ['singular', 'plural'];
+const LEVELS = ['A1', 'A2', 'B1'];
 
 function readJSON(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -122,6 +123,8 @@ function cmdValidate() {
     if (!hasForm && !hasNumber) errors.push(`${tag} form/number 二者缺一`);
     if (hasForm && !FORM_KEYS.includes(s.form)) errors.push(`${tag} form「${s.form}」非法`);
     if (hasNumber && !NUMBER_KEYS.includes(s.number)) errors.push(`${tag} number「${s.number}」非法`);
+    if (s.level && !LEVELS.includes(s.level)) errors.push(`${tag} level「${s.level}」非法（应为 A1/A2/B1）`);
+    if (!s.level) warn.push(`${tag} 缺 level（建议补 A1）`);
     if (!s.sentenceRU || !s.sentenceZH || !s.targetWordForm) errors.push(`${tag} 缺 sentenceRU/sentenceZH/targetWordForm`);
 
     // target 精确匹配
@@ -198,7 +201,8 @@ function cmdAddSentences(file) {
       sentenceRU: it.ru,
       sentenceZH: it.zh,
       targetWordForm: it.target,
-      otherDeclensions: it.od || []
+      otherDeclensions: it.od || [],
+      level: it.level || 'A1'
     };
     if (hasForm) s.form = it.form;
     else s.number = it.number;

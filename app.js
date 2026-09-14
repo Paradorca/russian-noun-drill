@@ -51,6 +51,12 @@ const App = {
       this.saveState();
     }
 
+    // Ensure practiceLevel exists (difficulty filter)
+    if (!this.state.practiceLevel) {
+      this.state.practiceLevel = 'A1';
+      this.saveState();
+    }
+
     const today = new Date().toISOString().slice(0,10);
     if (this.state.dailyStats?.date !== today) {
       this.state.dailyStats = { date: today, completed: 0 };

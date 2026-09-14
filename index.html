@@ -30,7 +30,7 @@
       <div id="practice-empty" class="hidden text-center mt-4">
         <div class="welcome-logo" style="margin-top:40px;">📭</div>
         <h3>暂无练习内容</h3>
-        <p>所选板块暂无可练习的例句，请在设置中更换练习板块。</p>
+        <p>所选板块或难度暂无可练习的例句，请在设置中调整练习板块或例句难度。</p>
       </div>
 
       <div id="sentence-card" class="hidden">
@@ -82,6 +82,19 @@
               <div class="setting-desc">只从所选板块的例句库中随机抽选</div>
             </div>
             <select id="mode-select">
+            </select>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="setting-item" style="border:none;">
+            <div>
+              <div class="setting-label">例句难度</div>
+              <div class="setting-desc">只抽选所选难度的例句（自定义例句不受影响）</div>
+            </div>
+            <select id="level-select">
+              <option value="A1">A1 · 基础</option>
+              <option value="A2">A2 · 初级</option>
+              <option value="B1">B1 · 中级</option>
             </select>
           </div>
         </div>
