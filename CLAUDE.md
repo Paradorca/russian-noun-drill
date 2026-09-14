@@ -18,7 +18,7 @@
 - `texts.js` — 添加语料：导入例句（自动识别目标词形）、导入/编辑/删除课文
 - 各模块通过 `Object.assign(App, { ... })` 挂到 App 上；`index.html` 中 app.js 必须最先加载
 - `grammar-data.json` — 语法框架 + 六格用法
-- `sentences-data.json` — 例句数组（当前 343 条）
+- `sentences-data.json` — 例句数组（当前 381 条）
 - `DATA-GUIDE.md` — 内容索引与字段约定，改内容（知识点/例句）前先读它
 - `tools/curate.js` — 内容脚本（list/validate/add-sentences/add-point/edit-point/delete-sentence）
 - `tools/release.js` — 发布脚本（自动 bump sw.js 版本号 + 校验 + git 提交推送）
@@ -39,7 +39,7 @@ root（俄语语法框架）→ 5 个 category 分支：noun-decl 名词变格�
 
 代词板块：人称代词用 `tableType: "personal"`，配 `personalTable.groups`（拆成两组：第一二人称 я/ты/мы/вы、第三人称 он/она/оно/они，每组 `headers` 4 列 + `rows` 6 格各形式），规则面板按组各渲染一张 5 列表，避免横滑。人称代词例句仍用 `number`（单数/复数）区分，且不设 `declensionTable`（自定义例句预览需判空）。
 
-动词板块不适用"格"的概念：未来动词例句用变位形式（时态×人称）代替 case，规则面板显示变位表，按格筛选不作用于动词。
+动词板块不适用"格"的概念：用 `tableType: "verb"` + `conjugationTable.groups`（`{title, headers, rows:[{forms}]}`），规则面板按组各渲染一张表（变位、过去时、体对照、运动动词对照）。动词例句无 `case`，用 `number`（变位/将来时/运动）或 `form`（过去时/体，表性和数）。按格筛选不作用于动词。
 
 ## 关键约定（改代码时必须遵守）
 

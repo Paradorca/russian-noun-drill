@@ -152,6 +152,11 @@ Object.assign(App, {
     if (node.superlativePairs) {
       node.superlativePairs.forEach(p => push(p.superlative, null, null, null));
     }
+    if (node.conjugationTable) {
+      (node.conjugationTable.groups || []).forEach(g =>
+        (g.rows || []).forEach(r =>
+          (r.forms || []).forEach(text => push(text, null, null, null))));
+    }
 
     for (const c of candidates) {
       if (tokens.includes(c.text)) return this._detectedResult(c);

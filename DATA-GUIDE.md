@@ -5,7 +5,7 @@
 ## 一、数据文件
 
 - `grammar-data.json` — 语法框架 + 六格用法。结构 `{ framework: { nodes: [...] }, caseUsages: {...} }`
-- `sentences-data.json` — 例句数组（当前 308 条）
+- `sentences-data.json` — 例句数组（当前 381 条）
 
 ## 二、知识点清单（44 个）
 
@@ -46,17 +46,17 @@
 | adj-comparative | 比较级 | comparative | красивый | 18 |
 | adj-superlative | 最高级 | superlative | красивый | 12 |
 
-### 数词（num，7 个，全部 ⏳）
+### 数词（num，7 个，全部 ✅）
 
-| id | 名称 |
-|---|---|
-| num-odin | один 的变格 |
-| num-dva-chetyre | два/три/четыре 的变格与搭配 |
-| num-pyat-plus | пять 及以上的变格与搭配 |
-| num-ordinal | 序数词 |
-| num-collective | 集合数词 |
-| num-time | 时间表示法 |
-| num-age | 年龄表示法 |
+| id | 名称 | exampleWord | 例句 |
+|---|---|---|---|
+| num-odin | один 的变格 | один | 5 |
+| num-dva-chetyre | два/три/четыре 的变格与搭配 | два | 5 |
+| num-pyat-plus | пять 及以上的变格与搭配 | пять | 5 |
+| num-ordinal | 序数词 | первый | 5 |
+| num-collective | 集合数词 | двое | 5 |
+| num-time | 时间表示法 | час | 5 |
+| num-age | 年龄表示法 | год | 5 |
 
 ### 代词（pron，7 个，全部 ✅）
 
@@ -70,17 +70,17 @@
 | pron-definitive | 限定代词（весь/сам） | adjective | весь | 12 |
 | pron-negative | 否定代词 | adjective + caseTable | никакой | 12 |
 
-### 动词（verb，7 个，全部 ⏳）
+### 动词（verb，7 个，全部 ✅，tableType 均为 `verb`）
 
-| id | 名称 |
-|---|---|
-| verb-conj1 | 第一变位法 |
-| verb-conj2 | 第二变位法 |
-| verb-irregular | 不规则动词 |
-| verb-past | 过去时 |
-| verb-future | 将来时 |
-| verb-aspect | 动词体（完成体/未完成体） |
-| verb-motion | 定向/不定向运动动词 |
+| id | 名称 | exampleWord | 例句 |
+|---|---|---|---|
+| verb-conj1 | 第一变位法 | читать | 6 |
+| verb-conj2 | 第二变位法 | говорить | 6 |
+| verb-irregular | 不规则动词 | хотеть | 5 |
+| verb-past | 过去时 | читать | 5 |
+| verb-future | 将来时 | читать | 6 |
+| verb-aspect | 动词体（完成体/未完成体） | читать / прочитать | 5 |
+| verb-motion | 定向/不定向运动动词 | идти / ходить | 5 |
 
 ## 三、例句字段 schema
 
@@ -102,8 +102,8 @@
 ## 四、字段取值约定
 
 - **case**：`nominative / genitive / dative / accusative / instrumental / prepositional`
-- **form**：`masculine / neuter / feminine / plural`（形容词、短尾）；`comparative / compound`（比较级）
-- **number**：`singular / plural`（名词、人称代词、кто/что/себя/никто/ничто 等名词性代词）
+- **form**：`masculine / neuter / feminine / plural`（形容词、短尾、动词过去时/体）；`comparative / compound`（比较级）
+- **number**：`singular / plural`（名词、人称代词、кто/что/себя/никто/ничто 等名词性代词、动词变位）
 - **level**：`A1 / A2 / B1`，缺省视为 A1。内置与自定义例句都按 `level === state.practiceLevel` 筛选（自定义例句在导入时选择难度）。分级：A1 = 基本变格（硬变化、硬变化形容词、人称/物主/指示/疑问代词、不变格名词）；A2 = 软变化/唏音/第三变格/特殊名词/软·混合·短尾·比较级形容词/数词/反身·限定·否定代词；B1 = -мя 型、最高级、集合数词。
 - **6 格顺序**（caseNames 数组固定顺序）：主格、属格、与格、宾格、工具格、前置格
 - 宾格在变格表中约定写 `同一或二`（同主格或同属格，随有生命性变化）
@@ -118,6 +118,7 @@
 | comparative | `comparativePairs: [{base, comparative}]` | 原级→比较级 |
 | superlative | `superlativePairs: [{base, superlative}]` | 原级→最高级 |
 | personal | `personalTable.groups: [{title, headers, rows:[{case, forms}]}]` | 每 group 一张表 |
+| verb | `conjugationTable.groups: [{title, headers, rows:[{forms}]}]` | 每 group 一张表（变位/过去时/体对照/运动动词对照） |
 
 **附加字段 `caseTable`**（用于 adjective 型下挂名词性代词表）：`{ title, headers: [...], rows: [{case, forms:[...]}] }`，渲染在形容词表之前。当前用于 кто/что、себя、никто/ничто。
 

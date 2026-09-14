@@ -94,7 +94,7 @@ function cmdValidate() {
       if (!p.description) warn.push(`知识点 ${p.id} 缺 description`);
       if (p.tableType !== 'personal' && !p.declensionTable && p.tableType !== 'comparative' && p.tableType !== 'superlative') {
         // comparative/superlative 用 pairs；其余应有 declensionTable（personal 例外）
-        if (p.tableType !== 'comparative' && p.tableType !== 'superlative' && p.tableType !== 'short' && p.tableType !== 'adjective' && p.tableType) {
+        if (p.tableType !== 'comparative' && p.tableType !== 'superlative' && p.tableType !== 'short' && p.tableType !== 'adjective' && p.tableType !== 'verb' && p.tableType) {
           // 名词等必须有 declensionTable
           if (!p.declensionTable) errors.push(`知识点 ${p.id} 缺 declensionTable`);
         }

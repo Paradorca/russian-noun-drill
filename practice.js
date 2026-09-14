@@ -163,6 +163,8 @@ Object.assign(App, {
     let secondPill = '';
     if (gpNode && gpNode.tableType === 'comparative') {
       secondPill = this.formName(s);
+    } else if (gpNode && gpNode.tableType === 'verb') {
+      secondPill = this.formName(s);
     } else if (s.case) {
       secondPill = `${this.caseName(s.case)} · ${this.formName(s)}`;
     }
@@ -313,6 +315,13 @@ Object.assign(App, {
         const header = `<tr><th>格</th>${g.headers.map(c => `<th>${c}</th>`).join('')}</tr>`;
         const rows = g.rows.map(r =>
           `<tr><td>${r.case}</td>${r.forms.map(f => `<td>${f}</td>`).join('')}</tr>`).join('');
+        return `<h5 style="color:var(--text);font-size:0.95rem;margin:12px 0 4px;">${g.title}</h5><table class="rule-table">${header}${rows}</table>`;
+      }).join('');
+    } else if (node.tableType === 'verb') {
+      tablesHTML = (node.conjugationTable.groups || []).map(g => {
+        const header = `<tr>${g.headers.map(c => `<th>${c}</th>`).join('')}</tr>`;
+        const rows = (g.rows || []).map(r =>
+          `<tr>${r.forms.map(f => `<td>${f}</td>`).join('')}</tr>`).join('');
         return `<h5 style="color:var(--text);font-size:0.95rem;margin:12px 0 4px;">${g.title}</h5><table class="rule-table">${header}${rows}</table>`;
       }).join('');
     } else {
