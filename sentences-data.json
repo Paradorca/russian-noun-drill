@@ -195,21 +195,10 @@
     "word": "станция",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Э́та ста́нция метро́ откры́лась в про́шлом году́.",
-    "sentenceZH": "这个地铁站是去年开放的。",
+    "sentenceRU": "Э́та ста́нция метро́ была́ откры́та в про́шлом году́ и сра́зу ста́ла популя́рной.",
+    "sentenceZH": "这个地铁站去年开通，立刻变得很受欢迎。",
     "targetWordForm": "ста́нция",
-    "otherDeclensions": [
-      {
-        "word": "Э́та",
-        "case": "nominative",
-        "brief": "阴性单数主格，指示代词'这个'"
-      },
-      {
-        "word": "году́",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，表示时间'在...年'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -218,8 +207,8 @@
     "word": "функция",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "У э́той фу́нкции есть огра́ничения.",
-    "sentenceZH": "这个功能有局限性。",
+    "sentenceRU": "У э́той фу́нкции появи́лось но́вое обновле́ние, и тепе́рь она́ рабо́тает быстре́е.",
+    "sentenceZH": "这个功能有了新更新，现在运行更快了。",
     "targetWordForm": "фу́нкции",
     "otherDeclensions": [],
     "level": "A2"
@@ -230,8 +219,8 @@
     "word": "станция",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Поезд подхо́дит к ста́нции.",
-    "sentenceZH": "列车正在进站。",
+    "sentenceRU": "Мы пошли́ к ста́нции, что́бы встре́тить дру́га.",
+    "sentenceZH": "我们走向车站，为了接朋友。",
     "targetWordForm": "ста́нции",
     "otherDeclensions": [],
     "level": "A2"
@@ -242,16 +231,10 @@
     "word": "профессия",
     "case": "accusative",
     "number": "singular",
-    "sentenceRU": "Он вы́брал инте́ресную профе́ссию.",
-    "sentenceZH": "他选择了一个有趣的职业。",
+    "sentenceRU": "После университе́та он вы́брал профе́ссию журнали́ста и перее́хал в сто́лицу.",
+    "sentenceZH": "大学毕业后，他选择了记者这个职业，并搬到了首都。",
     "targetWordForm": "профе́ссию",
-    "otherDeclensions": [
-      {
-        "word": "инте́ресную",
-        "case": "accusative",
-        "brief": "阴性单数宾格，形容词'有趣的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -260,16 +243,10 @@
     "word": "лекция",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "На ле́кции прису́тствовало мно́го студе́нтов.",
-    "sentenceZH": "很多学生在听讲座。",
+    "sentenceRU": "На ле́кции о совреме́нном иску́сстве со́бралось мно́го студе́нтов, и все внима́тельно слу́шали.",
+    "sentenceZH": "在现代艺术讲座上聚集了许多学生，大家都在认真听讲。",
     "targetWordForm": "ле́кции",
-    "otherDeclensions": [
-      {
-        "word": "студе́нтов",
-        "case": "genitive",
-        "brief": "阳性复数属格，表示数量'很多学生的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -373,16 +350,10 @@
     "word": "музей",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Э́тот музе́й рабо́тает без выходны́х.",
-    "sentenceZH": "这个博物馆无休开放。",
+    "sentenceRU": "Э́тот истори́ческий музе́й откры́лся по́сле ремо́нта и привлека́ет мно́го тури́стов.",
+    "sentenceZH": "这座历史博物馆在修缮后重新开放，吸引了很多游客。",
     "targetWordForm": "музе́й",
-    "otherDeclensions": [
-      {
-        "word": "Э́тот",
-        "case": "nominative",
-        "brief": "阳性单数主格，指示代词'这个'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -391,8 +362,8 @@
     "word": "музей",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Вы́ставка музе́я очень инте́ресная.",
-    "sentenceZH": "博物馆的展览非常有趣。",
+    "sentenceRU": "Мы посети́ли вы́ставку музе́я и узна́ли мно́го интере́сного об исто́рии го́рода.",
+    "sentenceZH": "我们参观了博物馆的展览，了解到很多关于这座城市历史的有趣知识。",
     "targetWordForm": "музе́я",
     "otherDeclensions": [],
     "level": "A2"
@@ -403,8 +374,8 @@
     "word": "трамвай",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Мы бежи́м к трамва́ю.",
-    "sentenceZH": "我们正跑向电车。",
+    "sentenceRU": "Мы опозда́ли на встре́чу и побежа́ли к трамва́ю че́рез перехо́д.",
+    "sentenceZH": "我们开会迟到了，于是穿过人行横道跑向电车。",
     "targetWordForm": "трамва́ю",
     "otherDeclensions": [],
     "level": "A2"
@@ -415,16 +386,10 @@
     "word": "музей",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Он рабо́тает дире́ктором музе́я.",
-    "sentenceZH": "他担任博物馆馆长。",
+    "sentenceRU": "Он стал дире́ктором музе́я по́сле до́лгой рабо́ты в отде́ле культу́ры.",
+    "sentenceZH": "他在文化部门工作多年后成为了博物馆馆长。",
     "targetWordForm": "музе́я",
-    "otherDeclensions": [
-      {
-        "word": "дире́ктором",
-        "case": "instrumental",
-        "brief": "阳性单数工具格，表示职位'以馆长身份'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -433,16 +398,10 @@
     "word": "музей",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В го́роде три совреме́нных музе́я.",
-    "sentenceZH": "城里有三座现代博物馆。",
+    "sentenceRU": "В э́том го́роде откры́лись три совреме́нных музе́я, и ка́ждый посвящён своёй те́ме.",
+    "sentenceZH": "这座城市新开了三座现代博物馆，每一座都有各自的主题。",
     "targetWordForm": "музе́я",
-    "otherDeclensions": [
-      {
-        "word": "го́роде",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，表示地点'在城市里'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -451,16 +410,10 @@
     "word": "словарь",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Э́тот слова́рь о́чень поле́зный.",
-    "sentenceZH": "这本词典非常有用。",
+    "sentenceRU": "Э́тот двуязы́чный слова́рь помога́л мне гото́виться к экза́мену ка́ждый день.",
+    "sentenceZH": "这本双语词典每天帮助我备考。",
     "targetWordForm": "слова́рь",
-    "otherDeclensions": [
-      {
-        "word": "Э́тот",
-        "case": "nominative",
-        "brief": "阳性单数主格，指示代词'这个'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -469,16 +422,10 @@
     "word": "учитель",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Мы ждём нашего́ учи́теля.",
-    "sentenceZH": "我们在等我们的老师。",
+    "sentenceRU": "После роди́тельского собра́ния ма́ма поблагодари́ла учи́теля за внима́ние к сы́ну.",
+    "sentenceZH": "家长会后，妈妈感谢老师对儿子的关心。",
     "targetWordForm": "учи́теля",
-    "otherDeclensions": [
-      {
-        "word": "нашего́",
-        "case": "genitive",
-        "brief": "阳性单数属格，物主代词'我们的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -487,8 +434,8 @@
     "word": "словарь",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Я часто́ обраща́юсь к словарю́.",
-    "sentenceZH": "我经常查阅词典。",
+    "sentenceRU": "Я обрати́лся к словарю́, что́бы прове́рить значе́ние незнако́мого сло́ва.",
+    "sentenceZH": "我查阅词典，以确认一个生词的含义。",
     "targetWordForm": "словарю́",
     "otherDeclensions": [],
     "level": "A2"
@@ -499,8 +446,8 @@
     "word": "учитель",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "Мы говори́ли об учи́теле то́лько хоро́шее.",
-    "sentenceZH": "我们只说老师的好话。",
+    "sentenceRU": "На встре́че выпускнико́в мы вспомина́ли об учи́теле и его́ интере́сных уро́ках.",
+    "sentenceZH": "在校友聚会上，我们回忆起老师和那些有趣的课。",
     "targetWordForm": "учи́теле",
     "otherDeclensions": [],
     "level": "A2"
@@ -511,21 +458,10 @@
     "word": "словарь",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "У меня́ есть колле́кция ре́дких словаре́й.",
-    "sentenceZH": "我有一批珍贵的词典收藏。",
+    "sentenceRU": "В библиоте́ке бы́ло мно́го ста́рых словаре́й, и я до́лго их листа́л.",
+    "sentenceZH": "图书馆里有很多旧词典，我翻了很久。",
     "targetWordForm": "словаре́й",
-    "otherDeclensions": [
-      {
-        "word": "меня́",
-        "case": "genitive",
-        "brief": "人称代词'我'的属格"
-      },
-      {
-        "word": "ре́дких",
-        "case": "genitive",
-        "brief": "复数属格，形容词'珍贵的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -534,16 +470,10 @@
     "word": "врач",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Наш врач прие́млет пацие́нтов по утрам.",
-    "sentenceZH": "我们的医生上午接诊。",
+    "sentenceRU": "О́пытный врач осмотре́л пацие́нта и вы́писал но́вое лека́рство.",
+    "sentenceZH": "经验丰富的医生给病人做了检查并开了新药。",
     "targetWordForm": "врач",
-    "otherDeclensions": [
-      {
-        "word": "пацие́нтов",
-        "case": "genitive",
-        "brief": "阳性复数属格，表示对象'接诊病人'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -552,21 +482,10 @@
     "word": "врач",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Мне нра́вится о́пыт э́того врача́.",
-    "sentenceZH": "我喜欢这位医生的经验。",
+    "sentenceRU": "Он попроси́л сове́та у врача́ и сра́зу запи́сался на приём.",
+    "sentenceZH": "他向医生寻求建议，并立刻预约了就诊。",
     "targetWordForm": "врача́",
-    "otherDeclensions": [
-      {
-        "word": "Мне",
-        "case": "dative",
-        "brief": "人称代词'我'的与格"
-      },
-      {
-        "word": "э́того",
-        "case": "genitive",
-        "brief": "阳性单数属格，指示代词'这个'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -575,21 +494,10 @@
     "word": "нож",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Я ре́жу хлеб о́стрым ножо́м.",
-    "sentenceZH": "我用锋利的刀切面包。",
+    "sentenceRU": "По́вар то́нко наре́зал о́вощи о́стрым ножо́м и пригото́вил сала́т.",
+    "sentenceZH": "厨师用锋利的刀把蔬菜切得很细，然后做了沙拉。",
     "targetWordForm": "ножо́м",
-    "otherDeclensions": [
-      {
-        "word": "хлеб",
-        "case": "accusative",
-        "brief": "阳性单数宾格，表示对象'切面包'"
-      },
-      {
-        "word": "о́стрым",
-        "case": "instrumental",
-        "brief": "阳性单数工具格，形容词'锋利的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -598,21 +506,10 @@
     "word": "врач",
     "case": "accusative",
     "number": "singular",
-    "sentenceRU": "Я уважа́ю э́того врача́ за терпе́ние.",
-    "sentenceZH": "我尊敬这位医生的耐心。（动物名词，四格同二格）",
+    "sentenceRU": "Мы поблагодари́ли врача́ за терпе́ние и профессиона́льную по́мощь.",
+    "sentenceZH": "我们感谢医生的耐心和专业的帮助。",
     "targetWordForm": "врача́",
-    "otherDeclensions": [
-      {
-        "word": "э́того",
-        "case": "accusative",
-        "brief": "阳性单数宾格（动物名词同二格），指示代词'这个'"
-      },
-      {
-        "word": "терпе́ние",
-        "case": "accusative",
-        "brief": "中性单数宾格，表示原因'为了耐心'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -621,21 +518,10 @@
     "word": "врач",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В больни́це рабо́тает мно́го молоды́х враче́й.",
-    "sentenceZH": "医院里有很多年轻医生工作。",
+    "sentenceRU": "Во вре́мя эпиде́мии в больни́цах не хвата́ло враче́й, и мно́гие рабо́тали без вы́ходных.",
+    "sentenceZH": "疫情期间医院里医生不够，很多人无休工作。",
     "targetWordForm": "враче́й",
-    "otherDeclensions": [
-      {
-        "word": "больни́це",
-        "case": "prepositional",
-        "brief": "阴性单数前置格，表示地点'在医院'"
-      },
-      {
-        "word": "молоды́х",
-        "case": "genitive",
-        "brief": "复数属格，形容词'年轻的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -833,8 +719,8 @@
     "word": "событие",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Э́то собы́тие измени́ло всё.",
-    "sentenceZH": "这件事改变了一切。",
+    "sentenceRU": "Э́то культу́рное собы́тие собра́ло журнали́стов из мно́гих стран.",
+    "sentenceZH": "这场文化活动吸引了来自许多国家的记者。",
     "targetWordForm": "собы́тие",
     "otherDeclensions": [],
     "level": "A2"
@@ -845,16 +731,10 @@
     "word": "событие",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Он не помнит де́тали собы́тия.",
-    "sentenceZH": "他不记得这件事的细节。",
+    "sentenceRU": "Очеви́дцы рассказа́ли подро́бности собы́тия, и поли́ция начала́ рассле́дование.",
+    "sentenceZH": "目击者讲述了事件细节，警方开始调查。",
     "targetWordForm": "собы́тия",
-    "otherDeclensions": [
-      {
-        "word": "де́тали",
-        "case": "genitive",
-        "brief": "阴性单数属格，表示对象'细节'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -863,8 +743,8 @@
     "word": "упражнение",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Я приступи́л к упражне́нию о́чень внима́тельно.",
-    "sentenceZH": "我非常认真地开始做这个练习。",
+    "sentenceRU": "Мы приступи́ли к упражне́нию и ста́ли повторя́ть но́вые слова́.",
+    "sentenceZH": "我们开始做练习，并开始复习生词。",
     "targetWordForm": "упражне́нию",
     "otherDeclensions": [],
     "level": "A2"
@@ -875,16 +755,10 @@
     "word": "событие",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "В собы́тии уча́ствовали лю́ди из ра́зных стран.",
-    "sentenceZH": "来自不同国家的人参与了这次活动。",
+    "sentenceRU": "В э́том истори́ческом собы́тии уча́ствовали предста́вители ра́зных культу́р.",
+    "sentenceZH": "来自不同文化的代表参与了这一历史事件。",
     "targetWordForm": "собы́тии",
-    "otherDeclensions": [
-      {
-        "word": "стран",
-        "case": "genitive",
-        "brief": "复数属格，表示来源'来自不同国家的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -893,21 +767,10 @@
     "word": "здание",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В э́том ра́йоне мно́го исто́рических зда́ний.",
-    "sentenceZH": "这个区域有很多历史建筑。",
+    "sentenceRU": "В ста́ром це́нтре сохрани́лось мно́го истори́ческих зда́ний, и тури́сты лю́бят там гуля́ть.",
+    "sentenceZH": "老城区保留了很多历史建筑，游客们喜欢在那里散步。",
     "targetWordForm": "зда́ний",
-    "otherDeclensions": [
-      {
-        "word": "э́том",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，指示代词'这个'"
-      },
-      {
-        "word": "ра́йоне",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，表示地点'在区域里'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -916,8 +779,8 @@
     "word": "ночь",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Ночь бы́ла тёплой и звёздной.",
-    "sentenceZH": "那个夜晚温暖而繁星满天。",
+    "sentenceRU": "Ночь бы́ла тёплой и звёздной, поэ́тому мы гуля́ли по на́бережной до́лго.",
+    "sentenceZH": "夜晚温暖而星光灿烂，所以我们在河堤上散步了很久。",
     "targetWordForm": "Ночь",
     "otherDeclensions": [],
     "level": "A2"
@@ -928,16 +791,10 @@
     "word": "дверь",
     "case": "accusative",
     "number": "singular",
-    "sentenceRU": "Он открыл тяжёлую дверь.",
-    "sentenceZH": "他打开了那扇沉重的门。",
+    "sentenceRU": "Он откры́л входну́ю дверь и пригласи́л госте́й в кварти́ру.",
+    "sentenceZH": "他打开大门，把客人请进了公寓。",
     "targetWordForm": "дверь",
-    "otherDeclensions": [
-      {
-        "word": "тяжёлую",
-        "case": "accusative",
-        "brief": "阴性单数宾格，形容词'沉重的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -946,16 +803,10 @@
     "word": "ночь",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "После́дняя ночи́ весны́ бы́ла дли́нной.",
-    "sentenceZH": "春天的最后一夜很漫长。",
+    "sentenceRU": "Мы слу́шали му́зыку до глубо́кой ночи́ и совсе́м забы́ли о вре́мени.",
+    "sentenceZH": "我们听音乐直到深夜，完全忘记了时间。",
     "targetWordForm": "ночи́",
-    "otherDeclensions": [
-      {
-        "word": "весны́",
-        "case": "genitive",
-        "brief": "阴性单数属格，表示所属'春天的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -964,16 +815,10 @@
     "word": "тетрадь",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Я пишу́ но́вой тетра́дью.",
-    "sentenceZH": "我用新笔记本写字。",
+    "sentenceRU": "Студе́нтка запи́сывала ле́кции но́вой тетра́дью и испо́льзовала ра́зные цветны́е ру́чки.",
+    "sentenceZH": "女学生用新笔记本记讲座，还用了各种彩色笔。",
     "targetWordForm": "тетра́дью",
-    "otherDeclensions": [
-      {
-        "word": "но́вой",
-        "case": "instrumental",
-        "brief": "阴性单数工具格，形容词'新的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -982,21 +827,10 @@
     "word": "ночь",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "Он провёл несколько бессо́нных ноче́й.",
-    "sentenceZH": "他度过了几个不眠之夜。",
+    "sentenceRU": "Пе́ред экза́меном он провёл не́сколько бессо́нных ноче́й за подгото́вкой.",
+    "sentenceZH": "考试前他度过了几个不眠之夜准备。",
     "targetWordForm": "ноче́й",
-    "otherDeclensions": [
-      {
-        "word": "несколько",
-        "case": "genitive",
-        "brief": "数量词'几个'要求后面接属格"
-      },
-      {
-        "word": "бессо́нных",
-        "case": "genitive",
-        "brief": "复数属格，形容词'不眠的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1005,16 +839,10 @@
     "word": "мать",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Мать всегда́ подде́рживает меня́.",
-    "sentenceZH": "母亲总是支持我。",
+    "sentenceRU": "Мать по́мнила ка́ждый ва́жный моме́нт из де́тства свои́х дете́й.",
+    "sentenceZH": "母亲记得孩子们童年的每一个重要时刻。",
     "targetWordForm": "Мать",
-    "otherDeclensions": [
-      {
-        "word": "меня́",
-        "case": "accusative",
-        "brief": "人称代词'我'的宾格"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1023,16 +851,10 @@
     "word": "мать",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Я за́бочусь о здоро́вье ма́тери.",
-    "sentenceZH": "我关心母亲的健康。",
+    "sentenceRU": "Он забо́тился о здоро́вье ма́тери и регуля́рно вызыва́л врача́.",
+    "sentenceZH": "他关心母亲的健康，定期请医生。",
     "targetWordForm": "ма́тери",
-    "otherDeclensions": [
-      {
-        "word": "здоро́вье",
-        "case": "prepositional",
-        "brief": "中性单数前置格，表示话题'关于健康'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1041,16 +863,10 @@
     "word": "дочь",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Он горди́тся свое́й доче́рью.",
-    "sentenceZH": "他为自己的女儿感到骄傲。",
-    "targetWordForm": "доче́рью",
-    "otherDeclensions": [
-      {
-        "word": "свое́й",
-        "case": "instrumental",
-        "brief": "阴性单数工具格，物主代词'自己的'"
-      }
-    ],
+    "sentenceRU": "Оте́ц горди́лся тала́нтливой до́черью и ча́сто расска́зывал о её успе́хах.",
+    "sentenceZH": "父亲为有才华的女儿感到骄傲，经常讲述她的成就。",
+    "targetWordForm": "до́черью",
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1059,16 +875,10 @@
     "word": "мать",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Я помога́ю ма́тери по дому́.",
-    "sentenceZH": "我帮母亲做家务。",
+    "sentenceRU": "Сын купи́л цветы́ ма́тери и поздра́вил её с пра́здником.",
+    "sentenceZH": "儿子给母亲买了花，并祝她节日快乐。",
     "targetWordForm": "ма́тери",
-    "otherDeclensions": [
-      {
-        "word": "дому́",
-        "case": "dative",
-        "brief": "阳性单数与格，表示范围'在家里'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1077,21 +887,10 @@
     "word": "дочь",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В саду́ игра́ли де́ти и их ма́тери.",
-    "sentenceZH": "孩子们在花园里玩，他们的母亲们也在。",
+    "sentenceRU": "На собра́нии ма́тери обсужда́ли успе́хи дете́й и пла́ны на бу́дущее.",
+    "sentenceZH": "在会议上，母亲们讨论了孩子们的成绩和未来计划。",
     "targetWordForm": "ма́тери",
-    "otherDeclensions": [
-      {
-        "word": "саду́",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，表示地点'在花园'"
-      },
-      {
-        "word": "де́ти",
-        "case": "nominative",
-        "brief": "复数主格，表示主体'孩子们'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1100,8 +899,8 @@
     "word": "время",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Время лечи́т всё.",
-    "sentenceZH": "时间治愈一切。",
+    "sentenceRU": "Время — э́то ресу́рс, кото́рый невозмо́жно верну́ть, и э́ту и́стину по́няли мно́гие.",
+    "sentenceZH": "时间是一种无法挽回的资源，许多人明白了这个道理。",
     "targetWordForm": "Время",
     "otherDeclensions": [],
     "level": "B1"
@@ -1112,8 +911,8 @@
     "word": "время",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "У нас ма́ло вре́мени.",
-    "sentenceZH": "我们的时间很少。",
+    "sentenceRU": "Если у тебя́ ма́ло вре́мени, лу́чше отказа́ться от второстепе́нных дел.",
+    "sentenceZH": "如果你时间少，最好放弃次要的事情。",
     "targetWordForm": "вре́мени",
     "otherDeclensions": [],
     "level": "B1"
@@ -1124,21 +923,10 @@
     "word": "имя",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Я не мо́гу вспо́мнить и́мени э́того челове́ка.",
-    "sentenceZH": "我想不起这个人的名字了。",
+    "sentenceRU": "Он объясни́л, что не мо́жет вспо́мнить и́мени э́того челове́ка, хотя́ ви́дел его́ ра́ньше.",
+    "sentenceZH": "他解释说想不起这个人的名字，尽管以前见过他。",
     "targetWordForm": "и́мени",
-    "otherDeclensions": [
-      {
-        "word": "э́того",
-        "case": "genitive",
-        "brief": "阳性单数属格，指示代词'这个'"
-      },
-      {
-        "word": "челове́ка",
-        "case": "genitive",
-        "brief": "阳性单数属格，表示所属'人的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "B1"
   },
   {
@@ -1147,8 +935,8 @@
     "word": "время",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Он уме́ет распределя́ть вре́менем.",
-    "sentenceZH": "他懂得分配时间。",
+    "sentenceRU": "Психологи утвержда́ют, что уме́ние управля́ть вре́менем влия́ет на успе́х в учёбе.",
+    "sentenceZH": "心理学家认为，管理时间的能力影响学业成功。",
     "targetWordForm": "вре́менем",
     "otherDeclensions": [],
     "level": "B1"
@@ -1159,21 +947,10 @@
     "word": "племя",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "На э́той земле́ жили́ ра́зные племена́.",
-    "sentenceZH": "这片土地上曾居住着不同的部落。",
+    "sentenceRU": "В э́той кни́ге опи́сано, что ра́зные племена́ жи́ли здесь до образова́ния госуда́рств.",
+    "sentenceZH": "这本书描写了在国家形成之前，不同的部落曾在这片土地上生活。",
     "targetWordForm": "племена́",
-    "otherDeclensions": [
-      {
-        "word": "э́той",
-        "case": "prepositional",
-        "brief": "阴性单数前置格，指示代词'这个'"
-      },
-      {
-        "word": "земле́",
-        "case": "prepositional",
-        "brief": "阴性单数前置格，表示地点'在土地上'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "B1"
   },
   {
@@ -1182,21 +959,10 @@
     "word": "отец",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Мой о́тец рабо́тает инжене́ром.",
-    "sentenceZH": "我的父亲是一名工程师。",
+    "sentenceRU": "Мой о́тец рабо́тал инжене́ром и ча́сто е́здил в командиро́вки.",
+    "sentenceZH": "我父亲曾是工程师，经常出差。",
     "targetWordForm": "о́тец",
-    "otherDeclensions": [
-      {
-        "word": "Мой",
-        "case": "nominative",
-        "brief": "阳性单数主格，物主代词'我的'"
-      },
-      {
-        "word": "инжене́ром",
-        "case": "instrumental",
-        "brief": "阳性单数工具格，表示职位'以工程师身份'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1205,16 +971,10 @@
     "word": "отец",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Я ви́жу отца́ у подъе́зда.",
-    "sentenceZH": "我看见父亲在单元门口。",
+    "sentenceRU": "Я до́лго ждал отца́ у вы́хода и наконе́ц уви́дел его́ в толпе́.",
+    "sentenceZH": "我在出口等了父亲很久，终于在人群中看见了他。",
     "targetWordForm": "отца́",
-    "otherDeclensions": [
-      {
-        "word": "подъе́зда",
-        "case": "genitive",
-        "brief": "阳性单数属格，表示地点'在单元门口'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1223,16 +983,10 @@
     "word": "палец",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "У него́ длинные па́льцы.",
-    "sentenceZH": "他的手指很长。",
+    "sentenceRU": "Пиани́ст игра́л бы́стро, и его́ па́льцы лета́ли по кла́вишам.",
+    "sentenceZH": "钢琴家弹得很快，手指在琴键上飞舞。",
     "targetWordForm": "па́льцы",
-    "otherDeclensions": [
-      {
-        "word": "него́",
-        "case": "genitive",
-        "brief": "人称代词'他'的属格"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1241,16 +995,10 @@
     "word": "потолок",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Цвет потолка́ бы́л бе́лым.",
-    "sentenceZH": "天花板的颜色是白色的。",
+    "sentenceRU": "Мы смени́ли цвет потолка́ и пове́сили но́вую лю́стру.",
+    "sentenceZH": "我们换了天花板的颜色，还挂了新吊灯。",
     "targetWordForm": "потолка́",
-    "otherDeclensions": [
-      {
-        "word": "бе́лым",
-        "case": "instrumental",
-        "brief": "阳性单数工具格，形容词'白色的'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1259,26 +1007,10 @@
     "word": "отец",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В на́шем дворе́ мно́го отцо́в с де́тьми.",
-    "sentenceZH": "我们院子里有很多父亲带着孩子。",
+    "sentenceRU": "На де́тском пра́зднике со́бралось мно́го отцо́в, и все уча́ствовали в и́грах.",
+    "sentenceZH": "儿童节上聚集了许多父亲，大家都参与了游戏。",
     "targetWordForm": "отцо́в",
-    "otherDeclensions": [
-      {
-        "word": "на́шем",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，物主代词'我们的'"
-      },
-      {
-        "word": "дворе́",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，表示地点'在院子里'"
-      },
-      {
-        "word": "де́тьми",
-        "case": "instrumental",
-        "brief": "复数工具格，表示伴随'带着孩子'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1287,8 +1019,8 @@
     "word": "гражданин",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Ка́ждый граждани́н име́ет пра́ва и обяза́нности.",
-    "sentenceZH": "每个公民都有权利和义务。",
+    "sentenceRU": "Ка́ждый граждани́н име́ет пра́во на образова́ние и медици́нскую по́мощь.",
+    "sentenceZH": "每个公民都享有教育和医疗的权利。",
     "targetWordForm": "граждани́н",
     "otherDeclensions": [],
     "level": "A2"
@@ -1299,8 +1031,8 @@
     "word": "гражданин",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Паспо́рт граждани́на недействи́телен.",
-    "sentenceZH": "这位公民的护照无效。",
+    "sentenceRU": "Со́трудник прове́рил па́спорт граждани́на и внёс да́нные в систе́му.",
+    "sentenceZH": "工作人员核对了公民的护照，并把信息录入系统。",
     "targetWordForm": "граждани́на",
     "otherDeclensions": [],
     "level": "A2"
@@ -1311,16 +1043,10 @@
     "word": "гражданин",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "В докуме́нте напи́сано о граждани́не.",
-    "sentenceZH": "文件里写着关于这位公民的信息。",
+    "sentenceRU": "В новостя́х рассказа́ли о граждани́не и его́ герои́ческом посту́пке.",
+    "sentenceZH": "新闻里讲述了这位公民和他英勇的举动。",
     "targetWordForm": "граждани́не",
-    "otherDeclensions": [
-      {
-        "word": "докуме́нте",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，表示地点'在文件里'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1329,16 +1055,10 @@
     "word": "гражданин",
     "case": "nominative",
     "number": "plural",
-    "sentenceRU": "Граждане́ собра́лись на пло́щади.",
-    "sentenceZH": "公民们聚集在广场上。",
+    "sentenceRU": "Граждане́ собра́лись на пло́щади и вы́разили своё мне́ние.",
+    "sentenceZH": "公民们聚集在广场上，表达了自己的意见。",
     "targetWordForm": "Граждане́",
-    "otherDeclensions": [
-      {
-        "word": "пло́щади",
-        "case": "prepositional",
-        "brief": "阴性单数前置格，表示地点'在广场上'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1347,21 +1067,10 @@
     "word": "гражданин",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В э́том го́роде живёт мно́го граждан.",
-    "sentenceZH": "这座城市里住着很多公民。",
+    "sentenceRU": "Во вре́мя вы́боров мно́го граждан пришли́ на уча́стки, и я́вка была́ высо́кой.",
+    "sentenceZH": "选举期间许多公民来到投票站，投票率很高。",
     "targetWordForm": "граждан",
-    "otherDeclensions": [
-      {
-        "word": "э́том",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，指示代词'这个'"
-      },
-      {
-        "word": "го́роде",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，表示地点'在城市里'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1370,8 +1079,8 @@
     "word": "человек",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Один челове́к не мо́жет всё знать.",
-    "sentenceZH": "一个人不可能什么都知道。",
+    "sentenceRU": "Оди́н челове́к предло́жил иде́ю, и вся кома́нда поддержа́ла её.",
+    "sentenceZH": "一个人提出了想法，整个团队都支持。",
     "targetWordForm": "челове́к",
     "otherDeclensions": [],
     "level": "A2"
@@ -1382,16 +1091,10 @@
     "word": "человек",
     "case": "genitive",
     "number": "plural",
-    "sentenceRU": "В за́ле бы́ло мно́го люде́й.",
-    "sentenceZH": "大厅里有很多人。",
+    "sentenceRU": "На конце́рте собра́лось мно́го люде́й, и атмосфе́ра была́ пра́здничной.",
+    "sentenceZH": "音乐会上聚集了很多人，气氛很有节日感。",
     "targetWordForm": "люде́й",
-    "otherDeclensions": [
-      {
-        "word": "за́ле",
-        "case": "prepositional",
-        "brief": "阳性单数前置格，表示地点'在大厅里'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1400,16 +1103,10 @@
     "word": "ребёнок",
     "case": "dative",
     "number": "plural",
-    "sentenceRU": "Мы купи́ли пода́рки де́тям.",
-    "sentenceZH": "我们给孩子们买了礼物。",
+    "sentenceRU": "Мы купи́ли пода́рки де́тям и устро́или небольшо́й пра́здник.",
+    "sentenceZH": "我们给孩子们买了礼物，还办了个小聚会。",
     "targetWordForm": "де́тям",
-    "otherDeclensions": [
-      {
-        "word": "пода́рки",
-        "case": "accusative",
-        "brief": "阳性复数宾格，表示对象'买了礼物'"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1418,16 +1115,10 @@
     "word": "сын",
     "case": "nominative",
     "number": "plural",
-    "sentenceRU": "У них два сы́на и дочь.",
-    "sentenceZH": "他们有两个儿子和一个女儿。",
+    "sentenceRU": "У них родили́сь два сы́на, и семья́ ста́ла большо́й.",
+    "sentenceZH": "他们生了两个儿子，家庭变大了。",
     "targetWordForm": "сы́на",
-    "otherDeclensions": [
-      {
-        "word": "них",
-        "case": "genitive",
-        "brief": "人称代词'他们'的属格"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1436,8 +1127,8 @@
     "word": "ребёнок",
     "case": "instrumental",
     "number": "plural",
-    "sentenceRU": "Она ра́дуется де́тьми.",
-    "sentenceZH": "她为孩子们感到高兴。",
+    "sentenceRU": "Она́ занима́лась де́тьми в де́тском саду́ и о́чень люби́ла свою́ рабо́ту.",
+    "sentenceZH": "她在幼儿园照顾孩子们，非常热爱自己的工作。",
     "targetWordForm": "де́тьми",
     "otherDeclensions": [],
     "level": "A2"
@@ -1820,8 +1511,8 @@
     "word": "синий",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Мой си́ний рюкза́к стои́т в углу́.",
-    "sentenceZH": "我的蓝色背包放在角落里。",
+    "sentenceRU": "Мой си́ний рюкза́к стоя́л в углу́, и я до́лго иска́л его́.",
+    "sentenceZH": "我的蓝色背包放在角落里，我找了很久。",
     "targetWordForm": "си́ний",
     "otherDeclensions": [],
     "level": "A2"
@@ -1832,8 +1523,8 @@
     "word": "синий",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "На столе́ лежи́т си́няя тетра́дь.",
-    "sentenceZH": "桌上放着一本蓝色练习本。",
+    "sentenceRU": "На столе́ лежа́ла си́няя тетра́дь, и в ней бы́ли запи́си ле́кций.",
+    "sentenceZH": "桌上放着一本蓝色练习本，里面记着讲座笔记。",
     "targetWordForm": "си́няя",
     "otherDeclensions": [],
     "level": "A2"
@@ -1844,8 +1535,8 @@
     "word": "синий",
     "case": "nominative",
     "form": "neuter",
-    "sentenceRU": "Си́нее мо́ре сего́дня споко́йно.",
-    "sentenceZH": "今天蓝色的大海很平静。",
+    "sentenceRU": "Си́нее мо́ре сверка́ло на со́лнце, и мы до́лго смотре́ли на него́.",
+    "sentenceZH": "蓝色的大海在阳光下闪烁，我们久久凝望。",
     "targetWordForm": "Си́нее",
     "otherDeclensions": [],
     "level": "A2"
@@ -1856,8 +1547,8 @@
     "word": "летний",
     "case": "nominative",
     "form": "plural",
-    "sentenceRU": "Ле́тние кани́кулы уже́ начали́сь.",
-    "sentenceZH": "暑假已经开始了。",
+    "sentenceRU": "Ле́тние кани́кулы прошли́ бы́стро, и студе́нты верну́лись в го́род.",
+    "sentenceZH": "暑假过得很快，学生们回到了城里。",
     "targetWordForm": "Ле́тние",
     "otherDeclensions": [],
     "level": "A2"
@@ -1868,16 +1559,10 @@
     "word": "синий",
     "case": "genitive",
     "form": "masculine",
-    "sentenceRU": "У меня́ нет си́него карандаша́.",
-    "sentenceZH": "我没有蓝色铅笔。",
+    "sentenceRU": "У меня́ не́ было си́него карандаша́, поэ́тому я попроси́л его́ у сосе́да.",
+    "sentenceZH": "我没有蓝色铅笔，所以向邻居借了一支。",
     "targetWordForm": "си́него",
-    "otherDeclensions": [
-      {
-        "word": "карандаша́",
-        "case": "genitive",
-        "brief": "каранда́ш 的属格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1886,16 +1571,10 @@
     "word": "синий",
     "case": "genitive",
     "form": "feminine",
-    "sentenceRU": "Она́ вы́шла из си́ней пала́тки.",
-    "sentenceZH": "她从蓝色帐篷里出来。",
+    "sentenceRU": "Она́ вы́шла из си́ней пала́тки и пошла́ к реке́.",
+    "sentenceZH": "她从蓝色帐篷里出来，走向河边。",
     "targetWordForm": "си́ней",
-    "otherDeclensions": [
-      {
-        "word": "пала́тки",
-        "case": "genitive",
-        "brief": "пала́тка 的属格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1904,16 +1583,10 @@
     "word": "синий",
     "case": "genitive",
     "form": "plural",
-    "sentenceRU": "В ко́мнате мно́го си́них стульев.",
-    "sentenceZH": "房间里有很多蓝色椅子。",
+    "sentenceRU": "В ко́мнате стоя́ло мно́го си́них сту́льев, и мы расста́вили их кру́гом.",
+    "sentenceZH": "房间里有很多蓝色椅子，我们把它们摆成一圈。",
     "targetWordForm": "си́них",
-    "otherDeclensions": [
-      {
-        "word": "стульев",
-        "case": "genitive",
-        "brief": "стул 的属格（复数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1922,16 +1595,10 @@
     "word": "синий",
     "case": "dative",
     "form": "masculine",
-    "sentenceRU": "Мы подошли́ к си́нему до́му.",
-    "sentenceZH": "我们走近了蓝色的房子。",
+    "sentenceRU": "Мы подошли́ к си́нему до́му и позвони́ли в дверь.",
+    "sentenceZH": "我们走近蓝色的房子，按了门铃。",
     "targetWordForm": "си́нему",
-    "otherDeclensions": [
-      {
-        "word": "до́му",
-        "case": "dative",
-        "brief": "дом 的与格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1940,16 +1607,10 @@
     "word": "синий",
     "case": "dative",
     "form": "feminine",
-    "sentenceRU": "Мы идём к си́ней маши́не.",
-    "sentenceZH": "我们走向蓝色的汽车。",
+    "sentenceRU": "Мы пое́хали к си́ней маши́не и се́ли в неё.",
+    "sentenceZH": "我们走向蓝色的汽车，坐了进去。",
     "targetWordForm": "си́ней",
-    "otherDeclensions": [
-      {
-        "word": "маши́не",
-        "case": "dative",
-        "brief": "маши́на 的与格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1958,8 +1619,8 @@
     "word": "синий",
     "case": "accusative",
     "form": "masculine",
-    "sentenceRU": "Я купи́л си́ний каранда́ш.",
-    "sentenceZH": "我买了一支蓝色铅笔。",
+    "sentenceRU": "Я купи́л си́ний каранда́ш и но́вую тетра́дь в магази́не.",
+    "sentenceZH": "我在商店买了一支蓝色铅笔和一本新练习本。",
     "targetWordForm": "си́ний",
     "otherDeclensions": [],
     "level": "A2"
@@ -1970,16 +1631,10 @@
     "word": "последний",
     "case": "accusative",
     "form": "masculine",
-    "sentenceRU": "Я уви́дел после́днего го́стя.",
-    "sentenceZH": "我看到了最后一位客人。",
+    "sentenceRU": "Я уви́дел после́днего го́стя и пригласи́л его́ в зал.",
+    "sentenceZH": "我看到了最后一位客人，把他请进了大厅。",
     "targetWordForm": "после́днего",
-    "otherDeclensions": [
-      {
-        "word": "го́стя",
-        "case": "accusative",
-        "brief": "гость 的宾格（单数，动物名词）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -1988,16 +1643,10 @@
     "word": "синий",
     "case": "accusative",
     "form": "feminine",
-    "sentenceRU": "Она́ на́дела си́нюю ю́бку.",
-    "sentenceZH": "她穿上了蓝色裙子。",
+    "sentenceRU": "Она́ на́дела си́нюю ю́бку и пошла́ на встре́чу с друзья́ми.",
+    "sentenceZH": "她穿上蓝色裙子，去见朋友了。",
     "targetWordForm": "си́нюю",
-    "otherDeclensions": [
-      {
-        "word": "ю́бку",
-        "case": "accusative",
-        "brief": "ю́бка 的宾格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2006,8 +1655,8 @@
     "word": "синий",
     "case": "accusative",
     "form": "plural",
-    "sentenceRU": "Мы уви́дели си́ние маши́ны.",
-    "sentenceZH": "我们看见了蓝色的汽车。",
+    "sentenceRU": "Мы уви́дели си́ние маши́ны на парко́вке и сфотографи́ровали их.",
+    "sentenceZH": "我们在停车场看到蓝色汽车，拍了照。",
     "targetWordForm": "си́ние",
     "otherDeclensions": [],
     "level": "A2"
@@ -2018,16 +1667,10 @@
     "word": "синий",
     "case": "instrumental",
     "form": "masculine",
-    "sentenceRU": "Он дово́лен си́ним рюкзако́м.",
-    "sentenceZH": "他对蓝色背包很满意。",
+    "sentenceRU": "Он был дово́лен си́ним рюкзако́м и носи́л его́ ка́ждый день.",
+    "sentenceZH": "他对蓝色背包很满意，每天都背着。",
     "targetWordForm": "си́ним",
-    "otherDeclensions": [
-      {
-        "word": "рюкзако́м",
-        "case": "instrumental",
-        "brief": "рюкза́к 的工具格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2036,16 +1679,10 @@
     "word": "синий",
     "case": "instrumental",
     "form": "feminine",
-    "sentenceRU": "Она́ дово́льна си́ней маши́ной.",
-    "sentenceZH": "她对蓝色的汽车很满意。",
+    "sentenceRU": "Она́ любова́лась си́ней маши́ной и реши́ла её купи́ть.",
+    "sentenceZH": "她欣赏着蓝色的汽车，决定买下它。",
     "targetWordForm": "си́ней",
-    "otherDeclensions": [
-      {
-        "word": "маши́ной",
-        "case": "instrumental",
-        "brief": "маши́на 的工具格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2054,16 +1691,10 @@
     "word": "синий",
     "case": "prepositional",
     "form": "masculine",
-    "sentenceRU": "Я ду́маю о си́нем рюкзаке́.",
-    "sentenceZH": "我在考虑那个蓝色背包。",
+    "sentenceRU": "Я ча́сто ду́мал о си́нем рюкзаке́ и наконе́ц реши́л его́ заказа́ть.",
+    "sentenceZH": "我常常想着那个蓝色背包，最终决定订购它。",
     "targetWordForm": "си́нем",
-    "otherDeclensions": [
-      {
-        "word": "рюкзаке́",
-        "case": "prepositional",
-        "brief": "рюкза́к 的前置格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2072,16 +1703,10 @@
     "word": "синий",
     "case": "prepositional",
     "form": "feminine",
-    "sentenceRU": "Мы говори́ли о си́ней кни́ге.",
-    "sentenceZH": "我们谈论了那本蓝色的书。",
+    "sentenceRU": "Мы говори́ли о си́ней кни́ге и её авто́ре на уро́ке.",
+    "sentenceZH": "我们在课上谈论了那本蓝色的书和它的作者。",
     "targetWordForm": "си́ней",
-    "otherDeclensions": [
-      {
-        "word": "кни́ге",
-        "case": "prepositional",
-        "brief": "кни́га 的前置格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2090,16 +1715,10 @@
     "word": "синий",
     "case": "prepositional",
     "form": "plural",
-    "sentenceRU": "В си́них пала́тках тепло́.",
-    "sentenceZH": "蓝色帐篷里很暖和。",
+    "sentenceRU": "В си́них пала́тках бы́ло тепло́, и тури́сты споко́йно спа́ли.",
+    "sentenceZH": "蓝色帐篷里很暖和，游客们睡得很安稳。",
     "targetWordForm": "си́них",
-    "otherDeclensions": [
-      {
-        "word": "пала́тках",
-        "case": "prepositional",
-        "brief": "пала́тка 的前置格（复数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2108,8 +1727,8 @@
     "word": "хороший",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "У меня́ есть хоро́ший друг.",
-    "sentenceZH": "我有一个好朋友。",
+    "sentenceRU": "У меня́ есть хоро́ший друг, и мы ча́сто путеше́ствуем вме́сте.",
+    "sentenceZH": "我有一个好朋友，我们经常一起旅行。",
     "targetWordForm": "хоро́ший",
     "otherDeclensions": [],
     "level": "A2"
@@ -2120,8 +1739,8 @@
     "word": "хороший",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Она́ хоро́шая учи́тельница.",
-    "sentenceZH": "她是一位好老师。",
+    "sentenceRU": "Она́ хоро́шая учи́тельница, и все ученики́ её лю́бят.",
+    "sentenceZH": "她是一位好老师，所有学生都喜欢她。",
     "targetWordForm": "хоро́шая",
     "otherDeclensions": [],
     "level": "A2"
@@ -2132,8 +1751,8 @@
     "word": "хороший",
     "case": "nominative",
     "form": "neuter",
-    "sentenceRU": "Это хоро́шее вино́.",
-    "sentenceZH": "这是好酒。",
+    "sentenceRU": "В э́том рестора́не подаю́т хоро́шее вино́, и мы ча́сто там у́жинаем.",
+    "sentenceZH": "这家餐厅供应好酒，我们经常在那里吃晚饭。",
     "targetWordForm": "хоро́шее",
     "otherDeclensions": [],
     "level": "A2"
@@ -2144,16 +1763,10 @@
     "word": "хороший",
     "case": "accusative",
     "form": "masculine",
-    "sentenceRU": "Я зна́ю хоро́шего врача́.",
-    "sentenceZH": "我认识一位好医生。",
+    "sentenceRU": "Я зна́ю хоро́шего врача́ и дам тебе́ его́ телефо́н.",
+    "sentenceZH": "我认识一位好医生，我会把他的电话给你。",
     "targetWordForm": "хоро́шего",
-    "otherDeclensions": [
-      {
-        "word": "врача́",
-        "case": "accusative",
-        "brief": "врач 的宾格（单数，动物名词）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2162,16 +1775,10 @@
     "word": "хороший",
     "case": "prepositional",
     "form": "feminine",
-    "sentenceRU": "Мы говори́ли о хоро́шей кни́ге.",
-    "sentenceZH": "我们谈论了一本好书。",
+    "sentenceRU": "Мы говори́ли о хоро́шей кни́ге и сове́товали её друг дру́гу.",
+    "sentenceZH": "我们谈论一本好书，并互相推荐。",
     "targetWordForm": "хоро́шей",
-    "otherDeclensions": [
-      {
-        "word": "кни́ге",
-        "case": "prepositional",
-        "brief": "кни́га 的前置格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2180,16 +1787,10 @@
     "word": "хороший",
     "case": "instrumental",
     "form": "masculine",
-    "sentenceRU": "Он дово́лен хоро́шим результа́том.",
-    "sentenceZH": "他对好成绩很满意。",
+    "sentenceRU": "Он был дово́лен хоро́шим результа́том и сра́зу позвони́л роди́телям.",
+    "sentenceZH": "他对好成绩很满意，立刻打电话给父母。",
     "targetWordForm": "хоро́шим",
-    "otherDeclensions": [
-      {
-        "word": "результа́том",
-        "case": "instrumental",
-        "brief": "результа́т 的工具格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2198,16 +1799,10 @@
     "word": "хороший",
     "case": "dative",
     "form": "masculine",
-    "sentenceRU": "Я помога́ю хоро́шему дру́гу.",
-    "sentenceZH": "我帮助一位好朋友。",
+    "sentenceRU": "Я помога́ю хоро́шему дру́гу гото́виться к экза́мену.",
+    "sentenceZH": "我帮好朋友备考。",
     "targetWordForm": "хоро́шему",
-    "otherDeclensions": [
-      {
-        "word": "дру́гу",
-        "case": "dative",
-        "brief": "друг 的与格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2216,8 +1811,8 @@
     "word": "лёгкий",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "У меня́ лёгкий рюкза́к.",
-    "sentenceZH": "我有一个轻的背包。",
+    "sentenceRU": "У меня́ лёгкий рюкза́к, поэ́тому мне удо́бно гуля́ть весь день.",
+    "sentenceZH": "我的背包很轻，所以整天走路也很舒服。",
     "targetWordForm": "лёгкий",
     "otherDeclensions": [],
     "level": "A2"
@@ -2228,8 +1823,8 @@
     "word": "лёгкий",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Э́то лёгкая зада́ча.",
-    "sentenceZH": "这是一道简单的题。",
+    "sentenceRU": "Э́то лёгкая зада́ча, и мы реши́ли её за пять мину́т.",
+    "sentenceZH": "这是一道简单的题，我们五分钟就解出来了。",
     "targetWordForm": "лёгкая",
     "otherDeclensions": [],
     "level": "A2"
@@ -2240,16 +1835,10 @@
     "word": "лёгкий",
     "case": "accusative",
     "form": "feminine",
-    "sentenceRU": "Она́ чита́ет лёгкую кни́гу.",
-    "sentenceZH": "她在读一本轻松的书。",
+    "sentenceRU": "Она́ взяла́ лёгкую кни́гу и пошла́ в парк чита́ть.",
+    "sentenceZH": "她拿了一本轻松的书，去公园读。",
     "targetWordForm": "лёгкую",
-    "otherDeclensions": [
-      {
-        "word": "кни́гу",
-        "case": "accusative",
-        "brief": "кни́га 的宾格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2258,8 +1847,8 @@
     "word": "лёгкий",
     "case": "accusative",
     "form": "neuter",
-    "sentenceRU": "Мы вы́учили лёгкое пра́вило.",
-    "sentenceZH": "我们学会了一条简单的规则。",
+    "sentenceRU": "Мы вы́учили лёгкое пра́вило и сра́зу сде́лали упражне́ние.",
+    "sentenceZH": "我们学会了一条简单的规则，立刻做了练习。",
     "targetWordForm": "лёгкое",
     "otherDeclensions": [],
     "level": "A2"
@@ -2270,16 +1859,10 @@
     "word": "лёгкий",
     "case": "instrumental",
     "form": "feminine",
-    "sentenceRU": "Он дово́лен лёгкой побе́дой.",
-    "sentenceZH": "他对轻松的胜利很满意。",
+    "sentenceRU": "Он был дово́лен лёгкой побе́дой и не скрыва́л ра́дости.",
+    "sentenceZH": "他对轻松的胜利很满意，毫不掩饰喜悦。",
     "targetWordForm": "лёгкой",
-    "otherDeclensions": [
-      {
-        "word": "побе́дой",
-        "case": "instrumental",
-        "brief": "побе́да 的工具格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2288,16 +1871,10 @@
     "word": "лёгкий",
     "case": "prepositional",
     "form": "neuter",
-    "sentenceRU": "В лёгком пла́тье удо́бно.",
-    "sentenceZH": "穿轻薄连衣裙很舒服。",
+    "sentenceRU": "В лёгком пла́тье бы́ло удо́бно, и она́ гуля́ла весь ве́чер.",
+    "sentenceZH": "穿轻薄连衣裙很舒服，她散了一晚上的步。",
     "targetWordForm": "лёгком",
-    "otherDeclensions": [
-      {
-        "word": "пла́тье",
-        "case": "prepositional",
-        "brief": "пла́тье 的前置格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2306,16 +1883,10 @@
     "word": "лёгкий",
     "case": "dative",
     "form": "neuter",
-    "sentenceRU": "Она́ ра́да лёгкому зада́нию.",
-    "sentenceZH": "她对简单的任务很高兴。",
+    "sentenceRU": "Она́ была́ ра́да лёгкому зада́нию и бы́стро его́ вы́полнила.",
+    "sentenceZH": "她对简单的任务很高兴，很快就完成了。",
     "targetWordForm": "лёгкому",
-    "otherDeclensions": [
-      {
-        "word": "зада́нию",
-        "case": "dative",
-        "brief": "зада́ние 的与格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2324,8 +1895,8 @@
     "word": "плохой",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Сего́дня плоха́я пого́да.",
-    "sentenceZH": "今天天气不好。",
+    "sentenceRU": "Сего́дня плоха́я пого́да, поэ́тому мы оста́лись до́ма.",
+    "sentenceZH": "今天天气不好，所以我们待在家里。",
     "targetWordForm": "плоха́я",
     "otherDeclensions": [],
     "level": "A2"
@@ -2336,8 +1907,8 @@
     "word": "плохой",
     "case": "nominative",
     "form": "neuter",
-    "sentenceRU": "Э́то плохо́е реше́ние.",
-    "sentenceZH": "这是个糟糕的决定。",
+    "sentenceRU": "Э́то плохо́е реше́ние, и оно́ привело́ к пробле́мам.",
+    "sentenceZH": "这是个糟糕的决定，它带来了问题。",
     "targetWordForm": "плохо́е",
     "otherDeclensions": [],
     "level": "A2"
@@ -2348,16 +1919,10 @@
     "word": "плохой",
     "case": "genitive",
     "form": "masculine",
-    "sentenceRU": "Мы избежа́ли плохо́го результа́та.",
-    "sentenceZH": "我们避免了不好的结果。",
+    "sentenceRU": "Мы избежа́ли плохо́го результа́та и во́время испра́вили оши́бку.",
+    "sentenceZH": "我们避免了不好的结果，及时改正了错误。",
     "targetWordForm": "плохо́го",
-    "otherDeclensions": [
-      {
-        "word": "результа́та",
-        "case": "genitive",
-        "brief": "результа́т 的属格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2366,8 +1931,8 @@
     "word": "плохой",
     "case": "accusative",
     "form": "masculine",
-    "sentenceRU": "Он получи́л плохо́й результа́т.",
-    "sentenceZH": "他得到了不好的结果。",
+    "sentenceRU": "Он получи́л плохо́й результа́т и реши́л занима́ться бо́льше.",
+    "sentenceZH": "他得到了不好的结果，决定更努力学习。",
     "targetWordForm": "плохо́й",
     "otherDeclensions": [],
     "level": "A2"
@@ -2378,16 +1943,10 @@
     "word": "плохой",
     "case": "prepositional",
     "form": "feminine",
-    "sentenceRU": "Я слы́шал о плохо́й но́вости.",
-    "sentenceZH": "我听到了坏消息。",
+    "sentenceRU": "Я слы́шал о плохо́й но́вости и о́чень расстро́ился.",
+    "sentenceZH": "我听到了坏消息，非常难过。",
     "targetWordForm": "плохо́й",
-    "otherDeclensions": [
-      {
-        "word": "но́вости",
-        "case": "prepositional",
-        "brief": "но́вость 的前置格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2396,16 +1955,10 @@
     "word": "плохой",
     "case": "instrumental",
     "form": "neuter",
-    "sentenceRU": "Он недово́лен плохи́м реше́нием.",
-    "sentenceZH": "他对糟糕的决定不满意。",
+    "sentenceRU": "Он был недово́лен плохи́м реше́нием и попроси́л его́ пересмотре́ть.",
+    "sentenceZH": "他对糟糕的决定不满意，请求重新考虑。",
     "targetWordForm": "плохи́м",
-    "otherDeclensions": [
-      {
-        "word": "реше́нием",
-        "case": "instrumental",
-        "brief": "реше́ние 的工具格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2414,16 +1967,10 @@
     "word": "плохой",
     "case": "dative",
     "form": "masculine",
-    "sentenceRU": "Не ве́рь плохо́му сове́ту.",
-    "sentenceZH": "不要相信坏建议。",
+    "sentenceRU": "Не сто́ит сле́довать плохо́му сове́ту, и мы отказа́лись от э́той иде́и.",
+    "sentenceZH": "不应听从坏建议，我们放弃了这个想法。",
     "targetWordForm": "плохо́му",
-    "otherDeclensions": [
-      {
-        "word": "сове́ту",
-        "case": "dative",
-        "brief": "сове́т 的与格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2432,8 +1979,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Э́тот го́род о́чень кра́сив.",
-    "sentenceZH": "这座城市很美。",
+    "sentenceRU": "Э́тот го́род о́чень кра́сив, и мы фотографи́ровали его́ це́лый день.",
+    "sentenceZH": "这座城市很美，我们拍了一整天照。",
     "targetWordForm": "кра́сив",
     "otherDeclensions": [],
     "level": "A2"
@@ -2444,8 +1991,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Э́та де́вушка о́чень краси́ва.",
-    "sentenceZH": "这个女孩很美。",
+    "sentenceRU": "Э́та де́вушка была́ краси́ва, и все обраща́ли на неё внима́ние.",
+    "sentenceZH": "这个女孩很漂亮，大家都注意到她。",
     "targetWordForm": "краси́ва",
     "otherDeclensions": [],
     "level": "A2"
@@ -2456,8 +2003,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "neuter",
-    "sentenceRU": "Э́то ме́сто краси́во.",
-    "sentenceZH": "这个地方很美。",
+    "sentenceRU": "Э́то ме́сто бы́ло краси́во, поэ́тому мы реши́ли там останови́ться.",
+    "sentenceZH": "这个地方很美，所以我们决定在那里停留。",
     "targetWordForm": "краси́во",
     "otherDeclensions": [],
     "level": "A2"
@@ -2468,8 +2015,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "plural",
-    "sentenceRU": "Э́ти цветы́ краси́вы.",
-    "sentenceZH": "这些花很美。",
+    "sentenceRU": "Э́ти цветы́ краси́вы, и я купи́л их для ма́мы.",
+    "sentenceZH": "这些花很美，我买来送给妈妈。",
     "targetWordForm": "краси́вы",
     "otherDeclensions": [],
     "level": "A2"
@@ -2480,8 +2027,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Я рад тебя́ ви́деть.",
-    "sentenceZH": "很高兴见到你。",
+    "sentenceRU": "Я был рад встре́тить ста́рого дру́га и пригласи́л его́ в кафе́.",
+    "sentenceZH": "我很高兴见到老朋友，邀请他去了咖啡馆。",
     "targetWordForm": "рад",
     "otherDeclensions": [],
     "level": "A2"
@@ -2492,8 +2039,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Она́ гото́ва к экза́мену.",
-    "sentenceZH": "她为考试做好了准备。",
+    "sentenceRU": "Она́ была́ гото́ва к экза́мену и отвеча́ла уве́ренно.",
+    "sentenceZH": "她为考试做好了准备，回答得很自信。",
     "targetWordForm": "гото́ва",
     "otherDeclensions": [],
     "level": "A2"
@@ -2504,8 +2051,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "plural",
-    "sentenceRU": "Мы гото́вы отве́тить на вопро́с.",
-    "sentenceZH": "我们准备好回答问题了。",
+    "sentenceRU": "Мы гото́вы отве́тить на вопро́с, и студе́нты подня́ли ру́ки.",
+    "sentenceZH": "我们准备好回答问题了，学生们举起了手。",
     "targetWordForm": "гото́вы",
     "otherDeclensions": [],
     "level": "A2"
@@ -2516,8 +2063,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Уро́к был интере́сен.",
-    "sentenceZH": "课很有趣。",
+    "sentenceRU": "Уро́к был интере́сен, и вре́мя прошло́ незаме́тно.",
+    "sentenceZH": "课很有趣，时间不知不觉就过去了。",
     "targetWordForm": "интере́сен",
     "otherDeclensions": [],
     "level": "A2"
@@ -2528,8 +2075,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Э́тот вопро́с о́чень тру́ден.",
-    "sentenceZH": "这个问题很难。",
+    "sentenceRU": "Э́тот вопро́с был тру́ден, поэ́тому мы до́лго его́ обсужда́ли.",
+    "sentenceZH": "这个问题很难，所以我们讨论了很久。",
     "targetWordForm": "тру́ден",
     "otherDeclensions": [],
     "level": "A2"
@@ -2540,8 +2087,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "plural",
-    "sentenceRU": "Вы соверше́нно пра́вы.",
-    "sentenceZH": "你们完全正确。",
+    "sentenceRU": "Вы бы́ли соверше́нно пра́вы, и мы при́няли ва́ше реше́ние.",
+    "sentenceZH": "你们完全正确，我们采纳了你们的决定。",
     "targetWordForm": "пра́вы",
     "otherDeclensions": [],
     "level": "A2"
@@ -2552,8 +2099,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Он уже́ свобо́ден.",
-    "sentenceZH": "他已经有空了。",
+    "sentenceRU": "Он был свобо́ден по́сле рабо́ты и пошёл в спортза́л.",
+    "sentenceZH": "他下班后有空，去了健身房。",
     "targetWordForm": "свобо́ден",
     "otherDeclensions": [],
     "level": "A2"
@@ -2564,8 +2111,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Кни́га была́ интере́сна.",
-    "sentenceZH": "书很有趣。",
+    "sentenceRU": "Кни́га была́ интере́сна, и я прочита́л её за два дня.",
+    "sentenceZH": "书很有趣，我两天就读完了。",
     "targetWordForm": "интере́сна",
     "otherDeclensions": [],
     "level": "A2"
@@ -2576,8 +2123,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Э́тот дом краси́вее того́.",
-    "sentenceZH": "这栋房子比那栋更美。",
+    "sentenceRU": "Э́тот дом краси́вее того́, и мы вы́брали и́менно его́.",
+    "sentenceZH": "这栋房子比那栋更美，我们选了它。",
     "targetWordForm": "краси́вее",
     "otherDeclensions": [],
     "level": "A2"
@@ -2588,8 +2135,8 @@
     "word": "интересный",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Э́та кни́га интере́снее той.",
-    "sentenceZH": "这本书比那本更有趣。",
+    "sentenceRU": "Э́та кни́га интере́снее той, поэ́тому я чита́ю её ка́ждый ве́чер.",
+    "sentenceZH": "这本书比那本更有趣，所以我每晚都读。",
     "targetWordForm": "интере́снее",
     "otherDeclensions": [],
     "level": "A2"
@@ -2600,16 +2147,10 @@
     "word": "дорогой",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Но́вый телефо́н доро́же ста́рого.",
-    "sentenceZH": "新手机比旧手机贵。",
+    "sentenceRU": "Но́вый телефо́н доро́же ста́рого, и я реши́л копи́ть де́ньги.",
+    "sentenceZH": "新手机比旧手机贵，我决定攒钱。",
     "targetWordForm": "доро́же",
-    "otherDeclensions": [
-      {
-        "word": "ста́рого",
-        "case": "genitive",
-        "brief": "ста́рый 的属格（比较对象）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2618,8 +2159,8 @@
     "word": "хороший",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Сего́дня пого́да лу́чше, чем вчера́.",
-    "sentenceZH": "今天天气比昨天好。",
+    "sentenceRU": "Сего́дня пого́да лу́чше, чем вчера́, и мы пошли́ гуля́ть в парк.",
+    "sentenceZH": "今天天气比昨天好，我们去了公园散步。",
     "targetWordForm": "лу́чше",
     "otherDeclensions": [],
     "level": "A2"
@@ -2630,8 +2171,8 @@
     "word": "плохой",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Э́та зада́ча ху́же, чем пре́жняя.",
-    "sentenceZH": "这道题比上一道更差。",
+    "sentenceRU": "Э́та зада́ча ху́же, чем пре́жняя, и нам ну́жно бо́льше вре́мени.",
+    "sentenceZH": "这道题比上一道更难，我们需要更多时间。",
     "targetWordForm": "ху́же",
     "otherDeclensions": [],
     "level": "A2"
@@ -2642,16 +2183,10 @@
     "word": "старый",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Мой брат ста́рше меня́.",
-    "sentenceZH": "我哥哥比我大。",
+    "sentenceRU": "Мой брат ста́рше меня́ и уже́ рабо́тает в ба́нке.",
+    "sentenceZH": "我哥哥比我大，已经在银行工作。",
     "targetWordForm": "ста́рше",
-    "otherDeclensions": [
-      {
-        "word": "меня́",
-        "case": "genitive",
-        "brief": "人称代词「я」的属格，比较对象（старше + 属格）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2660,8 +2195,8 @@
     "word": "короткий",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Э́тот путь коро́че.",
-    "sentenceZH": "这条路更短。",
+    "sentenceRU": "Э́тот путь коро́че, и мы пришли́ быстре́е, чем ожида́ли.",
+    "sentenceZH": "这条路更短，我们到得比预期快。",
     "targetWordForm": "коро́че",
     "otherDeclensions": [],
     "level": "A2"
@@ -2672,8 +2207,8 @@
     "word": "тихий",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Она́ говори́т ти́ше бра́та.",
-    "sentenceZH": "她说话比哥哥轻。",
+    "sentenceRU": "Она́ говори́т ти́ше бра́та, и её тру́дно услы́шать.",
+    "sentenceZH": "她说话比哥哥轻，很难听清。",
     "targetWordForm": "ти́ше",
     "otherDeclensions": [],
     "level": "A2"
@@ -2684,8 +2219,8 @@
     "word": "тяжёлый",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Э́тот чемода́н тяжеле́е.",
-    "sentenceZH": "这个箱子更重。",
+    "sentenceRU": "Э́тот чемода́н тяжеле́е, поэ́тому мы взя́ли такси́.",
+    "sentenceZH": "这个箱子更重，所以我们打了车。",
     "targetWordForm": "тяжеле́е",
     "otherDeclensions": [],
     "level": "A2"
@@ -2696,8 +2231,8 @@
     "word": "дешёвый",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Э́то вино́ деше́вле.",
-    "sentenceZH": "这种酒更便宜。",
+    "sentenceRU": "Э́то вино́ деше́вле, и мы купи́ли сра́зу две буты́лки.",
+    "sentenceZH": "这种酒更便宜，我们一下买了两瓶。",
     "targetWordForm": "деше́вле",
     "otherDeclensions": [],
     "level": "A2"
@@ -2708,8 +2243,8 @@
     "word": "быстрый",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Он бе́гает быстре́е меня́.",
-    "sentenceZH": "他跑得比我快。",
+    "sentenceRU": "Он бе́гает быстре́е меня́ и вы́играл соревнова́ние.",
+    "sentenceZH": "他跑得比我快，赢得了比赛。",
     "targetWordForm": "быстре́е",
     "otherDeclensions": [],
     "level": "A2"
@@ -2720,16 +2255,10 @@
     "word": "длинный",
     "case": "nominative",
     "form": "comparative",
-    "sentenceRU": "Э́та у́лица длинне́е той.",
-    "sentenceZH": "这条街比那条更长。",
+    "sentenceRU": "Э́та у́лица длинне́е той, и мы шли по ней о́чень до́лго.",
+    "sentenceZH": "这条街比那条更长，我们走了很久。",
     "targetWordForm": "длинне́е",
-    "otherDeclensions": [
-      {
-        "word": "той",
-        "case": "genitive",
-        "brief": "та 的属格（比较对象）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "A2"
   },
   {
@@ -2738,8 +2267,8 @@
     "word": "удобный",
     "case": "nominative",
     "form": "compound",
-    "sentenceRU": "Э́тот вариа́нт бо́лее удо́бный.",
-    "sentenceZH": "这个方案更方便。",
+    "sentenceRU": "Э́тот вариа́нт бо́лее удо́бный, и мы останови́лись на нём.",
+    "sentenceZH": "这个方案更方便，我们选了它。",
     "targetWordForm": "бо́лее",
     "otherDeclensions": [],
     "level": "A2"
@@ -2750,8 +2279,8 @@
     "word": "трудный",
     "case": "nominative",
     "form": "compound",
-    "sentenceRU": "Э́та зада́ча бо́лее тру́дная.",
-    "sentenceZH": "这道题更难。",
+    "sentenceRU": "Э́та зада́ча бо́лее тру́дная, и нам нужна́ по́мощь преподава́теля.",
+    "sentenceZH": "这道题更难，我们需要老师的帮助。",
     "targetWordForm": "бо́лее",
     "otherDeclensions": [],
     "level": "A2"
@@ -2762,8 +2291,8 @@
     "word": "тёплый",
     "case": "nominative",
     "form": "compound",
-    "sentenceRU": "Сего́дня пого́да ме́нее тёплая.",
-    "sentenceZH": "今天天气没那么暖和。",
+    "sentenceRU": "Сего́дня пого́да ме́нее тёплая, поэ́тому возьми́те ку́ртку.",
+    "sentenceZH": "今天天气没那么暖和，所以带上外套。",
     "targetWordForm": "ме́нее",
     "otherDeclensions": [],
     "level": "A2"
@@ -2774,8 +2303,8 @@
     "word": "надёжный",
     "case": "nominative",
     "form": "compound",
-    "sentenceRU": "Э́то реше́ние бо́лее надёжное.",
-    "sentenceZH": "这个决定更可靠。",
+    "sentenceRU": "Э́то реше́ние бо́лее надёжное, и мы дове́рились ему́.",
+    "sentenceZH": "这个决定更可靠，我们相信它。",
     "targetWordForm": "бо́лее",
     "otherDeclensions": [],
     "level": "A2"
@@ -2786,8 +2315,8 @@
     "word": "дорогой",
     "case": "nominative",
     "form": "compound",
-    "sentenceRU": "Он вы́брал бо́лее дорого́й вариа́нт.",
-    "sentenceZH": "他选了更贵的方案。",
+    "sentenceRU": "Он вы́брал бо́лее дорого́й вариа́нт и заплати́л сра́зу.",
+    "sentenceZH": "他选了更贵的方案，并立刻付款。",
     "targetWordForm": "бо́лее",
     "otherDeclensions": [],
     "level": "A2"
@@ -2798,8 +2327,8 @@
     "word": "важный",
     "case": "nominative",
     "form": "compound",
-    "sentenceRU": "Мы обсуди́ли бо́лее ва́жный вопро́с.",
-    "sentenceZH": "我们讨论了更重要的问题。",
+    "sentenceRU": "Мы обсуди́ли бо́лее ва́жный вопро́с и соста́вили план.",
+    "sentenceZH": "我们讨论了更重要的问题，并制定了计划。",
     "targetWordForm": "бо́лее",
     "otherDeclensions": [],
     "level": "A2"
@@ -2810,8 +2339,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Э́то красиве́йший го́род.",
-    "sentenceZH": "这是最美的城市。",
+    "sentenceRU": "Мно́гие тури́сты счита́ют, что э́то красиве́йший го́род, в кото́ром они́ бы́ли.",
+    "sentenceZH": "许多游客认为，这是他们到过的最美的城市。",
     "targetWordForm": "красиве́йший",
     "otherDeclensions": [],
     "level": "B1"
@@ -2822,8 +2351,8 @@
     "word": "интересный",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Э́то интересне́йшая кни́га.",
-    "sentenceZH": "这是一本最有趣的书。",
+    "sentenceRU": "Э́то интересне́йшая кни́га, кото́рую я когда́-либо чита́л.",
+    "sentenceZH": "这是我读过的最有趣的一本书。",
     "targetWordForm": "интересне́йшая",
     "otherDeclensions": [],
     "level": "B1"
@@ -2834,16 +2363,10 @@
     "word": "трудный",
     "case": "accusative",
     "form": "feminine",
-    "sentenceRU": "Он реши́л трудне́йшую зада́чу.",
-    "sentenceZH": "他解出了最难的题。",
+    "sentenceRU": "Он реши́л трудне́йшую зада́чу, кото́рую не смог реши́ть никто́ из гру́ппы.",
+    "sentenceZH": "他解出了小组里没人能解出的最难的题。",
     "targetWordForm": "трудне́йшую",
-    "otherDeclensions": [
-      {
-        "word": "зада́чу",
-        "case": "accusative",
-        "brief": "зада́ча 的宾格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "B1"
   },
   {
@@ -2852,16 +2375,10 @@
     "word": "красивый",
     "case": "prepositional",
     "form": "masculine",
-    "sentenceRU": "Мы живём в красиве́йшем го́роде.",
-    "sentenceZH": "我们住在最美的城市。",
+    "sentenceRU": "Мы жи́ли в красиве́йшем го́роде, о кото́ром я ча́сто расска́зываю друзья́м.",
+    "sentenceZH": "我们住在最美的城市，我常向朋友讲述它。",
     "targetWordForm": "красиве́йшем",
-    "otherDeclensions": [
-      {
-        "word": "го́роде",
-        "case": "prepositional",
-        "brief": "го́род 的前置格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "B1"
   },
   {
@@ -2870,8 +2387,8 @@
     "word": "высокий",
     "case": "nominative",
     "form": "neuter",
-    "sentenceRU": "Э́то высоча́йшее зда́ние.",
-    "sentenceZH": "这是最高的建筑。",
+    "sentenceRU": "Э́то высоча́йшее зда́ние, кото́рое бы́ло постро́ено за три го́да.",
+    "sentenceZH": "这是三年建成的最高的建筑。",
     "targetWordForm": "высоча́йшее",
     "otherDeclensions": [],
     "level": "B1"
@@ -2882,8 +2399,8 @@
     "word": "хороший",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Он мой лу́чший друг.",
-    "sentenceZH": "他是我最好的朋友。",
+    "sentenceRU": "Он утвержда́ет, что э́то лу́чший спо́соб вы́учить иностра́нный язы́к.",
+    "sentenceZH": "他断言这是学习外语的最好方法。",
     "targetWordForm": "лу́чший",
     "otherDeclensions": [],
     "level": "B1"
@@ -2894,8 +2411,8 @@
     "word": "красивый",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Э́то са́мый краси́вый го́род.",
-    "sentenceZH": "这是最美的城市。",
+    "sentenceRU": "Если ты хо́чешь уви́деть са́мый краси́вый зака́т, приезжа́й к мо́рю.",
+    "sentenceZH": "如果你想看最美的日落，就来海边。",
     "targetWordForm": "са́мый",
     "otherDeclensions": [],
     "level": "B1"
@@ -2906,8 +2423,8 @@
     "word": "интересный",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Э́то са́мая интере́сная кни́га.",
-    "sentenceZH": "这是最有趣的一本书。",
+    "sentenceRU": "Учёные счита́ют, что э́то са́мая интере́сная гипо́теза из всех предло́женных.",
+    "sentenceZH": "科学家认为这是所有提出假设中最有趣的。",
     "targetWordForm": "са́мая",
     "otherDeclensions": [],
     "level": "B1"
@@ -2918,16 +2435,10 @@
     "word": "большой",
     "case": "prepositional",
     "form": "masculine",
-    "sentenceRU": "Мы жи́ли в са́мом большо́м го́роде.",
-    "sentenceZH": "我们住在最大的城市。",
+    "sentenceRU": "Он рассказа́л, что жил в са́мом большо́м го́роде страны́ и привы́к к шу́му.",
+    "sentenceZH": "他说他住在这个国家最大的城市，习惯了喧嚣。",
     "targetWordForm": "са́мом",
-    "otherDeclensions": [
-      {
-        "word": "го́роде",
-        "case": "prepositional",
-        "brief": "го́род 的前置格（单数）"
-      }
-    ],
+    "otherDeclensions": [],
     "level": "B1"
   },
   {
@@ -2936,8 +2447,8 @@
     "word": "трудный",
     "case": "nominative",
     "form": "neuter",
-    "sentenceRU": "Э́то са́мое тру́дное зада́ние.",
-    "sentenceZH": "这是最难的任务。",
+    "sentenceRU": "Преподава́тель объясни́л, что э́то са́мое тру́дное зада́ние в ку́рсе.",
+    "sentenceZH": "老师解释说这是课程里最难的任务。",
     "targetWordForm": "са́мое",
     "otherDeclensions": [],
     "level": "B1"
@@ -2948,8 +2459,8 @@
     "word": "интересный",
     "case": "accusative",
     "form": "feminine",
-    "sentenceRU": "Она́ чита́ет са́мую интере́сную кни́гу.",
-    "sentenceZH": "她在读最有趣的一本书。",
+    "sentenceRU": "Она́ прочита́ла са́мую интере́сную кни́гу, кото́рую ей сове́товали в библиоте́ке.",
+    "sentenceZH": "她读了图书馆推荐给她的最有趣的一本书。",
     "targetWordForm": "са́мую",
     "otherDeclensions": [],
     "level": "B1"
@@ -2960,8 +2471,8 @@
     "word": "интересный",
     "case": "nominative",
     "form": "plural",
-    "sentenceRU": "Э́то са́мые интере́сные ле́кции.",
-    "sentenceZH": "这些是最有趣的课。",
+    "sentenceRU": "Э́то са́мые интере́сные ле́кции, кото́рые я слу́шал за всю учёбу.",
+    "sentenceZH": "这是我整个学习期间听过的最有趣的课。",
     "targetWordForm": "са́мые",
     "otherDeclensions": [],
     "level": "B1"
@@ -4160,8 +3671,8 @@
     "word": "себя",
     "case": "accusative",
     "number": "singular",
-    "sentenceRU": "Я ви́жу себя́ в зе́ркале.",
-    "sentenceZH": "我在镜子里看见自己。",
+    "sentenceRU": "Я ви́дел себя́ в зе́ркале и удиви́лся свое́й но́вой стри́жке.",
+    "sentenceZH": "我在镜子里看见自己，对自己的新发型感到惊讶。",
     "targetWordForm": "себя́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4172,8 +3683,8 @@
     "word": "себя",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "Я купи́л э́то для себя́.",
-    "sentenceZH": "我给自己买了这个。",
+    "sentenceRU": "Я купи́л э́то для себя́ и о́чень дово́лен поку́пкой.",
+    "sentenceZH": "我给自己买了这个，对购买很满意。",
     "targetWordForm": "себя́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4184,8 +3695,8 @@
     "word": "себя",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Он купи́л себе́ кни́гу.",
-    "sentenceZH": "他给自己买了本书。",
+    "sentenceRU": "Он купи́л себе́ кни́гу и сра́зу нача́л чита́ть.",
+    "sentenceZH": "他给自己买了本书，立刻开始读。",
     "targetWordForm": "себе́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4196,8 +3707,8 @@
     "word": "себя",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Она́ горди́тся собо́й.",
-    "sentenceZH": "她为自己骄傲。",
+    "sentenceRU": "Она́ горди́лась собо́й и свои́ми достиже́ниями.",
+    "sentenceZH": "她为自己和成就感到骄傲。",
     "targetWordForm": "собо́й",
     "otherDeclensions": [],
     "level": "A2"
@@ -4208,8 +3719,8 @@
     "word": "себя",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "Он ча́сто ду́мает о себе́.",
-    "sentenceZH": "他经常想自己。",
+    "sentenceRU": "Он ча́сто ду́мал о себе́ и о своём бу́дущем.",
+    "sentenceZH": "他经常思考自己和未来。",
     "targetWordForm": "себе́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4220,8 +3731,8 @@
     "word": "свой",
     "case": "accusative",
     "form": "masculine",
-    "sentenceRU": "Он лю́бит свой дом.",
-    "sentenceZH": "他爱自己的房子。",
+    "sentenceRU": "Он лю́бит свой дом и ка́ждый ве́чер возвраща́ется туда́.",
+    "sentenceZH": "他爱自己的房子，每晚都回到那里。",
     "targetWordForm": "свой",
     "otherDeclensions": [],
     "level": "A2"
@@ -4232,8 +3743,8 @@
     "word": "свой",
     "case": "accusative",
     "form": "feminine",
-    "sentenceRU": "Он чита́ет свою́ кни́гу.",
-    "sentenceZH": "他读自己的书。",
+    "sentenceRU": "Он чита́л свою́ кни́гу и де́лал заме́тки на поля́х.",
+    "sentenceZH": "他读自己的书，在页边做笔记。",
     "targetWordForm": "свою́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4244,8 +3755,8 @@
     "word": "свой",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "У него́ своя́ маши́на.",
-    "sentenceZH": "他有自己的汽车。",
+    "sentenceRU": "У него́ бы́ла своя́ маши́на, и он е́здил на ней на рабо́ту.",
+    "sentenceZH": "他有自己的汽车，开它去上班。",
     "targetWordForm": "своя́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4256,8 +3767,8 @@
     "word": "свой",
     "case": "genitive",
     "form": "masculine",
-    "sentenceRU": "У него́ нет своего́ до́ма.",
-    "sentenceZH": "他没有自己的房子。",
+    "sentenceRU": "У него́ не́ было своего́ до́ма, и он снима́л кварти́ру.",
+    "sentenceZH": "他没有自己的房子，一直租公寓。",
     "targetWordForm": "своего́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4268,8 +3779,8 @@
     "word": "свой",
     "case": "instrumental",
     "form": "masculine",
-    "sentenceRU": "Он горди́тся свои́м сы́ном.",
-    "sentenceZH": "他为自己儿子骄傲。",
+    "sentenceRU": "Он горди́лся свои́м сы́ном и расска́зывал о нём друзья́м.",
+    "sentenceZH": "他为儿子骄傲，向朋友们讲述他。",
     "targetWordForm": "свои́м",
     "otherDeclensions": [],
     "level": "A2"
@@ -4280,8 +3791,8 @@
     "word": "свой",
     "case": "dative",
     "form": "masculine",
-    "sentenceRU": "Он пи́шет письмо́ своему́ бра́ту.",
-    "sentenceZH": "他给自己的哥哥写信。",
+    "sentenceRU": "Он писа́л письмо́ своему́ бра́ту и вспомина́л де́тство.",
+    "sentenceZH": "他给哥哥写信，回忆童年。",
     "targetWordForm": "своему́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4292,8 +3803,8 @@
     "word": "свой",
     "case": "prepositional",
     "form": "masculine",
-    "sentenceRU": "Он ду́мает о своём бу́дущем.",
-    "sentenceZH": "他在想自己的未来。",
+    "sentenceRU": "Он ду́мал о своём бу́дущем и стро́ил пла́ны.",
+    "sentenceZH": "他思考自己的未来，制定计划。",
     "targetWordForm": "своём",
     "otherDeclensions": [],
     "level": "A2"
@@ -4304,8 +3815,8 @@
     "word": "весь",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Весь день я рабо́тал.",
-    "sentenceZH": "我工作了一整天。",
+    "sentenceRU": "Весь день я рабо́тал и к ве́черу о́чень уста́л.",
+    "sentenceZH": "我工作了一整天，到晚上非常累。",
     "targetWordForm": "Весь",
     "otherDeclensions": [],
     "level": "A2"
@@ -4316,8 +3827,8 @@
     "word": "весь",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Вся семья́ до́ма.",
-    "sentenceZH": "全家都在家。",
+    "sentenceRU": "Вся семья́ собра́лась на пра́здник, и бы́ло о́чень ве́село.",
+    "sentenceZH": "全家聚在一起过节，非常开心。",
     "targetWordForm": "Вся",
     "otherDeclensions": [],
     "level": "A2"
@@ -4328,8 +3839,8 @@
     "word": "весь",
     "case": "nominative",
     "form": "neuter",
-    "sentenceRU": "Всё в поря́дке.",
-    "sentenceZH": "一切都好。",
+    "sentenceRU": "Всё бы́ло гото́во, и мы нача́ли ме́роприя́тие.",
+    "sentenceZH": "一切准备就绪，我们开始了活动。",
     "targetWordForm": "Всё",
     "otherDeclensions": [],
     "level": "A2"
@@ -4340,8 +3851,8 @@
     "word": "весь",
     "case": "nominative",
     "form": "plural",
-    "sentenceRU": "Все студе́нты здесь.",
-    "sentenceZH": "所有学生都在这里。",
+    "sentenceRU": "Все студе́нты пришли́ на ле́кцию, и а́удито́рия была́ полна́.",
+    "sentenceZH": "所有学生都来听课，教室坐满了。",
     "targetWordForm": "Все",
     "otherDeclensions": [],
     "level": "A2"
@@ -4352,8 +3863,8 @@
     "word": "весь",
     "case": "genitive",
     "form": "masculine",
-    "sentenceRU": "Я не зна́ю всего́ те́кста.",
-    "sentenceZH": "我不了解全文。",
+    "sentenceRU": "Я не зна́л всего́ те́кста и попроси́л по́мощи.",
+    "sentenceZH": "我不了解全文，请求了帮助。",
     "targetWordForm": "всего́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4364,8 +3875,8 @@
     "word": "весь",
     "case": "accusative",
     "form": "feminine",
-    "sentenceRU": "Я чита́л всю ночь.",
-    "sentenceZH": "我读了一整夜。",
+    "sentenceRU": "Я чита́л всю ночь и зако́нчил кни́гу к утру́.",
+    "sentenceZH": "我读了一整夜，到早上读完了书。",
     "targetWordForm": "всю",
     "otherDeclensions": [],
     "level": "A2"
@@ -4376,8 +3887,8 @@
     "word": "весь",
     "case": "instrumental",
     "form": "masculine",
-    "sentenceRU": "Мы знако́мы со всем кла́ссом.",
-    "sentenceZH": "我们认识全班。",
+    "sentenceRU": "Мы познако́мились со всем кла́ссом и ста́ли друзья́ми.",
+    "sentenceZH": "我们认识了全班，成了朋友。",
     "targetWordForm": "всем",
     "otherDeclensions": [],
     "level": "A2"
@@ -4388,8 +3899,8 @@
     "word": "весь",
     "case": "prepositional",
     "form": "masculine",
-    "sentenceRU": "Он ду́мает обо всём.",
-    "sentenceZH": "他什么都想。",
+    "sentenceRU": "Он ду́мал обо всём и подгото́вился к любы́м вопро́сам.",
+    "sentenceZH": "他什么都想过了，为各种问题做好了准备。",
     "targetWordForm": "всём",
     "otherDeclensions": [],
     "level": "A2"
@@ -4400,8 +3911,8 @@
     "word": "сам",
     "case": "nominative",
     "form": "masculine",
-    "sentenceRU": "Он сам э́то сде́лал.",
-    "sentenceZH": "他自己做了这个。",
+    "sentenceRU": "Он сам сде́лал ремо́нт и сэкономи́л мно́го де́нег.",
+    "sentenceZH": "他自己做了装修，省了很多钱。",
     "targetWordForm": "сам",
     "otherDeclensions": [],
     "level": "A2"
@@ -4412,8 +3923,8 @@
     "word": "сам",
     "case": "nominative",
     "form": "feminine",
-    "sentenceRU": "Она́ сама́ пришла́.",
-    "sentenceZH": "她自己来了。",
+    "sentenceRU": "Она́ сама́ пришла́ и принесла́ пода́рки.",
+    "sentenceZH": "她自己来了，还带了礼物。",
     "targetWordForm": "сама́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4424,8 +3935,8 @@
     "word": "сам",
     "case": "dative",
     "form": "masculine",
-    "sentenceRU": "Я дал э́то самому́ дире́ктору.",
-    "sentenceZH": "我把它给了经理本人。",
+    "sentenceRU": "Я отда́л докуме́нты самому́ дире́ктору и получи́л разреше́ние.",
+    "sentenceZH": "我把文件交给了经理本人，得到了批准。",
     "targetWordForm": "самому́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4436,8 +3947,8 @@
     "word": "сам",
     "case": "nominative",
     "form": "plural",
-    "sentenceRU": "Они́ са́ми э́то зна́ют.",
-    "sentenceZH": "他们自己知道这个。",
+    "sentenceRU": "Они́ са́ми реши́ли э́ту пробле́му и горди́лись собо́й.",
+    "sentenceZH": "他们自己解决了这个问题，为此自豪。",
     "targetWordForm": "са́ми",
     "otherDeclensions": [],
     "level": "A2"
@@ -4448,8 +3959,8 @@
     "word": "никто",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Никто́ не зна́ет.",
-    "sentenceZH": "没有人知道。",
+    "sentenceRU": "Никто́ не зна́л отве́та, и преподава́тель объясни́л пра́вило сно́ва.",
+    "sentenceZH": "没有人知道答案，老师又讲了一遍规则。",
     "targetWordForm": "Никто́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4460,8 +3971,8 @@
     "word": "никто",
     "case": "accusative",
     "number": "singular",
-    "sentenceRU": "Я никого́ не ви́жу.",
-    "sentenceZH": "我谁也没看见。",
+    "sentenceRU": "Я никого́ не ви́дел в ко́мнате и реши́л подожда́ть.",
+    "sentenceZH": "我在房间里谁也没看见，决定等一等。",
     "targetWordForm": "никого́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4472,8 +3983,8 @@
     "word": "никто",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Я никому́ не сказа́л.",
-    "sentenceZH": "我谁也没告诉。",
+    "sentenceRU": "Я никому́ не сказа́л о свои́х пла́нах и сохрани́л секре́т.",
+    "sentenceZH": "我谁也没告诉自己的计划，保守了秘密。",
     "targetWordForm": "никому́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4484,8 +3995,8 @@
     "word": "никто",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Он нике́м не дово́лен.",
-    "sentenceZH": "他对谁都不满意。",
+    "sentenceRU": "Он нике́м не был дово́лен и критикова́л всю кома́нду.",
+    "sentenceZH": "他对谁都不满意，批评了整个团队。",
     "targetWordForm": "нике́м",
     "otherDeclensions": [],
     "level": "A2"
@@ -4496,8 +4007,8 @@
     "word": "никто",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "Он ни о ко́м не ду́мает.",
-    "sentenceZH": "他谁也不想。",
+    "sentenceRU": "Он ни о ко́м не ду́мал и сосредото́чился на рабо́те.",
+    "sentenceZH": "他谁也不想，专注于工作。",
     "targetWordForm": "ко́м",
     "otherDeclensions": [],
     "level": "A2"
@@ -4508,8 +4019,8 @@
     "word": "ничто",
     "case": "nominative",
     "number": "singular",
-    "sentenceRU": "Ничто́ не измени́лось.",
-    "sentenceZH": "什么都没改变。",
+    "sentenceRU": "Ничто́ не измени́лось, и мы продолжа́ли рабо́тать как ра́ньше.",
+    "sentenceZH": "什么都没改变，我们继续像以前一样工作。",
     "targetWordForm": "Ничто́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4520,8 +4031,8 @@
     "word": "ничто",
     "case": "genitive",
     "number": "singular",
-    "sentenceRU": "У него́ ничего́ нет.",
-    "sentenceZH": "他什么都没有。",
+    "sentenceRU": "У него́ ничего́ не́ было, и он нача́л всё с нуля́.",
+    "sentenceZH": "他什么都没有，一切从零开始。",
     "targetWordForm": "ничего́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4532,8 +4043,8 @@
     "word": "ничто",
     "case": "dative",
     "number": "singular",
-    "sentenceRU": "Он ничему́ не удивля́ется.",
-    "sentenceZH": "他对什么都不惊讶。",
+    "sentenceRU": "Он ничему́ не удивля́лся и споко́йно всё принима́л.",
+    "sentenceZH": "他对什么都不惊讶，平静地接受一切。",
     "targetWordForm": "ничему́",
     "otherDeclensions": [],
     "level": "A2"
@@ -4544,8 +4055,8 @@
     "word": "ничто",
     "case": "instrumental",
     "number": "singular",
-    "sentenceRU": "Он ниче́м не интересу́ется.",
-    "sentenceZH": "他对什么都不感兴趣。",
+    "sentenceRU": "Он ниче́м не интересу́ется и це́лыми дня́ми сиди́т до́ма.",
+    "sentenceZH": "他对什么都不感兴趣，整天待在家里。",
     "targetWordForm": "ниче́м",
     "otherDeclensions": [],
     "level": "A2"
@@ -4556,8 +4067,8 @@
     "word": "ничто",
     "case": "prepositional",
     "number": "singular",
-    "sentenceRU": "Он ни о чём не ду́мает.",
-    "sentenceZH": "他什么都不想。",
+    "sentenceRU": "Он ни о чём не ду́мал и про́сто отдыха́л.",
+    "sentenceZH": "他什么都不想，只是休息。",
     "targetWordForm": "чём",
     "otherDeclensions": [],
     "level": "A2"
@@ -4568,8 +4079,8 @@
     "word": "никакой",
     "case": "genitive",
     "form": "feminine",
-    "sentenceRU": "Нет никако́й пробле́мы.",
-    "sentenceZH": "没有任何问题。",
+    "sentenceRU": "Нет никако́й пробле́мы, и мы мо́жем продолжа́ть.",
+    "sentenceZH": "没有任何问题，我们可以继续。",
     "targetWordForm": "никако́й",
     "otherDeclensions": [],
     "level": "A2"
@@ -4580,8 +4091,8 @@
     "word": "никакой",
     "case": "genitive",
     "form": "plural",
-    "sentenceRU": "У меня́ нет никаки́х вопро́сов.",
-    "sentenceZH": "我没有任何问题。",
+    "sentenceRU": "У меня́ не́ было никаки́х вопро́сов, и я ушёл с собра́ния.",
+    "sentenceZH": "我没有任何问题，就离开了会议。",
     "targetWordForm": "никаки́х",
     "otherDeclensions": [],
     "level": "A2"
@@ -4591,8 +4102,8 @@
     "grammarPointName": "один 的变格",
     "word": "один",
     "case": "nominative",
-    "sentenceRU": "У меня́ есть оди́н брат.",
-    "sentenceZH": "我有一个兄弟。",
+    "sentenceRU": "У меня́ есть оди́н брат, и мы жи́ли вме́сте в де́тстве.",
+    "sentenceZH": "我有一个兄弟，我们小时候住在一起。",
     "targetWordForm": "оди́н",
     "otherDeclensions": [],
     "form": "masculine",
@@ -4603,8 +4114,8 @@
     "grammarPointName": "один 的变格",
     "word": "один",
     "case": "genitive",
-    "sentenceRU": "Здесь нет ни одно́й маши́ны.",
-    "sentenceZH": "这里一辆车也没有。",
+    "sentenceRU": "Здесь не́ было ни одно́й маши́ны, и мы прошли́ пешко́м.",
+    "sentenceZH": "这里一辆车也没有，我们步行过去了。",
     "targetWordForm": "одно́й",
     "otherDeclensions": [],
     "form": "feminine",
@@ -4615,8 +4126,8 @@
     "grammarPointName": "один 的变格",
     "word": "один",
     "case": "instrumental",
-    "sentenceRU": "Я разгова́ривал с одни́м студе́нтом.",
-    "sentenceZH": "我和一个大学生交谈。",
+    "sentenceRU": "Я разгова́ривал с одни́м студе́нтом и узна́л мно́го но́вого.",
+    "sentenceZH": "我和一个大学生交谈，了解了很多新东西。",
     "targetWordForm": "одни́м",
     "otherDeclensions": [],
     "form": "masculine",
@@ -4627,8 +4138,8 @@
     "grammarPointName": "один 的变格",
     "word": "один",
     "case": "accusative",
-    "sentenceRU": "Я ви́жу одну́ де́вушку.",
-    "sentenceZH": "我看见一个女孩。",
+    "sentenceRU": "Я ви́дел одну́ де́вушку на вы́ставке и запо́мнил её.",
+    "sentenceZH": "我在展览上看到一个女孩，记住了她。",
     "targetWordForm": "одну́",
     "otherDeclensions": [],
     "form": "feminine",
@@ -4639,8 +4150,8 @@
     "grammarPointName": "один 的变格",
     "word": "один",
     "case": "nominative",
-    "sentenceRU": "Э́то одни́ и те же лю́ди.",
-    "sentenceZH": "这是同一批人。",
+    "sentenceRU": "Э́то одни́ и те же лю́ди, и мы уже́ встреча́лись ра́ньше.",
+    "sentenceZH": "这是同一批人，我们以前见过。",
     "targetWordForm": "одни́",
     "otherDeclensions": [],
     "form": "plural",
@@ -4651,8 +4162,8 @@
     "grammarPointName": "два/три/четыре 的变格与搭配",
     "word": "два",
     "case": "nominative",
-    "sentenceRU": "У меня́ есть два бра́та.",
-    "sentenceZH": "我有两个兄弟。",
+    "sentenceRU": "У меня́ есть два бра́та, и мы ча́сто собира́емся по вы́ходным.",
+    "sentenceZH": "我有两个兄弟，我们经常在周末聚。",
     "targetWordForm": "два",
     "otherDeclensions": [],
     "number": "singular",
@@ -4663,8 +4174,8 @@
     "grammarPointName": "два/три/четыре 的变格与搭配",
     "word": "два",
     "case": "nominative",
-    "sentenceRU": "У меня́ есть две сестры́.",
-    "sentenceZH": "我有两个姐妹。",
+    "sentenceRU": "У меня́ есть две сестры́, и обе́ живу́т в друго́м го́роде.",
+    "sentenceZH": "我有两个姐妹，两人都住在另一个城市。",
     "targetWordForm": "две",
     "otherDeclensions": [],
     "number": "singular",
@@ -4675,8 +4186,8 @@
     "grammarPointName": "два/три/четыре 的变格与搭配",
     "word": "два",
     "case": "genitive",
-    "sentenceRU": "У него́ нет двух биле́тов.",
-    "sentenceZH": "他没有两张票。",
+    "sentenceRU": "У него́ не́ было двух биле́тов, и он купи́л то́лько оди́н.",
+    "sentenceZH": "他没有两张票，只买了一张。",
     "targetWordForm": "двух",
     "otherDeclensions": [],
     "number": "singular",
@@ -4687,8 +4198,8 @@
     "grammarPointName": "два/три/четыре 的变格与搭配",
     "word": "два",
     "case": "instrumental",
-    "sentenceRU": "Он прие́хал с двумя́ детьми́.",
-    "sentenceZH": "他带着两个孩子来了。",
+    "sentenceRU": "Он прие́хал с двумя́ детьми́ и сра́зу пошёл на мо́ре.",
+    "sentenceZH": "他带着两个孩子来了，立刻去了海边。",
     "targetWordForm": "двумя́",
     "otherDeclensions": [],
     "number": "singular",
@@ -4699,8 +4210,8 @@
     "grammarPointName": "два/три/четыре 的变格与搭配",
     "word": "два",
     "case": "prepositional",
-    "sentenceRU": "Мы ду́маем о четырёх пробле́мах.",
-    "sentenceZH": "我们在思考四个问题。",
+    "sentenceRU": "Мы ду́мали о четырёх пробле́мах и иска́ли реше́ния.",
+    "sentenceZH": "我们思考四个问题，寻找解决办法。",
     "targetWordForm": "четырёх",
     "otherDeclensions": [],
     "number": "singular",
@@ -4711,8 +4222,8 @@
     "grammarPointName": "пять 及以上的变格与搭配",
     "word": "пять",
     "case": "nominative",
-    "sentenceRU": "У меня́ есть пять книг.",
-    "sentenceZH": "我有五本书。",
+    "sentenceRU": "У меня́ есть пять книг по исто́рии, и я хочу́ прочита́ть их все.",
+    "sentenceZH": "我有五本历史书，我想全部读完。",
     "targetWordForm": "пять",
     "otherDeclensions": [],
     "number": "singular",
@@ -4723,8 +4234,8 @@
     "grammarPointName": "пять 及以上的变格与搭配",
     "word": "пять",
     "case": "genitive",
-    "sentenceRU": "У него́ нет пяти́ рубле́й.",
-    "sentenceZH": "他没有五卢布。",
+    "sentenceRU": "У него́ не́ было пяти́ рубле́й, и друг одолжи́л ему́ де́ньги.",
+    "sentenceZH": "他没有五卢布，朋友借给他钱。",
     "targetWordForm": "пяти́",
     "otherDeclensions": [],
     "number": "singular",
@@ -4735,8 +4246,8 @@
     "grammarPointName": "пять 及以上的变格与搭配",
     "word": "пять",
     "case": "dative",
-    "sentenceRU": "Он позвони́л пяти́ друзья́м.",
-    "sentenceZH": "他打电话给五个朋友。",
+    "sentenceRU": "Он позвони́л пяти́ друзья́м и пригласи́л их на день рожде́ния.",
+    "sentenceZH": "他打电话给五个朋友，邀请他们参加生日聚会。",
     "targetWordForm": "пяти́",
     "otherDeclensions": [],
     "number": "singular",
@@ -4747,8 +4258,8 @@
     "grammarPointName": "пять 及以上的变格与搭配",
     "word": "пять",
     "case": "instrumental",
-    "sentenceRU": "Он прие́хал с пятью́ друзья́ми.",
-    "sentenceZH": "他带着五个朋友来了。",
+    "sentenceRU": "Он прие́хал с пятью́ друзья́ми и за́нял весь стол в кафе́.",
+    "sentenceZH": "他带着五个朋友来了，占了咖啡馆整张桌子。",
     "targetWordForm": "пятью́",
     "otherDeclensions": [],
     "number": "singular",
@@ -4759,8 +4270,8 @@
     "grammarPointName": "пять 及以上的变格与搭配",
     "word": "пять",
     "case": "prepositional",
-    "sentenceRU": "Мы говори́ли о пяти́ горо́дах.",
-    "sentenceZH": "我们谈论了五座城市。",
+    "sentenceRU": "Мы говори́ли о пяти́ горо́дах и вы́брали лу́чший для путеше́ствия.",
+    "sentenceZH": "我们谈论了五座城市，选出了最适合旅行的。",
     "targetWordForm": "пяти́",
     "otherDeclensions": [],
     "number": "singular",
@@ -4771,8 +4282,8 @@
     "grammarPointName": "序数词",
     "word": "первый",
     "case": "nominative",
-    "sentenceRU": "Сего́дня пе́рвый день весны́.",
-    "sentenceZH": "今天是春天的第一天。",
+    "sentenceRU": "Сего́дня пе́рвый день весны́, и снег уже́ та́ет.",
+    "sentenceZH": "今天是春天的第一天，雪已经开始融化。",
     "targetWordForm": "пе́рвый",
     "otherDeclensions": [],
     "form": "masculine",
@@ -4783,8 +4294,8 @@
     "grammarPointName": "序数词",
     "word": "первый",
     "case": "genitive",
-    "sentenceRU": "У меня́ нет второ́й попы́тки.",
-    "sentenceZH": "我没有第二次机会。",
+    "sentenceRU": "У меня́ не́ было второ́й попы́тки, и я о́чень волнова́лся.",
+    "sentenceZH": "我没有第二次机会，非常紧张。",
     "targetWordForm": "второ́й",
     "otherDeclensions": [],
     "form": "feminine",
@@ -4795,8 +4306,8 @@
     "grammarPointName": "序数词",
     "word": "первый",
     "case": "accusative",
-    "sentenceRU": "Я чита́ю тре́тье письмо́.",
-    "sentenceZH": "我在读第三封信。",
+    "sentenceRU": "Я чита́л тре́тье письмо́ и наконе́ц по́нял всю исто́рию.",
+    "sentenceZH": "我读到第三封信，终于明白了整个故事。",
     "targetWordForm": "тре́тье",
     "otherDeclensions": [],
     "form": "neuter",
@@ -4807,8 +4318,8 @@
     "grammarPointName": "序数词",
     "word": "первый",
     "case": "instrumental",
-    "sentenceRU": "Он пришёл пе́рвым.",
-    "sentenceZH": "他第一个到了。",
+    "sentenceRU": "Он пришёл пе́рвым и за́нял лу́чшее ме́сто.",
+    "sentenceZH": "他第一个到，占了最好的位置。",
     "targetWordForm": "пе́рвым",
     "otherDeclensions": [],
     "form": "masculine",
@@ -4819,8 +4330,8 @@
     "grammarPointName": "序数词",
     "word": "первый",
     "case": "prepositional",
-    "sentenceRU": "Мы говори́ли о пе́рвых шага́х.",
-    "sentenceZH": "我们谈论了最初的步骤。",
+    "sentenceRU": "Мы говори́ли о пе́рвых шага́х и вспомина́ли нача́ло прое́кта.",
+    "sentenceZH": "我们谈论最初的步骤，回忆项目的开端。",
     "targetWordForm": "пе́рвых",
     "otherDeclensions": [],
     "form": "plural",
@@ -4831,8 +4342,8 @@
     "grammarPointName": "集合数词",
     "word": "двое",
     "case": "nominative",
-    "sentenceRU": "У меня́ есть дво́е дете́й.",
-    "sentenceZH": "我有两个孩子。",
+    "sentenceRU": "В отчёте напи́сано, что дво́е студе́нтов по́лностью сда́ли экза́мен досро́чно.",
+    "sentenceZH": "报告写道，两名学生完全提前通过了考试。",
     "targetWordForm": "дво́е",
     "otherDeclensions": [],
     "number": "singular",
@@ -4843,8 +4354,8 @@
     "grammarPointName": "集合数词",
     "word": "двое",
     "case": "genitive",
-    "sentenceRU": "У нас нет двои́х друзе́й.",
-    "sentenceZH": "我们没有两个朋友。",
+    "sentenceRU": "Если среди́ двои́х кандида́тов нет подходя́щего, коми́ссия продли́т отбо́р.",
+    "sentenceZH": "如果两名候选人中没有合适人选，委员会将延长选拔。",
     "targetWordForm": "двои́х",
     "otherDeclensions": [],
     "number": "singular",
@@ -4855,8 +4366,8 @@
     "grammarPointName": "集合数词",
     "word": "двое",
     "case": "dative",
-    "sentenceRU": "Он помог трои́м студе́нтам.",
-    "sentenceZH": "他帮助了三个大学生。",
+    "sentenceRU": "Преподава́тель объясни́л, что он дал дополни́тельное зада́ние трои́м студе́нтам, кото́рые пропусти́ли ле́кцию.",
+    "sentenceZH": "老师解释说他给三名缺课的学生布置了额外作业。",
     "targetWordForm": "трои́м",
     "otherDeclensions": [],
     "number": "singular",
@@ -4867,8 +4378,8 @@
     "grammarPointName": "集合数词",
     "word": "двое",
     "case": "instrumental",
-    "sentenceRU": "Он прие́хал с двои́ми детьми́.",
-    "sentenceZH": "他带着两个孩子来了。",
+    "sentenceRU": "Он прие́хал с двои́ми детьми́ и объясни́л, что не мо́жет оста́вить их одни́х.",
+    "sentenceZH": "他带着两个孩子来了，并解释说他不能把他们单独留下。",
     "targetWordForm": "двои́ми",
     "otherDeclensions": [],
     "number": "singular",
@@ -4879,8 +4390,8 @@
     "grammarPointName": "集合数词",
     "word": "двое",
     "case": "prepositional",
-    "sentenceRU": "Мы говори́ли о трои́х бра́тьях.",
-    "sentenceZH": "我们谈论了三个兄弟。",
+    "sentenceRU": "В статье́ говори́тся о трои́х бра́тьях, кото́рые основа́ли изве́стную компа́нию.",
+    "sentenceZH": "文章讲述了创建知名公司的三兄弟。",
     "targetWordForm": "трои́х",
     "otherDeclensions": [],
     "number": "singular",
@@ -4891,8 +4402,8 @@
     "grammarPointName": "时间表示法",
     "word": "час",
     "case": "nominative",
-    "sentenceRU": "Сейча́с час.",
-    "sentenceZH": "现在是一点。",
+    "sentenceRU": "Сейча́с час, и мы реши́ли пообе́дать.",
+    "sentenceZH": "现在是一点，我们决定吃午饭。",
     "targetWordForm": "час",
     "otherDeclensions": [],
     "number": "singular",
@@ -4903,8 +4414,8 @@
     "grammarPointName": "时间表示法",
     "word": "час",
     "case": "genitive",
-    "sentenceRU": "Сейча́с два часа́.",
-    "sentenceZH": "现在是两点。",
+    "sentenceRU": "Сейча́с два часа́, и мы ещё успе́ем на встре́чу.",
+    "sentenceZH": "现在是两点，我们还来得及赴约。",
     "targetWordForm": "часа́",
     "otherDeclensions": [],
     "number": "singular",
@@ -4915,8 +4426,8 @@
     "grammarPointName": "时间表示法",
     "word": "час",
     "case": "genitive",
-    "sentenceRU": "Сейча́с пять часо́в.",
-    "sentenceZH": "现在是五点。",
+    "sentenceRU": "Сейча́с пять часо́в, и рабо́чий день уже́ зако́нчился.",
+    "sentenceZH": "现在是五点，工作日已经结束。",
     "targetWordForm": "часо́в",
     "otherDeclensions": [],
     "number": "plural",
@@ -4927,8 +4438,8 @@
     "grammarPointName": "时间表示法",
     "word": "час",
     "case": "accusative",
-    "sentenceRU": "Мы пришли́ в час но́чи.",
-    "sentenceZH": "我们凌晨一点到的。",
+    "sentenceRU": "Мы пришли́ в час но́чи и о́чень уста́ли.",
+    "sentenceZH": "我们凌晨一点到，非常累。",
     "targetWordForm": "час",
     "otherDeclensions": [],
     "number": "singular",
@@ -4939,8 +4450,8 @@
     "grammarPointName": "时间表示法",
     "word": "час",
     "case": "accusative",
-    "sentenceRU": "Он прие́хал в пять часо́в.",
-    "sentenceZH": "他五点到的。",
+    "sentenceRU": "Он прие́хал в пять часо́в и сра́зу пошёл в о́фис.",
+    "sentenceZH": "他五点到的，立刻去了办公室。",
     "targetWordForm": "часо́в",
     "otherDeclensions": [],
     "number": "plural",
@@ -4951,8 +4462,8 @@
     "grammarPointName": "年龄表示法",
     "word": "год",
     "case": "nominative",
-    "sentenceRU": "Мне оди́н год.",
-    "sentenceZH": "我一岁。",
+    "sentenceRU": "Ребёнку испо́лнился оди́н год, и вся семья́ отмеча́ла пра́здник.",
+    "sentenceZH": "孩子满一岁了，全家庆祝。",
     "targetWordForm": "год",
     "otherDeclensions": [],
     "number": "singular",
@@ -4963,8 +4474,8 @@
     "grammarPointName": "年龄表示法",
     "word": "год",
     "case": "genitive",
-    "sentenceRU": "Ей два го́да.",
-    "sentenceZH": "她两岁。",
+    "sentenceRU": "Ей два го́да, и она́ уже́ говори́т коро́ткими фра́зами.",
+    "sentenceZH": "她两岁，已经会说短句子了。",
     "targetWordForm": "го́да",
     "otherDeclensions": [],
     "number": "singular",
@@ -4975,8 +4486,8 @@
     "grammarPointName": "年龄表示法",
     "word": "год",
     "case": "genitive",
-    "sentenceRU": "Ему́ два́дцать лет.",
-    "sentenceZH": "他二十岁。",
+    "sentenceRU": "Ему́ два́дцать лет, и он у́чится в университе́те.",
+    "sentenceZH": "他二十岁，在大学读书。",
     "targetWordForm": "лет",
     "otherDeclensions": [],
     "number": "plural",
@@ -4987,8 +4498,8 @@
     "grammarPointName": "年龄表示法",
     "word": "год",
     "case": "nominative",
-    "sentenceRU": "Мне два́дцать оди́н год.",
-    "sentenceZH": "我二十一岁。",
+    "sentenceRU": "Мне два́дцать оди́н год, и я то́лько зако́нчил университе́т.",
+    "sentenceZH": "我二十一岁，刚大学毕业。",
     "targetWordForm": "год",
     "otherDeclensions": [],
     "number": "singular",
@@ -4999,8 +4510,8 @@
     "grammarPointName": "年龄表示法",
     "word": "год",
     "case": "genitive",
-    "sentenceRU": "Ей три́дцать два го́да.",
-    "sentenceZH": "她三十二岁。",
+    "sentenceRU": "Ей три́дцать два го́да, и она́ уже́ сде́лала карье́ру.",
+    "sentenceZH": "她三十二岁，已经事业有成。",
     "targetWordForm": "го́да",
     "otherDeclensions": [],
     "number": "singular",
