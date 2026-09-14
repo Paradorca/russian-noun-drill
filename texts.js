@@ -62,6 +62,7 @@ Object.assign(App, {
     document.getElementById('add-custom-btn').onclick = () => this.addCustomSentence();
     this.editingSentenceIndex = null;
     document.getElementById('add-custom-btn').textContent = '添加例句';
+    document.getElementById('custom-level').value = 'A1';
     this.renderCustomSentences();
   },
 
@@ -70,6 +71,7 @@ Object.assign(App, {
     const sentenceZH = document.getElementById('custom-zh').value.trim();
     const source = document.getElementById('custom-source').value.trim();
     const grammarPointId = document.getElementById('custom-grammar').value;
+    const level = document.getElementById('custom-level').value || 'A1';
 
     if (!sentenceRU || !sentenceZH) {
       alert('请填写俄语句子和中文翻译');
@@ -86,7 +88,8 @@ Object.assign(App, {
       sentenceZH,
       targetWordForm: detected ? detected.target : '',
       otherDeclensions: [],
-      source: source || undefined
+      source: source || undefined,
+      level
     };
     if (detected) {
       if (detected.form) newSentence.form = detected.form;
@@ -107,6 +110,7 @@ Object.assign(App, {
     document.getElementById('custom-ru').value = '';
     document.getElementById('custom-zh').value = '';
     document.getElementById('custom-source').value = '';
+    document.getElementById('custom-level').value = 'A1';
     alert(detected ? '例句已保存，已自动识别目标词形' : '例句已保存（未能自动识别目标词形，练习时不显示高亮）');
   },
 
@@ -190,6 +194,7 @@ Object.assign(App, {
         <div style="font-size:0.85rem;color:var(--muted);margin-bottom:4px;">${s.sentenceZH}</div>
         <div style="display:flex;gap:6px;align-items:center;">
           <span class="meta-pill" style="font-size:0.75rem;">${s.grammarPointName}</span>
+          <span class="meta-pill" style="font-size:0.75rem;">${s.level || 'A1'}</span>
           ${pill}
           ${s.source ? `<span style="font-size:0.75rem;color:var(--muted);margin-left:auto;">来源：${s.source}</span>` : ''}
           <button onclick="App.editCustomSentence(${i})" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.8rem;">编辑</button>
@@ -215,6 +220,7 @@ Object.assign(App, {
     document.getElementById('custom-ru').value = s.sentenceRU;
     document.getElementById('custom-zh').value = s.sentenceZH;
     document.getElementById('custom-source').value = s.source || '';
+    document.getElementById('custom-level').value = s.level || 'A1';
     document.getElementById('add-custom-btn').textContent = '保存修改';
     document.getElementById('add-sentence-panel').scrollIntoView({ behavior: 'smooth' });
   },

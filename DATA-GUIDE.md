@@ -104,7 +104,7 @@
 - **case**：`nominative / genitive / dative / accusative / instrumental / prepositional`
 - **form**：`masculine / neuter / feminine / plural`（形容词、短尾）；`comparative / compound`（比较级）
 - **number**：`singular / plural`（名词、人称代词、кто/что/себя/никто/ничто 等名词性代词）
-- **level**：`A1 / A2 / B1`，缺省视为 A1。练习页 `generateQueue()` 只抽选 `level === state.practiceLevel` 的内置例句；自定义例句（userSentences）不受难度筛选。
+- **level**：`A1 / A2 / B1`，缺省视为 A1。内置与自定义例句都按 `level === state.practiceLevel` 筛选（自定义例句在导入时选择难度）。分级：A1 = 基本变格（硬变化、硬变化形容词、人称/物主/指示/疑问代词、不变格名词）；A2 = 软变化/唏音/第三变格/特殊名词/软·混合·短尾·比较级形容词/数词/反身·限定·否定代词；B1 = -мя 型、最高级、集合数词。
 - **6 格顺序**（caseNames 数组固定顺序）：主格、属格、与格、宾格、工具格、前置格
 - 宾格在变格表中约定写 `同一或二`（同主格或同属格，随有生命性变化）
 

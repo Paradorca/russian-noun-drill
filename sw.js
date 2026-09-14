@@ -1,4 +1,4 @@
-const CACHE_NAME = 'russian-noun-drill-v39';
+const CACHE_NAME = 'russian-noun-drill-v40';
 const FILES_TO_CACHE = [
   './',
   './index.html',

@@ -45,7 +45,7 @@ root（俄语语法框架）→ 5 个 category 分支：noun-decl 名词变格�
 
 1. **每次发布必须 bump `sw.js` 里的 `CACHE_NAME` 版本号**（如 v17 → v18），否则用户手机上是旧缓存。新增文件时同步加入 `FILES_TO_CACHE`。
 2. 用户数据全部在 localStorage 的 `russianNounDrillState` 键下（unlockedNodes、practiceMode、practiceLevel、userSentences、userTexts、aiProvider、aiApiKey 等）。新增字段时在 `loadState()` 里做向后兼容的 backfill。
-3. 每日练习 10 句，由 `practice.js` 的 `generateQueue()` 控制：practiceMode 存的是板块 id（noun-decl/adj-decl/num/pron/verb），从该板块的例句库中纯随机抽取，已学节点不影响抽选。practiceLevel 存难度等级（A1/A2/B1），内置例句按 `level` 字段筛选，自定义例句（userSentences）不受难度筛选。
+3. 每日练习 10 句，由 `practice.js` 的 `generateQueue()` 控制：practiceMode 存的是板块 id（noun-decl/adj-decl/num/pron/verb），从该板块的例句库中纯随机抽取，已学节点不影响抽选。practiceLevel 存难度等级（A1/A2/B1），内置与自定义例句均按 `level` 字段筛选（自定义例句的 level 在导入时选择）。
 4. 打字校验规则：只比对字母（忽略大小写、重音符号、标点，ё=е），见 `normalizeLetters/lettersOnly`。
 5. AI 助手：用户的 API Key 存在 localStorage，浏览器直连服务商 API（OpenAI 兼容格式），无后端。
 

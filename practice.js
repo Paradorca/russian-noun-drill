@@ -144,9 +144,8 @@ Object.assign(App, {
       return n ? n.id : null;
     };
     const level = this.state.practiceLevel || 'A1';
-    const builtin = this.sentences.filter(s => (s.level || 'A1') === level);
-    const all = [...builtin, ...(this.state.userSentences || [])];
-    const pool = all.filter(s => branchOf(s.grammarPointId) === branch);
+    const all = [...this.sentences, ...(this.state.userSentences || [])];
+    const pool = all.filter(s => (s.level || 'A1') === level && branchOf(s.grammarPointId) === branch);
     const shuffled = [...pool].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 10);
   },
