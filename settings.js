@@ -27,6 +27,13 @@ Object.assign(App, {
       this.saveState();
     };
 
+    const recallScope = document.getElementById('recall-scope');
+    recallScope.value = this.state.recallScope || 'cloze';
+    recallScope.onchange = (e) => {
+      this.state.recallScope = e.target.value;
+      this.saveState();
+    };
+
     const aiProvider = document.getElementById('ai-provider');
     const aiKeyInput = document.getElementById('ai-api-key');
     const aiHint = document.getElementById('ai-key-hint');

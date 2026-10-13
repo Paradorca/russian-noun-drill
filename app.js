@@ -57,6 +57,16 @@ const App = {
       this.saveState();
     }
 
+    if (!this.state.recallScope) {
+      this.state.recallScope = 'cloze';
+      this.saveState();
+    }
+
+    if (!this.state.weakSentences) {
+      this.state.weakSentences = {};
+      this.saveState();
+    }
+
     const today = new Date().toISOString().slice(0,10);
     if (this.state.dailyStats?.date !== today) {
       this.state.dailyStats = { date: today, completed: 0 };
@@ -116,6 +126,14 @@ const App = {
     }
     return s.number === 'singular' ? '单数' : '复数';
   },
+  speak(text) {
+    if (!('speechSynthesis' in window) || !text) return;
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'ru-RU';
+    u.rate = 0.9;
+    window.speechSynthesis.speak(u);
+  },
 };
 
 // Global event bindings
@@ -134,6 +152,21 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('chat-send-btn').onclick = () => App.sendChat();
   document.getElementById('chat-input').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') App.sendChat();
+  });
+
+  // 回忆练习
+  document.getElementById('mode-recall-btn').onclick = () => App.startRecallPractice();
+  document.getElementById('recall-check-btn').onclick = () => App.checkRecall();
+  document.getElementById('recall-reveal-btn').onclick = () => App.revealRecall();
+  document.getElementById('recall-next-btn').onclick = () => App.nextRecall();
+  document.getElementById('recall-toggle-rule-btn').onclick = () => App.toggleRecallRulePanel();
+  document.getElementById('recall-speak-btn').onclick = () => App.speakCurrentRecall();
+  document.getElementById('speak-sentence-btn').onclick = () => App.speakCurrentSentence();
+  document.getElementById('recall-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') App.checkRecall();
+  });
+  document.getElementById('recall-ru').addEventListener('click', (e) => {
+    if (e.target.classList.contains('word-target')) App.speak(e.target.textContent);
   });
 
   // Horizontal swipe on the app toggles the AI window

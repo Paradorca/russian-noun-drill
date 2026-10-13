@@ -23,7 +23,8 @@
       <div id="practice-mode">
         <h2>练习</h2>
         <p class="mb-4">选择要练习的内容</p>
-        <button id="mode-sentence-btn" class="btn btn-primary">✍️ 例句练习</button>
+        <button id="mode-recall-btn" class="btn btn-primary">🎤 回忆练习</button>
+        <button id="mode-sentence-btn" class="btn btn-secondary">📝 跟读练习</button>
         <button id="mode-text-btn" class="btn btn-secondary">📖 课文练习</button>
       </div>
 
@@ -48,10 +49,32 @@
         </div>
 
         <div class="action-row">
+          <button id="speak-sentence-btn" class="btn btn-secondary btn-small">🔊 朗读</button>
           <button id="toggle-rule-btn" class="btn btn-secondary btn-small">📖 查看变化规则</button>
         </div>
 
         <button id="next-btn" class="btn btn-primary">下一句</button>
+      </div>
+
+      <div id="recall-card" class="hidden">
+        <div class="sentence-card">
+          <div class="sentence-meta" id="recall-meta"></div>
+          <div class="sentence-zh" id="recall-zh"></div>
+          <div class="sentence-ru" id="recall-ru"></div>
+          <div class="recall-hint" id="recall-hint"></div>
+          <textarea id="recall-input" class="typing-input" rows="2" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
+          <div class="recall-feedback hidden" id="recall-feedback"></div>
+        </div>
+        <div class="rule-panel" id="recall-rule-panel"></div>
+        <div class="action-row">
+          <button id="recall-speak-btn" class="btn btn-secondary btn-small hidden">🔊 朗读</button>
+          <button id="recall-toggle-rule-btn" class="btn btn-secondary btn-small" disabled>📖 查看变化规则</button>
+        </div>
+        <div class="action-row">
+          <button id="recall-check-btn" class="btn btn-primary">检查</button>
+          <button id="recall-reveal-btn" class="btn btn-secondary">显示答案</button>
+        </div>
+        <button id="recall-next-btn" class="btn btn-primary" disabled>下一句</button>
       </div>
 
       <div id="practice-complete" class="hidden text-center mt-4">
@@ -95,6 +118,18 @@
               <option value="A1">A1 · 基础</option>
               <option value="A2">A2 · 初级</option>
               <option value="B1">B1 · 中级</option>
+            </select>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="setting-item" style="border:none;">
+            <div>
+              <div class="setting-label">回忆练习方式</div>
+              <div class="setting-desc">填空：只挖掉目标词；整句：从中文说出完整句子</div>
+            </div>
+            <select id="recall-scope">
+              <option value="cloze">填空</option>
+              <option value="whole">整句</option>
             </select>
           </div>
         </div>

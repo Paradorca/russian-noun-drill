@@ -14,6 +14,7 @@ Object.assign(App, {
     document.getElementById('practice-mode').classList.remove('hidden');
     document.getElementById('practice-empty').classList.add('hidden');
     document.getElementById('sentence-card').classList.add('hidden');
+    document.getElementById('recall-card').classList.add('hidden');
     document.getElementById('practice-complete').classList.add('hidden');
     document.getElementById('text-practice').classList.add('hidden');
   },
@@ -21,6 +22,7 @@ Object.assign(App, {
   startSentencePractice() {
     this.practice.mode = 'sentence';
     document.getElementById('practice-mode').classList.add('hidden');
+    document.getElementById('recall-card').classList.add('hidden');
     document.getElementById('text-practice').classList.add('hidden');
     document.getElementById('practice-complete').classList.add('hidden');
     this.startPractice();
@@ -31,6 +33,7 @@ Object.assign(App, {
     document.getElementById('practice-mode').classList.add('hidden');
     document.getElementById('practice-empty').classList.add('hidden');
     document.getElementById('sentence-card').classList.add('hidden');
+    document.getElementById('recall-card').classList.add('hidden');
     document.getElementById('practice-complete').classList.add('hidden');
     document.getElementById('text-practice').classList.remove('hidden');
     this.renderTextPractice();
@@ -134,7 +137,7 @@ Object.assign(App, {
     this.renderSentence(0);
   },
 
-  generateQueue() {
+  buildPool() {
     const nodes = this.data.framework.nodes;
     const branches = nodes.filter(n => n.type === 'category' && n.parentId === 'root').map(n => n.id);
     const branch = branches.includes(this.state.practiceMode) ? this.state.practiceMode : branches[0];
@@ -145,9 +148,11 @@ Object.assign(App, {
     };
     const level = this.state.practiceLevel || 'A1';
     const all = [...this.sentences, ...(this.state.userSentences || [])];
-    const pool = all.filter(s => (s.level || 'A1') === level && branchOf(s.grammarPointId) === branch);
-    const shuffled = [...pool].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, 10);
+    return all.filter(s => (s.level || 'A1') === level && branchOf(s.grammarPointId) === branch);
+  },
+
+  generateQueue() {
+    return [...this.buildPool()].sort(() => Math.random() - 0.5).slice(0, 10);
   },
 
   renderSentence(idx, keepChat) {
@@ -259,6 +264,10 @@ Object.assign(App, {
   },
 
   handleWordClick(e) {
+    if (e.target.classList.contains('word-target')) {
+      this.speak(e.target.textContent);
+      return;
+    }
     const popup = document.getElementById('other-decl-popup');
     if (e.target.classList.contains('word-other')) {
       const caseName = this.caseName(e.target.dataset.case);
@@ -373,6 +382,174 @@ Object.assign(App, {
     document.getElementById('complete-count').textContent = this.practice.queue.length;
   },
   restartPractice() {
-    this.startSentencePractice();
+    if (this.practice.mode === 'recall') this.startRecallPractice();
+    else this.startSentencePractice();
+  },
+
+  // ---- TTS ----
+  speakCurrentSentence() {
+    const s = this.practice.queue[this.practice.index];
+    if (s) this.speak(s.sentenceRU);
+  },
+  speakCurrentRecall() {
+    const s = this.practice.recallQueue && this.practice.recallQueue[this.practice.recallIndex];
+    if (s) this.speak(s.sentenceRU);
+  },
+
+  // ---- 回忆练习 ----
+  startRecallPractice() {
+    this.practice.mode = 'recall';
+    document.getElementById('practice-mode').classList.add('hidden');
+    document.getElementById('practice-empty').classList.add('hidden');
+    document.getElementById('sentence-card').classList.add('hidden');
+    document.getElementById('text-practice').classList.add('hidden');
+    document.getElementById('practice-complete').classList.add('hidden');
+    this.practice.recallQueue = this.generateRecallQueue();
+    this.practice.recallTotal = this.practice.recallQueue.length;
+    this.practice.recallIndex = 0;
+    this.practice.recallMissed = [];
+    const card = document.getElementById('recall-card');
+    if (this.practice.recallQueue.length === 0) {
+      card.classList.add('hidden');
+      document.getElementById('practice-empty').classList.remove('hidden');
+      return;
+    }
+    card.classList.remove('hidden');
+    this.renderRecall();
+  },
+
+  generateRecallQueue() {
+    const pool = this.buildPool();
+    const weak = this.state.weakSentences || {};
+    return pool.map(s => ({ s, w: weak[this.weakKey(s)] || 0 }))
+      .sort((a, b) => (b.w - a.w) || (Math.random() - 0.5))
+      .slice(0, 10)
+      .map(x => x.s);
+  },
+
+  weakKey(s) {
+    return `${s.grammarPointId}|${s.sentenceRU}|${s.targetWordForm}`;
+  },
+  markWeak(s) {
+    const k = this.weakKey(s);
+    this.state.weakSentences[k] = (this.state.weakSentences[k] || 0) + 1;
+    this.saveState();
+  },
+  clearWeak(s) {
+    const k = this.weakKey(s);
+    if (this.state.weakSentences[k]) {
+      delete this.state.weakSentences[k];
+      this.saveState();
+    }
+  },
+
+  renderRecall() {
+    const queue = this.practice.recallQueue;
+    if (this.practice.recallIndex >= queue.length) {
+      if (this.practice.recallMissed.length > 0) {
+        this.practice.recallQueue = this.practice.recallMissed;
+        this.practice.recallMissed = [];
+        this.practice.recallIndex = 0;
+        this.renderRecall();
+      } else {
+        this.showRecallComplete();
+      }
+      return;
+    }
+    const s = queue[this.practice.recallIndex];
+    const scope = this.state.recallScope || 'cloze';
+    const gpNode = this.data.framework.nodes.find(n => n.id === s.grammarPointId);
+
+    let secondPill = '';
+    if (gpNode && (gpNode.tableType === 'comparative' || gpNode.tableType === 'verb')) {
+      secondPill = this.formName(s);
+    } else if (s.case) {
+      secondPill = `${this.caseName(s.case)} · ${this.formName(s)}`;
+    }
+
+    document.getElementById('recall-meta').innerHTML =
+      `<span class="meta-pill">${s.grammarPointName}</span>` +
+      (secondPill ? `<span class="meta-pill">${secondPill}</span>` : '');
+    document.getElementById('recall-zh').textContent = s.sentenceZH;
+    document.getElementById('recall-ru').innerHTML = this.renderRecallRU(s, scope);
+    document.getElementById('recall-hint').innerHTML =
+      `原形：<strong>${this.escapeHtml(s.word || '')}</strong>${secondPill ? ' · ' + this.escapeHtml(secondPill) : ''}`;
+
+    document.getElementById('recall-rule-panel').classList.remove('open');
+    document.getElementById('recall-rule-panel').innerHTML = this.buildRuleHTML(s.grammarPointId, s.case);
+
+    const input = document.getElementById('recall-input');
+    input.value = '';
+    input.disabled = false;
+    input.placeholder = scope === 'cloze' ? '说出或打出挖空的词' : '说出或打出完整句子';
+    document.getElementById('recall-feedback').classList.add('hidden');
+    document.getElementById('recall-check-btn').disabled = false;
+    document.getElementById('recall-reveal-btn').disabled = false;
+    document.getElementById('recall-next-btn').disabled = true;
+    document.getElementById('recall-toggle-rule-btn').disabled = true;
+    document.getElementById('recall-speak-btn').classList.add('hidden');
+
+    this.chatHistory = [];
+    document.getElementById('chat-messages').innerHTML = '';
+    document.getElementById('ai-window').classList.add('hidden');
+    input.focus();
+  },
+
+  renderRecallRU(s, scope) {
+    if (scope === 'whole') return '';
+    const blank = '<span class="recall-blank">________</span>';
+    return s.sentenceRU.split(/([ ,.!?;:"«»—]+)/)
+      .map(t => t === s.targetWordForm ? blank : this.escapeHtml(t)).join('');
+  },
+
+  checkRecall() {
+    const s = this.practice.recallQueue[this.practice.recallIndex];
+    const scope = this.state.recallScope || 'cloze';
+    const input = document.getElementById('recall-input').value;
+    const target = scope === 'cloze' ? s.targetWordForm : s.sentenceRU;
+    const ok = this.lettersOnly(input) === this.lettersOnly(target);
+    this.finishRecall(ok, true);
+  },
+
+  revealRecall() {
+    this.finishRecall(false, false);
+  },
+
+  finishRecall(ok, requeue) {
+    const s = this.practice.recallQueue[this.practice.recallIndex];
+    document.getElementById('recall-ru').innerHTML =
+      this.renderHighlightedRU(s.sentenceRU, s.targetWordForm, s.otherDeclensions || []);
+    const fb = document.getElementById('recall-feedback');
+    fb.classList.remove('hidden');
+    if (ok) {
+      fb.innerHTML = '<span style="color:var(--success);font-weight:600;">✅ 正确！</span>';
+      this.clearWeak(s);
+    } else {
+      fb.innerHTML = '<span style="color:#E94560;font-weight:600;">❌ 正确答案已标出</span>';
+      this.markWeak(s);
+      if (requeue && !this.practice.recallMissed.includes(s)) this.practice.recallMissed.push(s);
+    }
+    this.speak(s.sentenceRU);
+    document.getElementById('recall-input').disabled = true;
+    document.getElementById('recall-check-btn').disabled = true;
+    document.getElementById('recall-reveal-btn').disabled = true;
+    document.getElementById('recall-next-btn').disabled = false;
+    document.getElementById('recall-toggle-rule-btn').disabled = false;
+    document.getElementById('recall-speak-btn').classList.remove('hidden');
+  },
+
+  nextRecall() {
+    this.practice.recallIndex++;
+    this.renderRecall();
+  },
+
+  toggleRecallRulePanel() {
+    document.getElementById('recall-rule-panel').classList.toggle('open');
+  },
+
+  showRecallComplete() {
+    document.getElementById('recall-card').classList.add('hidden');
+    document.getElementById('practice-complete').classList.remove('hidden');
+    document.getElementById('complete-count').textContent = this.practice.recallTotal || 0;
   },
 });

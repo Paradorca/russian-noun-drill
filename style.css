@@ -502,6 +502,25 @@ p { margin-bottom: 12px; color: var(--muted); }
   opacity: 0.6;
 }
 
+.recall-hint {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 8px 0 12px;
+}
+
+.recall-hint strong { color: var(--text); }
+
+.recall-blank {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.recall-feedback {
+  margin-top: 12px;
+  font-size: 1rem;
+}
+
 .btn:disabled {
   opacity: 0.45;
   cursor: not-allowed;

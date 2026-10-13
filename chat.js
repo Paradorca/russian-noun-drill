@@ -35,11 +35,17 @@ Object.assign(App, {
     input.value = '';
     const thinkingEl = this.appendChatMsg('ai', '思考中…');
 
-    const s = this.practice.queue[this.practice.index];
+    const s = this.practice.mode === 'recall'
+      ? (this.practice.recallQueue && this.practice.recallQueue[this.practice.recallIndex])
+      : this.practice.queue[this.practice.index];
     const provider = this.aiProviders[this.state.aiProvider || 'deepseek'];
-    let systemPrompt = '你是一位俄语语法老师，用简体中文回答。只回答与俄语语法、句法、名词变格相关的问题；如果问题无关，礼貌地拒绝。回答要简洁，控制在150字以内。';
+    let systemPrompt = '你是一位俄语语法老师，用简体中文回答。只回答与俄语语法、词形变化（名词变格、形容词、代词、数词、动词变位）相关的问题；如果问题无关，礼貌地拒绝。回答要简洁，控制在200字以内。';
     if (s) {
-      systemPrompt += `\n\n当前例句：${s.sentenceRU}\n中文：${s.sentenceZH}\n变格词：「${s.targetWordForm}」（${this.caseName(s.case)}，${this.formName(s)}，语法点：${s.grammarPointName}）`;
+      const gpNode = this.data.framework.nodes.find(n => n.id === s.grammarPointId);
+      let tag = '';
+      if (gpNode && (gpNode.tableType === 'comparative' || gpNode.tableType === 'verb')) tag = this.formName(s);
+      else if (s.case) tag = `${this.caseName(s.case)}，${this.formName(s)}`;
+      systemPrompt += `\n\n当前例句：${s.sentenceRU}\n中文：${s.sentenceZH}\n目标词：「${s.targetWordForm}」（${tag}，语法点：${s.grammarPointName}）`;
     }
     const messages = [
       { role: 'system', content: systemPrompt },
