@@ -18,10 +18,29 @@ const App = {
     }
 
     this.loadState();
+    this.initSpeech();
     this.registerSW();
     this.setupNav();
     this.showMap();
     this.showBottomNav();
+  },
+
+  initSpeech() {
+    if (!('speechSynthesis' in window)) return;
+    this._voices = window.speechSynthesis.getVoices();
+    if (!this._voices.length) {
+      window.speechSynthesis.onvoiceschanged = () => {
+        this._voices = window.speechSynthesis.getVoices();
+      };
+    }
+  },
+
+  russianVoice() {
+    if (!('speechSynthesis' in window)) return null;
+    const voices = (this._voices && this._voices.length)
+      ? this._voices
+      : window.speechSynthesis.getVoices();
+    return voices.find(v => (v.lang || '').toLowerCase().replace('_', '-').startsWith('ru')) || null;
   },
 
   registerSW() {
@@ -128,11 +147,29 @@ const App = {
   },
   speak(text) {
     if (!('speechSynthesis' in window) || !text) return;
-    window.speechSynthesis.cancel();
+    const synth = window.speechSynthesis;
+    synth.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = 'ru-RU';
     u.rate = 0.9;
-    window.speechSynthesis.speak(u);
+    const v = this.russianVoice();
+    if (v) u.voice = v;
+    synth.speak(u);
+  },
+
+  testSpeech() {
+    if (!('speechSynthesis' in window)) {
+      alert('当前浏览器不支持语音朗读（speechSynthesis 不可用）。');
+      return;
+    }
+    const voices = window.speechSynthesis.getVoices();
+    const ru = voices.filter(v => (v.lang || '').toLowerCase().replace('_', '-').startsWith('ru'));
+    this.speak('Привет, как дела?');
+    let msg = '检测到 ' + voices.length + ' 个语音。\n';
+    msg += ru.length
+      ? '俄语语音：' + ru.map(v => v.name).join('、')
+      : '没有俄语语音——这就是朗读没声音的原因。';
+    setTimeout(() => alert(msg), 400);
   },
 };
 
@@ -148,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('text-back-btn').onclick = () => App.textPracticeBack();
   document.getElementById('complete-back-btn').onclick = () => App.showPracticeMode();
   document.getElementById('reset-progress-btn').onclick = () => App.resetProgress();
+  document.getElementById('test-speech-btn').onclick = () => App.testSpeech();
   document.getElementById('ai-close-btn').onclick = () => App.toggleChat();
   document.getElementById('chat-send-btn').onclick = () => App.sendChat();
   document.getElementById('chat-input').addEventListener('keydown', (e) => {
